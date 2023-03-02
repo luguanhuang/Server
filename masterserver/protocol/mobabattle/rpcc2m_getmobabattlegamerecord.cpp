@@ -1,0 +1,31 @@
+﻿#include "pch.h"
+#include "mobabattle/rpcc2m_getmobabattlegamerecord.h"
+#include "role/rolemanager.h"
+#include "role/role.h"
+#include "mobabattle/mobarecordmgr.h"
+#include "mobabattle/mobarecord.h"
+
+// generate by ProtoGen at date: 2017/6/16 0:20:27
+
+RPC_SERVER_IMPLEMETION(RpcC2M_GetMobaBattleGameRecord, GetMobaBattleGameRecordArg, GetMobaBattleGameRecordRes)
+
+void RpcC2M_GetMobaBattleGameRecord::OnCall(const GetMobaBattleGameRecordArg &roArg, GetMobaBattleGameRecordRes &roRes)
+{
+	CRole* pRole = CRoleManager::Instance()->GetBySession(m_sessionID);
+	if (pRole == NULL)
+	{
+		SSError << "Cannot Find Role, SessionID:" << m_sessionID << END;
+		return;
+	}
+	MobaRecord* record = MobaRecordMgr::Instance()->GetMobaRoleRecord(pRole->GetID());
+	if (record == NULL)
+	{
+		LogWarn("role [%llu], login but mobarecord is NULL", pRole->GetID());
+		return;
+	}
+	record->FillOneGameRecord(roArg.tag(), roRes);
+}
+
+void RpcC2M_GetMobaBattleGameRecord::OnDelayReplyRpc(const GetMobaBattleGameRecordArg &roArg, GetMobaBattleGameRecordRes &roRes, const CUserData &roUserData)
+{
+}

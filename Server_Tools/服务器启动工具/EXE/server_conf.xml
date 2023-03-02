@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+
+<ServerList ping="1000">
+	<!--  内网服务器    -->
+	<Server name="OB-QL" ip="10.0.128.240" port="22" user="lzg" pwd="lzg123u" >
+		<init		cmd="" />
+		<update		cmd="cd ~/OB_QL/code; git pull; cd ~/OB_QL/resource; git pull;" />
+		<compile	cmd="" />
+		<status		cmd="cd ~/OB_QL/code/server/Build/Debug/bin;./status obql" />
+		<start		cmd="cd ~/OB_QL/code/server/Build/Debug/bin;./start obql" />
+		<stop		cmd="cd ~/OB_QL/code/server/Build/Debug/bin;./stop obql" />
+	</Server>
+
+	<Server name="QL+1" ip="10.0.128.240" port="22" user="lzg" pwd="lzg123u" >
+		<init		cmd="" />
+		<update		cmd="cd ~/QL/code; git pull; cd ~/QL/resource; git pull;" />
+		<compile	cmd="" />
+		<status		cmd="cd ~/OB_QL/code/server/Build/Debug/bin;./status ql_1" />
+		<start		cmd="cd ~/OB_QL/code/server/Build/Debug/bin;./start ql_1" />
+		<stop		cmd="cd ~/OB_QL/code/server/Build/Debug/bin;./stop ql_1" />
+	</Server>
+
+
+	<!--  腾讯云全量服务器    -->
+	<Server name="QQ-IOS QA测试服" ip="119.29.194.32" port="30022" user="root" pwd="D3RL5NLbU9DM2Pq" >
+		<init		cmd="su user00" />
+		<update		cmd="" />
+		<compile	cmd="" />
+		<status		cmd="ps -ef | grep iqq_" />
+		<start		cmd="cd ~/dna_qq_ios/lzgjx/script; ./start_all.sh" />
+		<stop		cmd="cd ~/dna_qq_ios/lzgjx/script; ./stop_all.sh" />
+		<whitelist  cmd="cd ~/dna_qq_ios/lzgjx/gsconf/serveronly/;cp whitelist.txt whitelist.txt.bk.`date +%s`;cat /dev/null > whitelist.txt" varcmd="echo $var >> whitelist.txt" finalcmd="cd ~/dna_qq_ios/lzgjx/; ./gmtool gmtool_conf.xml msreload whitelist"/>
+	</Server>
+
+	<Server name="WX-IOS QA测试服" ip="119.29.194.32" port="30022" user="root" pwd="D3RL5NLbU9DM2Pq" >
+		<init		cmd="su user00" />
+		<update		cmd="" />
+		<compile	cmd="" />
+		<status		cmd="ps -ef | grep iwx_" />
+		<start		cmd="cd ~/dna_wx_ios/lzgjx/script; ./start_all.sh" />
+		<stop		cmd="cd ~/dna_wx_ios/lzgjx/script; ./stop_all.sh" />
+		<whitelist  cmd="cd ~/dna_wx_ios/lzgjx/gsconf/serveronly/;cp whitelist.txt whitelist.txt.bk.`date +%s`;cat /dev/null > whitelist.txt" varcmd="echo $var >> whitelist.txt" finalcmd="cd ~/dna_wx_ios/lzgjx/; ./gmtool gmtool_conf.xml msreload whitelist"/>
+	</Server>
+
+	<Server name="QQ-安卓 QA测试服" ip="119.29.194.32" port="30022" user="root" pwd="D3RL5NLbU9DM2Pq" >
+		<init		cmd="su user00" />
+		<update		cmd="" />
+		<compile	cmd="" />
+		<status		cmd="ps -ef | grep aqq_" />
+		<start		cmd="cd ~/dna_qq_android/lzgjx/script; ./start_all.sh" />
+		<stop		cmd="cd ~/dna_qq_android/lzgjx/script; ./stop_all.sh" />
+		<whitelist  cmd="cd ~/dna_qq_android/lzgjx/gsconf/serveronly/;cp whitelist.txt whitelist.txt.bk.`date +%s`;cat /dev/null > whitelist.txt" varcmd="echo $var >> whitelist.txt" finalcmd="cd ~/dna_qq_android/lzgjx/; ./gmtool gmtool_conf.xml msreload whitelist"/>
+	</Server>
+
+	<Server name="QQ-安卓 QA测试2服" ip="119.29.194.32" port="30022" user="root" pwd="D3RL5NLbU9DM2Pq" >
+		<init		cmd="su user00" />
+		<update		cmd="" />
+		<compile	cmd="" />
+		<status		cmd="ps -ef | grep aqq2_" />
+		<start		cmd="cd ~/dna_qq_android2/lzgjx/script; ./start_all.sh" />
+		<stop		cmd="cd ~/dna_qq_android2/lzgjx/script; ./stop_all.sh" />
+		<whitelist  cmd="cd ~/dna_qq_android2/lzgjx/gsconf/serveronly/;cp whitelist.txt whitelist.txt.bk.`date +%s`;cat /dev/null > whitelist.txt" varcmd="echo $var >> whitelist.txt" finalcmd="cd ~/dna_qq_android2/lzgjx/; ./gmtool gmtool_conf.xml msreload whitelist"/>
+	</Server>
+	
+	<Server name="WX-安卓 QA测试服" ip="119.29.194.32" port="30022" user="root" pwd="D3RL5NLbU9DM2Pq" >
+		<init		cmd="su user00" />
+		<update		cmd="" />
+		<compile	cmd="" />
+		<status		cmd="ps -ef | grep awx_" />
+		<start		cmd="cd ~/dna_wx_android/lzgjx/script; ./start_all.sh" />
+		<stop		cmd="cd ~/dna_wx_android/lzgjx/script; ./stop_all.sh" />
+		<whitelist  cmd="cd ~/dna_wx_android/lzgjx/gsconf/serveronly/;cp whitelist.txt whitelist.txt.bk.`date +%s`;cat /dev/null > whitelist.txt" varcmd="echo $var >> whitelist.txt" finalcmd="cd ~/dna_wx_android/lzgjx/; ./gmtool gmtool_conf.xml msreload whitelist"/>
+	</Server>
+</ServerList>

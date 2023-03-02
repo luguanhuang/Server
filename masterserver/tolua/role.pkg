@@ -1,0 +1,13 @@
+$#include "role/role.h"
+$pfile "uint64.pkg"
+
+
+class CRole
+{
+public:
+	CUint64 GetID() const;
+	CUint64 GetSessionID() const;
+
+	const std::string &GetName() const;
+	const std::string &GetAccount();
+};

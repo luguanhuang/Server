@@ -1,0 +1,3 @@
+
+PARTNER_MODULE(PartnerShop)
+PARTNER_MODULE(PartnerLiveness)

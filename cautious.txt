@@ -1,0 +1,16 @@
+1.mysql设置
+a.字符集必须设置为utf8
+b.最大包设置（set global max_allowed_packet=16777216;）
+c.服务器关闭交互式连接前等待活动的秒数（set interactive_timeout=2600000;）
+d.服务器关闭非交互连接之前等待活动的秒数（set wait_timeout=2600000;）
+e.MySQL 5.6.5 以上 支持timestamp自动更新
+
+2.linux要安装如下库
+curl
+
+3.开新服之前，要运行脚本为新数据库建表。[这个操作以后做到GM工具里面]
+
+4.程序运行需要libnetwork.so，运行前需要用命令
+  export LD_LIBRARY_PATH=/path/to/libnetwork/dir
+  来指定查找动态库的目录。
+  这个以后放在服务器启动脚本里面，在启动服务器前自动执行。

@@ -1,0 +1,43 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+using System.IO;
+using ProtoBuf;
+
+// generate by ProtoGen at date: 2016/12/21 21:29:01
+
+namespace XMainClient
+{
+    using DataType = KKSG.UpdateStartUpType;
+
+	class PtcC2N_UpdateStartUpTypeNtf : Protocol
+	{
+		public DataType Data = new DataType();
+
+		public PtcC2N_UpdateStartUpTypeNtf()
+		{
+
+		}
+
+		public override uint GetProtoType()
+		{
+			return 60574;
+		}
+
+		public override void Serialize(MemoryStream stream)
+		{
+			Serializer.Serialize(stream, Data);
+		}
+
+		public override void DeSerialize(MemoryStream stream)
+		{
+			Data = Serializer.Deserialize<DataType>(stream);
+		}
+
+		public override void Process()
+		{
+			throw new Exception("Send only protocol can not call process");
+		}
+
+	}
+}

@@ -1,0 +1,5795 @@
+<?xml version="1.0"?>
+<ArrayOfPGProtocol xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PGProtocol>
+    <Name>RegistServerNtf</Name>
+    <ProtoType>3070</ProtoType>
+    <Dir>common</Dir>
+    <From>TGate Server [网关]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>RegistServer</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>KeepAlivePingAck</Name>
+    <ProtoType>29192</ProtoType>
+    <Dir>login</Dir>
+    <From>Client [客户端]</From>
+    <To>TGate Server [网关]</To>
+    <MemberType />
+  </PGProtocol>
+  <PGProtocol>
+    <Name>NotifyAccountData</Name>
+    <ProtoType>29137</ProtoType>
+    <Dir>login</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>LoadAccountData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>LoginChallenge</Name>
+    <ProtoType>58495</ProtoType>
+    <Dir>login</Dir>
+    <From>TGate Server [网关]</From>
+    <To>Client [客户端]</To>
+    <MemberType>LoginChallenge</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>KeepAlivePingReq</Name>
+    <ProtoType>49142</ProtoType>
+    <Dir>login</Dir>
+    <From>TGate Server [网关]</From>
+    <To>Client [客户端]</To>
+    <MemberType />
+  </PGProtocol>
+  <PGProtocol>
+    <Name>ErrorNotify</Name>
+    <ProtoType>21940</ProtoType>
+    <Dir>common</Dir>
+    <From>TGate Server [网关]</From>
+    <To>Client [客户端]</To>
+    <MemberType>ErrorInfo</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>RegistGameServer</Name>
+    <ProtoType>26354</ProtoType>
+    <Dir>common</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Db Server [数据库]</To>
+    <MemberType>RegistServer</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>EnterSceneReq</Name>
+    <ProtoType>9036</ProtoType>
+    <Dir>scene</Dir>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>SceneRequest</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>EnterSceneNtf</Name>
+    <ProtoType>63366</ProtoType>
+    <Dir>scene</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>SceneCfg</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>LeaveSceneReq</Name>
+    <ProtoType>27927</ProtoType>
+    <Dir>scene</Dir>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType />
+  </PGProtocol>
+  <PGProtocol>
+    <Name>LeaveSceneNtf</Name>
+    <ProtoType>33831</ProtoType>
+    <Dir>scene</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType />
+  </PGProtocol>
+  <PGProtocol>
+    <Name>MoveOperationReq</Name>
+    <ProtoType>30732</ProtoType>
+    <Dir>action</Dir>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>MoveInfo</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>UnitAppear</Name>
+    <ProtoType>7458</ProtoType>
+    <Dir>scene</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>UnitAppearList</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>UnitDisappear</Name>
+    <ProtoType>26347</ProtoType>
+    <Dir>scene</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>UnitAppearance</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>UpdateField</Name>
+    <ProtoType>29364</ProtoType>
+    <Dir>common</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Db Server [数据库]</To>
+    <MemberType>UpdateField</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>CastSkill</Name>
+    <ProtoType>49584</ProtoType>
+    <Dir>skill</Dir>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>SkillDataUnit</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SkillResult</Name>
+    <ProtoType>1054</ProtoType>
+    <Dir>skill</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>SkillReplyDataUnit</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>DeathNotify</Name>
+    <ProtoType>2319</ProtoType>
+    <Dir>scene</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>DeathInfo</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>AttributeChangeNotify</Name>
+    <ProtoType>57626</ProtoType>
+    <Dir>scene</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>ChangedAttribute</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>LevelChangeNtf</Name>
+    <ProtoType>38651</ProtoType>
+    <Dir>role</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>LevelChanged</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>ItemChangedNtf</Name>
+    <ProtoType>20270</ProtoType>
+    <Dir>common</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>ItemChanged</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>UpdateTutorial</Name>
+    <ProtoType>31917</ProtoType>
+    <Dir>common</Dir>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>TutorialInfo</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>OpenSystemNtf</Name>
+    <ProtoType>41168</ProtoType>
+    <Dir>role</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>Systems</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>BattleResultNtf</Name>
+    <ProtoType>29609</ProtoType>
+    <Dir>battle</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>NewBattleResult</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>CompleteAchivement</Name>
+    <ProtoType>26346</ProtoType>
+    <Dir>common</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>AchivementInfo</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SkillChangedNtf</Name>
+    <ProtoType>38872</ProtoType>
+    <Dir>skill</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>SkillChangedData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>GSErrorNotify</Name>
+    <ProtoType>2031</ProtoType>
+    <Dir>common</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>ErrorInfo</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>QueryGlobalConfig</Name>
+    <ProtoType>58270</ProtoType>
+    <Dir>common</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Db Server [数据库]</To>
+    <MemberType />
+  </PGProtocol>
+  <PGProtocol>
+    <Name>ChangeFashionNotify</Name>
+    <ProtoType>1731</ProtoType>
+    <Dir>scene</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>FashionChanged</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>CheckinInfoNotify</Name>
+    <ProtoType>29332</ProtoType>
+    <Dir>checkin</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>CheckinInfoNotify</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>ActivityRoleNotify</Name>
+    <ProtoType>2548</ProtoType>
+    <Dir>activity</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>ActivityRoleNotify</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>OpenGate</Name>
+    <ProtoType>54510</ProtoType>
+    <Dir>common</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>TGate Server [网关]</To>
+    <MemberType>gateflag</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>UpdatePayInfo</Name>
+    <ProtoType>22775</ProtoType>
+    <Dir>pay</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>PayInfo</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>RewardChangedNtf</Name>
+    <ProtoType>57873</ProtoType>
+    <Dir>reward</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>RewardChanged</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>LeaveTeam</Name>
+    <ProtoType>47730</ProtoType>
+    <Dir>team</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>ErrorInfo</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>ReviveNotify</Name>
+    <ProtoType>16213</ProtoType>
+    <Dir>battle</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>ReviveInfo</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>UpdateBuyGoldAndFatigueInfo</Name>
+    <ProtoType>2587</ProtoType>
+    <Dir>pay</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>BuyGoldFatInfo</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>RoleDeathInSoloScene</Name>
+    <ProtoType>16659</ProtoType>
+    <Dir>battle</Dir>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType />
+  </PGProtocol>
+  <PGProtocol>
+    <Name>ReviveCountdown</Name>
+    <ProtoType>54507</ProtoType>
+    <Dir>battle</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>ReviveCountdownInfo</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>FatigueRecoverTimeNotify</Name>
+    <ProtoType>14296</ProtoType>
+    <Dir>role</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>FatigueRecoverTimeInfo</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>EnterSceneCoolDownQuery</Name>
+    <ProtoType>40442</ProtoType>
+    <Dir>scene</Dir>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>EnterSceneCoolDownQuery</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>EnterSceneCoolDownNotify</Name>
+    <ProtoType>38664</ProtoType>
+    <Dir>scene</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>EnterSceneCoolDownNotify</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>QueryReward</Name>
+    <ProtoType>41805</ProtoType>
+    <Dir>reward</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Db Server [数据库]</To>
+    <MemberType>QueryReward</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>RemoveReward</Name>
+    <ProtoType>22212</ProtoType>
+    <Dir>reward</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Db Server [数据库]</To>
+    <MemberType>RemoveReward</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>AddReward</Name>
+    <ProtoType>28040</ProtoType>
+    <Dir>reward</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Db Server [数据库]</To>
+    <MemberType>AddReward</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>GSLogNotify</Name>
+    <ProtoType>58575</ProtoType>
+    <Dir>log</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Log Server [日志服]</To>
+    <MemberType>LogMsg</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>ChatNotify</Name>
+    <ProtoType>4256</ProtoType>
+    <Dir>chat</Dir>
+    <From>TGate Server [网关]</From>
+    <To>Client [客户端]</To>
+    <MemberType>ChatNotify</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>FashoinChangedNtf</Name>
+    <ProtoType>12350</ProtoType>
+    <Dir>fashoin</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>FashionChangedData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>OperateRecordNtf</Name>
+    <ProtoType>56173</ProtoType>
+    <Dir>common</Dir>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>OperateRecord</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>GuildNotifyMemberChanged</Name>
+    <ProtoType>5957</ProtoType>
+    <Dir>guild</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>GuildMemberInfo</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>GuildSettingChangedNotify</Name>
+    <ProtoType>63721</ProtoType>
+    <Dir>guild</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>GuildSettingChanged</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>LoadGuildDataReq</Name>
+    <ProtoType>39792</ProtoType>
+    <Dir>guild</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Db Server [数据库]</To>
+    <MemberType />
+  </PGProtocol>
+  <PGProtocol>
+    <Name>UpdateGuild</Name>
+    <ProtoType>63741</ProtoType>
+    <Dir>guild</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Db Server [数据库]</To>
+    <MemberType>GuildAllDBData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>GuildCheckinBoxNtf</Name>
+    <ProtoType>5114</ProtoType>
+    <Dir>guild</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>GuildCheckinBoxNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>NewGuildBonusNtf</Name>
+    <ProtoType>33515</ProtoType>
+    <Dir>guild</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>NewGuildBonusData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>RegistLoginServer</Name>
+    <ProtoType>42710</ProtoType>
+    <Dir>common</Dir>
+    <From>ILogin Server[登录]</From>
+    <To>Db Server [数据库]</To>
+    <MemberType>RegistServer</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>GuildBestCardsNtf</Name>
+    <ProtoType>44473</ProtoType>
+    <Dir>guild</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>GuildBestCardsNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>ExecuteLevelScriptNtf</Name>
+    <ProtoType>47978</ProtoType>
+    <Dir>scene</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>ExecuteLevelScriptNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>DBLogNotify</Name>
+    <ProtoType>62195</ProtoType>
+    <Dir>common</Dir>
+    <From>Db Server [数据库]</From>
+    <To>Log Server [日志服]</To>
+    <MemberType>LogMsg</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>OnlineRewardNtf</Name>
+    <ProtoType>1895</ProtoType>
+    <Dir>reward</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>OnlineRewardNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>NextDayRewardNtf</Name>
+    <ProtoType>50036</ProtoType>
+    <Dir>reward</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>NextDayRewardNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>OnlineRewardReport</Name>
+    <ProtoType>36178</ProtoType>
+    <Dir>reward</Dir>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>OnlineRewardReport</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>NextDayRewardReport</Name>
+    <ProtoType>1059</ProtoType>
+    <Dir>reward</Dir>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>NextDayRewardReport</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>HintNotify</Name>
+    <ProtoType>23114</ProtoType>
+    <Dir>common</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>HintNotify</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>PositionDebug</Name>
+    <ProtoType>42493</ProtoType>
+    <Dir>scene</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>PositionCheckList</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>EnemyDorpDoodadNtf</Name>
+    <ProtoType>55996</ProtoType>
+    <Dir>battle</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>EnemyDropDoodadInfo</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>TakeRandomTask</Name>
+    <ProtoType>8442</ProtoType>
+    <Dir>task</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>randomtask</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>BuffNotify</Name>
+    <ProtoType>18520</ProtoType>
+    <Dir>battle</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>buffInfo</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>TeamSelectNotify</Name>
+    <ProtoType>25174</ProtoType>
+    <Dir>battle</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>TeamSelect</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>TeamInviteNotify</Name>
+    <ProtoType>4060</ProtoType>
+    <Dir>team</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>TeamInvite</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>FetchEnemyDoodadNtf</Name>
+    <ProtoType>50480</ProtoType>
+    <Dir>battle</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>OtherFetchDoodadRes</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>DelayNotify</Name>
+    <ProtoType>46829</ProtoType>
+    <Dir>common</Dir>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>DelayInfo</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>PkPrepareNtf</Name>
+    <ProtoType>41409</ProtoType>
+    <Dir>pk</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>PkPrepareNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>PkTimeoutNtf</Name>
+    <ProtoType>58692</ProtoType>
+    <Dir>pk</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>PkTimeoutNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>GuildGoblinKillNtf</Name>
+    <ProtoType>9436</ProtoType>
+    <Dir>battle</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>GuildGoblinSceneInfo</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SkillResultReq</Name>
+    <ProtoType>41958</ProtoType>
+    <Dir>skill</Dir>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>SkillResultReqUnit</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SkillBulletFireReport</Name>
+    <ProtoType>54744</ProtoType>
+    <Dir>skill</Dir>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>BulletUnitData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SkillBulletResultReq</Name>
+    <ProtoType>15929</ProtoType>
+    <Dir>skill</Dir>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>SkillBulletResultReqUnit</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SceneFinishStateChanged</Name>
+    <ProtoType>60400</ProtoType>
+    <Dir>scene</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>FinishStateInfo</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>PkRoleInfoNtf</Name>
+    <ProtoType>8937</ProtoType>
+    <Dir>pk</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>PkRoleInfoNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>ItemCircleDrawResult</Name>
+    <ProtoType>34574</ProtoType>
+    <Dir>common</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>CircleDrawGive</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>AddLevelScriptExtString</Name>
+    <ProtoType>34579</ProtoType>
+    <Dir>scene</Dir>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>AddLevelScriptExtString</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SceneDamageRankReport</Name>
+    <ProtoType>53015</ProtoType>
+    <Dir>scene</Dir>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType />
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SceneDamageRankNtf</Name>
+    <ProtoType>26864</ProtoType>
+    <Dir>scene</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>SceneDamageRankNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SceneLeftDoodad</Name>
+    <ProtoType>18028</ProtoType>
+    <Dir>battle</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>SceneLeftDoodad</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>RegistDBServer</Name>
+    <ProtoType>45216</ProtoType>
+    <Dir>common</Dir>
+    <From>Db Server [数据库]</From>
+    <To>PGM Server[GM]</To>
+    <MemberType>RegistServer</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>ReconnectNtf</Name>
+    <ProtoType>50526</ProtoType>
+    <Dir>login</Dir>
+    <From>TGate Server [网关]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>ReconnectNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>ChangeSupplementReport</Name>
+    <ProtoType>42193</ProtoType>
+    <Dir>item</Dir>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>ChangeSupplementReport</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>ChangeSupplementNtf</Name>
+    <ProtoType>11250</ProtoType>
+    <Dir>item</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>ChangeSupplementNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>RegisterLoginNtf</Name>
+    <ProtoType>27708</ProtoType>
+    <Dir>common</Dir>
+    <From>ILogin Server[登录]</From>
+    <To>PGM Server[GM]</To>
+    <MemberType>RegisterLoginNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>RegistGameServerToWebServer</Name>
+    <ProtoType>23920</ProtoType>
+    <Dir>common</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Web Server</To>
+    <MemberType>RegistServer</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>QTEOperation</Name>
+    <ProtoType>11413</ProtoType>
+    <Dir>common</Dir>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>QTEOperation</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>ChangeServerStateNtf</Name>
+    <ProtoType>28511</ProtoType>
+    <Dir>common</Dir>
+    <From>ILogin Server[登录]</From>
+    <To>Db Server [数据库]</To>
+    <MemberType>ServerListArg</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>CorrectPosition</Name>
+    <ProtoType>53665</ProtoType>
+    <Dir>action</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>Position</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>TeleportNotice</Name>
+    <ProtoType>27305</ProtoType>
+    <Dir>common</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>TeleportNoticeState</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>AllyMatchRoleIDNotify</Name>
+    <ProtoType>41598</ProtoType>
+    <Dir>scene</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>AllyMatchRoleID</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>TeamFullDataNtf</Name>
+    <ProtoType>48618</ProtoType>
+    <Dir>team</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>TeamFullDataNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>PetChangeNotfiy</Name>
+    <ProtoType>22264</ProtoType>
+    <Dir>pet</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>PetChangeNotfiy</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>ExpFindBackNtf</Name>
+    <ProtoType>4933</ProtoType>
+    <Dir>findback</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>ExpFindBackData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>AutoFightNTF</Name>
+    <ProtoType>25699</ProtoType>
+    <Dir>battle</Dir>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>AutoFight</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>TowerSceneInfoNtf</Name>
+    <ProtoType>14948</ProtoType>
+    <Dir>tower</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>TowerSceneInfoData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>CoverDesignationNtf</Name>
+    <ProtoType>45821</ProtoType>
+    <Dir>designation</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>CoverDesignationNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>ReachAchieveNtf</Name>
+    <ProtoType>1479</ProtoType>
+    <Dir>achievement</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>ReachAchieveNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>ReachDesignationNtf</Name>
+    <ProtoType>17457</ProtoType>
+    <Dir>designation</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>ReachDesignationNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SyncSceneFinish</Name>
+    <ProtoType>559</ProtoType>
+    <Dir>scene</Dir>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType />
+  </PGProtocol>
+  <PGProtocol>
+    <Name>LevelSealNtf</Name>
+    <ProtoType>40338</ProtoType>
+    <Dir>levelseal</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>LevelSealInfo</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>ReconnectSyncNotify</Name>
+    <ProtoType>42128</ProtoType>
+    <Dir>common</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>ReconectSync</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>OutLookChangeNtf</Name>
+    <ProtoType>28395</ProtoType>
+    <Dir>common</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>OutLookChange</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>FiveDayRewardNTF</Name>
+    <ProtoType>37452</ProtoType>
+    <Dir>reward</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>FiveRewardState</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SyncStepNotify</Name>
+    <ProtoType>37999</ProtoType>
+    <Dir>action</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>StepSyncInfo</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>TssSdkSendAnti2Server</Name>
+    <ProtoType>62305</ProtoType>
+    <Dir>tsssdk</Dir>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>TssSdkAntiData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>TssSdkAntiDataNtf</Name>
+    <ProtoType>33482</ProtoType>
+    <Dir>tsssdk</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>TssSdkAntiData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>AnswerAckNtf</Name>
+    <ProtoType>60141</ProtoType>
+    <Dir>qa</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>AnswerAckNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>GMCloseQARoom</Name>
+    <ProtoType>22741</ProtoType>
+    <Dir>qa</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>GMCloseQARoom</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>PushQuestionNtf</Name>
+    <ProtoType>45138</ProtoType>
+    <Dir>qa</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>PushQuestionNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>QANotify</Name>
+    <ProtoType>37337</ProtoType>
+    <Dir>qa</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>QANotify</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>PvpBattleBeginNtf</Name>
+    <ProtoType>53763</ProtoType>
+    <Dir>pvp</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>PvpBattleBeginData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>PvpBattleEndNtf</Name>
+    <ProtoType>46438</ProtoType>
+    <Dir>pvp</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>PvpBattleEndData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>PvpBattleKill</Name>
+    <ProtoType>61000</ProtoType>
+    <Dir>pvp</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>PvpBattleKill</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>FlowerRankRewardNtf</Name>
+    <ProtoType>14326</ProtoType>
+    <Dir>social</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType />
+  </PGProtocol>
+  <PGProtocol>
+    <Name>AudioLogNotify</Name>
+    <ProtoType>13942</ProtoType>
+    <Dir>common</Dir>
+    <From>Audio Server</From>
+    <To>Log Server [日志服]</To>
+    <MemberType>LogMsg</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>QAOverNtf</Name>
+    <ProtoType>29361</ProtoType>
+    <Dir>qa</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>QAOverNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>QARoomRankNtf</Name>
+    <ProtoType>36888</ProtoType>
+    <Dir>qa</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>QARoomRankNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>FastMBConfirmNtf</Name>
+    <ProtoType>51623</ProtoType>
+    <Dir>team</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>FMBArg</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>FMBRefuse</Name>
+    <ProtoType>50821</ProtoType>
+    <Dir>team</Dir>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>FMBRes</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>fastMBDismissNtf</Name>
+    <ProtoType>49087</ProtoType>
+    <Dir>team</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>FMDArg</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>NewGateConnected</Name>
+    <ProtoType>45791</ProtoType>
+    <Dir>common</Dir>
+    <From>NControl Server[控制服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>NewGateConnectedData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SelectRoleNtf</Name>
+    <ProtoType>19493</ProtoType>
+    <Dir>role</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>SelectRoleNtfData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>ChangeGsLine</Name>
+    <ProtoType>3517</ProtoType>
+    <Dir>common</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>TGate Server [网关]</To>
+    <MemberType>ChangeGsLineData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>ReceiveFlowerNtf</Name>
+    <ProtoType>43606</ProtoType>
+    <Dir>social</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>ReceiveFlowerData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>FlowerRainNtf</Name>
+    <ProtoType>30604</ProtoType>
+    <Dir>social</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>ReceiveFlowerData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>StartBattleFailedNtf</Name>
+    <ProtoType>54098</ProtoType>
+    <Dir>team</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>StartBattleFailedRes</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>UpdateGuildQARoom</Name>
+    <ProtoType>64072</ProtoType>
+    <Dir>qa</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>QARoomData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>QAEnterRoomNtf</Name>
+    <ProtoType>38488</ProtoType>
+    <Dir>qa</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>QAEnterRoomNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>KickAccount</Name>
+    <ProtoType>7387</ProtoType>
+    <Dir>login</Dir>
+    <From>NControl Server[控制服务器]</From>
+    <To>TGate Server [网关]</To>
+    <MemberType>KickAccountData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>WatchBattleInfoNtf</Name>
+    <ProtoType>23415</ProtoType>
+    <Dir>battlewatch</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>WatchBattleData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>RegistMSServer</Name>
+    <ProtoType>51480</ProtoType>
+    <Dir>common</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>PGM Server[GM]</To>
+    <MemberType>RegistServer</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>GmfJoinBattleReq</Name>
+    <ProtoType>19954</ProtoType>
+    <Dir>guild</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>GmfJoinBattleArg</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>GmfOneBattleEndNtf</Name>
+    <ProtoType>61740</ProtoType>
+    <Dir>guild</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>GmfOneBattleEnd</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>GmfBaseDataNtf</Name>
+    <ProtoType>4338</ProtoType>
+    <Dir>guild</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>GmfRoleDatas</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>WorldChannelLeftTimesNtf</Name>
+    <ProtoType>37503</ProtoType>
+    <Dir>chat</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>WorldChannelLeftTimesNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>NoticeGuildBossEnd</Name>
+    <ProtoType>34184</ProtoType>
+    <Dir>guild</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>NoticeGuildBossEnd</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>UpdateGuildArenaState</Name>
+    <ProtoType>21909</ProtoType>
+    <Dir>guild</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>UpdateGuildArenaState</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>GuildBossTimeOut</Name>
+    <ProtoType>56816</ProtoType>
+    <Dir>guild</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>GuildBossTimeOut</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>UpdateRoleSummary</Name>
+    <ProtoType>8458</ProtoType>
+    <Dir>role</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>UpdateRoleSummaryData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>D2GDesignationNtf</Name>
+    <ProtoType>22625</ProtoType>
+    <Dir>designation</Dir>
+    <From>Db Server [数据库]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>D2GDesignationNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SynGuildArenaBattleInfo</Name>
+    <ProtoType>1906</ProtoType>
+    <Dir>guild</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>SynGuildArenaBattleInfo</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SynGuildArenaFightUnit</Name>
+    <ProtoType>59912</ProtoType>
+    <Dir>guild</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>SynGuildArenaFightUnit</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>MulActivityStateChange</Name>
+    <ProtoType>13448</ProtoType>
+    <Dir>activity</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>MulActivityCha</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>AddTemplateMail</Name>
+    <ProtoType>36445</ProtoType>
+    <Dir>mail</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Db Server [数据库]</To>
+    <MemberType>AddTemplateMailData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>MailOperation</Name>
+    <ProtoType>19226</ProtoType>
+    <Dir>mail</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Db Server [数据库]</To>
+    <MemberType>MailOperationData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>GmfAllFightEndNtf</Name>
+    <ProtoType>42921</ProtoType>
+    <Dir>guild</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>GmfAllFightEnd</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>WorldBossStateNtf</Name>
+    <ProtoType>5473</ProtoType>
+    <Dir>worldboss</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>WorldBossStateNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>NotifyRoleEmpty2Watcher</Name>
+    <ProtoType>1540</ProtoType>
+    <Dir>battlewatch</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType />
+  </PGProtocol>
+  <PGProtocol>
+    <Name>BattleWatcherNtf</Name>
+    <ProtoType>54652</ProtoType>
+    <Dir>scene</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>BattleWatcherNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>NoticeGuildArenaBegin</Name>
+    <ProtoType>11695</ProtoType>
+    <Dir>guild</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>NoticeGuildArenaBegin</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>NotifyGuildBossAddAttr</Name>
+    <ProtoType>42027</ProtoType>
+    <Dir>guild</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>AddAttrCount</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>NotifyWatchData</Name>
+    <ProtoType>16154</ProtoType>
+    <Dir>battlewatch</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>OneLiveRecordInfo</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SceneDestroyed</Name>
+    <ProtoType>63408</ProtoType>
+    <Dir>scene</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>SceneDestroyedData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>NotifyClientEnterFight</Name>
+    <ProtoType>65191</ProtoType>
+    <Dir>battle</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>NotifyEnemyEnterFight</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>chatforward</Name>
+    <ProtoType>59684</ProtoType>
+    <Dir>chat</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>TGate Server [网关]</To>
+    <MemberType>ChatForward</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>NoticeForwardNtf</Name>
+    <ProtoType>25246</ProtoType>
+    <Dir>chat</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>NoticeForwardNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SyncLiveInfoToMs</Name>
+    <ProtoType>39515</ProtoType>
+    <Dir>battlewatch</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>SyncLiveInfoToMsData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>MDUpLoadChatNtf</Name>
+    <ProtoType>16216</ProtoType>
+    <Dir>chat</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Db Server [数据库]</To>
+    <MemberType>UploadChatInfoNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SynGuildArenaRoleOnline</Name>
+    <ProtoType>48528</ProtoType>
+    <Dir>guild</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>SynGuildArenaRoleOnline</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>ClientOnlyBuffNotify</Name>
+    <ProtoType>35149</ProtoType>
+    <Dir>battle</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>BuffList</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>VersionNotify</Name>
+    <ProtoType>8566</ProtoType>
+    <Dir>common</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>TGate Server [网关]</To>
+    <MemberType>SVersion</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>MCChatOffLineNotify</Name>
+    <ProtoType>35008</ProtoType>
+    <Dir>chat</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>ChatOfflineNotify</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>MsUpdateGlobalConfig</Name>
+    <ProtoType>54919</ProtoType>
+    <Dir>common</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Db Server [数据库]</To>
+    <MemberType>UpdateGlobalConfig</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>MsLevelSealNtf</Name>
+    <ProtoType>17527</ProtoType>
+    <Dir>levelseal</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>MsLevelSealInfo</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>RolesFinishSceneToMaster</Name>
+    <ProtoType>57908</ProtoType>
+    <Dir>guild</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>RolesFinishScene</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SceneEndToMaster</Name>
+    <ProtoType>26131</ProtoType>
+    <Dir>scene</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>SceneEndData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>UpdateGuildCampResult</Name>
+    <ProtoType>45716</ProtoType>
+    <Dir>guildcamp</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>GuildCampResult</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>FriendOpNtfNew</Name>
+    <ProtoType>22609</ProtoType>
+    <Dir>friend</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>FriendOpNotify</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>LoadOfflineChatNtf</Name>
+    <ProtoType>26622</ProtoType>
+    <Dir>chat</Dir>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>LoadOffLineChatNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>FriendQueryReportNew</Name>
+    <ProtoType>15079</ProtoType>
+    <Dir>friend</Dir>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>FriendQueryReportNew</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>FriendDegreeUpNtfNew</Name>
+    <ProtoType>36126</ProtoType>
+    <Dir>friend</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>FriendDegreeUpNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>BlackListReportNew</Name>
+    <ProtoType>57057</ProtoType>
+    <Dir>friend</Dir>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>BlackListReport</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>BlackListNtfNew</Name>
+    <ProtoType>1537</ProtoType>
+    <Dir>friend</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>BlackListNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>synguildarenadisplace</Name>
+    <ProtoType>21037</ProtoType>
+    <Dir>guild</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>guildarenadisplace</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>noticeguildbossendtogsn</Name>
+    <ProtoType>7857</ProtoType>
+    <Dir>scene</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>sceneid</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>ReportWatchNtf</Name>
+    <ProtoType>4097</ProtoType>
+    <Dir>chat</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>ReportWatcherNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>OnTransferWall</Name>
+    <ProtoType>37585</ProtoType>
+    <Dir>battle</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>NotifyTransferWall</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>UpdateFriendOnDB</Name>
+    <ProtoType>55555</ProtoType>
+    <Dir>friend</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Db Server [数据库]</To>
+    <MemberType>UpdateFriendOnDB</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>LogoutNtf</Name>
+    <ProtoType>6890</ProtoType>
+    <Dir>login</Dir>
+    <From>TGate Server [网关]</From>
+    <To>NControl Server[控制服务器]</To>
+    <MemberType />
+  </PGProtocol>
+  <PGProtocol>
+    <Name>GmLevelSealInfo</Name>
+    <ProtoType>44044</ProtoType>
+    <Dir>levelseal</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>LevelSealInfo</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>UpdateFriendOnGS</Name>
+    <ProtoType>50058</ProtoType>
+    <Dir>friend</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>UpdateFriendOnGS</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>AddMailGS</Name>
+    <ProtoType>44628</ProtoType>
+    <Dir>mail</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>AddMailGS</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>NotifyWatchIconNum</Name>
+    <ProtoType>12471</ProtoType>
+    <Dir>battlewatch</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>IconWatchListNum</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>NotifyWatchIconNum2Client</Name>
+    <ProtoType>48952</ProtoType>
+    <Dir>battlewatch</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>IconWatchListNum</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>GmfWaitOtherLoad</Name>
+    <ProtoType>1133</ProtoType>
+    <Dir>guild</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>GmfWaitOtherArg</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>GmfWaitFightBegin</Name>
+    <ProtoType>59721</ProtoType>
+    <Dir>guild</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>GmfWaitFightArg</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>OnlineNumNtf</Name>
+    <ProtoType>37014</ProtoType>
+    <Dir>common</Dir>
+    <From>NControl Server[控制服务器]</From>
+    <To>Db Server [数据库]</To>
+    <MemberType>OnlineNumNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>UsedLoginTokenNotify</Name>
+    <ProtoType>2308</ProtoType>
+    <Dir>login</Dir>
+    <From>NControl Server[控制服务器]</From>
+    <To>ILogin Server[登录]</To>
+    <MemberType>TokenNoitfyData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>RoleStateReportNew</Name>
+    <ProtoType>10217</ProtoType>
+    <Dir>common</Dir>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>RoleStateReport</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>RoleStateNtfNew</Name>
+    <ProtoType>62463</ProtoType>
+    <Dir>common</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>RoleStateNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>GMSendChat</Name>
+    <ProtoType>11601</ProtoType>
+    <Dir>chat</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>ChatForward</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>AddGuildBossAttr</Name>
+    <ProtoType>57234</ProtoType>
+    <Dir>guild</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType />
+  </PGProtocol>
+  <PGProtocol>
+    <Name>FirstEnterSceneNtf</Name>
+    <ProtoType>45896</ProtoType>
+    <Dir>common</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>FirstEnterSceneNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>HintNotifyMS</Name>
+    <ProtoType>15542</ProtoType>
+    <Dir>common</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>HintNotify</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>GmsetGuildBossTime</Name>
+    <ProtoType>51628</ProtoType>
+    <Dir>guild</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>gmguildbosstime</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SynSceneRewardG2M</Name>
+    <ProtoType>20148</ProtoType>
+    <Dir>scene</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>GuildExpAndConData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SynSceneRewardM2G</Name>
+    <ProtoType>59141</ProtoType>
+    <Dir>scene</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>GuildExpAndConData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>NoticeGuildBossDie</Name>
+    <ProtoType>21896</ProtoType>
+    <Dir>guild</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>guildid</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>CreateGuildBossSingle</Name>
+    <ProtoType>58351</ProtoType>
+    <Dir>guild</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>guildbossindex</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>ChangeGuildBossTime</Name>
+    <ProtoType>21461</ProtoType>
+    <Dir>guild</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>gmguildbosstime</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>WorldBossSyncGS</Name>
+    <ProtoType>59176</ProtoType>
+    <Dir>worldboss</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>WorldBossSyncGS</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>WorldBossSyncMS</Name>
+    <ProtoType>58842</ProtoType>
+    <Dir>worldboss</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>WorldBossSyncMS</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>WorldBossAttrNtf</Name>
+    <ProtoType>31578</ProtoType>
+    <Dir>worldboss</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>WorldBossAttrNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>JoinRoom</Name>
+    <ProtoType>8517</ProtoType>
+    <Dir>chat</Dir>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>JoinRoom</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>JoinRoomReply</Name>
+    <ProtoType>23084</ProtoType>
+    <Dir>chat</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>JoinRoomReply</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>QuitRoom</Name>
+    <ProtoType>44925</ProtoType>
+    <Dir>chat</Dir>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>QuitRoom</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>UpdateVoipRoomMemberNtf</Name>
+    <ProtoType>25546</ProtoType>
+    <Dir>chat</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>UpdateVoipRoomMemberNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>PayAllInfoNtf</Name>
+    <ProtoType>4976</ProtoType>
+    <Dir>pay</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>PayAllInfo</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>LoginReward2CNtf</Name>
+    <ProtoType>51966</ProtoType>
+    <Dir>reward</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>LoginRewardRet</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>ReloadVersionNtf</Name>
+    <ProtoType>44559</ProtoType>
+    <Dir>common</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType />
+  </PGProtocol>
+  <PGProtocol>
+    <Name>MSLogNotify</Name>
+    <ProtoType>13934</ProtoType>
+    <Dir>common</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Log Server [日志服]</To>
+    <MemberType>LogMsg</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>MSSaveSocialInfoNtf</Name>
+    <ProtoType>20325</ProtoType>
+    <Dir>social</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Db Server [数据库]</To>
+    <MemberType>SaveSocialInfoNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>MSReceiveFlowerNtf</Name>
+    <ProtoType>16969</ProtoType>
+    <Dir>social</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>ReceiveFlowerData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>MSFlowerRainNtf</Name>
+    <ProtoType>11986</ProtoType>
+    <Dir>social</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>ReceiveFlowerData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>TeamChangeM2CNtf</Name>
+    <ProtoType>53586</ProtoType>
+    <Dir>team</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>TeamChanged</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>LeaveTeamM2CNtf</Name>
+    <ProtoType>23306</ProtoType>
+    <Dir>team</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>ErrorInfo</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>TeamFullDataM2CNtf</Name>
+    <ProtoType>39119</ProtoType>
+    <Dir>team</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>TeamFullDataNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>TeamInviteM2CNotify</Name>
+    <ProtoType>1221</ProtoType>
+    <Dir>team</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>TeamInvite</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>MSErrorNotify</Name>
+    <ProtoType>48740</ProtoType>
+    <Dir>common</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>ErrorInfo</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>InviteRefuseM2CNtf</Name>
+    <ProtoType>33486</ProtoType>
+    <Dir>team</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>InviteRufuse</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>TeamInviteAckC2M</Name>
+    <ProtoType>15365</ProtoType>
+    <Dir>team</Dir>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>TeamInviteAck</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>RoleMatchStateM2CNotify</Name>
+    <ProtoType>11521</ProtoType>
+    <Dir>team</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>RoleStateMatch</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>FastMBConfirmM2CNtf</Name>
+    <ProtoType>58099</ProtoType>
+    <Dir>team</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>FMBArg</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>fastMBDismissM2CNtf</Name>
+    <ProtoType>38301</ProtoType>
+    <Dir>team</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>FMDArg</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>FMBRefuseC2M</Name>
+    <ProtoType>44407</ProtoType>
+    <Dir>team</Dir>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>FMBRes</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>AIDebugInfo</Name>
+    <ProtoType>60081</ProtoType>
+    <Dir>battle</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>AIDebugMsg</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>StartRollNtf</Name>
+    <ProtoType>41146</ProtoType>
+    <Dir>battle</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>StartRollNtfData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>CheckQueuingReq</Name>
+    <ProtoType>28232</ProtoType>
+    <Dir>queuing</Dir>
+    <From>Client [客户端]</From>
+    <To>NControl Server[控制服务器]</To>
+    <MemberType>CheckQueuingReq</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>CheckQueuingNtf</Name>
+    <ProtoType>25553</ProtoType>
+    <Dir>queuing</Dir>
+    <From>NControl Server[控制服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>CheckQueuingNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>NoticeHungryDown</Name>
+    <ProtoType>36895</ProtoType>
+    <Dir>pet</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>NoticeHungryDown</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>FirstPassRewardNtf</Name>
+    <ProtoType>19007</ProtoType>
+    <Dir>firstpass</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>FirstPassRewardNtfData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>UpdateSelfServer</Name>
+    <ProtoType>26469</ProtoType>
+    <Dir>common</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>ILogin Server[登录]</To>
+    <MemberType>UpdateSelfServer</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SaveRankListChangeToDB</Name>
+    <ProtoType>48865</ProtoType>
+    <Dir>ranklist</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Db Server [数据库]</To>
+    <MemberType>SaveRankListChange</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SaveRankListToDB</Name>
+    <ProtoType>38499</ProtoType>
+    <Dir>ranklist</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Db Server [数据库]</To>
+    <MemberType>RankListRawData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>TeamEventNotify</Name>
+    <ProtoType>43612</ProtoType>
+    <Dir>team</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>TeamEvent</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SaveRoleSummaryData</Name>
+    <ProtoType>22696</ProtoType>
+    <Dir>role</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Db Server [数据库]</To>
+    <MemberType>SaveRoleSummaryData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>TitleChangeNotify</Name>
+    <ProtoType>1040</ProtoType>
+    <Dir>title</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>titleChangeData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>QAIDNameNtf</Name>
+    <ProtoType>987</ProtoType>
+    <Dir>qa</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>QAIDNameList</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>FirstPassNewCommendRewardNtf</Name>
+    <ProtoType>40039</ProtoType>
+    <Dir>firstpass</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>FirstPassNewCommendRewardData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>PkTimeoutM2CNtf</Name>
+    <ProtoType>4963</ProtoType>
+    <Dir>pk</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>PkTimeoutNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SaveGuildData</Name>
+    <ProtoType>7855</ProtoType>
+    <Dir>guild</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Db Server [数据库]</To>
+    <MemberType>GuildAllDBData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>LoginGuildInfo</Name>
+    <ProtoType>29049</ProtoType>
+    <Dir>guild</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>MyGuild</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SendGuildSkillInfo</Name>
+    <ProtoType>55907</ProtoType>
+    <Dir>guild</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>GuildSkillAllData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>UpdatePrivateListNtf</Name>
+    <ProtoType>13179</ProtoType>
+    <Dir>chat</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Db Server [数据库]</To>
+    <MemberType>PrivateChatListToDB</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SynRoleInGuild</Name>
+    <ProtoType>24851</ProtoType>
+    <Dir>guild</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>SynRoleInGuild</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SavePunishData</Name>
+    <ProtoType>5616</ProtoType>
+    <Dir>account</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Db Server [数据库]</To>
+    <MemberType>PunishData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>MSEventNotify</Name>
+    <ProtoType>1415</ProtoType>
+    <Dir>common</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>EventNotify</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>ItemFindBackNtf</Name>
+    <ProtoType>28509</ProtoType>
+    <Dir>findback</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>ItemFindBackData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SynGuildInfo</Name>
+    <ProtoType>42824</ProtoType>
+    <Dir>role</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>SynGuildInfo</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SpriteChangedNtf</Name>
+    <ProtoType>197</ProtoType>
+    <Dir>sprite</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>SpriteChanged</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>FightGroupChangeNtf</Name>
+    <ProtoType>2142</ProtoType>
+    <Dir>battle</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>FightGroupChangeNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>BossRushOneFinishNtf</Name>
+    <ProtoType>21034</ProtoType>
+    <Dir>stage</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>BossRushPara</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SynAtlasAttr</Name>
+    <ProtoType>1285</ProtoType>
+    <Dir>atlas</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>AllSynCardAttr</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>PlayDiceNtf</Name>
+    <ProtoType>50453</ProtoType>
+    <Dir>superrisk</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>PlayDiceNtfData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>PlayDiceOver</Name>
+    <ProtoType>2064</ProtoType>
+    <Dir>superrisk</Dir>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>PlayDiceOverData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>DEProgressSyn</Name>
+    <ProtoType>36322</ProtoType>
+    <Dir>stage</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>DEProgressSynPara</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>IBShopIcon</Name>
+    <ProtoType>56800</ProtoType>
+    <Dir>ibshop</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>IBShopIcon</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>RemoveIBShopIcon</Name>
+    <ProtoType>33988</ProtoType>
+    <Dir>ibshop</Dir>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>RemoveIBShopIcon</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>NotifyEnhanceSuit</Name>
+    <ProtoType>44091</ProtoType>
+    <Dir>enhance</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>NotifyEnhanceSuit</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SynGuildArenaFightUnitNew</Name>
+    <ProtoType>34513</ProtoType>
+    <Dir>guild</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>SynGuildArenaFightUnit</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SynGuildArenaBattleInfoNew</Name>
+    <ProtoType>3680</ProtoType>
+    <Dir>guild</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>SynGuildArenaBattleInfo</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>NoticeGuildArenaBeginNew</Name>
+    <ProtoType>12290</ProtoType>
+    <Dir>guild</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>NoticeGuildArenaBegin</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SynGuildArenaRoleOnlineNew</Name>
+    <ProtoType>26598</ProtoType>
+    <Dir>guild</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>SynGuildArenaRoleOnline</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>synguildarenadisplaceNew</Name>
+    <ProtoType>56166</ProtoType>
+    <Dir>guild</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>guildarenadisplace</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>RiskBuyNtf</Name>
+    <ProtoType>61237</ProtoType>
+    <Dir>superrisk</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>RiskBuyData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SetVoipMemberState</Name>
+    <ProtoType>3881</ProtoType>
+    <Dir>chat</Dir>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>SetVoipMemberState</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>RiskRecoverDiceNtf</Name>
+    <ProtoType>45917</ProtoType>
+    <Dir>superrisk</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>RiskRecoverDiceData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>NotifyGuildSkillData</Name>
+    <ProtoType>2458</ProtoType>
+    <Dir>guild</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>GuildSkillAllData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SyncArenaGs</Name>
+    <ProtoType>65026</ProtoType>
+    <Dir>arena</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>SyncArenaGs</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>GetMaxTitleNtf</Name>
+    <ProtoType>37218</ProtoType>
+    <Dir>title</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>GetMaxTitle</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SynGuildSimpleData</Name>
+    <ProtoType>49439</ProtoType>
+    <Dir>guild</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>SynGuildSimpleData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>ReqGuildSimpleData</Name>
+    <ProtoType>21016</ProtoType>
+    <Dir>guild</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>ReqGuildSimpleData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>OpenSpriteEggNtf</Name>
+    <ProtoType>47965</ProtoType>
+    <Dir>sprite</Dir>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>OpenSpriteEgg</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>MNewGuildBonusNtf</Name>
+    <ProtoType>7302</ProtoType>
+    <Dir>guild</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>MNewGuildBonusData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>GuildSetingNotify</Name>
+    <ProtoType>21944</ProtoType>
+    <Dir>guild</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>GuildSettingChanged</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>AuctSaleItemDBNtf</Name>
+    <ProtoType>34550</ProtoType>
+    <Dir>auction</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Db Server [数据库]</To>
+    <MemberType>AuctDBItemDale</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>AuctTradeRecordDBNtf</Name>
+    <ProtoType>56492</ProtoType>
+    <Dir>auction</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Db Server [数据库]</To>
+    <MemberType>AuctDBTradeAccount</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SynGuildBossHurt</Name>
+    <ProtoType>20810</ProtoType>
+    <Dir>guild</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>SynGuildBossHurt</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SynAddGuildActivity</Name>
+    <ProtoType>49479</ProtoType>
+    <Dir>guild</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>SynAddGuildActivityArg</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>NotifyGuildCheckinProcess</Name>
+    <ProtoType>42460</ProtoType>
+    <Dir>guild</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>NotifyGuildCheckinProcess</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>GuildBestCardsNtfMs</Name>
+    <ProtoType>31828</ProtoType>
+    <Dir>guild</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>GuildBestCardsNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>TowerFirstPassRewardNtf</Name>
+    <ProtoType>1039</ProtoType>
+    <Dir>tower</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>TowerFirstPassRewardData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>DERankChangNtf</Name>
+    <ProtoType>11404</ProtoType>
+    <Dir>stage</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>DERankChangePara</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SynFatigueResult</Name>
+    <ProtoType>55471</ProtoType>
+    <Dir>guild</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>SynFatigueResult</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>GmfJoinBattleM2CReq</Name>
+    <ProtoType>63969</ProtoType>
+    <Dir>guild</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>GmfJoinBattleArg</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>GmfJoinBattleC2MRes</Name>
+    <ProtoType>25047</ProtoType>
+    <Dir>guild</Dir>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>GmfJoinBattleRes</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>GmfUpdateDataG2M</Name>
+    <ProtoType>54928</ProtoType>
+    <Dir>guild</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>GmfUpdateData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SynGuildCheckinHint</Name>
+    <ProtoType>53260</ProtoType>
+    <Dir>guild</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>SynGuildCheckinHint</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>UpdateDesignation</Name>
+    <ProtoType>20483</ProtoType>
+    <Dir>desvent</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Db Server [数据库]</To>
+    <MemberType>AllDesignationEvent</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SynGuildContribute</Name>
+    <ProtoType>29191</ProtoType>
+    <Dir>guild</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>SynGuildContribute</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>HallIconSNtf</Name>
+    <ProtoType>17871</ProtoType>
+    <Dir>activity</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>HallIconPara</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>UpdateTaskStatus</Name>
+    <ProtoType>1609</ProtoType>
+    <Dir>task</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>TaskInfo</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SkyCityFinalRes</Name>
+    <ProtoType>30112</ProtoType>
+    <Dir>skycity</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>SkyCityFinalInfo</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SkyCityEstimateRes</Name>
+    <ProtoType>36139</ProtoType>
+    <Dir>skycity</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>SkyCityEstimateInfo</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SkyCityTimeRes</Name>
+    <ProtoType>30724</ProtoType>
+    <Dir>skycity</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>SkyCityTimeInfo</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>NotifyIdipMessageGs</Name>
+    <ProtoType>59353</ProtoType>
+    <Dir>common</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>IdipMessage</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>NotifyIdipMessageMs</Name>
+    <ProtoType>48558</ProtoType>
+    <Dir>common</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>IdipMessage</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>IdipPunishInfoNtf</Name>
+    <ProtoType>46304</ProtoType>
+    <Dir>common</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>IdipPunishInfo</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>IdipPunishInfoMsNtf</Name>
+    <ProtoType>8208</ProtoType>
+    <Dir>common</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>IdipPunishInfo</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>IdipClearChatNtf</Name>
+    <ProtoType>47934</ProtoType>
+    <Dir>chat</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>IdipClearChatInfo</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SkyCityTeamRes</Name>
+    <ProtoType>49519</ProtoType>
+    <Dir>skycity</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>SkyCityAllTeamBaseInfo</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SaveGardenInfo</Name>
+    <ProtoType>61597</ProtoType>
+    <Dir>garden</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Db Server [数据库]</To>
+    <MemberType>GardenInfo</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>GuildCardRankReq</Name>
+    <ProtoType>50768</ProtoType>
+    <Dir>guild</Dir>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>GuildCardRankReq</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>GuildCardRankNtf</Name>
+    <ProtoType>63693</ProtoType>
+    <Dir>guild</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>GuildCardRankNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>NotifyScenePkWin</Name>
+    <ProtoType>18556</ProtoType>
+    <Dir>guild</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>NotifyScenePkWin</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>NoticeGuildLadderStart</Name>
+    <ProtoType>49782</ProtoType>
+    <Dir>guild</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>NoticeGuildLadderStart</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>GmfKickNty</Name>
+    <ProtoType>21295</ProtoType>
+    <Dir>scene</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>GmfKickRes</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>GuildCardMatchReq</Name>
+    <ProtoType>21904</ProtoType>
+    <Dir>guild</Dir>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>GuildCardMatchReq</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>GuildCardMatchNtf</Name>
+    <ProtoType>64513</ProtoType>
+    <Dir>guild</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>GuildCardMatchNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SkyCityTeamResultNtf</Name>
+    <ProtoType>46536</ProtoType>
+    <Dir>skycity</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>SkyCityTeamResult</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>OpenPrivateChatNtf</Name>
+    <ProtoType>23206</ProtoType>
+    <Dir>chat</Dir>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>OpenPrivateChat</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SkyCityBattleDataNtf</Name>
+    <ProtoType>51753</ProtoType>
+    <Dir>scene</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>SkyCityAllInfo</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>CommitAnswerNtf</Name>
+    <ProtoType>12159</ProtoType>
+    <Dir>qa</Dir>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>CommitAnswerNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>GiveAnserQARewardNtf</Name>
+    <ProtoType>54848</ProtoType>
+    <Dir>qa</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>GiveAnserQARewardNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>GiveUpQAQuestionNtf</Name>
+    <ProtoType>17022</ProtoType>
+    <Dir>qa</Dir>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>GiveUpQuestionNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>GmfBattleStateNtf</Name>
+    <ProtoType>21747</ProtoType>
+    <Dir>scene</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>GmfBatlleStatePara</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>QAOverToGS</Name>
+    <ProtoType>31351</ProtoType>
+    <Dir>qa</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>QAOverToGS</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>BroadCast</Name>
+    <ProtoType>7356</ProtoType>
+    <Dir>broadcast</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>BroadCastData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>BroadCastM2T</Name>
+    <ProtoType>37061</ProtoType>
+    <Dir>broadcast</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>TGate Server [网关]</To>
+    <MemberType>BroadCastDataM2T</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SpActivityChangeNtf</Name>
+    <ProtoType>24832</ProtoType>
+    <Dir>spactivity</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>SpActivityChange</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SpActivityOffsetDayNtf</Name>
+    <ProtoType>4059</ProtoType>
+    <Dir>spactivity</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>SpActivityOffsetDay</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SpriteStateChangeNtf</Name>
+    <ProtoType>38584</ProtoType>
+    <Dir>garden</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>SpriteState</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>GardenEventNtf</Name>
+    <ProtoType>2774</ProtoType>
+    <Dir>garden</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>GardenEventNtfArg</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>InvUnfStateM2CNtf</Name>
+    <ProtoType>2693</ProtoType>
+    <Dir>team</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>InvUnfState</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>DPSNotify</Name>
+    <ProtoType>36800</ProtoType>
+    <Dir>battle</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>DPSNotify</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>RoleEventSyncGS</Name>
+    <ProtoType>43221</ProtoType>
+    <Dir>role</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>RoleEventSync</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>DelRoleNtf</Name>
+    <ProtoType>64495</ProtoType>
+    <Dir>role</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Db Server [数据库]</To>
+    <MemberType>DelRoleNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>NoticeGuildArenaNextTime</Name>
+    <ProtoType>21612</ProtoType>
+    <Dir>guild</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>NoticeGuildArenaNextTime</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SkillCoolNtf</Name>
+    <ProtoType>55142</ProtoType>
+    <Dir>skill</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>SkillCoolPara</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>GardenBanquetNtf</Name>
+    <ProtoType>21287</ProtoType>
+    <Dir>garden</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>BanquetNtfArg</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>GardenPlantEventNotice</Name>
+    <ProtoType>60686</ProtoType>
+    <Dir>garden</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>GardenPlantEventNoticeArg</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>GardenBanquetNotice</Name>
+    <ProtoType>36929</ProtoType>
+    <Dir>garden</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>GardenBanquetNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SyncPlatFriend2MS</Name>
+    <ProtoType>38885</ProtoType>
+    <Dir>platfriend</Dir>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>SyncPlatFriend2MSData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SavePayList</Name>
+    <ProtoType>20269</ProtoType>
+    <Dir>common</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Db Server [数据库]</To>
+    <MemberType>PayList</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>NewRouterNtf</Name>
+    <ProtoType>16492</ProtoType>
+    <Dir>common</Dir>
+    <From>KWorld Server[跨服玩法服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>NewRouterInfo</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>NoticeGuildWageReward</Name>
+    <ProtoType>29986</ProtoType>
+    <Dir>guild</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>NoticeGuildWageReward</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>ReportSessionInfo</Name>
+    <ProtoType>7787</ProtoType>
+    <Dir>session</Dir>
+    <From>NControl Server[控制服务器]</From>
+    <To>Router Server[转发服务器]</To>
+    <MemberType>ReportSessionInfo</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>GmfGuildCombatNtf</Name>
+    <ProtoType>55102</ProtoType>
+    <Dir>guild</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>GmfGuildCombatPara</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>GprOneBattleEndNtf</Name>
+    <ProtoType>39421</ProtoType>
+    <Dir>guild</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>GprOneBattleEnd</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>GprAllFightEndNtf</Name>
+    <ProtoType>58789</ProtoType>
+    <Dir>guild</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>GprAllFightEnd</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SavePlatFriendInfo</Name>
+    <ProtoType>8055</ProtoType>
+    <Dir>platfriend</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Db Server [数据库]</To>
+    <MemberType>SavePlatFriendInfoData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SceneCreated</Name>
+    <ProtoType>43003</ProtoType>
+    <Dir>scene</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>SceneCreatedData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>RoleLogin</Name>
+    <ProtoType>39016</ProtoType>
+    <Dir>login</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>RoleLoginData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>RoleLogout</Name>
+    <ProtoType>64285</ProtoType>
+    <Dir>login</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>RoleLogoutData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>NewRoleCreated</Name>
+    <ProtoType>44687</ProtoType>
+    <Dir>role</Dir>
+    <From>NControl Server[控制服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>NewRoleCreatedData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>RoleChangeSceneNtf</Name>
+    <ProtoType>15275</ProtoType>
+    <Dir>scene</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>RoleChangeSceneNtfData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>EnterSceneReqToMs</Name>
+    <ProtoType>14394</ProtoType>
+    <Dir>scene</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>EnterSceneReqToMsData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>ResWarTeamResultNtf</Name>
+    <ProtoType>44866</ProtoType>
+    <Dir>reswar</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>ResWarTeamResult</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>ResWarBattleDataNtf</Name>
+    <ProtoType>18834</ProtoType>
+    <Dir>reswar</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>ResWarAllInfo</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>RoleEnterCrossSceneNtf</Name>
+    <ProtoType>23973</ProtoType>
+    <Dir>crossscene</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>KWorld Server[跨服玩法服务器]</To>
+    <MemberType>RoleEnterCrossSceneNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>CrossSceneDestoryed</Name>
+    <ProtoType>47334</ProtoType>
+    <Dir>crossscene</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>KWorld Server[跨服玩法服务器]</To>
+    <MemberType>CrossSceneDestoryed</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>ResWarTeamResOne</Name>
+    <ProtoType>8869</ProtoType>
+    <Dir>reswar</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>ResWarAllTeamBaseInfo</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SendGuildBonusNtf</Name>
+    <ProtoType>36841</ProtoType>
+    <Dir>guild</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>SendGuildBonusNtfData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>BattleLogReport</Name>
+    <ProtoType>10382</ProtoType>
+    <Dir>battle</Dir>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>BattleLogReport</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>GuildAuctUpdateNtf</Name>
+    <ProtoType>61195</ProtoType>
+    <Dir>auction</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Db Server [数据库]</To>
+    <MemberType>GuildAuctPara</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>CrossGsCloseNtf</Name>
+    <ProtoType>52951</ProtoType>
+    <Dir>common</Dir>
+    <From>Router Server[转发服务器]</From>
+    <To>NControl Server[控制服务器]</To>
+    <MemberType>CrossGsCloseNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>ResWarGuildBriefNtf</Name>
+    <ProtoType>35338</ProtoType>
+    <Dir>reswar</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>ResWarGuildBrief</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>ClickGuildCamp</Name>
+    <ProtoType>32895</ProtoType>
+    <Dir>guildcamp</Dir>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>ClickGuildCampArg</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>PayMemberPrivilegeNtf</Name>
+    <ProtoType>33306</ProtoType>
+    <Dir>pay</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>PayMemberPrivilege</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SynGuilIntegralState</Name>
+    <ProtoType>28075</ProtoType>
+    <Dir>guild</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>SynGuilIntegralState</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>ResWarStateNtf</Name>
+    <ProtoType>18481</ProtoType>
+    <Dir>reswar</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>ResWarStateInfo</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SynGuildIntegralState</Name>
+    <ProtoType>4104</ProtoType>
+    <Dir>guild</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>SynGuildIntegralState</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>KillEnemyScoreNtf</Name>
+    <ProtoType>50119</ProtoType>
+    <Dir>battle</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>KillEnemyScoreData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>syncservertime</Name>
+    <ProtoType>55598</ProtoType>
+    <Dir>common</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>SyncServerTime</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>ServerOpenDayNtf</Name>
+    <ProtoType>23820</ProtoType>
+    <Dir>common</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>ServerOpenDay</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>ResWarRankSimpleInfoNtf</Name>
+    <ProtoType>29973</ProtoType>
+    <Dir>reswar</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>ResWarRankSimpleInfo</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>GuildBuffSimpleInfoNtf</Name>
+    <ProtoType>57161</ProtoType>
+    <Dir>reswar</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>GuildBuffSimpleAllInfo</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>QueryResWarRequet</Name>
+    <ProtoType>53580</ProtoType>
+    <Dir>reswar</Dir>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>QueryResWarArg</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>GuildBuffSimpleItemNtf</Name>
+    <ProtoType>63964</ProtoType>
+    <Dir>reswar</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>GuildBuffSimpleItem</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>GardenFishStop</Name>
+    <ProtoType>56656</ProtoType>
+    <Dir>garden</Dir>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>GardenFishStopArg</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>WorldLevelNtf</Name>
+    <ProtoType>2395</ProtoType>
+    <Dir>common</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>WorldLevel</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>NotifyServerClose</Name>
+    <ProtoType>39937</ProtoType>
+    <Dir>common</Dir>
+    <From>Router Server[转发服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>NotifyServerClose</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>UpdateWorldMatchNum</Name>
+    <ProtoType>64286</ProtoType>
+    <Dir>pvp</Dir>
+    <From>KWorld Server[跨服玩法服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>UpdateWorldMatchNum</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>HallIconMNtf</Name>
+    <ProtoType>51500</ProtoType>
+    <Dir>reswar</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>HallIconPara</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SceneDestroyedToNs</Name>
+    <ProtoType>2719</ProtoType>
+    <Dir>scene</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>NControl Server[控制服务器]</To>
+    <MemberType>SceneDestroyedData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>synGuildInheritExp</Name>
+    <ProtoType>15872</ProtoType>
+    <Dir>guild</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>synGuildInheritExp</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>CrossZoneStatusNtf</Name>
+    <ProtoType>3748</ProtoType>
+    <Dir>cross</Dir>
+    <From>KWorld Server[跨服玩法服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>CrossZoneStatusNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>UpdatePlatNoticeMsNtf</Name>
+    <ProtoType>53792</ProtoType>
+    <Dir>gm</Dir>
+    <From>PGM Server[GM]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>PlatNotice</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>UpdatePlatNoticeLoginNtf</Name>
+    <ProtoType>49664</ProtoType>
+    <Dir>gm</Dir>
+    <From>PGM Server[GM]</From>
+    <To>ILogin Server[登录]</To>
+    <MemberType>PlatNotice</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SavePlatNoticePtf</Name>
+    <ProtoType>20396</ProtoType>
+    <Dir>gm</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Db Server [数据库]</To>
+    <MemberType>PlatNotice</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SynDoingGuildInherit</Name>
+    <ProtoType>51759</ProtoType>
+    <Dir>guild</Dir>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>SynDoingGuildInherit</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>NoticeDoingGuildInherit</Name>
+    <ProtoType>61639</ProtoType>
+    <Dir>guild</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>NoticeDoingGuildInherit</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SynGuildInheritNumInfo</Name>
+    <ProtoType>54442</ProtoType>
+    <Dir>guild</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>SynGuildInheritNumInfo</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>ResWarMineDataNtf</Name>
+    <ProtoType>57215</ProtoType>
+    <Dir>reswar</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>ResWarMineData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>NoticeGuildInheritNumInfo</Name>
+    <ProtoType>22629</ProtoType>
+    <Dir>guild</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>NoticeGuildInheritNumInfo</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>UpdateFunctionOpen2Ms</Name>
+    <ProtoType>7109</ProtoType>
+    <Dir>common</Dir>
+    <From>NControl Server[控制服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>FunctionOpenInfo</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>UpdateFunctionOpen2Gs</Name>
+    <ProtoType>61771</ProtoType>
+    <Dir>common</Dir>
+    <From>NControl Server[控制服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>FunctionOpenInfo</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>CdCall</Name>
+    <ProtoType>34744</ProtoType>
+    <Dir>skill</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>CallData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>NoticeGuildInheritEnd</Name>
+    <ProtoType>4062</ProtoType>
+    <Dir>guild</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>NoticeGuildInheritEnd</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>mscrashrecoverr2g</Name>
+    <ProtoType>9568</ProtoType>
+    <Dir>common</Dir>
+    <From>Router Server[转发服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>MsCrashRecoverR2G</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>mscrashrecoverg2m</Name>
+    <ProtoType>37460</ProtoType>
+    <Dir>common</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>MSCrashRecoverG2M</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>LeaveLargeRoom</Name>
+    <ProtoType>55577</ProtoType>
+    <Dir>chat</Dir>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>LeaveLargeRoomParam</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>LargeRoomRoleNtf</Name>
+    <ProtoType>36333</ProtoType>
+    <Dir>chat</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>LargeRoomRoleParam</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>LargeRoomLoginParamNtf</Name>
+    <ProtoType>51856</ProtoType>
+    <Dir>chat</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>LargeRoomLoginParam</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SyncAllLiveInfoToMs</Name>
+    <ProtoType>34839</ProtoType>
+    <Dir>battlewatch</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>SyncAllLiveInfoToMSData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>FMWhiteRoleNtf</Name>
+    <ProtoType>27611</ProtoType>
+    <Dir>chat</Dir>
+    <From>FM Server[语音直播服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>FMWhiteRoleList</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>LargeRoomRadioNtf</Name>
+    <ProtoType>38425</ProtoType>
+    <Dir>chat</Dir>
+    <From>FM Server[语音直播服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>LargeRoomRoleParam</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>LeaveFMLargeRoom</Name>
+    <ProtoType>51478</ProtoType>
+    <Dir>chat</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>FM Server[语音直播服务器]</To>
+    <MemberType>LeaveLargeRoom</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>ResWarTimeNtf</Name>
+    <ProtoType>36825</ProtoType>
+    <Dir>reswar</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>ResWarTime</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>EnterHallNotice</Name>
+    <ProtoType>35843</ProtoType>
+    <Dir>common</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>EnterHallNotice</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SyncMoveNotify</Name>
+    <ProtoType>32838</ProtoType>
+    <Dir>action</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>StepMoveData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>NotifyGtSessionLogin</Name>
+    <ProtoType>65202</ProtoType>
+    <Dir>login</Dir>
+    <From>NControl Server[控制服务器]</From>
+    <To>TGate Server [网关]</To>
+    <MemberType>NotfiyGtSessionLogin</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>CrossGsCloseNtf2Ms</Name>
+    <ProtoType>45650</ProtoType>
+    <Dir>common</Dir>
+    <From>Router Server[转发服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>CrossGsCloseNtf2Ms</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>NsCloseNtf</Name>
+    <ProtoType>44832</ProtoType>
+    <Dir>common</Dir>
+    <From>NControl Server[控制服务器]</From>
+    <To>Router Server[转发服务器]</To>
+    <MemberType>NsCloseNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>HandleMicphone</Name>
+    <ProtoType>50175</ProtoType>
+    <Dir>chat</Dir>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>HandleMicphoneArg</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>ChangeNameCountNtf</Name>
+    <ProtoType>59287</ProtoType>
+    <Dir>role</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>ChangeNameCountNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>FMShowNtf</Name>
+    <ProtoType>29146</ProtoType>
+    <Dir>chat</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>FM Server[语音直播服务器]</To>
+    <MemberType>FMShow</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>GuildBuffCDParamNtf</Name>
+    <ProtoType>4703</ProtoType>
+    <Dir>reswar</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>GuildBuffCDParam</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>FMLargeRoomCloseParmNtf</Name>
+    <ProtoType>45955</ProtoType>
+    <Dir>chat</Dir>
+    <From>FM Server[语音直播服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>FMLargeRoomCloseParm</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SceneEmptyNotify</Name>
+    <ProtoType>59605</ProtoType>
+    <Dir>scene</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>SceneEmptyNotify</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>MSDestoryScene</Name>
+    <ProtoType>19289</ProtoType>
+    <Dir>scene</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>MSDestoryScene</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>AntiAddictionRemindNtf</Name>
+    <ProtoType>17999</ProtoType>
+    <Dir>common</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>AntiAddictionRemindInfo</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>HorseAwardAllNtf</Name>
+    <ProtoType>5990</ProtoType>
+    <Dir>horserace</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>HorseAwardAll</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>HorseRankNtf</Name>
+    <ProtoType>22250</ProtoType>
+    <Dir>horserank</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>HorseRank</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>HorseWaitTimeNtf</Name>
+    <ProtoType>34138</ProtoType>
+    <Dir>horserace</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>HorseWaitTime</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>HorseAnimationNtf</Name>
+    <ProtoType>21212</ProtoType>
+    <Dir>horserace</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>HorseAnimation</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>RemoveAskItemNtf</Name>
+    <ProtoType>28190</ProtoType>
+    <Dir>task</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>RemoveAskItemNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>HorseFinalNtf</Name>
+    <ProtoType>57969</ProtoType>
+    <Dir>horse</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>HorseFinal</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>PicUrlNtf</Name>
+    <ProtoType>30863</ProtoType>
+    <Dir>role</Dir>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>PicUrlInfo</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>NotifyMentorApply</Name>
+    <ProtoType>61023</ProtoType>
+    <Dir>mentorship</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>NotifyMentorApplyData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>AddPartnerLivenessG2M</Name>
+    <ProtoType>56610</ProtoType>
+    <Dir>partner</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>AddPartnerLiveness</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>PokerTournamentReq</Name>
+    <ProtoType>3685</ProtoType>
+    <Dir>pokertournament</Dir>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>GuildCardMatchReq</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>UpdatePartnerToClient</Name>
+    <ProtoType>63692</ProtoType>
+    <Dir>partner</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>UpdatePartnerToClient</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>UpdatePartnerToGS</Name>
+    <ProtoType>31031</ProtoType>
+    <Dir>partner</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>UpdatePartnerToGS</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>MakePartnerResultNtf</Name>
+    <ProtoType>49652</ProtoType>
+    <Dir>partner</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>MakePartnerResult</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>InvFightNotify</Name>
+    <ProtoType>38172</ProtoType>
+    <Dir>invfight</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>InvFightPara</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>HorseCountDownTimeNtf</Name>
+    <ProtoType>65307</ProtoType>
+    <Dir>horse</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>HorseCountDownTime</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>MDDelChatNtf</Name>
+    <ProtoType>56562</ProtoType>
+    <Dir>chat</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Db Server [数据库]</To>
+    <MemberType>MDDelChatData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>DoodadItemAddNtf</Name>
+    <ProtoType>16613</ProtoType>
+    <Dir>battle</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>DoodadItemAddNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>GCFZhanLingNotify</Name>
+    <ProtoType>14402</ProtoType>
+    <Dir>guilfcastle</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>GCFZhanLingPara</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>InvFightBefEnterSceneNtf</Name>
+    <ProtoType>7135</ProtoType>
+    <Dir>invfight</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>InvFightBefESpara</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>HeroBattleDataNtf</Name>
+    <ProtoType>60769</ProtoType>
+    <Dir>herobattle</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>HeroBattleData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>ScenePrepareInfoNtf</Name>
+    <ProtoType>65478</ProtoType>
+    <Dir>scene</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>ScenePrepareInfoNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>HeroBattleTeamMsgNtf</Name>
+    <ProtoType>1414</ProtoType>
+    <Dir>herobattle</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>HeroBattleTeamMsg</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>HeroBattleSyncNtf</Name>
+    <ProtoType>33024</ProtoType>
+    <Dir>herobattle</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>HeroBattleSyncData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>HeroBattleInCircleNtf</Name>
+    <ProtoType>40409</ProtoType>
+    <Dir>herobattle</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>HeroBattleInCircle</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SaveMentorInfoNtf</Name>
+    <ProtoType>58217</ProtoType>
+    <Dir>mentorship</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Db Server [数据库]</To>
+    <MemberType>SaveMentor2DbData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>GCFSynG2M</Name>
+    <ProtoType>58155</ProtoType>
+    <Dir>guildcastle</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>GCFSynPara</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>GCFSynM2G</Name>
+    <ProtoType>13528</ProtoType>
+    <Dir>guildcastle</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>GCFSynPara</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>HeroBattleOverTime</Name>
+    <ProtoType>2950</ProtoType>
+    <Dir>herobattle</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>HeroBattleOverTimeData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>PayParameterInfoNtf</Name>
+    <ProtoType>1181</ProtoType>
+    <Dir>pay</Dir>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>PayParameterInfo</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>PayParameterInfoInvalidNtf</Name>
+    <ProtoType>64504</ProtoType>
+    <Dir>pay</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType />
+  </PGProtocol>
+  <PGProtocol>
+    <Name>HeroBattleTeamRoleNtf</Name>
+    <ProtoType>25720</ProtoType>
+    <Dir>herobattle</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>HeroBattleTeamRoleData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>GCFSynG2CNtf</Name>
+    <ProtoType>31469</ProtoType>
+    <Dir>guildcastle</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>GCFG2CSynPara</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>NoticeGuildTerrWar</Name>
+    <ProtoType>17274</ProtoType>
+    <Dir>guild</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>NoticeGuildTerrWar</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>NoticeGuildTerrall</Name>
+    <ProtoType>7704</ProtoType>
+    <Dir>guild</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>NoticeGuildTerrall</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>UpdateStartUpTypeNtf</Name>
+    <ProtoType>60574</ProtoType>
+    <Dir>common</Dir>
+    <From>Client [客户端]</From>
+    <To>NControl Server[控制服务器]</To>
+    <MemberType>UpdateStartUpType</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>UpdateStartUpTypeN2GNtf</Name>
+    <ProtoType>50760</ProtoType>
+    <Dir>common</Dir>
+    <From>NControl Server[控制服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>UpdateStartUpType</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>TryTeacherInherit</Name>
+    <ProtoType>23393</ProtoType>
+    <Dir>guild</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>TryTeacherInherit</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>BalanceInfoNtf</Name>
+    <ProtoType>11806</ProtoType>
+    <Dir>pay</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>BalanceInfo</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>PayAddDiamondNtf</Name>
+    <ProtoType>40400</ProtoType>
+    <Dir>pay</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>PayAddDiamondInfo</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>PayConsumeNtf</Name>
+    <ProtoType>1991</ProtoType>
+    <Dir>pay</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>PayConsumeDiamondInfo</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>DoodadItemUseNtf</Name>
+    <ProtoType>13498</ProtoType>
+    <Dir>battle</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>DoodadItemUseNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>GuildBonusGetAll</Name>
+    <ProtoType>55177</ProtoType>
+    <Dir>guildbonus</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>GuildBonusGetAllData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>UpdateServerState2Login</Name>
+    <ProtoType>5865</ProtoType>
+    <Dir>common</Dir>
+    <From>NControl Server[控制服务器]</From>
+    <To>ILogin Server[登录]</To>
+    <MemberType>UpdateServerState2Login</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>UpdateRegisterCount2Ns</Name>
+    <ProtoType>17531</ProtoType>
+    <Dir>common</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>NControl Server[控制服务器]</To>
+    <MemberType>UpdateRegisterCount2Ns</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SpecialStateNtf</Name>
+    <ProtoType>11703</ProtoType>
+    <Dir>battle</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>SpecialStateNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>ResWarEnemyTimeNtf</Name>
+    <ProtoType>48125</ProtoType>
+    <Dir>reswar</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>ResWarEnemyTime</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>NotifyServerConnect</Name>
+    <ProtoType>13122</ProtoType>
+    <Dir>common</Dir>
+    <From>Router Server[转发服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>NotifyServerConnect</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>CloseChooseHeroNtf</Name>
+    <ProtoType>38670</ProtoType>
+    <Dir>herobattle</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType />
+  </PGProtocol>
+  <PGProtocol>
+    <Name>BroadCastG2R</Name>
+    <ProtoType>4891</ProtoType>
+    <Dir>common</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Router Server[转发服务器]</To>
+    <MemberType>BroadCastG2R</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>LevelScriptStateNtf</Name>
+    <ProtoType>12789</ProtoType>
+    <Dir>battle</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>LevelScriptStateData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>AudioChannelToMs</Name>
+    <ProtoType>23192</ProtoType>
+    <Dir>chat</Dir>
+    <From>FM Server[语音直播服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>ChatInfo</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>AudioChannelToFm</Name>
+    <ProtoType>32348</ProtoType>
+    <Dir>chat</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>FM Server[语音直播服务器]</To>
+    <MemberType>ChatInfo</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SceneStateNtf</Name>
+    <ProtoType>4376</ProtoType>
+    <Dir>scene</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>SceneStateNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>QueryRoleStateReq</Name>
+    <ProtoType>54208</ProtoType>
+    <Dir>role</Dir>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>QueryRoleStateReq</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>QueryRoleStateAck</Name>
+    <ProtoType>53402</ProtoType>
+    <Dir>role</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>QueryRoleStateAck</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>IBShopHasBuyNtf</Name>
+    <ProtoType>12835</ProtoType>
+    <Dir>ibshop</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>IBShopHasBuy</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>UpdateLeagueBattleSeasonInfo</Name>
+    <ProtoType>42828</ProtoType>
+    <Dir>league</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>UpdateLeagueBattleSeasonInfo</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SkillInitCoolNtf</Name>
+    <ProtoType>4132</ProtoType>
+    <Dir>role</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>SkillInitCoolPara</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>NotifyLeagueTeamCreate</Name>
+    <ProtoType>22343</ProtoType>
+    <Dir>league</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>NotifyLeagueTeamCreate</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>NotifyLeagueTeamDissolve</Name>
+    <ProtoType>11033</ProtoType>
+    <Dir>league</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>NotifyLeagueTeamDissolve</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>HeroBattleCanUseHero</Name>
+    <ProtoType>20354</ProtoType>
+    <Dir>herobattle</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>HeroBattleCanUseHeroData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>UpdateLeagueTeamState</Name>
+    <ProtoType>7643</ProtoType>
+    <Dir>league</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>UpdateLeagueTeamState</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>LeagueBattleStartMatchNtf</Name>
+    <ProtoType>61870</ProtoType>
+    <Dir>league</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>LeagueBattleStartMatchNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>LeagueBattleStopMatchNtf</Name>
+    <ProtoType>53912</ProtoType>
+    <Dir>league</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>LeagueBattleStopMatchNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>LeagueBattleLoadInfoNtf</Name>
+    <ProtoType>16091</ProtoType>
+    <Dir>leaguebattle</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>LeagueBattleLoadInfoNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>LeagueBattleBaseDataNtf</Name>
+    <ProtoType>19581</ProtoType>
+    <Dir>leaguebattle</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>LeagueBattleBaseDataNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>LeagueBattleOneResultNft</Name>
+    <ProtoType>40599</ProtoType>
+    <Dir>leaguebattle</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>LeagueBattleOneResultNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>LeagueBattleResultNtf</Name>
+    <ProtoType>29255</ProtoType>
+    <Dir>leaguebattle</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>LeagueBattleResultNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>PushPraiseNtf</Name>
+    <ProtoType>5686</ProtoType>
+    <Dir>pandora</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>PushPraise</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>HeroBattleTipsNtf</Name>
+    <ProtoType>15389</ProtoType>
+    <Dir>herobattle</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>HeroBattleTipsData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>LeagueBattleStateNtf</Name>
+    <ProtoType>59496</ProtoType>
+    <Dir>leaguebattle</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>LeagueBattleStateNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>LeagueBattleMatchTimeoutNtf</Name>
+    <ProtoType>31012</ProtoType>
+    <Dir>league</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>LeagueBattleMatchTimeoutNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>CancelRedDotReq</Name>
+    <ProtoType>40873</ProtoType>
+    <Dir>reddot</Dir>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>CancelRedDot</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>MidasExceptionNtf</Name>
+    <ProtoType>22947</ProtoType>
+    <Dir>pay</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>MidasExceptionInfo</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>LeagueBattleUpdateDataG2M</Name>
+    <ProtoType>26510</ProtoType>
+    <Dir>leaguebattle</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>LeagueBattleUpdateDataG2M</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>ServerInfoNtf</Name>
+    <ProtoType>37845</ProtoType>
+    <Dir>server</Dir>
+    <From>ILogin Server[登录]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>ServerInfoPara</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>LeagueEliminationUpdateG2M</Name>
+    <ProtoType>42184</ProtoType>
+    <Dir>leaguebattle</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>LeagueEliminationUpdateData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>UpdateLeagueEleRoomStateNtf</Name>
+    <ProtoType>15800</ProtoType>
+    <Dir>league</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>UpdateLeagueEleRoomStateNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>CloseLeagueEleNtf</Name>
+    <ProtoType>8195</ProtoType>
+    <Dir>league</Dir>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>CloseLeagueEleNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SynGuildBossHp</Name>
+    <ProtoType>54597</ProtoType>
+    <Dir>guild</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>SynGuildBossHp</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SynGuildBossDie</Name>
+    <ProtoType>45172</ProtoType>
+    <Dir>guild</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>SynGuildBossDie</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SynGuildBossDoEnd</Name>
+    <ProtoType>51634</ProtoType>
+    <Dir>guild</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>SynGuildBossDoEnd</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>FMWhiteListReloadNtf</Name>
+    <ProtoType>25576</ProtoType>
+    <Dir>chat</Dir>
+    <From>FM Server[语音直播服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>FmReloadInfo</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>KickFMAuchor</Name>
+    <ProtoType>33806</ProtoType>
+    <Dir>chat</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType />
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SynGuildBossAttr</Name>
+    <ProtoType>7318</ProtoType>
+    <Dir>guild</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>SynGuildBossAttr</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>NoticeGuildBossAttr</Name>
+    <ProtoType>830</ProtoType>
+    <Dir>guild</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>NoticeGuildBossAttr</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>LevelChangeNtfMs</Name>
+    <ProtoType>38683</ProtoType>
+    <Dir>role</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>LevelChangeNtfMs</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>ControlFunctionNtf</Name>
+    <ProtoType>3181</ProtoType>
+    <Dir>misc</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>ControlFunciontInfo</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>GuildAuctItemTimeFresh</Name>
+    <ProtoType>49239</ProtoType>
+    <Dir>auction</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>GuildAuctItemTime</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>PkMatchInWorldNtf</Name>
+    <ProtoType>29347</ProtoType>
+    <Dir>pk</Dir>
+    <From>KWorld Server[跨服玩法服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>PkMatchToWorldPara</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SyncCrossLeagueTeam2MS</Name>
+    <ProtoType>12116</ProtoType>
+    <Dir>leaguebattle</Dir>
+    <From>KWorld Server[跨服玩法服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>SyncCrossLeagueTeam2MS</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SyncRoleSummaryToMS</Name>
+    <ProtoType>57915</ProtoType>
+    <Dir>common</Dir>
+    <From>KWorld Server[跨服玩法服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>SyncRoleSummaryToMS</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>LeagueMatchWorldNtf</Name>
+    <ProtoType>39077</ProtoType>
+    <Dir>league</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>KWorld Server[跨服玩法服务器]</To>
+    <MemberType>LeagueMatchWorldNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>LeagueMatchWorldResultNtf</Name>
+    <ProtoType>64974</ProtoType>
+    <Dir>league</Dir>
+    <From>KWorld Server[跨服玩法服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>LeagueMatchWorldResultNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>PokerTournamentEndReFund</Name>
+    <ProtoType>50590</ProtoType>
+    <Dir>pokertournament</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>PokerTournamentEndReFundMsg</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>ClickNoticeNtf</Name>
+    <ProtoType>61015</ProtoType>
+    <Dir>misc</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>ClickNoticeData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>HeroBattleWorldMatchNtf</Name>
+    <ProtoType>15732</ProtoType>
+    <Dir>herobattle</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>KWorld Server[跨服玩法服务器]</To>
+    <MemberType>HeroBattleWorldMatchData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>HeroWorldRoomNtf</Name>
+    <ProtoType>35021</ProtoType>
+    <Dir>herobattle</Dir>
+    <From>KWorld Server[跨服玩法服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>HeroWorldRoomData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>ServerInfoNtf2World</Name>
+    <ProtoType>46221</ProtoType>
+    <Dir>server</Dir>
+    <From>ILogin Server[登录]</From>
+    <To>KWorld Server[跨服玩法服务器]</To>
+    <MemberType>ServerInfoPara</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SyncServerTime2MS</Name>
+    <ProtoType>37391</ProtoType>
+    <Dir>common</Dir>
+    <From>KWorld Server[跨服玩法服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>SyncServerTime</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SyncServerTime2CrossGs</Name>
+    <ProtoType>36075</ProtoType>
+    <Dir>common</Dir>
+    <From>KWorld Server[跨服玩法服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>SyncServerTime</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>LeagueCrossEliNtfMs</Name>
+    <ProtoType>10773</ProtoType>
+    <Dir>leaguebattle</Dir>
+    <From>KWorld Server[跨服玩法服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>LeagueCrossEliNtfMs</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>LeagueEliminationUpdateG2K</Name>
+    <ProtoType>34910</ProtoType>
+    <Dir>leaguebattle</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>KWorld Server[跨服玩法服务器]</To>
+    <MemberType>LeagueEliminationUpdateData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>LeagueCrossRewardNtf</Name>
+    <ProtoType>41543</ProtoType>
+    <Dir>leaguebattle</Dir>
+    <From>KWorld Server[跨服玩法服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>LeagueCrossReward</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>DeleteCrossRoleSummary</Name>
+    <ProtoType>33732</ProtoType>
+    <Dir>role</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Db Server [数据库]</To>
+    <MemberType>DeleteCrossRoleSummary</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>NoticeGuildTerrEnd</Name>
+    <ProtoType>2103</ProtoType>
+    <Dir>guild</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>NoticeGuildTerrEnd</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>NoticeGuildTerrBattleWin</Name>
+    <ProtoType>61655</ProtoType>
+    <Dir>guild</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>NoticeGuildTerrBattleWin</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>NoticeGuildTerrBigIcon</Name>
+    <ProtoType>13723</ProtoType>
+    <Dir>guild</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>NoticeGuildTerrBigIcon</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>OpenSystemNtfMs</Name>
+    <ProtoType>53016</ProtoType>
+    <Dir>role</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>OpenSystemNtfMsData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>CloseHintNtf</Name>
+    <ProtoType>37802</ProtoType>
+    <Dir>common</Dir>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>CloseHintNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>ReportRoleSummary2World</Name>
+    <ProtoType>49809</ProtoType>
+    <Dir>common</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>KWorld Server[跨服玩法服务器]</To>
+    <MemberType>SyncRoleSummaryToMS</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>GetRoleSummaryFromWorld</Name>
+    <ProtoType>16628</ProtoType>
+    <Dir>common</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>KWorld Server[跨服玩法服务器]</To>
+    <MemberType>GetRoleSummaryFromWorld</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>BroadCastWorld2Ms</Name>
+    <ProtoType>34278</ProtoType>
+    <Dir>common</Dir>
+    <From>KWorld Server[跨服玩法服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>WorldMasterInfo</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>BroadCastWorld2Gs</Name>
+    <ProtoType>20476</ProtoType>
+    <Dir>common</Dir>
+    <From>KWorld Server[跨服玩法服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>WorldMasterInfo</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>BroadCastWorld2Rs</Name>
+    <ProtoType>29151</ProtoType>
+    <Dir>common</Dir>
+    <From>KWorld Server[跨服玩法服务器]</From>
+    <To>Router Server[转发服务器]</To>
+    <MemberType>WorldMasterInfo</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>MilitaryRankChange</Name>
+    <ProtoType>47816</ProtoType>
+    <Dir>militaryrank</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>MilitaryRankChangeArg</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>AccountLogout</Name>
+    <ProtoType>25855</ProtoType>
+    <Dir>account</Dir>
+    <From>NControl Server[控制服务器]</From>
+    <To>Db Server [数据库]</To>
+    <MemberType>AccountLogout</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>BroadCastG2T</Name>
+    <ProtoType>57877</ProtoType>
+    <Dir>broadcast</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>TGate Server [网关]</To>
+    <MemberType>BroadCastG2TData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>AudioAIDNtf</Name>
+    <ProtoType>54517</ProtoType>
+    <Dir>common</Dir>
+    <From>Audio Server</From>
+    <To>Client [客户端]</To>
+    <MemberType>AudioTextArg</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>CountDownNtf</Name>
+    <ProtoType>3259</ProtoType>
+    <Dir>common</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>CountDownNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>ReportRegisterCount</Name>
+    <ProtoType>49223</ProtoType>
+    <Dir>common</Dir>
+    <From>Db Server [数据库]</From>
+    <To>NControl Server[控制服务器]</To>
+    <MemberType>UpdateRegisterCount2Ns</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>AllGiftIBItemNtf</Name>
+    <ProtoType>2916</ProtoType>
+    <Dir>pay</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>AllGiftIBItem</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>GiftIBBackInfoNtf</Name>
+    <ProtoType>6953</ProtoType>
+    <Dir>pay</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>GiftIBBackInfo</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>MysqlConnectLost</Name>
+    <ProtoType>36241</ProtoType>
+    <Dir>common</Dir>
+    <From>Db Server [数据库]</From>
+    <To>NControl Server[控制服务器]</To>
+    <MemberType>MysqlConnectLostData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>NotifyRouterInfo2Gate</Name>
+    <ProtoType>4039</ProtoType>
+    <Dir>common</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>TGate Server [网关]</To>
+    <MemberType>RouterListenInfo</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>NotifyRouterInfo2DB</Name>
+    <ProtoType>26305</ProtoType>
+    <Dir>common</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Db Server [数据库]</To>
+    <MemberType>RouterListenInfo</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>NotifyRouterInfo2Ctrl</Name>
+    <ProtoType>22364</ProtoType>
+    <Dir>common</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>NControl Server[控制服务器]</To>
+    <MemberType>RouterListenInfo</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>FmMasterInfoNtf</Name>
+    <ProtoType>25260</ProtoType>
+    <Dir>common</Dir>
+    <From>FM Server[语音直播服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>FmMasterInfo</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>ShareRandomGiftNtf</Name>
+    <ProtoType>18823</ProtoType>
+    <Dir>lottery</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>ShareRandomGiftData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>PunishAccountNtf</Name>
+    <ProtoType>65094</ProtoType>
+    <Dir>gm</Dir>
+    <From>PGM Server[GM]</From>
+    <To>ILogin Server[登录]</To>
+    <MemberType>PunishAccount</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>BuyPayAileenNtf</Name>
+    <ProtoType>45141</ProtoType>
+    <Dir>pay</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>BuyPayAileenStatus</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>KickAccountNtf</Name>
+    <ProtoType>23889</ProtoType>
+    <Dir>gm</Dir>
+    <From>PGM Server[GM]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>PunishAccountBrief</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>ModifyGuildNameNtf</Name>
+    <ProtoType>18518</ProtoType>
+    <Dir>guild</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>ModifyArg</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>WorldBossGuildAddAttrSyncGsNtf</Name>
+    <ProtoType>23367</ProtoType>
+    <Dir>worldboss</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>WorldBossGuildAddAttrSyncGs</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>WorldBossGuildAddAttrSyncClientNtf</Name>
+    <ProtoType>65314</ProtoType>
+    <Dir>worldboss</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>WorldBossGuildAddAttrSyncClient</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>BanAccountListNtf</Name>
+    <ProtoType>46748</ProtoType>
+    <Dir>idip</Dir>
+    <From>ILogin Server[登录]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>BanAccountList</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>DelBanAccountNtf</Name>
+    <ProtoType>9091</ProtoType>
+    <Dir>idip</Dir>
+    <From>ILogin Server[登录]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>BanAccontSimple</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>M2SUserStatusSync</Name>
+    <ProtoType>53444</ProtoType>
+    <Dir>platfriend</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>SCenter Server[中心服务器]</To>
+    <MemberType>M2SUserStatusSyncData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>S2MInvFightMsgNtf</Name>
+    <ProtoType>53925</ProtoType>
+    <Dir>platfriend</Dir>
+    <From>SCenter Server[中心服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>S2MInvFightMsgNtfData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>InvFightCrossNtf</Name>
+    <ProtoType>25954</ProtoType>
+    <Dir>invfight</Dir>
+    <From>KWorld Server[跨服玩法服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>InvFightCrossNtfData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>EnterSceneFromMs</Name>
+    <ProtoType>30827</ProtoType>
+    <Dir>scene</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>EnterSceneFromMsData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>UpdateGlobalValue</Name>
+    <ProtoType>55899</ProtoType>
+    <Dir>common</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>UpdateGlobalValue</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>BroadCastGlobalValue</Name>
+    <ProtoType>22233</ProtoType>
+    <Dir>common</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>BroadCastGlobalValue</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>MilitaryrankNtf</Name>
+    <ProtoType>64945</ProtoType>
+    <Dir>militaryrank</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>MilitaryRecord</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>LoginActivityStatusNtf</Name>
+    <ProtoType>34113</ProtoType>
+    <Dir>loginactivity</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>LoginActivityStatus</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>LoginActivityAwardReq</Name>
+    <ProtoType>16542</ProtoType>
+    <Dir>loginactivity</Dir>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType />
+  </PGProtocol>
+  <PGProtocol>
+    <Name>PayBuyGoodsFailNtf</Name>
+    <ProtoType>23670</ProtoType>
+    <Dir>pay</Dir>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>PayBuyGoodsFail</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>IBGiftTipsReq</Name>
+    <ProtoType>29090</ProtoType>
+    <Dir>pay</Dir>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>IBGiftTips</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SavePayIbItem</Name>
+    <ProtoType>53614</ProtoType>
+    <Dir>pay</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Db Server [数据库]</To>
+    <MemberType>SavePayIbItemNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>ArenaStarDataNtf</Name>
+    <ProtoType>11371</ProtoType>
+    <Dir>arenastar</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>ArenaStarPara</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>NotifySkyTeamCreate</Name>
+    <ProtoType>21688</ProtoType>
+    <Dir>skyteam</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>NotifySkyTeamCreate</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SkyCraftMatchNtf</Name>
+    <ProtoType>4938</ProtoType>
+    <Dir>skycraft</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>SkyCraftMatchNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SkyCraftEliRoomNtf</Name>
+    <ProtoType>6761</ProtoType>
+    <Dir>skycraft</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>SkyCraftEliRoomNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>CloseSkyCraftEliNtf</Name>
+    <ProtoType>46239</ProtoType>
+    <Dir>skycraft</Dir>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>CloseSkyCraftEliNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>ChangeSceneWorldReq</Name>
+    <ProtoType>16478</ProtoType>
+    <Dir>scene</Dir>
+    <From>KWorld Server[跨服玩法服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>ChangeSceneWorldReq</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>DisplayAddItem</Name>
+    <ProtoType>55159</ProtoType>
+    <Dir>fashion</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>DisplayAddItemArg</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>UpdateDisplayItems</Name>
+    <ProtoType>12217</ProtoType>
+    <Dir>fashion</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>UpdateDisplayItems</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>guildcamppartyNotify</Name>
+    <ProtoType>23338</ProtoType>
+    <Dir>guild</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>guildcamppartyNotifyNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>IBGiftIconNtf</Name>
+    <ProtoType>44659</ProtoType>
+    <Dir>pay</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>IBGiftIcon</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>GiftIBSucessNtf</Name>
+    <ProtoType>29707</ProtoType>
+    <Dir>pay</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>GiftIBBackInfo</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>AbsPartyNtf</Name>
+    <ProtoType>35041</ProtoType>
+    <Dir>absparty</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>AbsPartyInfo</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>UpdateCustomBattleOnDB</Name>
+    <ProtoType>34368</ProtoType>
+    <Dir>custombattle</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Db Server [数据库]</To>
+    <MemberType>UpdateCustomBattleOnDB</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>UpdateCustomBattleRoleOnDB</Name>
+    <ProtoType>56056</ProtoType>
+    <Dir>custombattle</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Db Server [数据库]</To>
+    <MemberType>UpdateCustomBattleRoleOnDB</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>GuildCampPartyTradeNotify</Name>
+    <ProtoType>62988</ProtoType>
+    <Dir>guild</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>GuildCampPartyTradeNotifyArg</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>ReportCustomBattleResult</Name>
+    <ProtoType>47975</ProtoType>
+    <Dir>custombattle</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>ReportCustomBattleResult</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>ReportCustomBattleResultWorld</Name>
+    <ProtoType>2704</ProtoType>
+    <Dir>custombattle</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>KWorld Server[跨服玩法服务器]</To>
+    <MemberType>ReportCustomBattleResult</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>CustomBattleDelMatch</Name>
+    <ProtoType>34876</ProtoType>
+    <Dir>custombattle</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>KWorld Server[跨服玩法服务器]</To>
+    <MemberType>CustomBattleDelMatch</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>TransCustomBattleMatch</Name>
+    <ProtoType>53445</ProtoType>
+    <Dir>custombattle</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>KWorld Server[跨服玩法服务器]</To>
+    <MemberType>TransCustomBattleMatch</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>TeamRequestPlatFreindConfirm</Name>
+    <ProtoType>45804</ProtoType>
+    <Dir>team</Dir>
+    <From>SCenter Server[中心服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>TeamRequestPlatFreindConfirmData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>TeamRequestPlatFreind2Client</Name>
+    <ProtoType>37841</ProtoType>
+    <Dir>team</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>TeamRequestPlatFreind2ClientData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>KMatchedk2mNtf</Name>
+    <ProtoType>28109</ProtoType>
+    <Dir>match</Dir>
+    <From>KWorld Server[跨服玩法服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>KMatchedPara</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>KMatchedw2hNtf</Name>
+    <ProtoType>29657</ProtoType>
+    <Dir>match</Dir>
+    <From>KWorld Server[跨服玩法服务器]</From>
+    <To>HTeam Server [组队服务器]</To>
+    <MemberType>KMatchedPara</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>ReportBadPlayer2Ms</Name>
+    <ProtoType>55873</ProtoType>
+    <Dir>battle</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>ReportBadPlayer2Ms</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>CustomBattleLoadingNtf</Name>
+    <ProtoType>34402</ProtoType>
+    <Dir>custombattle</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>CustomBattleLoadingNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>CustomBattleGMNotify</Name>
+    <ProtoType>65108</ProtoType>
+    <Dir>custombattle</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>CustomBattleGMNotify</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>TarjaInfoNtf</Name>
+    <ProtoType>41859</ProtoType>
+    <Dir>team</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>TarjaInfo</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>TarjaBriefNtf</Name>
+    <ProtoType>35068</ProtoType>
+    <Dir>team</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>TarjaBrief</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SceneTeamResultNtf</Name>
+    <ProtoType>14783</ProtoType>
+    <Dir>team</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>SceneTeamResultPara</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>TeamCostLeaderResetNtf</Name>
+    <ProtoType>11286</ProtoType>
+    <Dir>team</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>TeamCostPara</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>WorldMasterInfoNtf</Name>
+    <ProtoType>62412</ProtoType>
+    <Dir>common</Dir>
+    <From>KWorld Server[跨服玩法服务器]</From>
+    <To>HTeam Server [组队服务器]</To>
+    <MemberType>W2TMasterInfo</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>PkUpdateSynNtf</Name>
+    <ProtoType>35115</ProtoType>
+    <Dir>pk</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>PkUpdateSynPara</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>PlatformShareAwardNtf</Name>
+    <ProtoType>24055</ProtoType>
+    <Dir>platformshareresult</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>PlatformShareAwardPara</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>NotifyPlatShareResult</Name>
+    <ProtoType>8480</ProtoType>
+    <Dir>platformshareresult</Dir>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>NotifyPlatShareResultArg</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>WeekEnd4v4RoleDataNtf</Name>
+    <ProtoType>54598</ProtoType>
+    <Dir>weekend4v4</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>WeekEnd4v4BattleAllRoleData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>HeroKillNotify</Name>
+    <ProtoType>58962</ProtoType>
+    <Dir>mobabattle</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>HeroKillNotifyData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>MobaBattleTeamRoleNtf</Name>
+    <ProtoType>44930</ProtoType>
+    <Dir>mobabattle</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>MobaBattleTeamRoleData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>MobaRoleChangeNtf</Name>
+    <ProtoType>12958</ProtoType>
+    <Dir>mobabattle</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>MobaRoleChangeData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>MobaBattleTeamMsgNtf</Name>
+    <ProtoType>14987</ProtoType>
+    <Dir>mobabattle</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>MobaBattleTeamMsg</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>TransSkillNotfiy</Name>
+    <ProtoType>1366</ProtoType>
+    <Dir>skill</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>TransSkillNotfiy</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>EntityTargetChangeNtf</Name>
+    <ProtoType>9303</ProtoType>
+    <Dir>battle</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>EntityTargetData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>MobaSignalBroadcast</Name>
+    <ProtoType>6250</ProtoType>
+    <Dir>mobabattle</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>MobaSignalBroadcastData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>PetInviteNtf</Name>
+    <ProtoType>19818</ProtoType>
+    <Dir>pet</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>PetInviteNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>AddMobaBattleRecord</Name>
+    <ProtoType>36411</ProtoType>
+    <Dir>mobabattle</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>AddMobaBattleRecordData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SaveMobaRoleRecord</Name>
+    <ProtoType>16269</ProtoType>
+    <Dir>mobabattle</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Db Server [数据库]</To>
+    <MemberType>SaveMobaRoleRecordData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>ChatNotifyG2C</Name>
+    <ProtoType>48111</ProtoType>
+    <Dir>chat</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>ChatNotify</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SessionChange2Gt</Name>
+    <ProtoType>29446</ProtoType>
+    <Dir>session</Dir>
+    <From>NControl Server[控制服务器]</From>
+    <To>TGate Server [网关]</To>
+    <MemberType>SessionChangeData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>MobaMiniMapNtf</Name>
+    <ProtoType>32069</ProtoType>
+    <Dir>mobabattle</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>MobaMiniMapData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>ClientSessionChangeG2M</Name>
+    <ProtoType>591</ProtoType>
+    <Dir>session</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>ClientSessionChangeG2M</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>RoleLoginReconnectNtf</Name>
+    <ProtoType>47084</ProtoType>
+    <Dir>login</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>RoleLoginReconnectNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>MobaAddExpNtf</Name>
+    <ProtoType>36674</ProtoType>
+    <Dir>mobabattle</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>MobaAddExpData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>BMCrossNtfDataNtf</Name>
+    <ProtoType>38469</ProtoType>
+    <Dir>bigmelee</Dir>
+    <From>KWorld Server[跨服玩法服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>BMCrossNtfData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>BMReadyTimeNtf</Name>
+    <ProtoType>8612</ProtoType>
+    <Dir>bigmelee</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>BMReadyTime</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>BMEnterReadySceneNtf</Name>
+    <ProtoType>27074</ProtoType>
+    <Dir>bigmelee</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>KWorld Server[跨服玩法服务器]</To>
+    <MemberType>BMEnterSvrInfo</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>EnterBMFightSceneNtf</Name>
+    <ProtoType>17198</ProtoType>
+    <Dir>bigmelee</Dir>
+    <From>KWorld Server[跨服玩法服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>EnterBMFightScene</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>MayhemAwardNtf</Name>
+    <ProtoType>5187</ProtoType>
+    <Dir>mayhem</Dir>
+    <From>KWorld Server[跨服玩法服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>MayhemAwardList</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>BMSceneFightInfoNtf</Name>
+    <ProtoType>20128</ProtoType>
+    <Dir>bigmelee</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>KWorld Server[跨服玩法服务器]</To>
+    <MemberType>BMSceneFightInfo</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>BMFightTimeNtf</Name>
+    <ProtoType>4101</ProtoType>
+    <Dir>bigmelee</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>BMFightTime</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>BMRoleSceneSyncNtf</Name>
+    <ProtoType>40091</ProtoType>
+    <Dir>bigmelee</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>BMRoleSceneSync</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>MayhemBattlefieldReport</Name>
+    <ProtoType>43066</ProtoType>
+    <Dir>mayhem</Dir>
+    <From>KWorld Server[跨服玩法服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>MayhemBattlefieldArg</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>BigMeleeReliveNtf</Name>
+    <ProtoType>3358</ProtoType>
+    <Dir>bigmelee</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>BigMeleeRelive</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>BMLeaveFightSceneNtf</Name>
+    <ProtoType>45898</ProtoType>
+    <Dir>bigmelee</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>KWorld Server[跨服玩法服务器]</To>
+    <MemberType>BMEnterSvrInfo</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>MobaHintNtf</Name>
+    <ProtoType>17027</ProtoType>
+    <Dir>scene</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>MobaHintNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>AddMilitaryRank</Name>
+    <ProtoType>61218</ProtoType>
+    <Dir>militaryrank</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>AddMilitaryRankData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>TeamTranGs2Ms</Name>
+    <ProtoType>21157</ProtoType>
+    <Dir>team</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>TeamTransData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>ServerCrossDataM2W</Name>
+    <ProtoType>7963</ProtoType>
+    <Dir>common</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>KWorld Server[跨服玩法服务器]</To>
+    <MemberType>ServerCrossDataSynPara</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>ServerCrossDataW2CrossG</Name>
+    <ProtoType>29551</ProtoType>
+    <Dir>common</Dir>
+    <From>KWorld Server[跨服玩法服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>ServerCrossDataSynPara</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>serverCrossDataW2T</Name>
+    <ProtoType>27970</ProtoType>
+    <Dir>common</Dir>
+    <From>KWorld Server[跨服玩法服务器]</From>
+    <To>HTeam Server [组队服务器]</To>
+    <MemberType>ServerCrossDataSynPara</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>TeamTranMs2Ts</Name>
+    <ProtoType>57050</ProtoType>
+    <Dir>team</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>HTeam Server [组队服务器]</To>
+    <MemberType>TeamTransData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>TeamTranTs2Ms</Name>
+    <ProtoType>40019</ProtoType>
+    <Dir>team</Dir>
+    <From>HTeam Server [组队服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>TeamTransData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>TeamTranMs2Gs</Name>
+    <ProtoType>59361</ProtoType>
+    <Dir>team</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>TeamTransData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>M2NVersoinNotify</Name>
+    <ProtoType>53700</ProtoType>
+    <Dir>common</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>NControl Server[控制服务器]</To>
+    <MemberType>SVersion</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>TajieHelpNotify</Name>
+    <ProtoType>36521</ProtoType>
+    <Dir>tajie</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>TajieHelpData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>NotifyStartUpTypeToClient</Name>
+    <ProtoType>64412</ProtoType>
+    <Dir>common</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>NotifyStartUpTypeToClient</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>HeroBattleAncientPower</Name>
+    <ProtoType>37102</ProtoType>
+    <Dir>herobattle</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>HeroBattleAncientPowerData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>GroupChatManager</Name>
+    <ProtoType>17710</ProtoType>
+    <Dir>groupchat</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>GroupChatManagerPtc</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>GroupChatQuit</Name>
+    <ProtoType>56654</ProtoType>
+    <Dir>groupchat</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>GroupChatQuitPtc</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>GroupChatDismiss</Name>
+    <ProtoType>18973</ProtoType>
+    <Dir>groupchat</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>GroupChatDismissPtc</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>WeddingInviteNtf</Name>
+    <ProtoType>35104</ProtoType>
+    <Dir>wedding</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>WeddingInviteNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SaveMarriageInfoNtf</Name>
+    <ProtoType>3951</ProtoType>
+    <Dir>marriage</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Db Server [数据库]</To>
+    <MemberType>SaveMarriage2DbData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>NotifyMarriageApply</Name>
+    <ProtoType>42923</ProtoType>
+    <Dir>marriage</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>NotifyMarriageApplyData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>BattleStatisticsReport</Name>
+    <ProtoType>3612</ProtoType>
+    <Dir>battle</Dir>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType />
+  </PGProtocol>
+  <PGProtocol>
+    <Name>BattleStatisticsNtf</Name>
+    <ProtoType>65061</ProtoType>
+    <Dir>battle</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>BattleStatisticsNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>WeddingLoadInfoNtf</Name>
+    <ProtoType>61694</ProtoType>
+    <Dir>wedding</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>WeddingLoadInfoNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>WeddingStateNtf</Name>
+    <ProtoType>30976</ProtoType>
+    <Dir>wedding</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>WeddingStateNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>WeddingEventNtf</Name>
+    <ProtoType>51472</ProtoType>
+    <Dir>wedding</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>WeddingEventNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>HorseFailTipsNtf</Name>
+    <ProtoType>2357</ProtoType>
+    <Dir>horse</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType />
+  </PGProtocol>
+  <PGProtocol>
+    <Name>NotifyMarriageDivorceApply</Name>
+    <ProtoType>32886</ProtoType>
+    <Dir>marriage</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>NotifyMarriageDivorceApplyData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>WarningRandomNtf</Name>
+    <ProtoType>8594</ProtoType>
+    <Dir>skill</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>WarningRandomSet</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>GroupChatIssueCount</Name>
+    <ProtoType>61968</ProtoType>
+    <Dir>groupchat</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>GroupChatIssueCountNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>UpdateWeddingStateG2M</Name>
+    <ProtoType>23976</ProtoType>
+    <Dir>wedding</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>UpdateWeddingStateG2M</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>GroupChatApply</Name>
+    <ProtoType>34424</ProtoType>
+    <Dir>groupchat</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>GroupChatApplyNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>DBGroupChatSaveGroupIssueNtf</Name>
+    <ProtoType>4171</ProtoType>
+    <Dir>dbgroupchat</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Db Server [数据库]</To>
+    <MemberType>DBGroupChatSaveGroupIssue</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>DBGroupChatDelGroupIssueNtf</Name>
+    <ProtoType>34614</ProtoType>
+    <Dir>dbgroupchat</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Db Server [数据库]</To>
+    <MemberType>DBGroupChatDelGroupIssue</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>DBGroupChatSaveRoleIssueNtf</Name>
+    <ProtoType>866</ProtoType>
+    <Dir>dbgroupchat</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Db Server [数据库]</To>
+    <MemberType>DBGroupChatSaveRoleIssue</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>DBGroupChatDelRoleIssueNtf</Name>
+    <ProtoType>51604</ProtoType>
+    <Dir>dbgroupchat</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Db Server [数据库]</To>
+    <MemberType>DBGroupChatDelRoleIssue</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>DBGroupChatSaveGroupNtf</Name>
+    <ProtoType>59908</ProtoType>
+    <Dir>dbgroupchat</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Db Server [数据库]</To>
+    <MemberType>DBGroupChatSaveGroup</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>DBGroupChatDelGroupNtf</Name>
+    <ProtoType>49002</ProtoType>
+    <Dir>dbgroupchat</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Db Server [数据库]</To>
+    <MemberType>DBGroupChatDelGroup</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>DBGroupChatDelRoleNtf</Name>
+    <ProtoType>24442</ProtoType>
+    <Dir>dbgroupchat</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Db Server [数据库]</To>
+    <MemberType>DBGroupChatDelRole</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>DBGroupChatSaveRoleNtf</Name>
+    <ProtoType>43081</ProtoType>
+    <Dir>dbgroupchat</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Db Server [数据库]</To>
+    <MemberType>DBGroupChatSaveRole</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>ShareReport</Name>
+    <ProtoType>31884</ProtoType>
+    <Dir>misc</Dir>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>ShareReportData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>WeddingCarEndM2G</Name>
+    <ProtoType>42520</ProtoType>
+    <Dir>wedding</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>WeddingCarEndM2G</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>ThemeActivityChangeNtf</Name>
+    <ProtoType>25642</ProtoType>
+    <Dir>spactivity</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>ThemeActivityChangeData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>RoleLeaveCrossSceneNtf</Name>
+    <ProtoType>14595</ProtoType>
+    <Dir>crossscene</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>KWorld Server[跨服玩法服务器]</To>
+    <MemberType>RoleLeaveCrossSceneNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>WeddingCarNtf</Name>
+    <ProtoType>48301</ProtoType>
+    <Dir>wedding</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>WeddingCarNotify</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>BackFlowOpenNtf</Name>
+    <ProtoType>27749</ProtoType>
+    <Dir>spactivity</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>BackFlowOpenNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>StartBattleFailedM2CNtf</Name>
+    <ProtoType>20444</ProtoType>
+    <Dir>team</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>StartBattleFailedRes</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>BigMeleeEndNtf</Name>
+    <ProtoType>36899</ProtoType>
+    <Dir>bigmelee</Dir>
+    <From>KWorld Server[跨服玩法服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType />
+  </PGProtocol>
+  <PGProtocol>
+    <Name>PrivateChat</Name>
+    <ProtoType>30597</ProtoType>
+    <Dir>chat</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>PrivateChatGS</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>TransNotify</Name>
+    <ProtoType>15935</ProtoType>
+    <Dir>transform</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>TransNotify</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>BattleFieldEventReq</Name>
+    <ProtoType>1769</ProtoType>
+    <Dir>battlefield</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>KWorld Server[跨服玩法服务器]</To>
+    <MemberType>BattleFieldEvent</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>InvfightAgainReqC2G</Name>
+    <ProtoType>2055</ProtoType>
+    <Dir>invfight</Dir>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>InvFightAgainPara</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>InvfightAgainReqG2M</Name>
+    <ProtoType>25754</ProtoType>
+    <Dir>invfight</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>InvFightAgainPara</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>InvfightAgainReqG2W</Name>
+    <ProtoType>23179</ProtoType>
+    <Dir>invfight</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>KWorld Server[跨服玩法服务器]</To>
+    <MemberType>InvFightAgainPara</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>EnterBFFightSceneNtf</Name>
+    <ProtoType>33660</ProtoType>
+    <Dir>battlefield</Dir>
+    <From>KWorld Server[跨服玩法服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>EnterBFFightBatchScene</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>SynDragonGuildSimpleData</Name>
+    <ProtoType>35494</ProtoType>
+    <Dir>dragonguild</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>SynDragonGuildSimpleData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>reqdragonguildsimpledata</Name>
+    <ProtoType>54058</ProtoType>
+    <Dir>dragonguild</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>DragonGuildDataReq</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>LoginDragonGuildInfo</Name>
+    <ProtoType>21856</ProtoType>
+    <Dir>dragonguild</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>MyDragonGuild</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>DragonGuildSettingChanged</Name>
+    <ProtoType>42603</ProtoType>
+    <Dir>dragonguild</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>DragonGuildSettingChanged</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>UpdateDragonGuildData</Name>
+    <ProtoType>13352</ProtoType>
+    <Dir>dragonguild</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Db Server [数据库]</To>
+    <MemberType>UpdateDragonGuildData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>DragonGuildNameNtf</Name>
+    <ProtoType>35553</ProtoType>
+    <Dir>dragonguild</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>DragonGuildNameNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>CostDragonGuildReceiveCount</Name>
+    <ProtoType>47101</ProtoType>
+    <Dir>dragonguild</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>CostDragonGuildReceiveCountData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>CheckDragonGuildTask</Name>
+    <ProtoType>49520</ProtoType>
+    <Dir>dragonguild</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>CheckDragonGuildTaskData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>NotifyDragonGuildRedPoint</Name>
+    <ProtoType>28271</ProtoType>
+    <Dir>dragonguild</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>NotifyDragonGuildRedPoint</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>GoBackReadySceneNtf</Name>
+    <ProtoType>10491</ProtoType>
+    <Dir>battlefield</Dir>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>GoBackReadyScene</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>GoalAwardsRedPoint</Name>
+    <ProtoType>11570</ProtoType>
+    <Dir>goalawards</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>GoalAwardsRedPointNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>BattleFieldReadyInfoNtf</Name>
+    <ProtoType>40392</ProtoType>
+    <Dir>battlefield</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>BattleFieldReadyInfo</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>BattleFieldReliveNtf</Name>
+    <ProtoType>813</ProtoType>
+    <Dir>battlefield</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>BattleFieldReliveInfo</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>BattleFieldRoleAgainstNtf</Name>
+    <ProtoType>8049</ProtoType>
+    <Dir>battlefield</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>BattleFieldRoleAgainst</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>GoalAwardsServerAwards</Name>
+    <ProtoType>32122</ProtoType>
+    <Dir>goalawards</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>GoalAwardsServerAwards_M2G</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>GoalAwardsServerEvent</Name>
+    <ProtoType>64621</ProtoType>
+    <Dir>goalawards</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>GoalAwardsServerEvent_G2M</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>BattleFieldReadySceneNtf</Name>
+    <ProtoType>48118</ProtoType>
+    <Dir>battlefield</Dir>
+    <From>KWorld Server[跨服玩法服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>BattleFieldReadyScene</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>BattleFiedlReadySceneGsNtf</Name>
+    <ProtoType>15032</ProtoType>
+    <Dir>battlefield</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>BattleFieldReadyScene</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>BFFightTimeNtf</Name>
+    <ProtoType>39352</ProtoType>
+    <Dir>battlefield</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>BFFightTime</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>DBGoalAwardsSaveNtf</Name>
+    <ProtoType>10887</ProtoType>
+    <Dir>dbgoalawards</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Db Server [数据库]</To>
+    <MemberType>DBGoalAwardsSave</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>PayScoreNtf</Name>
+    <ProtoType>61859</ProtoType>
+    <Dir>pay</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>PayScoreData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>NpcFlNotifyM2G</Name>
+    <ProtoType>20387</ProtoType>
+    <Dir>npcfeeling</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>NpcFlPara</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>BattleFailInfoMsNtf</Name>
+    <ProtoType>27457</ProtoType>
+    <Dir>battlefield</Dir>
+    <From>KWorld Server[跨服玩法服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>BattleFailInfo</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>BattleFailInfoGsNtf</Name>
+    <ProtoType>33023</ProtoType>
+    <Dir>battlefield</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>BattleFailInfo</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>GoalAwardsServerTeam</Name>
+    <ProtoType>25101</ProtoType>
+    <Dir>goalawards</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>GoalAwardsServerTeam_G2M</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>NpcFlNtf</Name>
+    <ProtoType>18961</ProtoType>
+    <Dir>npcfeeling</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>NpcFlRes</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>DailyTaskEventNtf</Name>
+    <ProtoType>26376</ProtoType>
+    <Dir>task</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>DailyTaskEventNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>UpdateFreeflowHintInfo</Name>
+    <ProtoType>27628</ProtoType>
+    <Dir>common</Dir>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>UpdateFreeflowHintInfo</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>DoodadItemSkillsNtf</Name>
+    <ProtoType>45490</ProtoType>
+    <Dir>battle</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>DoodadItemAllSkill</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>ConsumeRebateNtf</Name>
+    <ProtoType>2016</ProtoType>
+    <Dir>pay</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>ConsumeRebateNtfData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>MulActivityIconSysReq</Name>
+    <ProtoType>64642</ProtoType>
+    <Dir>skycity</Dir>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>MulActivityIconSys</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>WordNotify</Name>
+    <ProtoType>34052</ProtoType>
+    <Dir>notice</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>WordNotify</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>BigMeleePointNtf</Name>
+    <ProtoType>15624</ProtoType>
+    <Dir>bigmelee</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>BigMeleePoint</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>BigMeleePointOutLookNtf</Name>
+    <ProtoType>25027</ProtoType>
+    <Dir>bigmelee</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>BigMeleePointOutLook</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>TaskRefreshNtf</Name>
+    <ProtoType>40464</ProtoType>
+    <Dir>task</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>TaskRefreshNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>KickAccountJkydNtf</Name>
+    <ProtoType>39286</ProtoType>
+    <Dir>kickaccount</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>KickAccountJkydMsg</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>KickAccountJkydG2M</Name>
+    <ProtoType>65490</ProtoType>
+    <Dir>kickaccount</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <MemberType>KickAccountJkydG2M</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>GuildCastFeatsNtf</Name>
+    <ProtoType>32885</ProtoType>
+    <Dir>guildcastle</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>GuildCastFeats</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>PayTotalNtf</Name>
+    <ProtoType>11424</ProtoType>
+    <Dir>pay</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <MemberType>PayTotalNtfData</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>WorldLevelNtf2Client</Name>
+    <ProtoType>63449</ProtoType>
+    <Dir>common</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>WorldLevel</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>UpdateStageInfoNtf</Name>
+    <ProtoType>21189</ProtoType>
+    <Dir>stage</Dir>
+    <From>Game Server [游戏服务器]</From>
+    <To>Client [客户端]</To>
+    <MemberType>UpdateStageInfoNtf</MemberType>
+  </PGProtocol>
+  <PGProtocol>
+    <Name>PkRankLogSyn</Name>
+    <ProtoType>64474</ProtoType>
+    <Dir>pk</Dir>
+    <From>Master Server[主控服务器]</From>
+    <To>KWorld Server[跨服玩法服务器]</To>
+    <MemberType>PkRoleRankLogPara</MemberType>
+  </PGProtocol>
+</ArrayOfPGProtocol>

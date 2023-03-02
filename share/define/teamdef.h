@@ -1,0 +1,99 @@
+#ifndef __TEAMDEF_H__
+#define __TEAMDEF_H__
+
+enum TeamType 
+{
+	EXP_TEAM_SCENE			= 1,	// 远征队
+	GUILD_TEAM_SCENE		= 2,	// 公会组队本
+	NEST_TEAM_SCENE			= 3,	// 巢穴
+	ABYSS_TEAM_SCENE		= 4,	// 深渊副本
+	SMALL_GOBLIN_TEAM_SCENE = 5,	// 小妖精
+	DRAGON_TEAM_SCENE		= 6,	// 龙
+	TEAM_TOWER				= 7,	// 爬塔
+	PVP_TEAM_SCENE			= 8,	// PVP
+	GODDESS_TEAM_SCENE		= 9,	// 女神试炼
+	ENDLESSABYSS_SCENE		= 10,	// 双人深渊
+	SKYCITY_SCENE			= 11,   // 天空之城
+	RESWAR_SCENE			= 12,	//
+	GUILDCAMP_TEAM_SCENE	= 13,	// 公会营地
+	WEEK_NEST_TEAM_SCENE	= 14,   // 每周巢穴 
+	PARTNER_TEAM_SCENE      = 15,   // 结拜
+	HEROBATTLE_TEAM_SCENE	= 16,	// 英雄战场
+	LEAGUETEAM_SCENE		= 17,	// 战队联赛(组队建立关系和组队战斗复用)
+	FESTIVAL_TEAM_SCENE     = 18,   // 节日
+	TASK_TEAM_SCENE         = 19,   // 用于任务
+	SKYCRAFT_SCENE			= 20,	// 天空争霸赛
+	TEAM_TYPE_PKTWO         = 21,   // 天梯
+    TEAM_WEEKEND4V4_SCENE   = 22,   // 周末活动
+	MOBABATTLE_TEAM_SCENE	= 23,	// 英雄峡谷
+	TEAM_TYPE_CUSTOMPKTWO	= 24,	// 全民PK2v2
+	TEAM_TYPE_BIOHELL		= 25,	// 生化地狱犬;
+	TEAM_TYPE_COUPLE		= 26,	// 夫妻副本;
+	TEAM_TYPE_MARRIAGE		= 27,	// 结婚组队;
+	TEAM_TYPE_COMPETE_DRAGON = 28,	// 竞技龙本
+
+	TEAM_TYPE_MAX 
+};
+
+enum TeamCostCountType
+{
+	TEAM_CCT_NONE = 0,//不扣次数
+	TEAM_CCT_ENTER = 1,//进入扣次数
+	TEAM_CCT_WIN = 2,//胜利扣次数
+};
+
+enum TeamOpType
+{
+	TEAM_OPT_NORMAL = 0,
+	TEAM_OPT_FORCE = 1,
+	TEAM_OPT_MATCH = 2,
+	TEAM_OPT_INVITE = 3,
+};
+
+enum TeamTransType
+{
+	TEAM_TRANS_OP_REQ = 0,
+	TEAM_TRANS_FETCH_TEAM = 1,
+	TEAM_TRANS_TEAM_CHANGEDATA = 2,
+	TEAM_TRANS_ROLE2TEAM = 3,
+	TEAM_TRANS_ROLELEAVE = 4,
+	TEAM_TRANS_ROLELOGOUT = 5,
+	TEAM_TRANS_ERRERCODE = 6,
+	TEAM_TRANS_INVITEDATA = 7,
+	TEAM_TRANS_TEAMFULLDATA = 8,
+	TEAM_TRANS_TEAMSYN2GS = 9,
+	TEAM_TRANS_GS_REGISTER = 11,
+	TEAM_TRANS_INV_REFUSE = 12,
+	TEAM_TRANS_TEAM_MATCH = 13,
+	TEAM_TRANS_SYN_EXTRAINFO = 14,
+	TEAM_TRANS_CHAT = 15,
+	TEAM_TRANS_START_BATTLE = 16,
+	TEAM_TRANS_COST_CANCEL = 17,
+	TEAM_TRANS_BATTLE_RESULT = 18,
+	TEAM_TRANS_ROLE_MATCH = 19,
+	TEAM_TRANS_RM_CONFIRM_NOTICE = 20,
+	TEAM_TRANS_RM_REFUSE_NOTICE = 21,
+	TEAM_TRANS_START_BATTLE_FAILED = 22,
+	TEAM_TRANS_CHECK_EXP_CHANGE = 23,
+};
+
+enum TGotoNextSceneType
+{
+	TGOTONST_FIRST = 0,
+	TGOTONST_NEXT = 1,
+	TGOTONST_RETURN = 2,
+};
+
+enum THSpecialType
+{
+	THSpeType_None = 0,
+	THSpeType_Ac2Join = 1,
+};
+
+const UINT32 TeamCostInvalidID = (UINT32)(-1);
+const int TeamListSendCountLimit = 100;
+const int TeamForCheckCountLimit = 50000;
+
+#define TJUDGERET(ret) if (0 != ret) {return ret;}
+
+#endif

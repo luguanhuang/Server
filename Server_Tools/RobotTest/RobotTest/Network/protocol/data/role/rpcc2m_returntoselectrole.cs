@@ -1,0 +1,49 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+using System.IO;
+using ProtoBuf;
+
+// generate by ProtoGen at date: 2016/7/13 23:16:35
+
+namespace XMainClient
+{
+	using ArgDataType = KKSG.ReturnToSelectRoleArg;
+    using ResDataType = KKSG.ReturnToSelectRoleRes;
+
+    class RpcC2M_ReturnToSelectRole : Rpc
+    {
+        public ArgDataType oArg = new ArgDataType();
+        public ResDataType oRes = new ResDataType();
+
+        public RpcC2M_ReturnToSelectRole()
+        {
+        }
+
+        public override uint GetRpcType()
+        {
+            return 25477;
+        }
+
+        public override void Serialize(MemoryStream stream)
+        {
+            Serializer.Serialize(stream, oArg);
+        }
+
+        public override void DeSerialize(MemoryStream stream)
+        {
+            oRes = Serializer.Deserialize<ResDataType>(stream);
+        }
+
+        public override void Process()
+        {
+            base.Process();
+            Process_RpcC2M_ReturnToSelectRole.OnReply(oArg, oRes);
+        }
+
+        public override void OnTimeout(object args)
+        {
+            Process_RpcC2M_ReturnToSelectRole.OnTimeout(oArg);
+        }
+    }
+}

@@ -1,0 +1,6913 @@
+<?xml version="1.0"?>
+<ArrayOfPGRpc xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PGRpc>
+    <Name>SyncTime</Name>
+    <ProtoType>30514</ProtoType>
+    <Dir>common</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>SyncTimeArg</Arg>
+    <Res>SyncTimeRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>SkillLevelup</Name>
+    <ProtoType>63698</ProtoType>
+    <Dir>skill</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>SkillLevelupArg</Arg>
+    <Res>SkillLevelupRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>FetchAchivementReward</Name>
+    <ProtoType>47094</ProtoType>
+    <Dir>Common</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>FetchAchiveArg</Arg>
+    <Res>FetchAchiveRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>SelectChestReward</Name>
+    <ProtoType>40987</ProtoType>
+    <Dir>battle</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>SelectChestArg</Arg>
+    <Res>SelectChestRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ResetSkill</Name>
+    <ProtoType>26941</ProtoType>
+    <Dir>skill</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>ResetSkillArg</Arg>
+    <Res>ResetSkillRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ChooseProfession</Name>
+    <ProtoType>24314</ProtoType>
+    <Dir>role</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>ChooseProfArg</Arg>
+    <Res>ChooseProfRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>BindSkill</Name>
+    <ProtoType>48236</ProtoType>
+    <Dir>skill</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>BingSkillArg</Arg>
+    <Res>BindSkillRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>TaskOperate</Name>
+    <ProtoType>20029</ProtoType>
+    <Dir>task</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>TaskOPArg</Arg>
+    <Res>TaskOPRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>QueryLotteryCD</Name>
+    <ProtoType>12242</ProtoType>
+    <Dir>lottery</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>QueryLotteryCDArg</Arg>
+    <Res>QueryLotteryCDRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>DrawLottery</Name>
+    <ProtoType>27802</ProtoType>
+    <Dir>lottery</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>DrawLotteryArg</Arg>
+    <Res>DrawLotteryRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>EnhanceItem</Name>
+    <ProtoType>3744</ProtoType>
+    <Dir>enhance</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>EnhanceItemArg</Arg>
+    <Res>EnhanceItemRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>QuerySceneDayCount</Name>
+    <ProtoType>1676</ProtoType>
+    <Dir>scene</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>QuerySceneDayCountArg</Arg>
+    <Res>QuerySceneDayCountRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GMCommand</Name>
+    <ProtoType>3248</ProtoType>
+    <Dir>common</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>GMCmdArg</Arg>
+    <Res>GMCmdRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>DecomposeEquipment</Name>
+    <ProtoType>6556</ProtoType>
+    <Dir>enhance</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>DecomposeEquipmentArg</Arg>
+    <Res>DecomposeEquipmentRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>Reconnect</Name>
+    <ProtoType>28358</ProtoType>
+    <Dir>login</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>TGate Server [网关]</To>
+    <Arg>ReconnArg</Arg>
+    <Res>ReconnRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>EmblemLevelUp</Name>
+    <ProtoType>9893</ProtoType>
+    <Dir>emblem</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>EmblemLevelUpArg</Arg>
+    <Res>EmblemLevelUpRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>UseItem</Name>
+    <ProtoType>64132</ProtoType>
+    <Dir>common</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>UseItemArg</Arg>
+    <Res>UseItemRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>JadeOperation</Name>
+    <ProtoType>55991</ProtoType>
+    <Dir>jade</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>JadeOperationArg</Arg>
+    <Res>JadeOperationRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>JadeCompose</Name>
+    <ProtoType>35616</ProtoType>
+    <Dir>jade</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>JadeComposeArg</Arg>
+    <Res>JadeComposeRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>Checkin</Name>
+    <ProtoType>56127</ProtoType>
+    <Dir>checkin</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>CheckinArg</Arg>
+    <Res>CheckinRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetActivityChest</Name>
+    <ProtoType>34363</ProtoType>
+    <Dir>activity</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>GetActivityChestArg</Arg>
+    <Res>GetActivityChestRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>FashionCompose</Name>
+    <ProtoType>46372</ProtoType>
+    <Dir>fashion</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>FashionComposeArg</Arg>
+    <Res>FashionComposeRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>BuyJadeSlot</Name>
+    <ProtoType>37813</ProtoType>
+    <Dir>jade</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>BuyJadeSlotArg</Arg>
+    <Res>BuyJadeSlotRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetSystemReward</Name>
+    <ProtoType>11595</ProtoType>
+    <Dir>reward</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>GetSystemRewardArg</Arg>
+    <Res>GetSystemRewardRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>Sweep</Name>
+    <ProtoType>6019</ProtoType>
+    <Dir>battle</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>SweepArg</Arg>
+    <Res>SweepRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>Revive</Name>
+    <ProtoType>29831</ProtoType>
+    <Dir>battle</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>ReviveArg</Arg>
+    <Res>ReviveRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>QueryShopItem</Name>
+    <ProtoType>18079</ProtoType>
+    <Dir>shop</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>QueryShopItemArg</Arg>
+    <Res>QueryShopItemRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>BuyShopItem</Name>
+    <ProtoType>33881</ProtoType>
+    <Dir>shop</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>BuyShopItemArg</Arg>
+    <Res>BuyShopItemRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>BuyGoldAndFatigue</Name>
+    <ProtoType>31095</ProtoType>
+    <Dir>pay</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>BuyGoldAndFatigueArg</Arg>
+    <Res>BuyGoldAndFatigueRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>AddTempAttr</Name>
+    <ProtoType>22021</ProtoType>
+    <Dir>common</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>AddTempAttrArg</Arg>
+    <Res>AddTempAttrRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>QueryOpenGameActivityTime</Name>
+    <ProtoType>24079</ProtoType>
+    <Dir>common</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>QueryOpenGameArg</Arg>
+    <Res>QueryOpenGameRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>QueryGateIP</Name>
+    <ProtoType>9179</ProtoType>
+    <Dir>login</Dir>
+    <timeout>15000</timeout>
+    <From>Client [客户端]</From>
+    <To>ILogin Server[登录]</To>
+    <Arg>QueryGateArg</Arg>
+    <Res>QueryGateRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ShowFlowerPage</Name>
+    <ProtoType>47831</ProtoType>
+    <Dir>social</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>ShowFlowerPageArg</Arg>
+    <Res>ShowFlowerPageRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>SendFlower</Name>
+    <ProtoType>16310</ProtoType>
+    <Dir>social</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>SendFlowerArg</Arg>
+    <Res>SendFlowerRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>FetchChapterChest</Name>
+    <ProtoType>21099</ProtoType>
+    <Dir>common</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>FetchChapterChestArg</Arg>
+    <Res>FetchChapterChestRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>StartGuildCard</Name>
+    <ProtoType>35743</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>StartGuildCardArg</Arg>
+    <Res>StartGuildCardRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>QueryGuildCard</Name>
+    <ProtoType>55524</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>QueryGuildCardArg</Arg>
+    <Res>QueryGuildCardRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ChangeGuildCard</Name>
+    <ProtoType>55997</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>ChangeGuildCardArg</Arg>
+    <Res>ChangeGuildCardRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>EndGuildCard</Name>
+    <ProtoType>13212</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>EndGuildCardArg</Arg>
+    <Res>EndGuildCardRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ClientLoginRequest</Name>
+    <ProtoType>10091</ProtoType>
+    <Dir>login</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>TGate Server [网关]</To>
+    <Arg>LoginArg</Arg>
+    <Res>LoginRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetGuildCheckinBox</Name>
+    <ProtoType>19269</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>GetGuildCheckinBoxArg</Arg>
+    <Res>GetGuildCheckinBoxRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>StageCountReset</Name>
+    <ProtoType>8496</ProtoType>
+    <Dir>scene</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>StageCountResetArg</Arg>
+    <Res>StageCountResetRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetGuildBonusList</Name>
+    <ProtoType>43440</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>GetGuildBonusListArg</Arg>
+    <Res>GetGuildBonusListResult</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetGuildBonusDetailInfo</Name>
+    <ProtoType>20027</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>GetGuildBonusDetailInfoArg</Arg>
+    <Res>GetGuildBonusDetailInfoResult</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetGuildBonusReward</Name>
+    <ProtoType>55720</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>GetGuildBonusRewardArg</Arg>
+    <Res>GetGuildBonusRewardResult</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>OpenSceneChest</Name>
+    <ProtoType>27401</ProtoType>
+    <Dir>scene</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>OpenSceneChestArg</Arg>
+    <Res>OpenSceneChestRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ReportBattle</Name>
+    <ProtoType>21292</ProtoType>
+    <Dir>scene</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>ReportBattleArg</Arg>
+    <Res>ReportBattleRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetOnlineReward</Name>
+    <ProtoType>21137</ProtoType>
+    <Dir>reward</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>GetOnlineRewardArg</Arg>
+    <Res>GetOnlineRewardRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetNextDayReward</Name>
+    <ProtoType>40997</ProtoType>
+    <Dir>reward</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>GetNextDayRewardArg</Arg>
+    <Res>GetNextDayRewardRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>FetchEnemyDoodadReq</Name>
+    <ProtoType>56348</ProtoType>
+    <Dir>battle</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>EnemyDoodadInfo</Arg>
+    <Res>RollInfoRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GuildGoblinInfo</Name>
+    <ProtoType>59865</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>GuildGoblinInfoArg</Arg>
+    <Res>GuildGoblinInfoRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GMHttpCommand</Name>
+    <ProtoType>26403</ProtoType>
+    <Dir>gm</Dir>
+    <timeout>15000</timeout>
+    <From>PGM Server[GM]</From>
+    <To>Db Server [数据库]</To>
+    <Arg>GMHttpArg</Arg>
+    <Res>GMHttpRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>UseSupplement</Name>
+    <ProtoType>20068</ProtoType>
+    <Dir>item</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>UseSupplementReq</Arg>
+    <Res>UseSupplementRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>SetRoleConfig</Name>
+    <ProtoType>35306</ProtoType>
+    <Dir>common</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>SetRoleConfigReq</Arg>
+    <Res>SetRoleConfigRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>LoginHttpCommand</Name>
+    <ProtoType>32926</ProtoType>
+    <Dir>gm</Dir>
+    <timeout>5000</timeout>
+    <From>PGM Server[GM]</From>
+    <To>ILogin Server[登录]</To>
+    <Arg>GMHttpArg</Arg>
+    <Res>GMHttpRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>LevelUpSlotAttr</Name>
+    <ProtoType>62918</ProtoType>
+    <Dir>slotattr</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>LevelUpSlotAttrArg</Arg>
+    <Res>LevelUpSlotAttrRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>PetOperation</Name>
+    <ProtoType>28857</ProtoType>
+    <Dir>pet</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>PetOperationArg</Arg>
+    <Res>PetOperationRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>FetchMail</Name>
+    <ProtoType>12373</ProtoType>
+    <Dir>mail</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>FetchMailArg</Arg>
+    <Res>FetchMailRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>MailOp</Name>
+    <ProtoType>50122</ProtoType>
+    <Dir>mail</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>MailOpArg</Arg>
+    <Res>MailOpRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>BuyTeamSceneCount</Name>
+    <ProtoType>9226</ProtoType>
+    <Dir>team</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>BuyTeamSceneCountP</Arg>
+    <Res>BuyTeamSceneCountRet</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ExpFindBack</Name>
+    <ProtoType>38008</ProtoType>
+    <Dir>findback</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>ExpFindBackArg</Arg>
+    <Res>ExpFindBackRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetTowerActivityTop</Name>
+    <ProtoType>5168</ProtoType>
+    <Dir>activity</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>GetTowerActivityTopArg</Arg>
+    <Res>GetTowerActivityTopRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetDesignationReq</Name>
+    <ProtoType>44412</ProtoType>
+    <Dir>designation</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>GetDesignationReq</Arg>
+    <Res>GetDesignationRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>SetDesignationReq</Name>
+    <ProtoType>7673</ProtoType>
+    <Dir>designation</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>SetDesignationReq</Arg>
+    <Res>SetDesignationRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetClassifyDesignationReq</Name>
+    <ProtoType>40256</ProtoType>
+    <Dir>designation</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>GetClassifyDesignationReq</Arg>
+    <Res>GetClassifyDesignationRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetAchieveBrifInfoReq</Name>
+    <ProtoType>25095</ProtoType>
+    <Dir>achievement</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>GetAchieveBrifInfoReq</Arg>
+    <Res>GetAchieveBrifInfoRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetAchieveClassifyInfoReq</Name>
+    <ProtoType>14056</ProtoType>
+    <Dir>achievement</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>GetAchieveClassifyInfoReq</Arg>
+    <Res>GetAchieveClassifyInfoRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ReqPlayerAutoPlay</Name>
+    <ProtoType>3718</ProtoType>
+    <Dir>battle</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>ReqAutoPlay</Arg>
+    <Res>RetAutoPlay</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetAchieveRewardReq</Name>
+    <ProtoType>1577</ProtoType>
+    <Dir>achievement</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>GetAchieveRewardReq</Arg>
+    <Res>GetAchieveRewardRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetLevelSealInfo</Name>
+    <ProtoType>10497</ProtoType>
+    <Dir>levelseal</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>GetLevelSealInfoArg</Arg>
+    <Res>GetLevelSealInfoRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>LevelSealButtonStatus</Name>
+    <ProtoType>10396</ProtoType>
+    <Dir>levelseal</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>LevelSealOverExpArg</Arg>
+    <Res>LevelSealOverExpRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetAchievePointRewardReq</Name>
+    <ProtoType>13722</ProtoType>
+    <Dir>achievement</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>GetAchievePointRewardReq</Arg>
+    <Res>GetAchievePointRewardRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ReqGetLoginReward</Name>
+    <ProtoType>44079</ProtoType>
+    <Dir>reward</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>LoginRewardGetReq</Arg>
+    <Res>LoginRewardGetRet</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>FiveDayRewardReq</Name>
+    <ProtoType>63999</ProtoType>
+    <Dir>reward</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>FiveRewardRes</Arg>
+    <Res>FiveRewardRet</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GuildCheckInBonusInfo</Name>
+    <ProtoType>47251</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>GuildCheckInBonusInfoArg</Arg>
+    <Res>GuildCheckInBonusInfoRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>SendGuildBonus</Name>
+    <ProtoType>61243</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>SendGuildBonusArg</Arg>
+    <Res>SendGuildBonusRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>AskForCheckInBonus</Name>
+    <ProtoType>32843</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>AskForCheckInBonusArg</Arg>
+    <Res>AskForCheckInBonusRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ThanksForBonus</Name>
+    <ProtoType>42614</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>ThanksForBonusArg</Arg>
+    <Res>ThanksForBonusRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>PvpAllReq</Name>
+    <ProtoType>57262</ProtoType>
+    <Dir>pvp</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>PvpArg</Arg>
+    <Res>PvpRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>AgreeQAReq</Name>
+    <ProtoType>43200</ProtoType>
+    <Dir>qa</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>AgreeQAReq</Arg>
+    <Res>AgreeQARes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetFlowerLeftTime</Name>
+    <ProtoType>26834</ProtoType>
+    <Dir>social</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>GetFlowerLeftTimeArg</Arg>
+    <Res>GetFlowerLeftTimeRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetFlower</Name>
+    <ProtoType>11473</ProtoType>
+    <Dir>social</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>GetFlowerArg</Arg>
+    <Res>GetFlowerRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetFlowerReward</Name>
+    <ProtoType>65090</ProtoType>
+    <Dir>social</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>GetFlowerRewardArg</Arg>
+    <Res>GetFlowerRewardRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetFlowerRewardList</Name>
+    <ProtoType>26656</ProtoType>
+    <Dir>social</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>GetFlowerRewardListArg</Arg>
+    <Res>GetFlowerRewardListRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetAudioListReq</Name>
+    <ProtoType>49666</ProtoType>
+    <Dir>common</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Audio Server</To>
+    <Arg>GetAudioListReq</Arg>
+    <Res>GetAudioListRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>UpLoadAudioReq</Name>
+    <ProtoType>3069</ProtoType>
+    <Dir>common</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Audio Server</To>
+    <Arg>UpLoadAudioReq</Arg>
+    <Res>UpLoadAudioRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>EnhanceTranster</Name>
+    <ProtoType>25778</ProtoType>
+    <Dir>equip</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>EnhanceTransterArg</Arg>
+    <Res>EnhanceTransterRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>PvpNowAllData</Name>
+    <ProtoType>58355</ProtoType>
+    <Dir>pvp</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>roArg</Arg>
+    <Res>PvpNowGameData</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetQADataReq</Name>
+    <ProtoType>26871</ProtoType>
+    <Dir>qa</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GetQADataReq</Arg>
+    <Res>GetQADataRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetDragonTopInfo</Name>
+    <ProtoType>7973</ProtoType>
+    <Dir>dragon</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>GetDragonTopInfoArg</Arg>
+    <Res>GetDragonTopInfoRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>RegisterGs2Ms</Name>
+    <ProtoType>4755</ProtoType>
+    <Dir>common</Dir>
+    <timeout>2000000</timeout>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>RegisterGs2MsArg</Arg>
+    <Res>RegisterGs2MsRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>RegisterGt2Ms</Name>
+    <ProtoType>8141</ProtoType>
+    <Dir>common</Dir>
+    <timeout>2000000</timeout>
+    <From>TGate Server [网关]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>RegisterGt2MsArg</Arg>
+    <Res>RegisterGt2MsRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>TeamInviteListReq</Name>
+    <ProtoType>11403</ProtoType>
+    <Dir>team</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>TeamInviteArg</Arg>
+    <Res>TeamInviteRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>RegisterGs2Gt</Name>
+    <ProtoType>9408</ProtoType>
+    <Dir>common</Dir>
+    <timeout>10000</timeout>
+    <From>Game Server [游戏服务器]</From>
+    <To>TGate Server [网关]</To>
+    <Arg>RegisterGs2GtArg</Arg>
+    <Res>RegisterGs2GtRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>RegisterGt2Gs</Name>
+    <ProtoType>30179</ProtoType>
+    <Dir>common</Dir>
+    <timeout>10000</timeout>
+    <From>TGate Server [网关]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>RegisterGt2GsArg</Arg>
+    <Res>RegisterGt2GsRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>LoginRequestNew</Name>
+    <ProtoType>44486</ProtoType>
+    <Dir>login</Dir>
+    <timeout>30000</timeout>
+    <From>TGate Server [网关]</From>
+    <To>NControl Server[控制服务器]</To>
+    <Arg>LoginRequestNewArg</Arg>
+    <Res>LoginRequestNewRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ReadAccountData</Name>
+    <ProtoType>20979</ProtoType>
+    <Dir>login</Dir>
+    <timeout>30000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Db Server [数据库]</To>
+    <Arg>ReadAccountDataArg</Arg>
+    <Res>ReadAccountDataRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>CreateRoleNew</Name>
+    <ProtoType>13034</ProtoType>
+    <Dir>role</Dir>
+    <timeout>30000</timeout>
+    <From>Client [客户端]</From>
+    <To>NControl Server[控制服务器]</To>
+    <Arg>CreateRoleNewArg</Arg>
+    <Res>CreateRoleNewRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>CreateRoleOnDBNew</Name>
+    <ProtoType>8069</ProtoType>
+    <Dir>role</Dir>
+    <timeout>600000</timeout>
+    <From>NControl Server[控制服务器]</From>
+    <To>Db Server [数据库]</To>
+    <Arg>CreateRoleOnDBNewArg</Arg>
+    <Res>CreateRoleOnDBNewRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>SelectRoleNew</Name>
+    <ProtoType>217</ProtoType>
+    <Dir>role</Dir>
+    <timeout>30000</timeout>
+    <From>Client [客户端]</From>
+    <To>NControl Server[控制服务器]</To>
+    <Arg>SelectRoleNewArg</Arg>
+    <Res>SelectRoleNewRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ReadRoleData</Name>
+    <ProtoType>65264</ProtoType>
+    <Dir>role</Dir>
+    <timeout>30000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Db Server [数据库]</To>
+    <Arg>ReadRoleDataArg</Arg>
+    <Res>ReadRoleDataRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>EnterScene</Name>
+    <ProtoType>38481</ProtoType>
+    <Dir>scene</Dir>
+    <timeout>60000</timeout>
+    <From>NControl Server[控制服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>EnterSceneArg</Arg>
+    <Res>EnterSceneRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>LeaveScene</Name>
+    <ProtoType>48300</ProtoType>
+    <Dir>scene</Dir>
+    <timeout>60000</timeout>
+    <From>NControl Server[控制服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>LeaveSceneArg</Arg>
+    <Res>LeaveSceneRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>SaveRoleData</Name>
+    <ProtoType>54811</ProtoType>
+    <Dir>role</Dir>
+    <timeout>20000</timeout>
+    <From>Game Server [游戏服务器]</From>
+    <To>Db Server [数据库]</To>
+    <Arg>SaveRoleDataArg</Arg>
+    <Res>SaveRoleDataRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>IdentifyEmblem</Name>
+    <ProtoType>43787</ProtoType>
+    <Dir>emblem</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>IdentifyEmblemArg</Arg>
+    <Res>IdentifyEmblemRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>OpenGuildQAReq</Name>
+    <ProtoType>62840</ProtoType>
+    <Dir>qa</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>OpenGuildQAReq</Arg>
+    <Res>OpenGuildQARes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetGuildQADataReq</Name>
+    <ProtoType>35568</ProtoType>
+    <Dir>qa</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>GetGuildQADataReq</Arg>
+    <Res>GetGuildQADataRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>MulActivityReq</Name>
+    <ProtoType>22806</ProtoType>
+    <Dir>activity</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>MulActivityArg</Arg>
+    <Res>MulActivityRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetWatchInfoByID</Name>
+    <ProtoType>45635</ProtoType>
+    <Dir>battlewatch</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>GetWatchInfoByIDArg</Arg>
+    <Res>GetWatchInfoByIDRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetMyWatchRecord</Name>
+    <ProtoType>22907</ProtoType>
+    <Dir>battlewatch</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>GetMyWatchRecordArg</Arg>
+    <Res>GetMyWatchRecordRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>EnterWatchBattle</Name>
+    <ProtoType>47590</ProtoType>
+    <Dir>battlewatch</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>EnterWatchBattleArg</Arg>
+    <Res>EnterWatchBattleRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ChangeWatchRole</Name>
+    <ProtoType>35369</ProtoType>
+    <Dir>battlewatch</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>ChangeWatchRoleArg</Arg>
+    <Res>ChangeWatchRoleRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>CommendWatchBattle</Name>
+    <ProtoType>1476</ProtoType>
+    <Dir>battlewatch</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>CommendWatchBattleArg</Arg>
+    <Res>CommendWatchBattleRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>BossRushReq</Name>
+    <ProtoType>44074</ProtoType>
+    <Dir>common</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>BossRushArg</Arg>
+    <Res>BossRushRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ReturnToSelectRole</Name>
+    <ProtoType>25477</ProtoType>
+    <Dir>role</Dir>
+    <timeout>30000</timeout>
+    <From>Client [客户端]</From>
+    <To>NControl Server[控制服务器]</To>
+    <Arg>ReturnToSelectRoleArg</Arg>
+    <Res>ReturnToSelectRoleRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>DoEnterScene</Name>
+    <ProtoType>45201</ProtoType>
+    <Dir>scene</Dir>
+    <timeout>600000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>DoEnterSceneArg</Arg>
+    <Res>DoEnterSceneRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ChangeSceneVerify</Name>
+    <ProtoType>41926</ProtoType>
+    <Dir>scene</Dir>
+    <timeout>30000</timeout>
+    <From>Game Server [游戏服务器]</From>
+    <To>NControl Server[控制服务器]</To>
+    <Arg>ChangeSceneVerifyArg</Arg>
+    <Res>ChangeSceneVerifyRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>TakeOffAllJade</Name>
+    <ProtoType>21793</ProtoType>
+    <Dir>Jade</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>TakeOffAllJadeArg</Arg>
+    <Res>TakeOffAllJadeRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>SweepTower</Name>
+    <ProtoType>39381</ProtoType>
+    <Dir>activity</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>SweepTowerArg</Arg>
+    <Res>SweepTowerRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ResetTower</Name>
+    <ProtoType>8570</ProtoType>
+    <Dir>activity</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>ResetTowerArg</Arg>
+    <Res>ResetTowerRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GMHttpCommandNew</Name>
+    <ProtoType>42798</ProtoType>
+    <Dir>gm</Dir>
+    <timeout>5000</timeout>
+    <From>PGM Server[GM]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GMHttpArg</Arg>
+    <Res>GMHttpRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GSHttpCommandNew</Name>
+    <ProtoType>40585</ProtoType>
+    <Dir>gm</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>GMHttpArg</Arg>
+    <Res>GMHttpRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>MsSaveRoleData</Name>
+    <ProtoType>57109</ProtoType>
+    <Dir>role</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Db Server [数据库]</To>
+    <Arg>SaveRoleDataArg</Arg>
+    <Res>SaveRoleDataRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetGoddessTrialRewards</Name>
+    <ProtoType>41420</ProtoType>
+    <Dir>GoddessTrial</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>GetGoddessTrialRewardsArg</Arg>
+    <Res>GetGoddessTrialRewardsRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>MsGetAllRole</Name>
+    <ProtoType>13928</ProtoType>
+    <Dir>role</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Db Server [数据库]</To>
+    <Arg>GetAllRoleArg</Arg>
+    <Res>GetAllRoleRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>CreateBattleScene</Name>
+    <ProtoType>50269</ProtoType>
+    <Dir>scene</Dir>
+    <timeout>30000</timeout>
+    <From>Master Server [主控服务器]</From>
+    <To>NControl Server[控制服务器]</To>
+    <Arg>CreateBattleSceneArg</Arg>
+    <Res>CreateBattleSceneRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>CreateBattle</Name>
+    <ProtoType>2620</ProtoType>
+    <Dir>scene</Dir>
+    <timeout>30000</timeout>
+    <From>NControl Server[控制服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>CreateBattleArg</Arg>
+    <Res>CreateBattleRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>chat</Name>
+    <ProtoType>56705</ProtoType>
+    <Dir>chat</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>ChatArg</Arg>
+    <Res>ChatRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ChatCanSend</Name>
+    <ProtoType>38579</ProtoType>
+    <Dir>chat</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>ChatCanSendReq</Arg>
+    <Res>ChatCanSendRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetWatchInfoByType</Name>
+    <ProtoType>28313</ProtoType>
+    <Dir>battlewatch</Dir>
+    <timeout>5000</timeout>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GetWatchInfoByTypeArg</Arg>
+    <Res>GetWatchInfoByTypeRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>EnterWatchBattleMs</Name>
+    <ProtoType>2371</ProtoType>
+    <Dir>battlewatch</Dir>
+    <timeout>5000</timeout>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>EnterWatchBattleMsArg</Arg>
+    <Res>EnterWatchBattleMsRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>DoAddFriendNew</Name>
+    <ProtoType>23397</ProtoType>
+    <Dir>friend</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>DoAddFriendArg</Arg>
+    <Res>DoAddFriendRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>RemoveFriendNew</Name>
+    <ProtoType>2841</ProtoType>
+    <Dir>friend</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>RemoveFriendArg</Arg>
+    <Res>RemoveFriendRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>AddBlackListNew</Name>
+    <ProtoType>265</ProtoType>
+    <Dir>friend</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>AddBlackListArg</Arg>
+    <Res>AddBlackListRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>RemoveBlackListNew</Name>
+    <ProtoType>38702</ProtoType>
+    <Dir>friend</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>RemoveBlackListArg</Arg>
+    <Res>RemoveBlackListRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>FriendGiftOpNew</Name>
+    <ProtoType>35639</ProtoType>
+    <Dir>friend</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>FriendGiftOpArg</Arg>
+    <Res>FriendGiftOpRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>RandomFriendWaitListNew</Name>
+    <ProtoType>65353</ProtoType>
+    <Dir>friend</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>RandomFriendWaitListArg</Arg>
+    <Res>RandomFriendWaitListRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>IncLevelSealBossCount</Name>
+    <ProtoType>36102</ProtoType>
+    <Dir>levelseal</Dir>
+    <timeout>5000</timeout>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>IncBossCountArg</Arg>
+    <Res>IncBossCountRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>NoticeGuildBossDoEndToGSN</Name>
+    <ProtoType>22920</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>NoticeGuildBossDoEndArg</Arg>
+    <Res>NoticeGuildBossDoEndRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>QueryPowerPoint</Name>
+    <ProtoType>44381</ProtoType>
+    <Dir>common</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>QueryPowerPointArg</Arg>
+    <Res>QueryPowerPointRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>RegisterNs2Login</Name>
+    <ProtoType>52792</ProtoType>
+    <Dir>common</Dir>
+    <timeout>30000</timeout>
+    <From>NControl Server[控制服务器]</From>
+    <To>ILogin Server[登录]</To>
+    <Arg>RegisterMs2LoginArg</Arg>
+    <Res>RegisterMs2LoginRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetWorldBossStateNew</Name>
+    <ProtoType>17093</ProtoType>
+    <Dir>worldboss</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GetWorldBossStateArg</Arg>
+    <Res>GetWorldBossStateRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetWorldBossTimeLeft</Name>
+    <ProtoType>23195</ProtoType>
+    <Dir>worldboss</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GetWorldBossTimeLeftArg</Arg>
+    <Res>GetWorldBossTimeLeftRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetPayAllInfo</Name>
+    <ProtoType>41260</ProtoType>
+    <Dir>pay</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>GetPayAllInfoArg</Arg>
+    <Res>GetPayAllInfoRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>PayCardAward</Name>
+    <ProtoType>20470</ProtoType>
+    <Dir>pay</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>PayCardAwardArg</Arg>
+    <Res>PayCardAwardRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>PayClick</Name>
+    <ProtoType>20376</ProtoType>
+    <Dir>pay</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>PayClickArg</Arg>
+    <Res>PayClickRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetActivityInfo</Name>
+    <ProtoType>43911</ProtoType>
+    <Dir>activity</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>GetActivityInfoArg</Arg>
+    <Res>GetActivityInfoRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ShowFlowerPageNew</Name>
+    <ProtoType>49446</ProtoType>
+    <Dir>social</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>ShowFlowerPageArg</Arg>
+    <Res>ShowFlowerPageRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>MSGetFlwoerRankReward</Name>
+    <ProtoType>55481</ProtoType>
+    <Dir>social</Dir>
+    <timeout>5000</timeout>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>MSGetFlowerRewardArg</Arg>
+    <Res>MSGetFlowerRewardRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>MSSendFlower</Name>
+    <ProtoType>5914</ProtoType>
+    <Dir>social</Dir>
+    <timeout>5000</timeout>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>MSSendFlowerArg</Arg>
+    <Res>MSSendFlowerRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>MSGetFlowerRewardList</Name>
+    <ProtoType>16271</ProtoType>
+    <Dir>social</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>NewGetFlowerRewardListArg</Arg>
+    <Res>NewGetFlowerRewardListRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetFlowerRewardState</Name>
+    <ProtoType>34241</ProtoType>
+    <Dir>social</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>GetFlowerRewardStateArg</Arg>
+    <Res>GetFlowerRewardStateRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>FetchTeamListC2M</Name>
+    <ProtoType>3930</ProtoType>
+    <Dir>team</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>FetchTeamListArg</Arg>
+    <Res>FetchTeamListRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>TeamSynM2C</Name>
+    <ProtoType>36098</ProtoType>
+    <Dir>team</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>TeamSynPara</Arg>
+    <Res>TeamSynRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>InvHistoryC2MReq</Name>
+    <ProtoType>29978</ProtoType>
+    <Dir>team</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>InvHistoryArg</Arg>
+    <Res>InvHistoryRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>TeamRequestC2M</Name>
+    <ProtoType>30954</ProtoType>
+    <Dir>team</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>TeamOPArg</Arg>
+    <Res>TeamOPRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>TeamStartBattleM2G</Name>
+    <ProtoType>3613</ProtoType>
+    <Dir>team</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>TeamStartBattleM2GArg</Arg>
+    <Res>TeamStartBattleM2GRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>TeamRequestM2G</Name>
+    <ProtoType>35416</ProtoType>
+    <Dir>team</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>TeamOPM2GArg</Arg>
+    <Res>TeamOPM2GRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>SynPetInfo</Name>
+    <ProtoType>6548</ProtoType>
+    <Dir>pet</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>SynPetInfoArg</Arg>
+    <Res>SynPetInfoRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ChooseRollReq</Name>
+    <ProtoType>50047</ProtoType>
+    <Dir>battle</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>ChooseRollReqArg</Arg>
+    <Res>ChooseRollReqRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>PayFirstAward</Name>
+    <ProtoType>46058</ProtoType>
+    <Dir>pay</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>PayFirstAwardArg</Arg>
+    <Res>PayFirstAwardRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GrowthFundAward</Name>
+    <ProtoType>43548</ProtoType>
+    <Dir>pay</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>GrowthFundAwardArg</Arg>
+    <Res>GrowthFundAwardRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>BuyVipLevelGift</Name>
+    <ProtoType>52536</ProtoType>
+    <Dir>pay</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>BuyVipLevelGiftArg</Arg>
+    <Res>BuyVipLevelGiftRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>TitleLevelUp</Name>
+    <ProtoType>24381</ProtoType>
+    <Dir>title</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>TitleLevelUpArg</Arg>
+    <Res>TitleLevelUpRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>FirstPassInfoReq</Name>
+    <ProtoType>4147</ProtoType>
+    <Dir>firstpass</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>FirstPassInfoReqArg</Arg>
+    <Res>FirstPassInfoReqRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetFirstPassReward</Name>
+    <ProtoType>12301</ProtoType>
+    <Dir>firstpass</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>GetFirstPassRewardArg</Arg>
+    <Res>GetFirstPassRewardRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>CommendFirstPass</Name>
+    <ProtoType>8467</ProtoType>
+    <Dir>firstpass</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>CommendFirstPassArg</Arg>
+    <Res>CommendFirstPassRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>MSCommendFirstPass</Name>
+    <ProtoType>54283</ProtoType>
+    <Dir>firstpass</Dir>
+    <timeout>5000</timeout>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>MSCommendFirstPassArg</Arg>
+    <Res>MSCommendFirstPassRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>FirstPassGetTopRoleInfo</Name>
+    <ProtoType>37076</ProtoType>
+    <Dir>firstpass</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>FirstPassGetTopRoleInfoArg</Arg>
+    <Res>FirstPassGetTopRoleInfoRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetRankInfo</Name>
+    <ProtoType>4357</ProtoType>
+    <Dir>firstpass</Dir>
+    <timeout>5000</timeout>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GetRankInfoArg</Arg>
+    <Res>GetRankInfoRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>PvpAllG2MReq</Name>
+    <ProtoType>25752</ProtoType>
+    <Dir>pvp</Dir>
+    <timeout>5000</timeout>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>PvpG2MArg</Arg>
+    <Res>PvpG2MRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ClientQueryRankListNtf</Name>
+    <ProtoType>39913</ProtoType>
+    <Dir>ranklist</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>ClientQueryRankListArg</Arg>
+    <Res>ClientQueryRankListRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GMCommandG2M</Name>
+    <ProtoType>25293</ProtoType>
+    <Dir>common</Dir>
+    <timeout>5000</timeout>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GMCmdg2mArg</Arg>
+    <Res>GMCmdg2mRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>MSUseSummaryReq</Name>
+    <ProtoType>20767</ProtoType>
+    <Dir>team</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>MSRobotSumamryArg</Arg>
+    <Res>MSRobotSumamryRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>TeamChangeExpCheck</Name>
+    <ProtoType>39450</ProtoType>
+    <Dir>team</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>TeamChangeExpArg</Arg>
+    <Res>TeamChangeExpRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>UpdateMSRankList</Name>
+    <ProtoType>33753</ProtoType>
+    <Dir>ranklist</Dir>
+    <timeout>5000</timeout>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>UpdateMSRankListArg</Arg>
+    <Res>UpdateMSRankListRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>AddFriendNew</Name>
+    <ProtoType>5634</ProtoType>
+    <Dir>friend</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>AddFriendArg</Arg>
+    <Res>AddFriendRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>PkRankReq</Name>
+    <ProtoType>56003</ProtoType>
+    <Dir>pk</Dir>
+    <timeout>5000</timeout>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>QMHRPkArg</Arg>
+    <Res>QMHRPkRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GMToolCommand2Ms</Name>
+    <ProtoType>20856</ProtoType>
+    <Dir>common</Dir>
+    <timeout>120000</timeout>
+    <From>OGM Tool[GM 工具]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GMToolCommandArg</Arg>
+    <Res>GMToolCommandRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GMToolCommand2Login</Name>
+    <ProtoType>63875</ProtoType>
+    <Dir>common</Dir>
+    <timeout>120000</timeout>
+    <From>OGM Tool[GM 工具]</From>
+    <To>ILogin Server[登录]</To>
+    <Arg>GMToolCommandArg</Arg>
+    <Res>GMToolCommandRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>PkReqC2M</Name>
+    <ProtoType>41221</ProtoType>
+    <Dir>pk</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>PkReqArg</Arg>
+    <Res>PkReqRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>PkReqM2G</Name>
+    <ProtoType>14445</ProtoType>
+    <Dir>pk</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>PkReqM2GArg</Arg>
+    <Res>PkReqM2GRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ClearPrivateChatList</Name>
+    <ProtoType>27304</ProtoType>
+    <Dir>chat</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>ClearPrivateChatListArg</Arg>
+    <Res>ClearPrivateChatListRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>AskGuildBriefInfo</Name>
+    <ProtoType>53355</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GuildBriefArg</Arg>
+    <Res>GuildBriefRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>CreateOrEnterGuild</Name>
+    <ProtoType>13871</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>CreateOrJoinGuild</Arg>
+    <Res>CreateOrJoinGuildRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>CreateGuildCost</Name>
+    <ProtoType>12393</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>CreateGuildCostArg</Arg>
+    <Res>CreateGuildCostRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>LeaveFromGuild</Name>
+    <ProtoType>2565</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>LeaveGuildArg</Arg>
+    <Res>LeaveGuildRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>AuctionAllReq</Name>
+    <ProtoType>38875</ProtoType>
+    <Dir>auction</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>AuctionAllReqArg</Arg>
+    <Res>AuctionAllReqRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>AuctionAllM2GReq</Name>
+    <ProtoType>33345</ProtoType>
+    <Dir>auction</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>AuctionReqM2GArg</Arg>
+    <Res>AuctionReqM2GRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>EnterGuildPower</Name>
+    <ProtoType>63349</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>EnterGuildPowerArg</Arg>
+    <Res>EnterGuildPowerRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ChangeOutLookOp</Name>
+    <ProtoType>56978</ProtoType>
+    <Dir>role</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>ChangeOutLookOpArg</Arg>
+    <Res>ChangeOutLookOpRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ItemFindBackInfo</Name>
+    <ProtoType>11755</ProtoType>
+    <Dir>findback</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>ItemFindBackInfoArg</Arg>
+    <Res>ItemFindBackInfoRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ItemFindBack</Name>
+    <ProtoType>60242</ProtoType>
+    <Dir>findback</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>ItemFindBackArg</Arg>
+    <Res>ItemFindBackRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ReqGuildList</Name>
+    <ProtoType>46835</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>FetchGuildListArg</Arg>
+    <Res>FetchGuildListRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ActivatAtlas</Name>
+    <ProtoType>15919</ProtoType>
+    <Dir>atlas</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>ActivatAtlasArg</Arg>
+    <Res>ActivatAtlasRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>AutoBreakAtlas</Name>
+    <ProtoType>23263</ProtoType>
+    <Dir>atlas</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>AutoBreakAtlasArg</Arg>
+    <Res>AutoBreakAtlasRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>breakAtlas</Name>
+    <ProtoType>13728</ProtoType>
+    <Dir>atlas</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>breakAtlas</Arg>
+    <Res>breakAtlasRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>BuyIBItem</Name>
+    <ProtoType>11547</ProtoType>
+    <Dir>ibshop</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>IBBuyItemReq</Arg>
+    <Res>IBBuyItemRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>QueryIBItem</Name>
+    <ProtoType>23880</ProtoType>
+    <Dir>ibshop</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>IBQueryItemReq</Arg>
+    <Res>IBQueryItemRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>SpriteOperation</Name>
+    <ProtoType>62961</ProtoType>
+    <Dir>sprite</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>SpriteOperationArg</Arg>
+    <Res>SpriteOperationRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>DEProgressReq</Name>
+    <ProtoType>5238</ProtoType>
+    <Dir>scene</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>DEProgressArg</Arg>
+    <Res>DEProgressRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>DERankReq</Name>
+    <ProtoType>16406</ProtoType>
+    <Dir>scene</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>DERankArg</Arg>
+    <Res>DERankRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>WorldBossEnd</Name>
+    <ProtoType>53655</ProtoType>
+    <Dir>worldboss</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>WorldBossEndArg</Arg>
+    <Res>WorldBossEndRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetRiskMapInfos</Name>
+    <ProtoType>11628</ProtoType>
+    <Dir>superrisk</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>GetRiskMapInfosArg</Arg>
+    <Res>GetRiskMapInfosRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>PlayDiceRequest</Name>
+    <ProtoType>51246</ProtoType>
+    <Dir>superrisk</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>PlayDiceRequestArg</Arg>
+    <Res>PlayDiceRequestRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ChangeRiskBoxState</Name>
+    <ProtoType>4472</ProtoType>
+    <Dir>superrisk</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>ChangeRiskBoxStateArg</Arg>
+    <Res>ChangeRiskBoxStateRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ReEnterRiskBattle</Name>
+    <ProtoType>1615</ProtoType>
+    <Dir>superrisk</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>ReEnterRiskBattleArg</Arg>
+    <Res>ReEnterRiskBattleRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ReqGuildBossInfo</Name>
+    <ProtoType>38917</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>AskGuildBossInfoArg</Arg>
+    <Res>AskGuildBossInfoRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>LevelSealExchange</Name>
+    <ProtoType>65467</ProtoType>
+    <Dir>levelseal</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>LevelSealExchangeArg</Arg>
+    <Res>LevelSealExchangeRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>AskGuildMembers</Name>
+    <ProtoType>57958</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GuildMemberArg</Arg>
+    <Res>GuildMemberRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>PlayDiceOver</Name>
+    <ProtoType>15035</ProtoType>
+    <Dir>superrisk</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>PlayDiceOverArg</Arg>
+    <Res>PlayDiceOverRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>AskGuildSkillInfoNew</Name>
+    <ProtoType>35479</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>AskGuildSkillInfoArg</Arg>
+    <Res>AskGuildSkillInfoReq</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>StudyGuildSkillNew</Name>
+    <ProtoType>45669</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>StudyGuildSkillArg</Arg>
+    <Res>StudyGuildSkillRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>OpGuildReqData</Name>
+    <ProtoType>53332</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>OpGuildReqDataArg</Arg>
+    <Res>OpGuildReqDataRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>RiskBuyRequest</Name>
+    <ProtoType>42935</ProtoType>
+    <Dir>superrisk</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>RiskBuyRequestArg</Arg>
+    <Res>RiskBuyRequestRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>SmeltItem</Name>
+    <ProtoType>10028</ProtoType>
+    <Dir>smelt</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>SmeltItemArg</Arg>
+    <Res>SmeltItemRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>StartArenaGs</Name>
+    <ProtoType>1972</ProtoType>
+    <Dir>arena</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>StartArenaGsArg</Arg>
+    <Res>StartArenaGsRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>RefreshSweepReward</Name>
+    <ProtoType>38012</ProtoType>
+    <Dir>activity</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>RefreshSweepRewardArg</Arg>
+    <Res>RefreshSweepRewardRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetSweepTowerReward</Name>
+    <ProtoType>23703</ProtoType>
+    <Dir>activity</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>GetSweepTowerRewardArg</Arg>
+    <Res>GetSweepTowerRewardRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ReqGuildDareRewardRec</Name>
+    <ProtoType>1896</ProtoType>
+    <Dir>role</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>ReqGuildDareRewardRecArg</Arg>
+    <Res>ReqGuildDareRewardRecRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>CheckGuildDareReward</Name>
+    <ProtoType>65431</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>CheckGuildDareRewardArg</Arg>
+    <Res>CheckGuildDareRewardRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>LearnGuildSkill</Name>
+    <ProtoType>62806</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>LearnGuildSkillAgr</Arg>
+    <Res>LearnGuildSkillRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>EndAreanMs</Name>
+    <ProtoType>23525</ProtoType>
+    <Dir>arena</Dir>
+    <timeout>5000</timeout>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>EndAreanMsArg</Arg>
+    <Res>EndAreanMsRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ReqRoleGuildSkill</Name>
+    <ProtoType>43832</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>ReqRoleGuildSkillArg</Arg>
+    <Res>ReqRoleGuildSkillRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>MTShowTopList</Name>
+    <ProtoType>10166</ProtoType>
+    <Dir>ranklist</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>TShowTopListArg</Arg>
+    <Res>TShowTopListRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>getguildbosstimeleft</Name>
+    <ProtoType>25923</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>getguildbosstimeleftArg</Arg>
+    <Res>getguildbosstimeleftRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>FetchGuildApp</Name>
+    <ProtoType>3668</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>FetchGAPPArg</Arg>
+    <Res>FetchGAPPRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GuildApprovalNew</Name>
+    <ProtoType>28348</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GuildApprovalArg</Arg>
+    <Res>GuildApprovalRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>MGuildBonusOperateReq</Name>
+    <ProtoType>56113</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>MGuildBonusOperateReqArg</Arg>
+    <Res>MGuildBonusOperateReqRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ChangeGuildSettingNew</Name>
+    <ProtoType>55897</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>ChangeGuildSettingArg</Arg>
+    <Res>ChangeGuildSettingRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>QuerySceneTime</Name>
+    <ProtoType>39595</ProtoType>
+    <Dir>scene</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>QuerySceneTimeArg</Arg>
+    <Res>QuerySceneTimeRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ReqGuildActivity</Name>
+    <ProtoType>35709</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>ReqGuildActivityAgr</Arg>
+    <Res>ReqGuildActivityRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetGuildCheckinRecordsNew</Name>
+    <ProtoType>16239</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GetGuildCheckinRecordsArg</Arg>
+    <Res>GetGuildCheckinRecordsRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GuildCheckinNew</Name>
+    <ProtoType>5584</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GuildCheckinArg</Arg>
+    <Res>GuildCheckinRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>QueryGuildCheckinNew</Name>
+    <ProtoType>56433</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>QueryGuildCheckinArg</Arg>
+    <Res>QueryGuildCheckinRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ReqGuildCheckin</Name>
+    <ProtoType>59822</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>ReqGuildCheckinArg</Arg>
+    <Res>ReqGuildCheckinRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>NoticeGuildCheckin</Name>
+    <ProtoType>12454</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>NoticeGuildCheckinArg</Arg>
+    <Res>NoticeGuildCheckinRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>NotifyCheckinBox</Name>
+    <ProtoType>23321</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>NotifyCheckinBoxArg</Arg>
+    <Res>NotifyCheckinBoxRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GuildCardSyncMs</Name>
+    <ProtoType>24005</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GuildCardSyncMsArg</Arg>
+    <Res>GuildCardSyncMsRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetTowerFirstPassReward</Name>
+    <ProtoType>55009</ProtoType>
+    <Dir>activity</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>GetTowerFirstPassRewardArg</Arg>
+    <Res>GetTowerFirstPassRewardRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ReqRecvFatigue</Name>
+    <ProtoType>46479</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>ReqRecvFatigueArg</Arg>
+    <Res>ReqRecvFatigueRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GuildFatigueOPNew</Name>
+    <ProtoType>10226</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GuildFatigueArg</Arg>
+    <Res>GuildFatigueRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>FetchGuildHistoryNew</Name>
+    <ProtoType>26284</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GuildHistoryArg</Arg>
+    <Res>GuildHistoryRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ChangeMemberPositionNew</Name>
+    <ProtoType>13625</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>ChangeGuildPositionArg</Arg>
+    <Res>ChangeGuildPositionRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>DesignationEventReq</Name>
+    <ProtoType>63158</ProtoType>
+    <Dir>designation</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>DesignationEventReq</Arg>
+    <Res>DesignationEventRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetOtherGuildBriefNew</Name>
+    <ProtoType>16797</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GetOtherGuildBriefArg</Arg>
+    <Res>GetOtherGuildBriefRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>AskGuildArenaInfoNew</Name>
+    <ProtoType>24504</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>AskGuildArenaInfoArg</Arg>
+    <Res>AskGuildArenaInfoReq</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>AskGuildArenaTeamInfoNew</Name>
+    <ProtoType>2181</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>AskGuildArenaTeamInfoArg</Arg>
+    <Res>AskGuildArenaTeamInfoRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>AdjustGuildArenaRolePosNew</Name>
+    <ProtoType>57124</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>AdjustGuildArenaRolePosArg</Arg>
+    <Res>AdjustGuildArenaRolePosRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GuildArenaSimpleDeployNew</Name>
+    <ProtoType>42310</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GuildArenaSimpleDeployArg</Arg>
+    <Res>GuildArenaSimpleDeployRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>DbReload</Name>
+    <ProtoType>15224</ProtoType>
+    <Dir>common</Dir>
+    <timeout>30000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Db Server [数据库]</To>
+    <Arg>GMToolCommandArg</Arg>
+    <Res>GMToolCommandRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GsReload</Name>
+    <ProtoType>53060</ProtoType>
+    <Dir>common</Dir>
+    <timeout>30000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>GMToolCommandArg</Arg>
+    <Res>GMToolCommandRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ReqGuildLadderReward</Name>
+    <ProtoType>21840</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>ReqGuildLadderRewardArg</Arg>
+    <Res>ReqGuildLadderRewardRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ReqGuildLadderInfo</Name>
+    <ProtoType>44006</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>ReqGuildLadderInfoAgr</Arg>
+    <Res>ReqGuildLadderInfoRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ReqGuildLadderRnakInfo</Name>
+    <ProtoType>39925</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>ReqGuildLadderRnakInfoArg</Arg>
+    <Res>ReqGuildLadderRnakInfoRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>StartPlant</Name>
+    <ProtoType>2834</ProtoType>
+    <Dir>garden</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>StartPlantArg</Arg>
+    <Res>StartPlantRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>FetchPlantInfo</Name>
+    <ProtoType>19949</ProtoType>
+    <Dir>garden</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>FetchPlantInfoArg</Arg>
+    <Res>FetchPlantInfoRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>PlantCultivation</Name>
+    <ProtoType>61295</ProtoType>
+    <Dir>garden</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>PlantCultivationArg</Arg>
+    <Res>PlantCultivationRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>PlantHarvest</Name>
+    <ProtoType>39568</ProtoType>
+    <Dir>garden</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>PlantHarvestArg</Arg>
+    <Res>PlantHarvestRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>TryFish</Name>
+    <ProtoType>7028</ProtoType>
+    <Dir>garden</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>TryFishArg</Arg>
+    <Res>TryFishRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>MSConsumeItems</Name>
+    <ProtoType>26525</ProtoType>
+    <Dir>common</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>ConsumeItemsArg</Arg>
+    <Res>ConsumeItemsRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>FriendGardenPlantLog</Name>
+    <ProtoType>33646</ProtoType>
+    <Dir>garden</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>FriendGardenPlantLogArg</Arg>
+    <Res>FriendGardenPlantLogRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GardenCookingFood</Name>
+    <ProtoType>31406</ProtoType>
+    <Dir>garden</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GardenCookingFoodArg</Arg>
+    <Res>GardenCookingFoodRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>SkyCityEnter</Name>
+    <ProtoType>49485</ProtoType>
+    <Dir>skycity</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>SkyCityEnterArg</Arg>
+    <Res>SkyCityEnterRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GmfReadyReq</Name>
+    <ProtoType>12219</ProtoType>
+    <Dir>scene</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>GmfReadyArg</Arg>
+    <Res>GmfReadyRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>InspireReq</Name>
+    <ProtoType>54147</ProtoType>
+    <Dir>battle</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>InspireArg</Arg>
+    <Res>InspireRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ReqGuildBossTimeLeft</Name>
+    <ProtoType>24494</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>getguildbosstimeleftArg</Arg>
+    <Res>getguildbosstimeleftRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>SkyCityAllInfoReq</Name>
+    <ProtoType>29365</ProtoType>
+    <Dir>scene</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>SkyCityArg</Arg>
+    <Res>SkyCityRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>EnterQARoom</Name>
+    <ProtoType>15015</ProtoType>
+    <Dir>qa</Dir>
+    <timeout>5000</timeout>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>EnterQARoomReq</Arg>
+    <Res>EnterQARoomRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>CreateGuildQARoom</Name>
+    <ProtoType>25711</ProtoType>
+    <Dir>qa</Dir>
+    <timeout>5000</timeout>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>CreateGuildQARoomReq</Arg>
+    <Res>CreateGuildQARoomRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ReqGuildRankInfo</Name>
+    <ProtoType>48521</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>ReqGuildRankInfoArg</Arg>
+    <Res>ReqGuildRankInfoRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetGuildBindInfo</Name>
+    <ProtoType>62512</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GetGuildBindInfoReq</Arg>
+    <Res>GetGuildBindInfoRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GuildBindGroup</Name>
+    <ProtoType>16003</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GuildBindGroupReq</Arg>
+    <Res>GuildBindGroupRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GuildJoinBindGroup</Name>
+    <ProtoType>12928</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GuildJoinBindGroupReq</Arg>
+    <Res>GuildJoinBindGroupRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GuildUnBindGroup</Name>
+    <ProtoType>28516</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GuildUnBindGroupReq</Arg>
+    <Res>GuildUnBindGroupRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>gmfjoinreq</Name>
+    <ProtoType>37651</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>gmfjoinarg</Arg>
+    <Res>gmfjoinres</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetSpActivityReward</Name>
+    <ProtoType>7905</ProtoType>
+    <Dir>spactivity</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>GetSpActivityRewardArg</Arg>
+    <Res>GetSpActivityRewardRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetSpActivityBigPrize</Name>
+    <ProtoType>17229</ProtoType>
+    <Dir>spactivity</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>GetSpActivityBigPrizeArg</Arg>
+    <Res>GetSpActivityBigPrizeRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GardenBanquet</Name>
+    <ProtoType>22527</ProtoType>
+    <Dir>garden</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GardenBanquetArg</Arg>
+    <Res>GardenBanquetRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GardenPlayEvent</Name>
+    <ProtoType>18525</ProtoType>
+    <Dir>garden</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>GardenPlayEventArg</Arg>
+    <Res>GardenPlayEventRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GardenOverview</Name>
+    <ProtoType>20766</ProtoType>
+    <Dir>garden</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GardenOverviewArg</Arg>
+    <Res>GardenOverviewRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GardenPlantChangeStage</Name>
+    <ProtoType>55281</ProtoType>
+    <Dir>garden</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>GardenPlantChangeStageArg</Arg>
+    <Res>GardenPlantChangeStageRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetGuildLadderRewardTime</Name>
+    <ProtoType>3560</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>GetGuildLadderRewardTimeArg</Arg>
+    <Res>GetGuildLadderRewardTimeRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ReconnectGs</Name>
+    <ProtoType>20847</ProtoType>
+    <Dir>login</Dir>
+    <timeout>5000</timeout>
+    <From>TGate Server [网关]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>ReconnectGsArg</Arg>
+    <Res>ReconnectGsRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetLevelSealSelfGift</Name>
+    <ProtoType>61903</ProtoType>
+    <Dir>levelseal</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>GetLevelSealSealGiftArg</Arg>
+    <Res>GetLevelSealSelfGiftRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GardenBanquetAward</Name>
+    <ProtoType>1091</ProtoType>
+    <Dir>garden</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>BanquetAwardArg</Arg>
+    <Res>BanquetAwardRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ActiveCookbook</Name>
+    <ProtoType>31076</ProtoType>
+    <Dir>garden</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>ActiveCookbookArg</Arg>
+    <Res>ActiveCookbookRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GardenFishInfo</Name>
+    <ProtoType>10768</ProtoType>
+    <Dir>garden</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GardenFishInfoArg</Arg>
+    <Res>GardenFishInfoRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>PayNotify</Name>
+    <ProtoType>32125</ProtoType>
+    <Dir>pay</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>PayNotifyArg</Arg>
+    <Res>PayNotifyRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GardenSteal</Name>
+    <ProtoType>12696</ProtoType>
+    <Dir>garden</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GardenStealArg</Arg>
+    <Res>GardenStealRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GardenExpelSprite</Name>
+    <ProtoType>3250</ProtoType>
+    <Dir>garden</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GardenExpelSpriteArg</Arg>
+    <Res>GardenExpelSpriteRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ReqPlatFriendRankList</Name>
+    <ProtoType>43806</ProtoType>
+    <Dir>platfriend</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>ReqPlatFriendRankListArg</Arg>
+    <Res>ReqPlatFriendRankListRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>M2SReqPlatUserInfo</Name>
+    <ProtoType>64184</ProtoType>
+    <Dir>platfriend</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>SCenter Server[中心服务器]</To>
+    <Arg>M2SReqPlatUserInfoArg</Arg>
+    <Res>M2SReqPlatUserInfoRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>M2SLoginAndoutSync</Name>
+    <ProtoType>9003</ProtoType>
+    <Dir>platfriend</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>SCenter Server[中心服务器]</To>
+    <Arg>M2SLoginAndoutSyncArg</Arg>
+    <Res>M2SLoginAndoutSyncRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>M2SSendGift2PlatFriend</Name>
+    <ProtoType>48281</ProtoType>
+    <Dir>platfriend</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>SCenter Server[中心服务器]</To>
+    <Arg>M2SSendGift2PlatFriendArg</Arg>
+    <Res>M2SSendGift2PlatFriendRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>S2MSendGift2PlatFriend</Name>
+    <ProtoType>23021</ProtoType>
+    <Dir>platfriend</Dir>
+    <timeout>5000</timeout>
+    <From>SCenter Server[中心服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>S2MSendGift2PlatFriendArg</Arg>
+    <Res>S2MSendGift2PlatFriendRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>SendGift2PlatFriend</Name>
+    <ProtoType>57764</ProtoType>
+    <Dir>platfriend</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>SendGift2PlatFriendArg</Arg>
+    <Res>SendGift2PlatFriendRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>QueryRoleCardMatch</Name>
+    <ProtoType>42441</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>QueryRoleCardMatchArg</Arg>
+    <Res>QueryRoleCardMatchRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>AskGuildWageInfo</Name>
+    <ProtoType>17779</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>AskGuildWageInfoArg</Arg>
+    <Res>AskGuildWageInfoRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetGuildWageReward</Name>
+    <ProtoType>50133</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GetGuildWageRewardArg</Arg>
+    <Res>GetGuildWageReward</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>OPenGardenFarmland</Name>
+    <ProtoType>42589</ProtoType>
+    <Dir>garden</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>OpenGardenFarmlandArg</Arg>
+    <Res>OpenGardenFarmlandRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>RegisterMs2Router</Name>
+    <ProtoType>24423</ProtoType>
+    <Dir>common</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Router Server[转发服务器]</To>
+    <Arg>RegisterMs2RouterArg</Arg>
+    <Res>RegisterMs2RouterRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>RegisterGt2Router</Name>
+    <ProtoType>7359</ProtoType>
+    <Dir>common</Dir>
+    <timeout>5000</timeout>
+    <From>TGate Server [网关]</From>
+    <To>Router Server[转发服务器]</To>
+    <Arg>RegisterGt2RouterArg</Arg>
+    <Res>RegisterGt2RouterRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>RegisterRouter2World</Name>
+    <ProtoType>10474</ProtoType>
+    <Dir>common</Dir>
+    <timeout>5000</timeout>
+    <From>Router Server[转发服务器]</From>
+    <To>KWorld Server[跨服玩法服务器]</To>
+    <Arg>RegisterRouter2WorldArg</Arg>
+    <Res>RegisterRouter2WorldRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>RegisterGs2Router</Name>
+    <ProtoType>16574</ProtoType>
+    <Dir>common</Dir>
+    <timeout>5000</timeout>
+    <From>Game Server [游戏服务器]</From>
+    <To>Router Server[转发服务器]</To>
+    <Arg>RegisterGs2RouterArg</Arg>
+    <Res>RegisterGs2RouterRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>RegisterGs2World</Name>
+    <ProtoType>43007</ProtoType>
+    <Dir>common</Dir>
+    <timeout>5000</timeout>
+    <From>Game Server [游戏服务器]</From>
+    <To>KWorld Server[跨服玩法服务器]</To>
+    <Arg>RegisterGs2WorldArg</Arg>
+    <Res>RegisterGs2WorldRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>RegisterMs2World</Name>
+    <ProtoType>11622</ProtoType>
+    <Dir>common</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>KWorld Server[跨服玩法服务器]</To>
+    <Arg>RegisterMs2WorldArg</Arg>
+    <Res>RegisterMs2WorldRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ResWarExplore</Name>
+    <ProtoType>33965</ProtoType>
+    <Dir>reswar</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>ResWarExploreArg</Arg>
+    <Res>ResWarExploreRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>QueryResWar</Name>
+    <ProtoType>41509</ProtoType>
+    <Dir>reswar</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>QueryResWarArg</Arg>
+    <Res>QueryResWarRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetSceneInfo</Name>
+    <ProtoType>28161</ProtoType>
+    <Dir>crossscene</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>KWorld Server[跨服玩法服务器]</To>
+    <Arg>GetSceneInfoArg</Arg>
+    <Res>GetSceneInfoRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>CreateBattleCross</Name>
+    <ProtoType>53349</ProtoType>
+    <Dir>battle</Dir>
+    <timeout>5000</timeout>
+    <From>KWorld Server[跨服玩法服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>CreateBattleCrossArg</Arg>
+    <Res>CreateBattleCrossRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GoldClick</Name>
+    <ProtoType>12917</ProtoType>
+    <Dir>lottery</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>GoldClickArg</Arg>
+    <Res>GoldClickRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>RegisterGt2Ns</Name>
+    <ProtoType>48374</ProtoType>
+    <Dir>common</Dir>
+    <timeout>100000</timeout>
+    <From>TGate Server [网关]</From>
+    <To>NControl Server[控制服务器]</To>
+    <Arg>RegisterGt2NsArg</Arg>
+    <Res>RegisterGt2NsRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>RegisterGs2Ns</Name>
+    <ProtoType>18862</ProtoType>
+    <Dir>common</Dir>
+    <timeout>100000</timeout>
+    <From>Game Server [游戏服务器]</From>
+    <To>NControl Server[控制服务器]</To>
+    <Arg>RegisterGs2NsArg</Arg>
+    <Res>RegisterGs2NsRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>LoginVerify</Name>
+    <ProtoType>42255</ProtoType>
+    <Dir>login</Dir>
+    <timeout>30000</timeout>
+    <From>NControl Server[控制服务器]</From>
+    <To>ILogin Server[登录]</To>
+    <Arg>LoginVerifyArg</Arg>
+    <Res>LoginVerifyRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>NsReadAccountData</Name>
+    <ProtoType>17926</ProtoType>
+    <Dir>login</Dir>
+    <timeout>50000</timeout>
+    <From>NControl Server[控制服务器]</From>
+    <To>Db Server [数据库]</To>
+    <Arg>ReadAccountDataArg</Arg>
+    <Res>ReadAccountDataRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>NsReadRoleData</Name>
+    <ProtoType>38912</ProtoType>
+    <Dir>role</Dir>
+    <timeout>50000</timeout>
+    <From>NControl Server[控制服务器]</From>
+    <To>Db Server [数据库]</To>
+    <Arg>ReadRoleDataArg</Arg>
+    <Res>ReadRoleDataRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>KickAccountFromMs</Name>
+    <ProtoType>32648</ProtoType>
+    <Dir>login</Dir>
+    <timeout>50000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>NControl Server[控制服务器]</To>
+    <Arg>KickAccountFromMsArg</Arg>
+    <Res>KickAccountFromMsRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ChangeSceneFromMs</Name>
+    <ProtoType>8214</ProtoType>
+    <Dir>scene</Dir>
+    <timeout>50000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>NControl Server[控制服务器]</To>
+    <Arg>ChangeSceneFromMsArg</Arg>
+    <Res>ChangeSceneFromMsRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GuildAuctReqAll</Name>
+    <ProtoType>41964</ProtoType>
+    <Dir>auction</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GuildAuctReqArg</Arg>
+    <Res>GuildAuctReqRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GiveMailPrize</Name>
+    <ProtoType>60134</ProtoType>
+    <Dir>mail</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>GiveMailPrizeArg</Arg>
+    <Res>GiveMailPrizeRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GuildAuctReqM2C</Name>
+    <ProtoType>10626</ProtoType>
+    <Dir>auction</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>GuildAuctReqM2GArg</Arg>
+    <Res>GuildAuctReqM2GRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetGuildBonusSendList</Name>
+    <ProtoType>59719</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GetGuildBonusSendListArg</Arg>
+    <Res>GetGuildBonusSendListRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>SendGuildBonusInSendList</Name>
+    <ProtoType>64498</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>SendGuildBonusInSendListArg</Arg>
+    <Res>SendGuildBonusInSendListRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>UseGuildBuff</Name>
+    <ProtoType>15817</ProtoType>
+    <Dir>reswar</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>UseGuildBuffArg</Arg>
+    <Res>UseGuildBuffRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ResWarAllInfoReqOne</Name>
+    <ProtoType>8828</ProtoType>
+    <Dir>reswar</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>ResWarArg</Arg>
+    <Res>ResWarRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>StartResWarPVE</Name>
+    <ProtoType>35398</ProtoType>
+    <Dir>reswar</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>ResWarPVEArg</Arg>
+    <Res>ResWarPVERes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>applyguildarena</Name>
+    <ProtoType>50879</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>applyguildarenaarg</Arg>
+    <Res>applyguildarenares</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>getapplyguildlist</Name>
+    <ProtoType>31771</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>getapplyguildlistarg</Arg>
+    <Res>getapplyguildlistres</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>getintegralbattleInfo</Name>
+    <ProtoType>27825</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>getintegralbattleInfoarg</Arg>
+    <Res>getintegralbattleInfores</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GuildAuctFailBack</Name>
+    <ProtoType>34324</ProtoType>
+    <Dir>auction</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>GuildAuctFailArg</Arg>
+    <Res>GuildAuctFailRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GSDesignationEventReq</Name>
+    <ProtoType>13009</ProtoType>
+    <Dir>designation</Dir>
+    <timeout>5000</timeout>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>DesignationEventReq</Arg>
+    <Res>DesignationEventRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetGuildIntegralInfo</Name>
+    <ProtoType>56762</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GetGuildIntegralInfoArg</Arg>
+    <Res>GetGuildIntegralInfoRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GuildCampInfo</Name>
+    <ProtoType>4221</ProtoType>
+    <Dir>guildcamp</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GuildCampInfoArg</Arg>
+    <Res>GuildCampInfoRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>RegisterCtrl2Router</Name>
+    <ProtoType>22908</ProtoType>
+    <Dir>common</Dir>
+    <timeout>5000</timeout>
+    <From>NControl Server[控制服务器]</From>
+    <To>Router Server[转发服务器]</To>
+    <Arg>RegisterCtrl2RouterArg</Arg>
+    <Res>RegisterCtrl2RouterRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>RegisterMs2Login</Name>
+    <ProtoType>21001</ProtoType>
+    <Dir>common</Dir>
+    <timeout>60000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>ILogin Server[登录]</To>
+    <Arg>RegisterMs2LoginArg</Arg>
+    <Res>RegisterMs2LoginRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>QueryResWarRoleRank</Name>
+    <ProtoType>27001</ProtoType>
+    <Dir>reswar</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>ResWarRoleRankArg</Arg>
+    <Res>ResWarRoleRankRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>CheckRoleName</Name>
+    <ProtoType>19417</ProtoType>
+    <Dir>role</Dir>
+    <timeout>30000</timeout>
+    <From>NControl Server[控制服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>CheckRoleNameArg</Arg>
+    <Res>CheckRoleNameRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>CheckRoleBanInfo</Name>
+    <ProtoType>23292</ProtoType>
+    <Dir>role</Dir>
+    <timeout>60000</timeout>
+    <From>NControl Server[控制服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>CheckRoleBanInfoArg</Arg>
+    <Res>CheckRoleBanInfoRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ItemBuffOp</Name>
+    <ProtoType>50404</ProtoType>
+    <Dir>item</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>ItemBuffOpArg</Arg>
+    <Res>ItemBuffOpRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ReqGuildArenaHistory</Name>
+    <ProtoType>2922</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>ReqGuildArenaHistoryRes</Arg>
+    <Res>ReqGuildArenaHistoryRse</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>JustDance</Name>
+    <ProtoType>43613</ProtoType>
+    <Dir>dance</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>JustDanceArg</Arg>
+    <Res>JustDanceRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetDailyTaskInfo</Name>
+    <ProtoType>52480</ProtoType>
+    <Dir>task</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>GetDailyTaskInfoArg</Arg>
+    <Res>GetDailyTaskInfoRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetDailyTaskReward</Name>
+    <ProtoType>59899</ProtoType>
+    <Dir>task</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>GetDailyTaskRewardArg</Arg>
+    <Res>GetDailyTaskRewardRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>DailyTaskAskHelp</Name>
+    <ProtoType>9236</ProtoType>
+    <Dir>task</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>DailyTaskAskHelpArg</Arg>
+    <Res>DailyTaskAskHelpRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>AskGuildHelp</Name>
+    <ProtoType>57320</ProtoType>
+    <Dir>task</Dir>
+    <timeout>5000</timeout>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>AskGuildHelpReq</Arg>
+    <Res>AskGuildHelpRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetGuildDonateInfo</Name>
+    <ProtoType>14656</ProtoType>
+    <Dir>task</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GetGuildDonateInfoArg</Arg>
+    <Res>GetGuildDonateInfoRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>DonateMemberItem</Name>
+    <ProtoType>4241</ProtoType>
+    <Dir>task</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>DonateMemberItemArg</Arg>
+    <Res>DonateMemberItemRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>CostDonateItem</Name>
+    <ProtoType>23761</ProtoType>
+    <Dir>task</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>CostDonateItemArg</Arg>
+    <Res>CostDonateItemRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>QueryDonateInfo</Name>
+    <ProtoType>56758</ProtoType>
+    <Dir>task</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>QueryDonateInfoArg</Arg>
+    <Res>QueryDonateInfoRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>NsReload</Name>
+    <ProtoType>36875</ProtoType>
+    <Dir>common</Dir>
+    <timeout>30000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>NControl Server[控制服务器]</To>
+    <Arg>GMToolCommandArg</Arg>
+    <Res>GMToolCommandRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>AddGuildInherit</Name>
+    <ProtoType>15845</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>AddGuildInheritArg</Arg>
+    <Res>AddGuildInheritRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>tryAddGuildInherit</Name>
+    <ProtoType>35002</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>tryAddGuildInheritArg</Arg>
+    <Res>tryAddGuildInheritRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>AceptGuildInherit</Name>
+    <ProtoType>35235</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>AceptGuildInheritArg</Arg>
+    <Res>AceptGuildInheritRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ReqGuildInheritInfo</Name>
+    <ProtoType>7131</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>ReqGuildInheritInfoArg</Arg>
+    <Res>ReqGuildInheritInfoRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>DelGuildInherit</Name>
+    <ProtoType>3671</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>DelGuildInheritArg</Arg>
+    <Res>DelGuildInheritRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetPlatNoticeInfo</Name>
+    <ProtoType>47300</ProtoType>
+    <Dir>gm</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>ILogin Server[登录]</To>
+    <Arg>GetPlatNoticeArg</Arg>
+    <Res>GetPlatNoticeRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>QueryQQVipInfo</Name>
+    <ProtoType>43943</ProtoType>
+    <Dir>qqvip</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>QueryQQVipInfoArg</Arg>
+    <Res>QueryQQVipInfoRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>DailyTaskGiveUp</Name>
+    <ProtoType>10546</ProtoType>
+    <Dir>task</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>DailyTaskGiveUpArg</Arg>
+    <Res>DailyTaskGiveUpRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>FetchPlatNotice</Name>
+    <ProtoType>60271</ProtoType>
+    <Dir>platnotice</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>FetchPlatNoticeArg</Arg>
+    <Res>FetchPlatNoticeRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>CrashRecoverM2G</Name>
+    <ProtoType>26149</ProtoType>
+    <Dir>common</Dir>
+    <timeout>30000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>CrashRecoverM2GArg</Arg>
+    <Res>CrashRecoverM2GRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>FetchRoleInfoOnMs</Name>
+    <ProtoType>47736</ProtoType>
+    <Dir>role</Dir>
+    <timeout>30000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>FetchRoleInfoOnMsArg</Arg>
+    <Res>FetchRoleInfoOnMsRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>JoinFmRoom</Name>
+    <ProtoType>25303</ProtoType>
+    <Dir>chat</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>JoinLargeRoomArg</Arg>
+    <Res>JoinLargeRoomRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>UPJoinFmRoom</Name>
+    <ProtoType>21052</ProtoType>
+    <Dir>chat</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>FM Server[语音直播服务器]</To>
+    <Arg>JoinLargeRoomArg</Arg>
+    <Res>JoinLargeRoomRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ResWarBuff</Name>
+    <ProtoType>17670</ProtoType>
+    <Dir>reswar</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>ResWarBuffArg</Arg>
+    <Res>ResWarBuffRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>TryTeamCostReward</Name>
+    <ProtoType>44102</ProtoType>
+    <Dir>team</Dir>
+    <timeout>5000</timeout>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>TryTeamCostReward</Arg>
+    <Res>TryTeamCostRewardRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ChangeNameNew</Name>
+    <ProtoType>46227</ProtoType>
+    <Dir>role</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>ChangeNameArg</Arg>
+    <Res>ChangeNameRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ChangeNameGs</Name>
+    <ProtoType>54716</ProtoType>
+    <Dir>role</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>ChangeNameGsArg</Arg>
+    <Res>ChangeNameGsRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>QueryQQFriendsVipInfo</Name>
+    <ProtoType>11531</ProtoType>
+    <Dir>qqvip</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>QueryQQFriendsVipInfoArg</Arg>
+    <Res>QueryQQFriendsVipInfoRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ReqGuildInheritTimes</Name>
+    <ProtoType>27870</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>ReqGuildInheritTimesArg</Arg>
+    <Res>ReqGuildInheritTimesRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>RegisterDb2Router</Name>
+    <ProtoType>46405</ProtoType>
+    <Dir>common</Dir>
+    <timeout>5000</timeout>
+    <From>Db Server [数据库]</From>
+    <To>Router Server[转发服务器]</To>
+    <Arg>RegisterDb2RouterArg</Arg>
+    <Res>RegisterDb2RouterRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>EnchantEquip</Name>
+    <ProtoType>55166</ProtoType>
+    <Dir>equip</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>EnchantEquipArg</Arg>
+    <Res>EnchantEquipRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>UpdatePartnerData</Name>
+    <ProtoType>6189</ProtoType>
+    <Dir>db</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Db Server [数据库]</To>
+    <Arg>UpdatePartnerDataArg</Arg>
+    <Res>UpdatePartnerDataRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>MakePartnerM2G</Name>
+    <ProtoType>27743</ProtoType>
+    <Dir>partner</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>MakePartnerM2GArg</Arg>
+    <Res>MakePartnerM2GRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetPartnerInfo</Name>
+    <ProtoType>61123</ProtoType>
+    <Dir>partner</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GetPartnerInfoArg</Arg>
+    <Res>GetPartnerInfoRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetOtherMentorStatus</Name>
+    <ProtoType>4896</ProtoType>
+    <Dir>mentorship</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GetOtherMentorStatusArg</Arg>
+    <Res>GetOtherMentorStatusRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetMyMentorInfo</Name>
+    <ProtoType>8287</ProtoType>
+    <Dir>mentorship</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GetMyMentorInfoArg</Arg>
+    <Res>GetMyMentorInfoRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetMyApplyStudentInfo</Name>
+    <ProtoType>28961</ProtoType>
+    <Dir>mentorship</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GetMyApplyStudentInfoArg</Arg>
+    <Res>GetMyApplyStudentInfoRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetMyApplyMasterInfo</Name>
+    <ProtoType>61902</ProtoType>
+    <Dir>mentorship</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GetMyApplyMasterInfoArg</Arg>
+    <Res>GetMyApplyMasterInfoRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>MentorMyBeAppliedMsg</Name>
+    <ProtoType>45205</ProtoType>
+    <Dir>mentorship</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>MentorMyBeAppliedMsgArg</Arg>
+    <Res>MentorMyBeAppliedMsgRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>UpdateMentorApplyStudentInfo</Name>
+    <ProtoType>55126</ProtoType>
+    <Dir>mentorship</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>UpdateMentorApplyStudentInfoArg</Arg>
+    <Res>UpdateMentorApplyStudentInfoRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>MentorRelationOp</Name>
+    <ProtoType>10644</ProtoType>
+    <Dir>mentorship</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>MentorRelationOpArg</Arg>
+    <Res>MentorRelationOpRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>TakePartnerChest</Name>
+    <ProtoType>42982</ProtoType>
+    <Dir>partner</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>TakePartnerChestArg</Arg>
+    <Res>TakePartnerChestRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetPartnerInfoG2M</Name>
+    <ProtoType>40918</ProtoType>
+    <Dir>partner</Dir>
+    <timeout>5000</timeout>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GetPartnerInfoG2MArg</Arg>
+    <Res>GetPartnerInfoG2MRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetPartnerRecordM2G</Name>
+    <ProtoType>9660</ProtoType>
+    <Dir>partner</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>GetPartnerRecordM2GArg</Arg>
+    <Res>GetPartnerRecordM2GRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetPartnerDetailInfo</Name>
+    <ProtoType>31275</ProtoType>
+    <Dir>partner</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GetPartnerDetailInfoArg</Arg>
+    <Res>GetPartnerDetailInfoRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetPartnerLiveness</Name>
+    <ProtoType>18784</ProtoType>
+    <Dir>partner</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GetPartnerLivenessArg</Arg>
+    <Res>GetPartnerLivenessRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>LeavePartner</Name>
+    <ProtoType>63769</ProtoType>
+    <Dir>partner</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>LeavePartnerArg</Arg>
+    <Res>LeavePartnerRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetHeroBattleInfo</Name>
+    <ProtoType>65206</ProtoType>
+    <Dir>herobattle</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>GetHeroBattleInfoArg</Arg>
+    <Res>GetHeroBattleInfoRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>CancelLeavePartner</Name>
+    <ProtoType>27794</ProtoType>
+    <Dir>partner</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>CancelLeavePartnerArg</Arg>
+    <Res>CancelLeavePartnerRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>InvFightReqAll</Name>
+    <ProtoType>56726</ProtoType>
+    <Dir>invfight</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>InvFightArg</Arg>
+    <Res>InvFightRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>HorseReConnect</Name>
+    <ProtoType>7786</ProtoType>
+    <Dir>horse</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>HorseReConnectArg</Arg>
+    <Res>HorseReConnectRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>PhotographEffect</Name>
+    <ProtoType>14666</ProtoType>
+    <Dir>photo</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>PhotographEffectArg</Arg>
+    <Res>PhotographEffect</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GCFCommonReq</Name>
+    <ProtoType>28945</ProtoType>
+    <Dir>guildcastle</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GCFCommonArg</Arg>
+    <Res>GCFCommonRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GCFReadysInfoReq</Name>
+    <ProtoType>19040</ProtoType>
+    <Dir>guildcastle</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GCFReadyInfoArg</Arg>
+    <Res>GCFReadyInfoRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetCharm</Name>
+    <ProtoType>6728</ProtoType>
+    <Dir>photo</Dir>
+    <timeout>5000</timeout>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GetCharmArg</Arg>
+    <Res>GetCharmRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>InvFightM2GReq</Name>
+    <ProtoType>53169</ProtoType>
+    <Dir>invfight</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>InvFightM2GArg</Arg>
+    <Res>InvFightM2GRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetPartnerShop</Name>
+    <ProtoType>46131</ProtoType>
+    <Dir>partner</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GetPartnerShopArg</Arg>
+    <Res>GetPartnerShopRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>BuyPartnerShopItem</Name>
+    <ProtoType>14493</ProtoType>
+    <Dir>partner</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>BuyPartnerShopItemArg</Arg>
+    <Res>BuyPartnerShopItemRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>BuyPartnerItemM2G</Name>
+    <ProtoType>60172</ProtoType>
+    <Dir>partner</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>BuyPartnerShopItemM2GArg</Arg>
+    <Res>BuyPartnerShopItemM2GRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>PokerTournamentSignUpCost</Name>
+    <ProtoType>64780</ProtoType>
+    <Dir>pokertournament</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>ConsumeItemsArg</Arg>
+    <Res>PokerTournamentSignUpCostRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ReqGuildTerrCityInfo</Name>
+    <ProtoType>47229</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>ReqGuildTerrCityInfoArg</Arg>
+    <Res>ReqGuildTerrCityInfo</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ReqGuildTerrChallInfo</Name>
+    <ProtoType>9791</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>ReqGuildTerrChallInfoArg</Arg>
+    <Res>ReqGuildTerrChallInfoRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ReqGuildTerrAllianceInfo</Name>
+    <ProtoType>63044</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>ReqGuildTerrAllianceInfoArg</Arg>
+    <Res>ReqGuildTerrAllianceInfoRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetPartnerShopRecord</Name>
+    <ProtoType>56970</ProtoType>
+    <Dir>partner</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GetPartnerShopRecordArg</Arg>
+    <Res>GetPartnerShopRecordRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>PandoraLottery</Name>
+    <ProtoType>12575</ProtoType>
+    <Dir>pandora</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>PandoraLotteryArg</Arg>
+    <Res>PandoraLotteryRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>AllianceGuildTerr</Name>
+    <ProtoType>10041</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>AllianceGuildTerrArg</Arg>
+    <Res>AllianceGuildTerrRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GCFFightInfoReqC2M</Name>
+    <ProtoType>42852</ProtoType>
+    <Dir>guildcastle</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GCFFightInfoArg</Arg>
+    <Res>GCFFightInfoRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>RecAlliance</Name>
+    <ProtoType>31937</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>RecAllianceArg</Arg>
+    <Res>RecAllianceRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>TryAlliance</Name>
+    <ProtoType>20216</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>TryAllianceArg</Arg>
+    <Res>TryAlliance</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>AudioAuthKey</Name>
+    <ProtoType>19391</ProtoType>
+    <Dir>audiotext</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Audio Server</To>
+    <Arg>AudioAuthKeyArg</Arg>
+    <Res>AudioAuthKeyRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>AudioText</Name>
+    <ProtoType>42254</ProtoType>
+    <Dir>audiotxt</Dir>
+    <timeout>30000</timeout>
+    <From>Client [客户端]</From>
+    <To>Audio Server</To>
+    <Arg>AudioTextArg</Arg>
+    <Res>AudioTextRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ClearGuildTerrAlliance</Name>
+    <ProtoType>38312</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>ClearGuildTerrAllianceArg</Arg>
+    <Res>ClearGuildTerrAllianceRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>QueryClientIp</Name>
+    <ProtoType>24918</ProtoType>
+    <Dir>chat</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>QueryClientIpArg</Arg>
+    <Res>QueryClientIpRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>SavePayAccessData</Name>
+    <ProtoType>46712</ProtoType>
+    <Dir>pay</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Db Server [数据库]</To>
+    <Arg>SavePayAccessArg</Arg>
+    <Res>SavePayAccessDataRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>SetHeroInHeroBattle</Name>
+    <ProtoType>18341</ProtoType>
+    <Dir>herobattle</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>SetHeroInHeroBattleArg</Arg>
+    <Res>SetHeroInHeroBattleRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>PayGetBalance</Name>
+    <ProtoType>10665</ProtoType>
+    <Dir>pay</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>PayGetBalanceArg</Arg>
+    <Res>PayGetBalanceRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>PayConsumeAddGoods</Name>
+    <ProtoType>49937</ProtoType>
+    <Dir>pay</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>PayConsumeAddgoodsArg</Arg>
+    <Res>PayConsumeAddGoodsRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetGuildBonusLeft</Name>
+    <ProtoType>9967</ProtoType>
+    <Dir>guildbonus</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>GetGuildBonusLeftArg</Arg>
+    <Res>GetGuildBonusLeftRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetUnitAppearanceNew</Name>
+    <ProtoType>40593</ProtoType>
+    <Dir>role</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GetUnitAppearanceArg</Arg>
+    <Res>GetUnitAppearanceRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetHeroBattleGameRecord</Name>
+    <ProtoType>41057</ProtoType>
+    <Dir>herobattle</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>GetHeroBattleGameRecordArg</Arg>
+    <Res>GetHeroBattleGameRecordRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>BuyHeroInHeroBattle</Name>
+    <ProtoType>7735</ProtoType>
+    <Dir>herobattle</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>BuyHeroInHeroBattleArg</Arg>
+    <Res>BuyHeroInHeroBattleRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetHeroBattleWeekReward</Name>
+    <ProtoType>63058</ProtoType>
+    <Dir>herobattle</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>GetHeroBattleWeekRewardArg</Arg>
+    <Res>GetHeroBattleWeekRewardRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GCFCommonReqM2G</Name>
+    <ProtoType>155</ProtoType>
+    <Dir>castle</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>GCFCommonArgM2G</Arg>
+    <Res>GCFCommonResM2G</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>SaveLeagueTeamData</Name>
+    <ProtoType>60667</ProtoType>
+    <Dir>db</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Db Server [数据库]</To>
+    <Arg>SaveLeagueTeamDataArg</Arg>
+    <Res>SaveLeagueTeamDataRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetLeagueBattleInfo</Name>
+    <ProtoType>29101</ProtoType>
+    <Dir>league</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GetLeagueBattleInfoArg</Arg>
+    <Res>GetLeagueBattleInfoRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetLeagueTeamInfo</Name>
+    <ProtoType>12488</ProtoType>
+    <Dir>league</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GetLeagueTeamInfoArg</Arg>
+    <Res>GetLeagueTeamInfoRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetGardenInfo</Name>
+    <ProtoType>40709</ProtoType>
+    <Dir>garden</Dir>
+    <timeout>5000</timeout>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GetGardenInfoArg</Arg>
+    <Res>GetGardenInfoRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>LeaveLeagueTeam</Name>
+    <ProtoType>47239</ProtoType>
+    <Dir>league</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>LeaveLeagueTeamArg</Arg>
+    <Res>LeaveLeagueTeamRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>LeagueBattleReq</Name>
+    <ProtoType>8012</ProtoType>
+    <Dir>league</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>LeagueBattleReqArg</Arg>
+    <Res>LeagueBattleReqRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>AtlasUpStar</Name>
+    <ProtoType>41051</ProtoType>
+    <Dir>atlas</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>AtlasUpStarArg</Arg>
+    <Res>AtlasUpStarRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>LeagueBattleReadyReq</Name>
+    <ProtoType>15873</ProtoType>
+    <Dir>leaguebattle</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>LeagueBattleReadyReqArg</Arg>
+    <Res>LeagueBattleReadyReqRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ForgeEquip</Name>
+    <ProtoType>58244</ProtoType>
+    <Dir>equip</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>ForgeEquipArg</Arg>
+    <Res>ForgeEquipRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetListSubscribe</Name>
+    <ProtoType>1403</ProtoType>
+    <Dir>subscribe</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GetListSubscribeArg</Arg>
+    <Res>GetListSubscribeRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>SetSubscribe</Name>
+    <ProtoType>40540</ProtoType>
+    <Dir>subscribe</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>SetSubscirbeArg</Arg>
+    <Res>SetSubscribeRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ChangeProfession</Name>
+    <ProtoType>48822</ProtoType>
+    <Dir>role</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>ChangeProfessionArg</Arg>
+    <Res>ChangeProfessionRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>LeagueRankUpdateG2M</Name>
+    <ProtoType>27612</ProtoType>
+    <Dir>leaguebattle</Dir>
+    <timeout>5000</timeout>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>LeagueRankUpdateG2MArg</Arg>
+    <Res>LeagueRankUpdateG2MRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ChangeProfessionMs</Name>
+    <ProtoType>47282</ProtoType>
+    <Dir>role</Dir>
+    <timeout>5000</timeout>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>ChangeProfessionMsArg</Arg>
+    <Res>ChangeProfessionMsRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ReadHiddenRoles</Name>
+    <ProtoType>7384</ProtoType>
+    <Dir>role</Dir>
+    <timeout>5000</timeout>
+    <From>Game Server [游戏服务器]</From>
+    <To>Db Server [数据库]</To>
+    <Arg>ReadHiddenRolesArg</Arg>
+    <Res>ReadHiddenRolesRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetHolidayStageInfo</Name>
+    <ProtoType>31093</ProtoType>
+    <Dir>holidaystage</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>GetHolidayStageInfoArg</Arg>
+    <Res>GetHolidayStageInfoRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetLeagueBattleRecord</Name>
+    <ProtoType>51407</ProtoType>
+    <Dir>league</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GetLeagueBattleRecordArg</Arg>
+    <Res>GetLeagueBattleRecordRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ItemSell</Name>
+    <ProtoType>34826</ProtoType>
+    <Dir>item</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>ItemSellArg</Arg>
+    <Res>ItemSellRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>EnchantTransfer</Name>
+    <ProtoType>54906</ProtoType>
+    <Dir>equip</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>EnchantTransferArg</Arg>
+    <Res>EnchantTransferRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetLeagueEleInfo</Name>
+    <ProtoType>40678</ProtoType>
+    <Dir>league</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GetLeagueEleInfoArg</Arg>
+    <Res>GetLeagueEleInfoRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>JoinLeagueEleBattle</Name>
+    <ProtoType>43053</ProtoType>
+    <Dir>league</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>JoinLeagueEleBattleArg</Arg>
+    <Res>JoinLeagueEleBattleRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>RegisterMS2CS</Name>
+    <ProtoType>41166</ProtoType>
+    <Dir>common</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>SCenter Server[中心服务器]</To>
+    <Arg>RegisterMSToCSData</Arg>
+    <Res>RegisterMSToCSDataRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>PersonalCareer</Name>
+    <ProtoType>64048</ProtoType>
+    <Dir>role</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>PersonalCareerArg</Arg>
+    <Res>PersonalCareerRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>PersonalCareerTotalInfo</Name>
+    <ProtoType>23353</ProtoType>
+    <Dir>role</Dir>
+    <timeout>5000</timeout>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>PersonalCareerTotalInfoArg</Arg>
+    <Res>PersonalCareerTotalInfoRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ChangeDeclaration</Name>
+    <ProtoType>1588</ProtoType>
+    <Dir>role</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>ChangeDeclarationArg</Arg>
+    <Res>ChangeDeclarationRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ClickNewNotice</Name>
+    <ProtoType>50366</ProtoType>
+    <Dir>platnotice</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>ClickNewNoticeArg</Arg>
+    <Res>ClickNewNoticeRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>LeagueReportTop2World</Name>
+    <ProtoType>41468</ProtoType>
+    <Dir>leaguebattle</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>KWorld Server[跨服玩法服务器]</To>
+    <Arg>LeagueReportTop2WorldArg</Arg>
+    <Res>LeagueReportTop2WorldRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>PkMatchToWorldReq</Name>
+    <ProtoType>65374</ProtoType>
+    <Dir>pk</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>KWorld Server[跨服玩法服务器]</To>
+    <Arg>PkMatchToWorldPara</Arg>
+    <Res>PkMatchToWorldRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetRoleSummaryFromMS</Name>
+    <ProtoType>35</ProtoType>
+    <Dir>common</Dir>
+    <timeout>5000</timeout>
+    <From>KWorld Server[跨服玩法服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GetRoleSummaryFromMSArg</Arg>
+    <Res>GetRoleSummaryFromMSRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ChangeSkillSet</Name>
+    <ProtoType>51116</ProtoType>
+    <Dir>skill</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>ChangeSkillSetArg</Arg>
+    <Res>ChangeSkillSetRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>LeagueRankUpdateG2K</Name>
+    <ProtoType>35073</ProtoType>
+    <Dir>leaguebattle</Dir>
+    <timeout>5000</timeout>
+    <From>Game Server [游戏服务器]</From>
+    <To>KWorld Server[跨服玩法服务器]</To>
+    <Arg>LeagueRankUpdateG2MArg</Arg>
+    <Res>LeagueRankUpdateG2MRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>CheckNotice</Name>
+    <ProtoType>21107</ProtoType>
+    <Dir>misc</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>CheckNoticeArg</Arg>
+    <Res>CheckNoticeRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>RegisterMs2Fm</Name>
+    <ProtoType>18662</ProtoType>
+    <Dir>common</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>FM Server[语音直播服务器]</To>
+    <Arg>RegisterMs2FmArg</Arg>
+    <Res>RegisterMs2FmRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GMCommandM2W</Name>
+    <ProtoType>3038</ProtoType>
+    <Dir>gm</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>KWorld Server[跨服玩法服务器]</To>
+    <Arg>GMCmdg2mArg</Arg>
+    <Res>GMCmdg2mRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GMToolCommand2Version</Name>
+    <ProtoType>34761</ProtoType>
+    <Dir>common</Dir>
+    <timeout>5000</timeout>
+    <From>OGM Tool[GM 工具]</From>
+    <To>VVersion Server[版本服务器]</To>
+    <Arg>GMToolCommandArg</Arg>
+    <Res>GMToolCommandRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetPayReward</Name>
+    <ProtoType>63038</ProtoType>
+    <Dir>pay</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>GetPayRewardArg</Arg>
+    <Res>GetPayRewardRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ReqGuildTerrIntellInfo</Name>
+    <ProtoType>43276</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>ReqGuildTerrIntellInfoArg</Arg>
+    <Res>ReqGuildTerrIntellInfoRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetMulActOpenInfo</Name>
+    <ProtoType>46515</ProtoType>
+    <Dir>activity</Dir>
+    <timeout>5000</timeout>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GetMulActOpenInfoArg</Arg>
+    <Res>GetMulActOpenInfoRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>gmtoolcommand2fm</Name>
+    <ProtoType>9934</ProtoType>
+    <Dir>common</Dir>
+    <timeout>5000</timeout>
+    <From>OGM Tool[GM 工具]</From>
+    <To>FM Server[语音直播服务器]</To>
+    <Arg>GMToolCommandArg</Arg>
+    <Res>GMToolCommandRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GMToolCommand2World</Name>
+    <ProtoType>48620</ProtoType>
+    <Dir>common</Dir>
+    <timeout>5000</timeout>
+    <From>OGM Tool[GM 工具]</From>
+    <To>KWorld Server[跨服玩法服务器]</To>
+    <Arg>GMToolCommandArg</Arg>
+    <Res>GMToolCommandRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>CrossGsReload</Name>
+    <ProtoType>42258</ProtoType>
+    <Dir>common</Dir>
+    <timeout>5000</timeout>
+    <From>KWorld Server[跨服玩法服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>GMToolCommandArg</Arg>
+    <Res>GMToolCommandRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetMilitaryRank</Name>
+    <ProtoType>8041</ProtoType>
+    <Dir>militaryrank</Dir>
+    <timeout>5000</timeout>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GetMilitaryRankArg</Arg>
+    <Res>GetMilitaryRankRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>PayFriendItem</Name>
+    <ProtoType>29289</ProtoType>
+    <Dir>pay</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>PayFriendItemArg</Arg>
+    <Res>PayFriendItemRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>UpPayFriendItem</Name>
+    <ProtoType>62866</ProtoType>
+    <Dir>pay</Dir>
+    <timeout>5000</timeout>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>UpPayFriendItemArg</Arg>
+    <Res>UpPayFriendItemRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>SyncActivityEnd2MS</Name>
+    <ProtoType>28521</ProtoType>
+    <Dir>spactivity</Dir>
+    <timeout>5000</timeout>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>SyncActivityEnd2MSArg</Arg>
+    <Res>SyncActivityEnd2MSRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ItemCompose</Name>
+    <ProtoType>16118</ProtoType>
+    <Dir>item</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>ItemComposeArg</Arg>
+    <Res>ItemComposeRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>MsSaveDBEnd</Name>
+    <ProtoType>21521</ProtoType>
+    <Dir>common</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Db Server [数据库]</To>
+    <Arg>MsSaveDBEndArg</Arg>
+    <Res>MsSaveDBEndRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>QueryRouter</Name>
+    <ProtoType>53350</ProtoType>
+    <Dir>common</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>KWorld Server[跨服玩法服务器]</To>
+    <Arg>QueryRouterArg</Arg>
+    <Res>QueryRouterRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>QueryRankListLua</Name>
+    <ProtoType>21331</ProtoType>
+    <Dir>ranklist</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>ClientQueryRankListArg</Arg>
+    <Res>ClientQueryRankListRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetBackFlowSpActTime</Name>
+    <ProtoType>29909</ProtoType>
+    <Dir>spactivity</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>GetBackFlowSpActTimeArg</Arg>
+    <Res>GetBackFlowSpActTimeRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>InvFightCross2CSReq</Name>
+    <ProtoType>60688</ProtoType>
+    <Dir>invfight</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>SCenter Server[中心服务器]</To>
+    <Arg>InvFightCross2CSReqArg</Arg>
+    <Res>InvFightCross2CSReqRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>InvFightCross2MSReq</Name>
+    <ProtoType>31830</ProtoType>
+    <Dir>invfight</Dir>
+    <timeout>5000</timeout>
+    <From>SCenter Server[中心服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>InvFightCross2MSReqArg</Arg>
+    <Res>InvFightCross2MSReqRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>CreateCrossBattleScene</Name>
+    <ProtoType>37652</ProtoType>
+    <Dir>scene</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>KWorld Server[跨服玩法服务器]</To>
+    <Arg>CreateCrossBattleSceneArg</Arg>
+    <Res>CreateCrossBattleSceneRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>NotifyEnterCrossBattle2MS</Name>
+    <ProtoType>49625</ProtoType>
+    <Dir>scene</Dir>
+    <timeout>5000</timeout>
+    <From>KWorld Server[跨服玩法服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>NotifyEnterCrossBattle2MSArg</Arg>
+    <Res>NotifyEnterCrossBattle2MSRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>WorldBossGuildAddAttr</Name>
+    <ProtoType>9805</ProtoType>
+    <Dir>worldboss</Dir>
+    <timeout>15000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>WorldBossGuildAddAttrArg</Arg>
+    <Res>WorldBossGuildAddAttrRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>WorldBossGuildAddAttrGs</Name>
+    <ProtoType>40178</ProtoType>
+    <Dir>worldboss</Dir>
+    <timeout>10000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>WorldBossGuildAddAttrGsArg</Arg>
+    <Res>WorldBossGuildAddAttrGsRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ArgentaActivity</Name>
+    <ProtoType>838</ProtoType>
+    <Dir>spactivity</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>ArgentaActivityArg</Arg>
+    <Res>ArgentaActivityRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ModifyMsGuildName</Name>
+    <ProtoType>21709</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>ModifyArg</Arg>
+    <Res>ModifyRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ModifyGsGuildName</Name>
+    <ProtoType>12672</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>ModifyFwArg</Arg>
+    <Res>ModifyFwRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetPlatformShareChest</Name>
+    <ProtoType>7875</ProtoType>
+    <Dir>lottery</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>GetPlatformShareChestArg</Arg>
+    <Res>GetPlatformShareChestRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>LoginActivity</Name>
+    <ProtoType>64167</ProtoType>
+    <Dir>loginactivity</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>LoginActivityArg</Arg>
+    <Res>LoginActivityRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetGrowthFundTime</Name>
+    <ProtoType>38694</ProtoType>
+    <Dir>pay</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>GetGrowthFundTimeArg</Arg>
+    <Res>GetGrowthFundTimeRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>QueryRolesummary</Name>
+    <ProtoType>32686</ProtoType>
+    <Dir>role</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Db Server [数据库]</To>
+    <Arg>QueryRolesummaryArg</Arg>
+    <Res>QueryRolesummaryRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>QueryGardenInfo</Name>
+    <ProtoType>12918</ProtoType>
+    <Dir>garden</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Db Server [数据库]</To>
+    <Arg>QueryGardenInfoArg</Arg>
+    <Res>QueryGardenInfoRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GiftIbItemReq</Name>
+    <ProtoType>6054</ProtoType>
+    <Dir>ibshop</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>GiftIbItemArg</Arg>
+    <Res>GiftIbItemRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>SaveGiftIbItem</Name>
+    <ProtoType>50211</ProtoType>
+    <Dir>pay</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Db Server [数据库]</To>
+    <Arg>GiftIbItemArg</Arg>
+    <Res>GiftIbItemRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ArenaStarRoleDataSave</Name>
+    <ProtoType>24822</ProtoType>
+    <Dir>arenastar</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Db Server [数据库]</To>
+    <Arg>ArenaStarDataSaveArg</Arg>
+    <Res>ArenaStarDataSaveRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ArenaStarRoleReq</Name>
+    <ProtoType>53598</ProtoType>
+    <Dir>arenastar</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>ArenaStarReqArg</Arg>
+    <Res>ArenaStarReqRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>SkyTeamData2DB</Name>
+    <ProtoType>37593</ProtoType>
+    <Dir>db</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Db Server [数据库]</To>
+    <Arg>SkyTeamData2DBArg</Arg>
+    <Res>SkyTeamData2DBRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>LeaveSkyTeam</Name>
+    <ProtoType>26181</ProtoType>
+    <Dir>skyteam</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>LeaveSkyTeamArg</Arg>
+    <Res>LeaveSkyTeamRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>SkyCraftMatchReq</Name>
+    <ProtoType>26016</ProtoType>
+    <Dir>skycraft</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>SkyCraftMatchReq</Arg>
+    <Res>SkyCraftMatchRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>CustomBattleOp</Name>
+    <ProtoType>12314</ProtoType>
+    <Dir>custombattle</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>CustomBattleOpArg</Arg>
+    <Res>CustomBattleOpRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>CustomBattleWorldOp</Name>
+    <ProtoType>18992</ProtoType>
+    <Dir>custombattle</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>KWorld Server[跨服玩法服务器]</To>
+    <Arg>CustomBattleWorldOpArg</Arg>
+    <Res>CustomBattleWorldOpRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetSkyCraftInfo</Name>
+    <ProtoType>26199</ProtoType>
+    <Dir>skycraft</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GetSkyCraftInfoArg</Arg>
+    <Res>GetSkyCraftInfoRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetSkyCraftRecord</Name>
+    <ProtoType>39327</ProtoType>
+    <Dir>skycraft</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GetSkyCraftRecordArg</Arg>
+    <Res>GetSkyCraftRecordRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetSkyCraftEliInfo</Name>
+    <ProtoType>41103</ProtoType>
+    <Dir>skycraft</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GetSkyCraftEliInfoArg</Arg>
+    <Res>GetSkyCraftEliInfoRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetSkyCraftTeamInfo</Name>
+    <ProtoType>25015</ProtoType>
+    <Dir>skycraft</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GetSkyCraftTeamInfoArg</Arg>
+    <Res>GetSkyCraftTeamInfoRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>SaveGiftIbHist</Name>
+    <ProtoType>9710</ProtoType>
+    <Dir>pay</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Db Server [数据库]</To>
+    <Arg>SaveIbGiftRecordArg</Arg>
+    <Res>SaveIbGiftRecordRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>IbGiftHistReq</Name>
+    <ProtoType>27050</ProtoType>
+    <Dir>pay</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>IBGiftHistAllItemArg</Arg>
+    <Res>IBGiftHistAllItemRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ActivateFashionCharm</Name>
+    <ProtoType>58036</ProtoType>
+    <Dir>fashion</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>ActivateFashionArg</Arg>
+    <Res>ActivateFashionRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>PayDegreeReq</Name>
+    <ProtoType>15797</ProtoType>
+    <Dir>pay</Dir>
+    <timeout>5000</timeout>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>PayDegreeArg</Arg>
+    <Res>PayDegreeRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetGuildCamPartyRandItem</Name>
+    <ProtoType>53025</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>GetGuildCamPartyRandItemArg</Arg>
+    <Res>GetGuildCamPartyRandItemRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>TalkGuildCampSprite</Name>
+    <ProtoType>5683</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>TalkGuildCampSpriteArg</Arg>
+    <Res>TalkGuildCampSpriteRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GuildCampPartyReqExchange</Name>
+    <ProtoType>51021</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>GuildCampPartyReqExchangeReq</Arg>
+    <Res>GuildCampPartyReqExchangeRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetGuildCampPartyExchangeInfo</Name>
+    <ProtoType>44443</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>GetGuildCampPartyExchangeInfoArg</Arg>
+    <Res>GetGuildCampPartyExchangeInfoRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>CustomBattleGsOp</Name>
+    <ProtoType>20452</ProtoType>
+    <Dir>custombattle</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>CustomBattleGsOpArg</Arg>
+    <Res>CustomBattleGsOpRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GuildCampExchangeOperate</Name>
+    <ProtoType>31811</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>GuildCampExchangeOperateArg</Arg>
+    <Res>GuildCampExchangeOperateRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetGuildCampPartyReward</Name>
+    <ProtoType>58935</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>GetGuildCampPartyRewardArg</Arg>
+    <Res>GetGuildCampPartyRewardRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GiftIbReqGoods</Name>
+    <ProtoType>18140</ProtoType>
+    <Dir>pay</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GiftIbReqGoodsArg</Arg>
+    <Res>GiftIbReqGoodsRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GiftIbReqGSGoods</Name>
+    <ProtoType>3057</ProtoType>
+    <Dir>pay</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>GiftIbReqGSGoodsArg</Arg>
+    <Res>GiftIbReqGSGoodsRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ArtifactCompose</Name>
+    <ProtoType>599</ProtoType>
+    <Dir>artifact</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>ArtifactComposeArg</Arg>
+    <Res>ArtifactComposeRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ReplyPartyExchangeItemOpt</Name>
+    <ProtoType>13740</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>ReplyPartyExchangeItemOptArg</Arg>
+    <Res>ReplyPartyExchangeItemOptRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>AbsEnterScene</Name>
+    <ProtoType>23463</ProtoType>
+    <Dir>absparty</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>AbsEnterSceneArg</Arg>
+    <Res>AbsEnterSceneRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>CustomBattleCheckValid</Name>
+    <ProtoType>20197</ProtoType>
+    <Dir>custombattle</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>KWorld Server[跨服玩法服务器]</To>
+    <Arg>CustomBattleCheckValidArg</Arg>
+    <Res>CustomBattleCheckValidRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>EnchantActiveAttribute</Name>
+    <ProtoType>19086</ProtoType>
+    <Dir>enchant</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>EnchantActiveAttributeArg</Arg>
+    <Res>EnchantActiveAttributeRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>BuyExtraSkillEmblemSlot</Name>
+    <ProtoType>17851</ProtoType>
+    <Dir>emblem</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>BuyExtraSkillEmblemSlotArg</Arg>
+    <Res>BuyExtraSkillEmblemSlotRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ChangeLiveVisible</Name>
+    <ProtoType>56831</ProtoType>
+    <Dir>battlewatch</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>ChangeLiveVisibleArg</Arg>
+    <Res>ChangeLiveVisibleRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>CustomBattleResultMs</Name>
+    <ProtoType>44243</ProtoType>
+    <Dir>custombattle</Dir>
+    <timeout>5000</timeout>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>CustomBattleResultMsArg</Arg>
+    <Res>CustomBattleResultMsRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>CustomBattleResultWorld</Name>
+    <ProtoType>25314</ProtoType>
+    <Dir>custombattle</Dir>
+    <timeout>5000</timeout>
+    <From>Game Server [游戏服务器]</From>
+    <To>KWorld Server[跨服玩法服务器]</To>
+    <Arg>CustomBattleResultMsArg</Arg>
+    <Res>CustomBattleResultMsRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ReportBadPlayer</Name>
+    <ProtoType>32807</ProtoType>
+    <Dir>battle</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>ReportBadPlayerArg</Arg>
+    <Res>ReportBadPlayerRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>RegisterMs2Team</Name>
+    <ProtoType>63997</ProtoType>
+    <Dir>common</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>HTeam Server [组队服务器]</To>
+    <Arg>RegisterMs2HArg</Arg>
+    <Res>RegisterMs2HRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>TeamTranMs2Ts</Name>
+    <ProtoType>53395</ProtoType>
+    <Dir>team</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>HTeam Server [组队服务器]</To>
+    <Arg>TeamTransData</Arg>
+    <Res>TeamTransRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>TeamTranTs2Ms</Name>
+    <ProtoType>27234</ProtoType>
+    <Dir>team</Dir>
+    <timeout>5000</timeout>
+    <From>HTeam Server [组队服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>TeamTransData</Arg>
+    <Res>TeamTransRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>TeamTranMs2Gs</Name>
+    <ProtoType>17965</ProtoType>
+    <Dir>team</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>TeamTransData</Arg>
+    <Res>TeamTransRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>TeamRequestPlatFreindM2S</Name>
+    <ProtoType>31392</ProtoType>
+    <Dir>team</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>SCenter Server[中心服务器]</To>
+    <Arg>TeamRequestPlatFreindM2SArg</Arg>
+    <Res>TeamRequestPlatFreindM2SRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>TeamRequestPlatFreindS2M</Name>
+    <ProtoType>27908</ProtoType>
+    <Dir>team</Dir>
+    <timeout>5000</timeout>
+    <From>SCenter Server[中心服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>TeamRequestPlatFreindS2MArg</Arg>
+    <Res>TeamRequestPlatFreindS2MRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>KMatchCommonReq</Name>
+    <ProtoType>57822</ProtoType>
+    <Dir>match</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>KMatchCommonArg</Arg>
+    <Res>KMatchCommonRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>KMatchReqh2k</Name>
+    <ProtoType>55697</ProtoType>
+    <Dir>match</Dir>
+    <timeout>5000</timeout>
+    <From>HTeam Server [组队服务器]</From>
+    <To>KWorld Server[跨服玩法服务器]</To>
+    <Arg>KMatchTransArg</Arg>
+    <Res>KMatchCommonRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>KMatchReqm2k</Name>
+    <ProtoType>21913</ProtoType>
+    <Dir>match</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>KWorld Server[跨服玩法服务器]</To>
+    <Arg>KMatchTransArg</Arg>
+    <Res>KMatchCommonRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetGuildPartyReceiveInfo</Name>
+    <ProtoType>58154</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>GetGuildPartyReceiveInfoArg</Arg>
+    <Res>GetGuildPartyReceiveInfoRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ReturnSmeltStone</Name>
+    <ProtoType>16978</ProtoType>
+    <Dir>smelt</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>ReturnSmeltStoneArg</Arg>
+    <Res>ReturnSmeltStoneRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>KMatchCommonReqM2C</Name>
+    <ProtoType>54968</ProtoType>
+    <Dir>match</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>KMatchCommonArgM2G</Arg>
+    <Res>KMatchCommonResM2G</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>UpdateRoleReportData</Name>
+    <ProtoType>44113</ProtoType>
+    <Dir>db</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Db Server [数据库]</To>
+    <Arg>UpdateRoleReportDataArg</Arg>
+    <Res>UpdateRoleReportDataRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>RegisterTs2World</Name>
+    <ProtoType>60842</ProtoType>
+    <Dir>common</Dir>
+    <timeout>5000</timeout>
+    <From>HTeam Server [组队服务器]</From>
+    <To>KWorld Server[跨服玩法服务器]</To>
+    <Arg>RegisterTs2WorldArg</Arg>
+    <Res>RegisterTs2WorldRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ReqPlatUsersInfoI2S</Name>
+    <ProtoType>19123</ProtoType>
+    <Dir>platfriend</Dir>
+    <timeout>5000</timeout>
+    <From>ILogin Server[登录]</From>
+    <To>SCenter Server[中心服务器]</To>
+    <Arg>M2SReqPlatUserInfoArg</Arg>
+    <Res>M2SReqPlatUserInfoRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>UpLoadAudioToGate</Name>
+    <ProtoType>23176</ProtoType>
+    <Dir>chat</Dir>
+    <timeout>20000</timeout>
+    <From>Client [客户端]</From>
+    <To>TGate Server [网关]</To>
+    <Arg>UpLoadAudioReq</Arg>
+    <Res>UpLoadAudioRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>UpLoadAudioToAudio</Name>
+    <ProtoType>2071</ProtoType>
+    <Dir>chat</Dir>
+    <timeout>10000</timeout>
+    <From>TGate Server [网关]</From>
+    <To>Audio Server</To>
+    <Arg>UpLoadAudioReq</Arg>
+    <Res>UpLoadAudioRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>RegisterAudioToCenter</Name>
+    <ProtoType>8273</ProtoType>
+    <Dir>common</Dir>
+    <timeout>5000</timeout>
+    <From>Audio Server</From>
+    <To>SCenter Server[中心服务器]</To>
+    <Arg>RegisterAudioToCenterArg</Arg>
+    <Res>RegisterAudioToCenterRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetAudioFileCenter</Name>
+    <ProtoType>16548</ProtoType>
+    <Dir>audio</Dir>
+    <timeout>5000</timeout>
+    <From>Audio Server</From>
+    <To>SCenter Server[中心服务器]</To>
+    <Arg>GetAudioListReq</Arg>
+    <Res>GetAudioListRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetPlatShareAward</Name>
+    <ProtoType>26922</ProtoType>
+    <Dir>platformshareresult</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>GetPlatShareAwardArg</Arg>
+    <Res>GetPlatShareAwardRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>UpAudioToCenter</Name>
+    <ProtoType>30706</ProtoType>
+    <Dir>audio</Dir>
+    <timeout>5000</timeout>
+    <From>Audio Server</From>
+    <To>SCenter Server[中心服务器]</To>
+    <Arg>UpLoadAudioReq</Arg>
+    <Res>UpLoadAudioRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>WeekEnd4v4GetInfo</Name>
+    <ProtoType>59573</ProtoType>
+    <Dir>weekend4v4</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>WeekEnd4v4GetInfoArg</Arg>
+    <Res>WeekEnd4v4GetInfoRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetFlowerActivityReward</Name>
+    <ProtoType>36979</ProtoType>
+    <Dir>spactivity</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GetFlowerActivityRewardArg</Arg>
+    <Res>GetFlowerActivityRewardRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>SceneMobaOp</Name>
+    <ProtoType>32594</ProtoType>
+    <Dir>scene</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>SceneMobaOpArg</Arg>
+    <Res>SceneMobaOpRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>registerms2ns</Name>
+    <ProtoType>31368</ProtoType>
+    <Dir>common</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>NControl Server[控制服务器]</To>
+    <Arg>RegisterMs2NsArg</Arg>
+    <Res>RegisterMs2NsRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>MobaSignaling</Name>
+    <ProtoType>52475</ProtoType>
+    <Dir>mobabattle</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>MobaSignalingArg</Arg>
+    <Res>MobaSignalingRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ActivateHairColor</Name>
+    <ProtoType>52321</ProtoType>
+    <Dir>fashion</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>ActivateHairColorArg</Arg>
+    <Res>ActivateHairColorRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>TryTeacherInheritNew</Name>
+    <ProtoType>58897</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>TryTeacherInheritNewArg</Arg>
+    <Res>TryTeacherInheritNewRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>DHRReqC2G</Name>
+    <ProtoType>12451</ProtoType>
+    <Dir>common</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>DHRArg</Arg>
+    <Res>DHRRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetMobaBattleGameRecord</Name>
+    <ProtoType>9583</ProtoType>
+    <Dir>mobabattle</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GetMobaBattleGameRecordArg</Arg>
+    <Res>GetMobaBattleGameRecordRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetMobaBattleBriefRecord</Name>
+    <ProtoType>35507</ProtoType>
+    <Dir>mobabattle</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GetMobaBattleBriefRecordArg</Arg>
+    <Res>GetMobaBattleBriefRecordRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>PetOperationOther</Name>
+    <ProtoType>58525</ProtoType>
+    <Dir>pet</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>PetOperationOtherArg</Arg>
+    <Res>PetOperationOtherRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>QueryMobaRoleRecord</Name>
+    <ProtoType>30481</ProtoType>
+    <Dir>mobabattle</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Db Server [数据库]</To>
+    <Arg>QueryMobaRoleRecordArg</Arg>
+    <Res>QueryMobaRoleRecordRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>LoginReconnectReq</Name>
+    <ProtoType>25422</ProtoType>
+    <Dir>login</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>NControl Server[控制服务器]</To>
+    <Arg>LoginReconnectReqArg</Arg>
+    <Res>LoginReconnectReqRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>NotifyRoleLoginReconnect2Gs</Name>
+    <ProtoType>29808</ProtoType>
+    <Dir>login</Dir>
+    <timeout>5000</timeout>
+    <From>NControl Server[控制服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>NotifyRoleLoginReconnect2GsArg</Arg>
+    <Res>NotifyRoleLoginReconnect2GsRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>EnterBMReadyScene</Name>
+    <ProtoType>24371</ProtoType>
+    <Dir>bigmelee</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>EnterBMReadySceneArg</Arg>
+    <Res>EnterBMReadySceneRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ReportBMRoleInfo</Name>
+    <ProtoType>5924</ProtoType>
+    <Dir>bigmelee</Dir>
+    <timeout>5000</timeout>
+    <From>Game Server [游戏服务器]</From>
+    <To>KWorld Server[跨服玩法服务器]</To>
+    <Arg>BMSceneFightInfo</Arg>
+    <Res>BMSceneRankRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>QueryBigMeleeRank</Name>
+    <ProtoType>33332</ProtoType>
+    <Dir>bigmelee</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>QueryMayhemRankArg</Arg>
+    <Res>QueryMayhemRankRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>QueryBigMeleeRank2k</Name>
+    <ProtoType>17912</ProtoType>
+    <Dir>bigmelee</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>KWorld Server[跨服玩法服务器]</To>
+    <Arg>QueryMayhemRank2kArg</Arg>
+    <Res>QueryMayhemRankRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>TsReload</Name>
+    <ProtoType>3695</ProtoType>
+    <Dir>common</Dir>
+    <timeout>5000</timeout>
+    <From>KWorld Server[跨服玩法服务器]</From>
+    <To>HTeam Server [组队服务器]</To>
+    <Arg>GMToolCommandArg</Arg>
+    <Res>GMToolCommandRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GMCommandW2T</Name>
+    <ProtoType>24217</ProtoType>
+    <Dir>gm</Dir>
+    <timeout>5000</timeout>
+    <From>KWorld Server[跨服玩法服务器]</From>
+    <To>HTeam Server [组队服务器]</To>
+    <Arg>GMCmdg2mArg</Arg>
+    <Res>GMCmdg2mRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>MsGiveItem</Name>
+    <ProtoType>43464</ProtoType>
+    <Dir>common</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>MsGiveItemArg</Arg>
+    <Res>MsGiveItemRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetMobaBattleInfo</Name>
+    <ProtoType>64051</ProtoType>
+    <Dir>mobabattle</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GetMobaBattleInfoArg</Arg>
+    <Res>GetMobaBattleInfoRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetMobaBattleWeekReward</Name>
+    <ProtoType>55678</ProtoType>
+    <Dir>mobabattle</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GetMobaBattleWeekRewardArg</Arg>
+    <Res>GetMobaBattleWeekRewardRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>TeamStartBattleT2W</Name>
+    <ProtoType>693</ProtoType>
+    <Dir>team</Dir>
+    <timeout>5000</timeout>
+    <From>HTeam Server [组队服务器]</From>
+    <To>KWorld Server[跨服玩法服务器]</To>
+    <Arg>TeamStartBattleArg</Arg>
+    <Res>TeamStartBattleRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>TeamStartBattleW2M</Name>
+    <ProtoType>4910</ProtoType>
+    <Dir>team</Dir>
+    <timeout>5000</timeout>
+    <From>KWorld Server[跨服玩法服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>TeamStartBattleArg</Arg>
+    <Res>TeamStartBattleRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>TeamStartBattleM2GCross</Name>
+    <ProtoType>18793</ProtoType>
+    <Dir>team</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>TeamStartBattleArg</Arg>
+    <Res>TeamStartBattleRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>BuySpriteEgg</Name>
+    <ProtoType>34552</ProtoType>
+    <Dir>sprite</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>BuySpriteEggArg</Arg>
+    <Res>BuySpriteEggRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetEnhanceAttr</Name>
+    <ProtoType>23396</ProtoType>
+    <Dir>enhance</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>GetEnhanceAttrArg</Arg>
+    <Res>GetEnhanceAttrRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GroupChatLeaderReviewList</Name>
+    <ProtoType>33836</ProtoType>
+    <Dir>groupchat</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GroupChatLeaderReviewListC2S</Arg>
+    <Res>GroupChatLeaderReviewListS2C</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GroupChatFindRoleInfoList</Name>
+    <ProtoType>7283</ProtoType>
+    <Dir>groupchat</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GroupChatFindRoleInfoListC2S</Arg>
+    <Res>GroupChatFindRoleInfoListS2C</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GroupChatFindTeamInfoList</Name>
+    <ProtoType>46399</ProtoType>
+    <Dir>groupchat</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GroupChatFindTeamInfoListC2S</Arg>
+    <Res>GroupChatFindTeamInfoListS2C</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GroupChatPlayerIssueInfo</Name>
+    <ProtoType>48317</ProtoType>
+    <Dir>groupchat</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GroupChatPlayerIssueInfoC2S</Arg>
+    <Res>GroupChatPlayerIssueInfoS2C</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GroupChatLeaderIssueInfo</Name>
+    <ProtoType>9594</ProtoType>
+    <Dir>groupchat</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GroupChatLeaderIssueInfoC2S</Arg>
+    <Res>GroupChatLeaderIssueInfoS2C</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GroupChatLeaderReview</Name>
+    <ProtoType>21611</ProtoType>
+    <Dir>groupchat</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GroupChatLeaderReviewC2S</Arg>
+    <Res>GroupChatLeaderReviewS2C</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GroupChatPlayerApply</Name>
+    <ProtoType>24788</ProtoType>
+    <Dir>groupchat</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GroupChatPlayerApplyC2S</Arg>
+    <Res>GroupChatPlayerApplyS2C</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GroupChatGetGroupInfo</Name>
+    <ProtoType>64081</ProtoType>
+    <Dir>groupchat</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GroupChatGetGroupInfoC2S</Arg>
+    <Res>GroupChatGetGroupInfoS2C</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GroupChatManager</Name>
+    <ProtoType>35391</ProtoType>
+    <Dir>groupchat</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GroupChatManagerC2S</Arg>
+    <Res>GroupChatManagerS2C</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GroupChatQuit</Name>
+    <ProtoType>58833</ProtoType>
+    <Dir>groupchat</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GroupChatQuitC2S</Arg>
+    <Res>GroupChatQuitS2C</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GroupChatCreate</Name>
+    <ProtoType>59293</ProtoType>
+    <Dir>groupchat</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GroupChatCreateC2S</Arg>
+    <Res>GroupChatCreateS2C</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetAncientTimesAward</Name>
+    <ProtoType>40517</ProtoType>
+    <Dir>spactivity</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>AncientTimesArg</Arg>
+    <Res>AncientTimesRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>SelectHeroAncientPower</Name>
+    <ProtoType>7667</ProtoType>
+    <Dir>herobattle</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>SelectHeroAncientPowerArg</Arg>
+    <Res>SelectHeroAncientPowerRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GroupChatClear</Name>
+    <ProtoType>61477</ProtoType>
+    <Dir>groupchat</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GroupChatClearC2S</Arg>
+    <Res>GroupChatClearS2C</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>HoldWedding</Name>
+    <ProtoType>51875</ProtoType>
+    <Dir>wedding</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>HoldWeddingReq</Arg>
+    <Res>HoldWeddingRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetAllWeddingInfo</Name>
+    <ProtoType>30155</ProtoType>
+    <Dir>wedding</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GetAllWeddingInfoArg</Arg>
+    <Res>GetAllWeddingInfoRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetWeddingInviteInfo</Name>
+    <ProtoType>2804</ProtoType>
+    <Dir>wedding</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GetWeddingInviteInfoArg</Arg>
+    <Res>GetWeddingInviteInfoRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>EnterWeddingScene</Name>
+    <ProtoType>30316</ProtoType>
+    <Dir>wedding</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>EnterWeddingSceneArg</Arg>
+    <Res>EnterWeddingSceneRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetMarriageRelation</Name>
+    <ProtoType>13460</ProtoType>
+    <Dir>marriage</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GetMarriageRelationArg</Arg>
+    <Res>GetMarriageRelationRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>MarriageRelationOp</Name>
+    <ProtoType>24966</ProtoType>
+    <Dir>marriage</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>MarriageRelationOpArg</Arg>
+    <Res>MarriageRelationOpRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>WeddingInviteOperator</Name>
+    <ProtoType>8562</ProtoType>
+    <Dir>wedding</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>WeddingInviteOperatorArg</Arg>
+    <Res>WeddingInviteOperatorRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GroupChatLeaderAddRole</Name>
+    <ProtoType>44703</ProtoType>
+    <Dir>groupchat</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GroupChatLeaderAddRoleC2S</Arg>
+    <Res>GroupChatLeaderAddRoleS2C</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>CheckMarriageCouple</Name>
+    <ProtoType>56199</ProtoType>
+    <Dir>marriage</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>CheckMarriageCoupleArg</Arg>
+    <Res>CheckMarriageCoupleRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>WeddingOperator</Name>
+    <ProtoType>38050</ProtoType>
+    <Dir>wedding</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>WeddingOperatorArg</Arg>
+    <Res>WeddingOperatorRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>TactEnterScene</Name>
+    <ProtoType>27599</ProtoType>
+    <Dir>spactivity</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>TactEnterSceneArg</Arg>
+    <Res>TactEnterSceneRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GroupChatChangeName</Name>
+    <ProtoType>44170</ProtoType>
+    <Dir>groupchat</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GroupChatChangeNameC2S</Arg>
+    <Res>GroupChatChangeNameS2C</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>DragonGroupRoleList</Name>
+    <ProtoType>29660</ProtoType>
+    <Dir>DragonGroup</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>DragonGroupRoleListC2S</Arg>
+    <Res>DragonGroupRoleListS2C</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>DragonGroupRecord</Name>
+    <ProtoType>62181</ProtoType>
+    <Dir>DragonGroup</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>DragonGroupRecordC2S</Arg>
+    <Res>DragonGroupRecordS2C</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetMarriageLiveness</Name>
+    <ProtoType>30055</ProtoType>
+    <Dir>marriage</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GetMarriageLivenessArg</Arg>
+    <Res>GetMarriageLivenessRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>TakeMarriageChest</Name>
+    <ProtoType>38713</ProtoType>
+    <Dir>marriage</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>TakeMarriageChestArg</Arg>
+    <Res>TakeMarriageChestRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>CheckRoleBeforePay</Name>
+    <ProtoType>56255</ProtoType>
+    <Dir>pay</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>CheckRoleBeforePayArg</Arg>
+    <Res>CheckRoleBeforePayRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GiveMarriageLvRerewardM2G</Name>
+    <ProtoType>7964</ProtoType>
+    <Dir>marriage</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>GiveMarriageLvRewardM2GArg</Arg>
+    <Res>GiveMarriageLvRewardRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>Holdweddingcheckm2g</Name>
+    <ProtoType>37621</ProtoType>
+    <Dir>wedding</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>Holdweddingcheckm2gArg</Arg>
+    <Res>Holdweddingcheckm2gRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ArtifactDeityStoveOp</Name>
+    <ProtoType>35155</ProtoType>
+    <Dir>artifact</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>ArtifactDeityStoveOpArg</Arg>
+    <Res>ArtifactDeityStoveOpRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>StartWeddingCar</Name>
+    <ProtoType>26388</ProtoType>
+    <Dir>wedding</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>StartWeddingCarArg</Arg>
+    <Res>StartWeddingCarRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>WeddingOperM2G</Name>
+    <ProtoType>64766</ProtoType>
+    <Dir>wedding</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>WeddingOperM2GArg</Arg>
+    <Res>WeddingOperM2GRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ThemeActivityHint</Name>
+    <ProtoType>39987</ProtoType>
+    <Dir>spactivity</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>ThemeActivityHintArg</Arg>
+    <Res>ThemeActivityHintRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>BackFlowBuyOp</Name>
+    <ProtoType>16261</ProtoType>
+    <Dir>pay</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>BackFlowBuyOpArg</Arg>
+    <Res>BackFlowBuyOpRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GMDoWhiteList</Name>
+    <ProtoType>5271</ProtoType>
+    <Dir>gm</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>NControl Server[控制服务器]</To>
+    <Arg>GMDoWhiteListArg</Arg>
+    <Res>GMDoWhiteListRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>TransformOp</Name>
+    <ProtoType>7373</ProtoType>
+    <Dir>transform</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>TransformOpArg</Arg>
+    <Res>TransformOpRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>UpgradeEquip</Name>
+    <ProtoType>32424</ProtoType>
+    <Dir>equip</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>UpgradeEquipArg</Arg>
+    <Res>UpgradeEquipRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetFashionSynthesisInfo</Name>
+    <ProtoType>26721</ProtoType>
+    <Dir>fashion</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>FashionSynthesisInfoArg</Arg>
+    <Res>FashionSynthesisInfoRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>FashionIBShopBuy</Name>
+    <ProtoType>9349</ProtoType>
+    <Dir>fashion</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>FashionIBShopBuyArg</Arg>
+    <Res>FashionIBShopBuyRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>EnterBattleReadyScene</Name>
+    <ProtoType>55233</ProtoType>
+    <Dir>battlefield</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>EnterBattleReadySceneArg</Arg>
+    <Res>EnterBattleReadySceneRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetDragonGuildLiveness</Name>
+    <ProtoType>16507</ProtoType>
+    <Dir>dragonguild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GetPartnerLivenessArg</Arg>
+    <Res>GetPartnerLivenessRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>CreateDragonGuildCost</Name>
+    <ProtoType>21601</ProtoType>
+    <Dir>dragonguild</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>CreateDragonGuildCostArg</Arg>
+    <Res>CreateDragonGuildCostRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetRolePower</Name>
+    <ProtoType>22338</ProtoType>
+    <Dir>dragonguild</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>GetRolePowerArg</Arg>
+    <Res>GetRolePowerRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>CreateOrJoinDragonGuild</Name>
+    <ProtoType>8623</ProtoType>
+    <Dir>dragonguild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>CreateOrJoinDragonGuildArg</Arg>
+    <Res>CreateOrJoinDragonGuildRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetDragonGuildRecordM2G</Name>
+    <ProtoType>56765</ProtoType>
+    <Dir>dragonguild</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>GetPartnerRecordM2GArg</Arg>
+    <Res>GetPartnerRecordM2GRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetDragonGuildInfoG2M</Name>
+    <ProtoType>14625</ProtoType>
+    <Dir>dragonguild</Dir>
+    <timeout>5000</timeout>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GetPartnerInfoG2MArg</Arg>
+    <Res>GetPartnerInfoG2MRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>TakeDragonGuildChest</Name>
+    <ProtoType>38031</ProtoType>
+    <Dir>dragonguild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>TakePartnerChestArg</Arg>
+    <Res>TakePartnerChestRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>FetchDGApps</Name>
+    <ProtoType>48732</ProtoType>
+    <Dir>dragonguild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>FetchDGAppArg</Arg>
+    <Res>FetchDGAppRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ChangeDragonGuildSetting</Name>
+    <ProtoType>52505</ProtoType>
+    <Dir>dragonguild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>ChangeDragonGuildSettingArg</Arg>
+    <Res>ChangeDragonGuildSettingRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>DragonGuildApproval</Name>
+    <ProtoType>4753</ProtoType>
+    <Dir>dragonguild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>DragonGuildApprovalArg</Arg>
+    <Res>DragonGuildApprovalRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>LeaveFromDragonGuild</Name>
+    <ProtoType>9882</ProtoType>
+    <Dir>dragonguild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>LeaveDragonGuildArg</Arg>
+    <Res>LeaveDragonGuildRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ModifyDragonGuildNameCost</Name>
+    <ProtoType>58056</ProtoType>
+    <Dir>dragonguild</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>ModifyDragonNameCostArg</Arg>
+    <Res>ModifyDragonNameCostRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ModifyDragonGuildName</Name>
+    <ProtoType>10624</ProtoType>
+    <Dir>dragonguild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>ModifyDragonGuildNameArg</Arg>
+    <Res>ModifyDragonGuildNameRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>AskDragonGuildMembers</Name>
+    <ProtoType>26644</ProtoType>
+    <Dir>dragonguild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>DragonGuildMemberArg</Arg>
+    <Res>DragonGuildMemberRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>FetchDragonGuildList</Name>
+    <ProtoType>23518</ProtoType>
+    <Dir>dragonguild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>FetchDragonGuildListArg</Arg>
+    <Res>FetchDragonGuildRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetDragonGuildTaskInfo</Name>
+    <ProtoType>36879</ProtoType>
+    <Dir>DragonGuild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GetDragonGuildTaskInfoArg</Arg>
+    <Res>GetDragonGuildTaskInfoRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetDragonGuildTaskChest</Name>
+    <ProtoType>15059</ProtoType>
+    <Dir>dragonguild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>GetDragonGuildTaskChestArg</Arg>
+    <Res>GetDragonGuildTaskChestRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetDragonGuildTaskChestG2M</Name>
+    <ProtoType>36818</ProtoType>
+    <Dir>dragonguild</Dir>
+    <timeout>5000</timeout>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GetDragonGuildTaskChestG2MArg</Arg>
+    <Res>GetDragonGuildTaskChestG2MRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetDragonGuildRecieveInfo</Name>
+    <ProtoType>19993</ProtoType>
+    <Dir>dragonguild</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>GetDragonGuildRecieveInfoArg</Arg>
+    <Res>GetDragonGuildRecieveInfoRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>BuyDragonGuildShopItem</Name>
+    <ProtoType>24893</ProtoType>
+    <Dir>dragonguild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>BuyDragonGuildShopItemArg</Arg>
+    <Res>BuyDragonGuildShopItemRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetDragonGuildShop</Name>
+    <ProtoType>6075</ProtoType>
+    <Dir>dragonguild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GetDragonGuildShopArg</Arg>
+    <Res>GetDragonGuildShopRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>BuyDragonGuildItemM2G</Name>
+    <ProtoType>26961</ProtoType>
+    <Dir>dragonguild</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>BuyDragonGuildShopItemM2GArg</Arg>
+    <Res>BuyDragonGuildShopItemM2GRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetDragonGuildShopRecord</Name>
+    <ProtoType>3114</ProtoType>
+    <Dir>dragonguild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GetDragonGuildShopRecordArg</Arg>
+    <Res>GetDragonGuildShopRecordRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ChangeDragonGuildPosition</Name>
+    <ProtoType>3888</ProtoType>
+    <Dir>dragonguild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>ChangeDragonGuildPositionArg</Arg>
+    <Res>ChangeDragonGuildPositionRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetDragonGuildBindInfo</Name>
+    <ProtoType>39788</ProtoType>
+    <Dir>dragonguild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GetDragonGuildBindInfoArg</Arg>
+    <Res>GetDragonGuildBindInfoRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>DragonGuildBindGroupReq</Name>
+    <ProtoType>34774</ProtoType>
+    <Dir>dragonguild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>DragonGuildBindReq</Arg>
+    <Res>DragonGuildBindRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>DragonGuildJoinBindGroup</Name>
+    <ProtoType>33949</ProtoType>
+    <Dir>dragonguild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>DragonGuildJoinBindGroupArg</Arg>
+    <Res>DragonGuildJoinBindGroupRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>DragonGuildUnBindGroup</Name>
+    <ProtoType>56553</ProtoType>
+    <Dir>dragonguild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>DragonGuildUnBindGroupArg</Arg>
+    <Res>DragonGuildUnBindGroupRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>CheckDragonGuildRedPointG2M</Name>
+    <ProtoType>13810</ProtoType>
+    <Dir>dragonguild</Dir>
+    <timeout>5000</timeout>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>CheckDragonGuildRedPointG2MArg</Arg>
+    <Res>CheckDragonGuildRedPointG2MRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GoalAwardsGetList</Name>
+    <ProtoType>36694</ProtoType>
+    <Dir>goalawards</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GoalAwardsGetList_C2M</Arg>
+    <Res>GoalAwardsGetList_M2C</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GoalAwardsGetAwards</Name>
+    <ProtoType>4985</ProtoType>
+    <Dir>goalawards</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GoalAwardsGetAwards_C2M</Arg>
+    <Res>GoalAwardsGetAwards_M2C</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>BattleFieldAwardNumReq</Name>
+    <ProtoType>59171</ProtoType>
+    <Dir>battlefield</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>BattleFieldAwardNumArg</Arg>
+    <Res>BattleFieldAwardNumRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>BattleFieldRankReq</Name>
+    <ProtoType>4893</ProtoType>
+    <Dir>battlefield</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>BattleFieldRankArg</Arg>
+    <Res>BattleFieldRankRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetWeeklyTaskInfo</Name>
+    <ProtoType>44747</ProtoType>
+    <Dir>task</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>GetWeeklyTaskInfoArg</Arg>
+    <Res>GetWeeklyTaskInfoRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetWeeklyTaskReward</Name>
+    <ProtoType>30588</ProtoType>
+    <Dir>task</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>GetWeeklyTaskRewardArg</Arg>
+    <Res>GetWeeklyTaskRewardRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>RefreshWeeklyTask</Name>
+    <ProtoType>3384</ProtoType>
+    <Dir>task</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>RefreshWeeklyTaskArg</Arg>
+    <Res>RefreshWeeklyTaskRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>BattleFieldRoleAgainstReq</Name>
+    <ProtoType>12475</ProtoType>
+    <Dir>battlefield</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>BattleFieldRoleAgainstArg</Arg>
+    <Res>BattleFieldRoleAgainst</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetCompeteDragonInfo</Name>
+    <ProtoType>65362</ProtoType>
+    <Dir>competedragon</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>GetCompeteDragonInfoArg</Arg>
+    <Res>GetCompeteDragonInfoRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>SetPreShow</Name>
+    <ProtoType>346</ProtoType>
+    <Dir>pay</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>SetPreShowArg</Arg>
+    <Res>SetPreShowRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>FuseEquip</Name>
+    <ProtoType>56006</ProtoType>
+    <Dir>equip</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>FuseEquipArg</Arg>
+    <Res>FuseEquipRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>TurnOverWeeklyTaskItem</Name>
+    <ProtoType>19937</ProtoType>
+    <Dir>task</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>TurnOverWeeklyTaskItemArg</Arg>
+    <Res>TurnOverWeeklyTaskItemRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>TaskDonateG2M</Name>
+    <ProtoType>61587</ProtoType>
+    <Dir>task</Dir>
+    <timeout>5000</timeout>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>TaskDonateG2MArg</Arg>
+    <Res>TaskDonateG2MRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetLuckyActivityInfo</Name>
+    <ProtoType>384</ProtoType>
+    <Dir>spactivity</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>GetLuckyActivityInfoArg</Arg>
+    <Res>GetLuckyActivityInfoRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>BuyDraw</Name>
+    <ProtoType>51925</ProtoType>
+    <Dir>spactivity</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>BuyDrawReq</Arg>
+    <Res>BuyDrawRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>LotteryDraw</Name>
+    <ProtoType>47060</ProtoType>
+    <Dir>spactivity</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>LotteryDrawReq</Arg>
+    <Res>LotteryDrawRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>NpcFlReqC2M</Name>
+    <ProtoType>11607</ProtoType>
+    <Dir>npcfeeling</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>NpcFlArg</Arg>
+    <Res>NpcFlRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>NpcFlReqM2G</Name>
+    <ProtoType>3920</ProtoType>
+    <Dir>npcfeeling</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>NpcFlArgM2G</Arg>
+    <Res>NpcFlResM2G</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>BMRankListReq</Name>
+    <ProtoType>41638</ProtoType>
+    <Dir>bigmelee</Dir>
+    <timeout>5000</timeout>
+    <From>Game Server [游戏服务器]</From>
+    <To>KWorld Server[跨服玩法服务器]</To>
+    <Arg>BMRankListArg</Arg>
+    <Res>BMRankListRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetDailyTaskRefreshInfo</Name>
+    <ProtoType>42385</ProtoType>
+    <Dir>task</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GetDailyTaskRefreshInfoArg</Arg>
+    <Res>GetDailyTaskRefreshInfoRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetDailyTaskAskHelp</Name>
+    <ProtoType>46394</ProtoType>
+    <Dir>task</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GetDailyTaskAskHelpArg</Arg>
+    <Res>GetDailyTaskAskHelpRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetDailyTaskRefreshRecord</Name>
+    <ProtoType>7202</ProtoType>
+    <Dir>task</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GetDailyTaskRefreshRecordArg</Arg>
+    <Res>GetDailyTaskRefreshRecordRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>DailyTaskRefreshOper</Name>
+    <ProtoType>31675</ProtoType>
+    <Dir>task</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>DailyTaskRefreshOperArg</Arg>
+    <Res>DailyTaskRefreshOperRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>DailyTaskRefreshM2G</Name>
+    <ProtoType>7069</ProtoType>
+    <Dir>task</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>DailyTaskRefreshM2GArg</Arg>
+    <Res>DailyTaskRefreshM2GRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>DailyTaskRefreshG2M</Name>
+    <ProtoType>22864</ProtoType>
+    <Dir>task</Dir>
+    <timeout>5000</timeout>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>DailyTaskRefreshG2MArg</Arg>
+    <Res>DailyTaskRefreshG2MRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>UpdateRoleTaskData</Name>
+    <ProtoType>1572</ProtoType>
+    <Dir>task</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Db Server [数据库]</To>
+    <Arg>UpdateRoleTaskDataArg</Arg>
+    <Res>UpdateRoleTaskDataRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>SurviveReqC2G</Name>
+    <ProtoType>19408</ProtoType>
+    <Dir>survive</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>SurviveReqArg</Arg>
+    <Res>SurviveReqRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>SurviveSynPointG2M</Name>
+    <ProtoType>11513</ProtoType>
+    <Dir>survive</Dir>
+    <timeout>5000</timeout>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>SurviveSynPointArg</Arg>
+    <Res>SurviveSynPointRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>DoodadItemAllSkillReq</Name>
+    <ProtoType>21002</ProtoType>
+    <Dir>battle</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>EmptyData</Arg>
+    <Res>DoodadItemAllSkill</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>PeerBox</Name>
+    <ProtoType>21959</ProtoType>
+    <Dir>scene</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>PeerBoxArg</Arg>
+    <Res>PeerBoxRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>QueryBoxs</Name>
+    <ProtoType>12558</ProtoType>
+    <Dir>scene</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>QueryBoxsArg</Arg>
+    <Res>QueryBoxsRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ActivatePreShow</Name>
+    <ProtoType>22466</ProtoType>
+    <Dir>pay</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>ActivatePreShowArg</Arg>
+    <Res>ActivatePreShowRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GuildPartySummonSpirit</Name>
+    <ProtoType>42269</ProtoType>
+    <Dir>guild</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>GuildPartySummonSpiritArg</Arg>
+    <Res>GuildPartySummonSpiritRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetDailyTaskG2M</Name>
+    <ProtoType>20249</ProtoType>
+    <Dir>task</Dir>
+    <timeout>5000</timeout>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GetDailyTaskG2MArg</Arg>
+    <Res>GetDailyTaskG2MRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ChooseSpecialEffects</Name>
+    <ProtoType>55040</ProtoType>
+    <Dir>fashion</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>ChooseSpecialEffectsArg</Arg>
+    <Res>ChooseSpecialEffectsRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>TeamGoToNextSceneReq</Name>
+    <ProtoType>52067</ProtoType>
+    <Dir>team</Dir>
+    <timeout>5000</timeout>
+    <From>Game Server [游戏服务器]</From>
+    <To>KWorld Server[跨服玩法服务器]</To>
+    <Arg>TeamStartBattleArg</Arg>
+    <Res>TeamStartBattleRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>EnterLeisureScene</Name>
+    <ProtoType>62361</ProtoType>
+    <Dir>scene</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>EnterLeisureSceneArg</Arg>
+    <Res>EnterLeisureSceneRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>BackFlowActivityOperation</Name>
+    <ProtoType>61579</ProtoType>
+    <Dir>spactivity</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>BackFlowActivityOperationArg</Arg>
+    <Res>BackFlowActivityOperationRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetNewZoneBenefit</Name>
+    <ProtoType>17236</ProtoType>
+    <Dir>activity</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>GetNewZoneBenefitArg</Arg>
+    <Res>GetNewZoneBenefitRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetNewZoneBenefitG2M</Name>
+    <ProtoType>24760</ProtoType>
+    <Dir>activity</Dir>
+    <timeout>5000</timeout>
+    <From>Game Server [游戏服务器]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GetNewZoneBenefitG2MArg</Arg>
+    <Res>GetNewZoneBenefitG2MRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetZoneRoleInfoM2I</Name>
+    <ProtoType>47976</ProtoType>
+    <Dir>role</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>ILogin Server[登录]</To>
+    <Arg>GetZoneRoleInfoM2IArg</Arg>
+    <Res>GetZoneRoleInfoM2IRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>GetZoneRoleInfoI2M</Name>
+    <ProtoType>53734</ProtoType>
+    <Dir>role</Dir>
+    <timeout>5000</timeout>
+    <From>ILogin Server[登录]</From>
+    <To>Master Server[主控服务器]</To>
+    <Arg>GetZoneRoleInfoI2MArg</Arg>
+    <Res>GetZoneRoleInfoI2MRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ReadAccountDataNew</Name>
+    <ProtoType>11357</ProtoType>
+    <Dir>role</Dir>
+    <timeout>5000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Db Server [数据库]</To>
+    <Arg>ReadAccountDataNewArg</Arg>
+    <Res>ReadAccountDataNewRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>SelectChargeBackRole</Name>
+    <ProtoType>38792</ProtoType>
+    <Dir>activity</Dir>
+    <timeout>5000</timeout>
+    <From>Client [客户端]</From>
+    <To>Game Server [游戏服务器]</To>
+    <Arg>SelectChargeBackRoleArg</Arg>
+    <Res>SelectChargeBackRoleRes</Res>
+  </PGRpc>
+  <PGRpc>
+    <Name>ReadMailFromDB</Name>
+    <ProtoType>19098</ProtoType>
+    <Dir>mail</Dir>
+    <timeout>60000</timeout>
+    <From>Master Server[主控服务器]</From>
+    <To>Db Server [数据库]</To>
+    <Arg>ReadMailFromDBArg</Arg>
+    <Res>ReadMailFromDBRes</Res>
+  </PGRpc>
+</ArrayOfPGRpc>
