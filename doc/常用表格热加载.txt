@@ -1,0 +1,115 @@
+常用系统系统热加载       ./gmtool gmtool_2local_conf.xml msreload [args]
+
+GuildAuctReward
+:GuildAuctReward.txt
+
+AuctSupplement:
+AuctSupplement.txt
+
+Boss:
+Boss.txt
+
+GuildBossConfig:
+GuildBossConfig.txt 
+
+XEntityStatistics:
+XEntityPresentation.txt XEntityStatistics.txt Profession.txt
+
+XEntityPresentation:
+XEntityPresentation.txt XEntityStatistics.txt Profession.txt
+
+BuffList:
+BuffList.txt BuffListPVP.txt
+
+BuffListPVP
+BuffList.txt BuffListPVP.txt
+
+SkillList:
+SkillList.txt ProfessionSkill.txt GuildSkill.txt
+
+SceneList:
+SceneList.txt SceneConsume.txt ChapterList.txt MonsterScore.txt
+
+SceneView:
+GlobalConfig.txt
+
+DNExpedition:
+DNExpedition.txt RandomSceneList.txt TeamCostReward.txt NestWeekList.txt
+
+RandomSceneList:
+DNExpedition.txt RandomSceneList.txt TeamCostReward.txt NestWeekList.txt
+
+DefMod:
+DefMod.txt AtkDefMod.txt AttributeList.txt
+
+AtkDefMod:
+DefMod.txt AtkDefMod.txt AttributeList.txt
+
+Vip:
+Vip.txt
+
+PkProfession:
+PkProfession.txt
+
+PlayerLevel:
+PlayerLevel.txt
+
+SystemList:
+SystemList.txt
+
+Shop:
+Shop.txt ShopType.txt
+
+IBShop:
+IBShop.txt
+
+TaskListNew:
+TaskListNew.txt DailyTask.txt DailyTaskFormat.txt DailyTaskReward.txt
+
+Notice:
+Notice.txt
+
+LevelSealType:
+LevelSeal.txt LevelSealType.txt
+
+WorldLevelExpBuff:
+WorldLevelExpBuff.txt
+
+MailContent:
+MailContent.txt
+
+GlobalConfig:
+GlobalConfig.txt
+
+FashionCompose:
+FashionSuit.txt FashionCompose.txt FashionComposeSet.txt FashionEffect.txt
+
+ItemList:
+ItemList.txt ChestList.txt EquipList.txt FashionList.txt DoodadList.txt CircleDraw.txt DesignationItem.txt ItemCompose.txt
+
+DropList: DropList.txt
+
+ItemBack: ItemBack.txt
+
+PayAileen: PayAileen.txt
+
+MultiActivityList:
+MultiActivityList.txt
+
+GuildConfig:
+GuildConfig.txt
+
+PandoraHeart:
+PandoraHeart.txt PandoraHeartReward.txt
+
+PkParam PkParam.txt
+
+/////////////////////////////////////////////////////////
+Skill:
+./gmtool gmtool_2local_conf.xml Skill Player_warrior/Player_warrior_attack_A1.txt
+
+AI:
+./gmtool gmtool_2local_conf.xml Skill AI Ally.xml
+
+Level:
+./gmtool gmtool_2local_conf.xml Level SceneId

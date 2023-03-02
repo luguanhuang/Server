@@ -1,0 +1,59 @@
+IDC正式环境上配置检查事项：
+
+
+1. msdk地址配置要是IDC正式环境地址:
+   检查gs_conf.xml:			<SdkUrl link="http://msdk.tencent-cloud.net"/>
+   检查ms_conf.xml:			<MsdkUrl link="http://msdk.tencent-cloud.net"/>
+   检查login_conf.xml:			<MsdkUrl link="http://msdk.tencent-cloud.net"/>
+
+
+2. 阿波罗语音IDC正式环境地址:
+   检查 lzgjx/gsconf/serveronly/voipparam.xml:   <ParamValue dir_svr_url="udp://10.173.129.28:16004|udp://10.239.177.62:16004" business_name="gcloud.long_zhi_gu" business_key="7b8ede479c395821ce55094651d7605e" />
+
+
+3. 米大师IDC正式环境地址:
+   检查 conf/ms_conf.xml:		<PayUrl link="10.206.139.242:80/v3/r" slavelink="10.212.20.177:80/v3/r" count="10" paydebug="0" paydelaytest="0"/>
+
+
+4. DataMoreIDC正式环境地址:
+   检查gs_conf.xml:			<DataMoreUrl link="http://dragonnest.tencent-cloud.net/datamore/dragonnestinner/user_profile" />
+
+
+5. 防沉迷IDC正式环境地址:		
+   检查gs_conf.xml:			<AntiAddictionUrl link="http://lzg.maasapi.idip.tencent-cloud.net/aas.fcg" />
+
+
+6. 信鸽推送IDC正式环境地址:		10.166.224.41
+   检查ms_conf.xml:   			<XingeUrl link="10.166.224.41"/>
+
+
+7. 开服时间要正确设置:
+   检查小服数据库的表 openserverdate, 第一行, _id为1， date 列精确到天: 例 2017-02-20)
+
+
+8. 屏蔽字检测配置检查:
+   检查 lzgjx/gsconf/serveronly/tss_sdk_conf.xml:   <use_dirty_file_flag_>0 </use_dirty_file_flag_>
+
+
+
+9. 小服注册人数上限检查：
+   检查 conf/db_conf.xml:		<MaxRegisterNum value="50000"/>
+
+
+10. 微信订阅推送开关设置，用来标识是否做订阅推送服务器, 微信区只能有且一个小服打开，不能多个服同时打开
+    检查小服数据库的表 wxpush 的第一行，插入(_id, isopen) -> 1, 1，只有一个小服需要插入，其他微信小服表为空
+
+
+11. WorldServer的DB的masterid表 要插入一行，配置主WorldServer的ID。
+
+
+12. fm_conf.xml配置，正式环境下:  qq大区<AppPlat app="qq"/>，微信大区<AppPlat app="wechat"/>,   预发布环境下:   <AppPlat app=""/>
+
+
+13. 反外挂开关要打开: ms_conf.xml, gs_conf.xml里: debug="0"，改成1的话，则反外挂检查关闭，gm权限玩家输入的gm命令可生效。
+
+
+14. login_conf.xml里的 debug="0"，改成1的话则所有玩家都拥有gm权限(可以点开gm命令输入框，但是否生效要看gs_conf.xml中的 debug是0还是1)。
+
+
+15. 正式开服前清理封印数据，检查小服数据库的globconfig表，执行DELETE FROM globalconfig WHERE `_id`=4 OR `_id`=5 OR `_id`=6 OR `_id`=8;

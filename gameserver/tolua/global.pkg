@@ -1,0 +1,5 @@
+$#include "tolua_global.h"
+
+
+
+Role* GetRoleByID(CUint64 id);

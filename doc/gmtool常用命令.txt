@@ -1,0 +1,64 @@
+
+gmtool 用来给MS 、Login 、VersionServer 发送热加载命令 
+
+1. MS的gmtool每个小区配置一个只连接本服MS, 用法:
+
+	./gmtool gmtool_2local_conf.xml msreload [args]
+   MS常用命令：
+	用途			|	热加载参数名		|	热加载文件
+
+	打开关闭白名单		|	usewhitelist		|	gsconf/serveronly/usewhitelist.txt
+	更新白名单		|	whitelist		|	gsconf/serveronly/whitelist.txt
+	更新版本号		|	version			|	gsconf/serveronly/Version.txt
+	更新排队设置		|	queuing			|	gsconf/serveronly/queuing.txt
+	打开关闭注册		|	dbloginlimit		|	dbconf/LoginLimit.txt
+	更新注册人数上限	|	maxregisternum		|	conf/db_conf.xml
+	视野同步设置		|	SceneView		|	gsconf/table/GlobalConfig.txt
+	渠道平台屏蔽功能	|	ChannelCloseSys		|	gsconf/serveronly/channelclosesystem.txt
+   示例：
+	./gmtool gmtool_2local_conf.xml msreload usewhitelist
+	./gmtool gmtool_2local_conf.xml msreload version
+	./gmtool gmtool_2local_conf.xml msreload whitelist		
+	./gmtool gmtool_2local_conf.xml msreload dbloginlimit		
+	./gmtool gmtool_2local_conf.xml msreload SceneView	
+	./gmtool gmtool_2local_conf.xml msreload ChannelCloseSys			
+	
+
+
+2.Login的gmtool所有login公用一个， 同时需要配置login的db，用法：
+
+	./gmtool gmtool_2login_conf.xml lgreload [args] 
+
+	Login上常用命令:
+	用途			|	热加载参数名		|	热加载文件
+
+	更新区服列表		|	gatelist		|	从DB重新读取gateinfo表
+	更新gm账号列表		|	gmaccount		|	从DB重新读取gmaccount表
+	更新ios审核版本号	|	iosauditversion  	|	loginconf/ios_audit_version.txt
+	更新白名单		|	whitelist		|	loginconf/whitelist.txt
+
+   示例:
+      ./gmtool gmtool_2login_conf.xml lgreload gatelist
+      ./gmtool gmtool_2login_conf.xml lgreload iosauditversion
+      ./gmtool gmtool_2login_conf.xml lgreload whitelist
+
+3. VersionServer 的gmtool
+	./gmtool gmtool_2version_conf.xml vsreload [args]
+
+	VersionServer上常用命令：
+	用途			|	热加载参数名		|	热加载文件
+	
+	更新版本号		|	version				|	Version.txt
+	
+	
+4.fmserver的gmtool，qq、wechat的fmserver各一个gmtool，qq、wechat的热备也需要配置gmtool。
+	热更新需要执行主机、热备gmtool的命令
+	./gmtool gmtool_2fm_conf.xml fmreload reload
+
+
+5.world和跨服GS 热加载
+	./gmtool gmtool_2world_conf.xml worldreload [args]
+
+     [args] 为各系统表格
+
+	 

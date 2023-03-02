@@ -1,0 +1,26 @@
+INCLUDE_DIRECTORIES( . network protcol http )
+INCLUDE_DIRECTORIES( /usr/include/mysql )
+INCLUDE_DIRECTORIES(${SERVER_SOURCE_DIR}/share )
+INCLUDE_DIRECTORIES(${SERVER_SOURCE_DIR}/thirdparty/tinyxml2 )
+INCLUDE_DIRECTORIES(${SERVER_SOURCE_DIR}/thirdparty/curl-7.40.0/include )
+
+LINK_DIRECTORIES( /usr/lib64/mysql )
+
+FILE(GLOB_RECURSE SRC_LIST *.cpp)
+#AUX_SOURCE_DIRECTORY(http SRC_LIST)
+AUX_SOURCE_DIRECTORY(${SERVER_SOURCE_DIR}/protocol/pb SRC_LIST)
+AUX_SOURCE_DIRECTORY(${SERVER_SOURCE_DIR}/thirdparty/tinyxml2 SRC_LIST)
+AUX_SOURCE_DIRECTORY(${SERVER_SOURCE_DIR}/share/util SRC_LIST)
+AUX_SOURCE_DIRECTORY(${SERVER_SOURCE_DIR}/share/utildb SRC_LIST)
+AUX_SOURCE_DIRECTORY(${SERVER_SOURCE_DIR}/share/profile SRC_LIST)
+
+LIST(APPEND SRC_LIST ${SERVER_SOURCE_DIR}/share/appid.cpp)
+
+
+ADD_EXECUTABLE(dbserver ${SRC_LIST})
+TARGET_LINK_LIBRARIES(dbserver common epoll util mysql pthread mysqlclient tcmalloc profiler
+		protobuf z)
+
+
+set_target_properties(dbserver PROPERTIES COTIRE_CXX_PREFIX_HEADER_INIT "pch.h")
+cotire(dbserver)

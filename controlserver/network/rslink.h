@@ -1,0 +1,34 @@
+#ifndef _RS_LINK_H_
+#define _RS_LINK_H_
+
+#include "baselink.h"
+
+class RSLink : public BaseLink
+{
+	RSLink();
+	~RSLink();
+	DECLARE_SINGLETON(RSLink)
+public:
+	virtual void OnConnectSucceed(UINT32 dwConnID);
+	virtual void OnConnectFailed();
+	virtual void OnPassiveConnect(UINT32 dwConnID) {}
+	virtual void OnClose(UINT32 dwConnID, int err);
+	virtual const std::string &GetName();
+
+	bool SendTo(const CProtocol& ptc);
+	bool SendTo(CRpc& rpc);
+
+	UINT32 GetConnId()
+	{
+		return m_connId;
+	}
+
+	void SetRouterIpPort(const std::string& ip, UINT32 port);
+
+private:
+	UINT32 m_connId;
+	std::string m_routerIp;
+	UINT32 m_routerPort;
+};
+
+#endif

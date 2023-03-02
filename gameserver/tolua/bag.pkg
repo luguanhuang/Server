@@ -1,0 +1,24 @@
+$#include "unit/role.h"
+$#include "gamelogic/bagtransition.h"
+
+
+class BagTransition
+{
+public:
+	BagTransition(Role *pRole);
+	~BagTransition();
+	
+	void SetRecyle();
+	void NotifyClient();
+};
+
+
+class BagGiveItemTransition : public BagTransition
+{
+public:
+	BagGiveItemTransition(Role *pRole);
+	~BagGiveItemTransition();
+
+	void SetReason(int nReason, int nSubReason = -1, bool bIsCheckZeroProfit = true);
+	void GiveItem(int itemID, int itemCount, bool isbind = true);
+};

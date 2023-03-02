@@ -1,0 +1,317 @@
+$#include "define/tlogenum.h"
+
+
+enum EItemFlowType
+{
+	ItemFlow_Task,			///> 任务
+
+	ItemFlow_Stage,			///> 关卡
+
+	ItemFlow_Skill,			///> 技能
+	ItemFlow_Level,			///> level 
+
+	ItemFlow_Equip,			///> 装备
+	ItemFlow_Compose,		///> 合成
+	ItemFlow_Decompose,		///> 分解
+	ItemFlow_Smelt,			///> 洗炼
+	ItemFlow_Emblem,		///> 纹章
+	ItemFlow_Jade,			///> 龙玉
+
+	ItemFlow_Pay,			///> pay
+	ItemFlow_Shop,			///> 商店
+
+	ItemFlow_Reward,		///> 运营活动
+
+	ItemFlow_Lottory,		///> 抽奖
+	ItemFlow_Fatigue,		///> 体力
+	ItemFlow_Activity,		///> 活跃度
+	ItemFlow_Checkin,		///> 签到
+	ItemFlow_Achievement,	///> 成就
+	ItemFlow_Fashion,		///> 时装
+	ItemFlow_Flower,		///> 送花
+	ItemFlow_TShow,			///> T台
+	ItemFlow_Mail,			///> 邮件
+	ItemFlow_FindBack,		///> 补偿
+	ItemFlow_Buy,			///> 买 
+	ItemFlow_GM,			///> GM
+	ItemFlow_Guild,			///> 公会
+	ItemFlow_GaoJiGu,		///> 家园
+	ItemFlow_Pet,			///> 宠物
+	ItemFlow_Camp,			///> camp
+	ItemFlow_Auction,		///> acution
+	ItemFlow_AchieveV2,		///> 新版成就
+	ItemFlow_Chat,			///> 聊天【世界】
+	ItemFlow_IDIP,			///> idip接口
+	ItemFlow_QA,			///> 答题
+	ItemFlow_DRAGON,		///> 龙本
+	ItemFlow_Tower,			///> 黑暗神殿
+	ItemFlow_Goddess,		///> 女神的试炼
+	ItemFlow_Friend,		///> 好友
+	ItemFlow_Title,			///> 头衔
+	ItemFlow_FirstPass,		///> 首通
+	ItemFlow_ItemFindBack,	///> 道具找回
+	ItemFlow_BuyIBShop,		///> 购买IB道具
+	ItemFlow_Atlas,         ///> 图鉴
+	ItemFlow_Sprite,		///> 精灵
+	ItemFlow_SuperRisk,		///> 大冒险
+	ItemFlow_LevelSeal,		///> 封印系统
+	ItemFlow_UseItem,		///> 使用道具
+	ItemFlow_OpenSystem,	///> 系统开放
+	ItemFlow_SpActivity,	///> 活动（开服活动，解封活动等）
+	ItemFlow_Garden,		///> 家园
+	ItemFlow_GuildAuction,  ///> 公会拍卖
+	ItemFlow_GoldClick,		///> 摇钱树
+	ItemFlow_MailBagFull,	///> 背包满了发邮件
+	ItemFlow_TeamCost,		///> 赏金团
+	ItemFlow_GuildInherit,	///> 公会传功
+
+	ItemFlow_Rename,		///> 改名
+	ItemFlow_Enchant,		///> 装备附魔
+	ItemFlow_Partner,		///> 战友系统
+	ItemFlow_PokerTournament,///> 扑克之王
+	ItemFlow_GuildTerritory, ///> 公会领地
+	ItemFlow_HeroBattle,	///> 英雄战场
+	ItemFlow_Forge,			///> 装备锻造
+
+	ItemFlow_ItemSell,		///> 物品出售
+	ItemFlow_ChangePro,		///> 变职业
+
+	ItemFlow_LeagueBattle,	///> 战队联赛
+};
+
+enum EItemFlowSubType
+{
+	////注意：： 新加类型只能依次往下加，不能打乱上面的数据id  （请加中文注释）
+	ItemFlow_Task_Finish,			///> 任务 
+	ItemFlow_Stage_Revive,			///> 关卡复活
+	ItemFlow_Stage_Count,			///> 关卡次数
+	ItemFlow_Stage_Chest,			///> 关卡宝箱
+	ItemFlow_Stage_Enter,			///> 关卡进入
+	ItemFlow_Stage_Supplement,		///> 关卡补给
+	ItemFlow_Stage_TeamBox,			///> 关卡抽宝箱
+	ItemFlow_Stage_Doodad,			///> 关卡掉落
+	ItemFlow_Stage_Battle,			///> 关卡奖励
+	ItemFlow_Stage_Abysss,			///> 深渊奖励
+	ItemFlow_Stage_Nest,			///> 巢穴奖励
+	ItemFlow_Stage_WorldBoss,		///> 世界boss鼓舞
+	ItemFlow_Stage_GuildBoss,		///> 工会boss鼓舞
+	ItemFlow_Stage_Arena,			///> 竞技场奖励
+	ItemFlow_Stage_Pk,				///> 排位赛奖励
+	ItemFlow_Stage_BossRush,		///> bossrush奖励
+	ItemFlow_Stage_ExpTeam,			///> 无
+	ItemFlow_Stage_Tower,			///> 黑暗神殿奖励
+	ItemFlow_Stage_Goblin,			///> 小妖精奖励
+	ItemFlow_Stage_Unknown,			///> 关卡其他奖励
+	ItemFlow_Skill_Up,				///> 技能升级
+	ItemFlow_Skill_Reset,			///> 技能重置
+	ItemFlow_Level_Give,			///> 等级奖励
+	ItemFlow_Equip_Enhance,			///> 装备强化
+	ItemFlow_Decompose_Item,		///> 物品分解
+	ItemFlow_Equip_Compose,			///> 装备合成
+	ItemFlow_Jade_Compose,			///> 龙玉合成
+	ItemFlow_Jade_OpenSlot,			///> 龙玉开孔
+	ItemFlow_Jade_BodyCompose,		///> 龙玉合成
+	ItemFlow_Jade_Equip,			///> 镶嵌龙玉
+	ItemFlow_Jade_Equip_Replace,	///> 龙玉替换
+	ItemFlow_Jade_TakeOff,			///> 龙玉脱
+	ItemFlow_Emblem_LevelUp,		///> 纹章升级
+	ItemFlow_Emblem_IdentifyCost,	///> 纹章鉴定
+	ItemFlow_Emblem_Compose,		///> 纹章合成
+	ItemFlow_Shop_Buy,				///> 商店买
+	ItemFlow_Shop_Refresh,			///> 商店刷新
+	ItemFlow_Pay_Give,				///> 付费
+	ItemFlow_Lottory_Draw,			///> 抽奖
+	ItemFlow_Checkin_Day,			///> 签到
+	ItemFlow_Activity_Day,			///> 活跃度
+	ItemFlow_Flower_Send,			///> 送花赠送
+	ItemFlow_Flower_Get,			///> 送花得到
+	ItemFlow_Flower_GetRankReward,	///> 送花排行奖励
+	ItemFlow_Achievement_Give,		///> 成就奖励
+	ItemFlow_Fashion_Compose,		///> 时装合成
+	ItemFlow_Fashion_SkillPoint,	///> 时装技能点
+	ItemFlow_Mail_Give,				///> 邮件给
+	ItemFlow_FindBack_Exp,			///> 经验找回
+	ItemFlow_TShow_Vote,			///> T台投票
+	ItemFlow_Fatigue_Add,			///> 增加体力
+	ItemFlow_Buy_Coin,				///> 购买金币
+	ItemFlow_Buy_Fatigue,			///> 购买体力
+	ItemFlow_Buy_DragonCoin,		///> 购买龙币
+	ItemFlow_GM_Give,				///> GM给
+	ItemFlow_GM_Clear,				///> GM清理
+	ItemFlow_Reward_System,			///> 系统奖励
+	ItemFlow_Reward_Online,			///> 在线奖励
+	ItemFlow_Reward_NextDay,		///> 次日奖励
+	ItemFlow_Reward_Days,			///> 登录天数奖励
+	ItemFlow_Reward_Login,			///> 登录奖励
+	ItemFlow_Guild_Create,			///> 工会创建
+	ItemFlow_Guild_Card,			///> 工会扑克
+	ItemFlow_Guild_Checkin,			///> 工会签到
+	ItemFlow_Guild_Fatigue,			///> 工会体力
+	ItemFlow_Guild_Bonus,			///> 工会红包
+	ItemFlow_GaoJiGu_Fish,			///> 钓鱼
+	ItemFlow_Pet_Feed,				///> 宠物喂养
+	ItemFlow_Camp_Task,				///> 阵营任务
+	ItemFlow_Auction_Take,			///> 拍卖行扣
+	ItemFlow_Auction_Give,			///> 拍卖行给
+	ItemFlow_AchieveV2_Achieve,		///> 成就奖励
+	ItemFlow_AchieveV2_AchievePoint,///> 成就点数奖励
+	ItemFlow_Stage_Pvp,				///> 保卫队长
+	ItemFlow_Chat_World,			///> 世界聊天
+	ItemFlow_IDIP_Oper,				///> IDIP
+	ItemFlow_QA_AnswerRight,		///> 答题答对奖励
+	ItemFlow_DRAGON_Enter,			///> 进入龙本
+	ItemFlow_Stage_Sweep,           ///> 扫荡
+	ItemFlow_Tower_Sweep,			///> 黑暗神殿
+	ItemFlow_Goddess_Reward,		///> 女神的眼泪奖励
+	ItemFlow_Guild_Dare_Reward,		///> 公会挑战奖励
+	ItemFlow_NestBuy,				///> 巢穴次数购买
+	ItemFlow_AbysssBuy,				///> 深渊次数购买
+	ItemFlow_FriendGift,			///> 好友礼物
+	ItemFlow_EnhanceTrans,			///> 强化转移
+	ItemFlow_Expand_Seat,           ///> 扩展坐骑栏  
+	ItemFlow_BuyPay,				///> 充值获得钻石
+	ItemFlow_BuyAileen,				///> 充值购买艾琳每日礼包
+	ItemFlow_BuyPayCard,			///> 充值购买周/月卡
+	ItemFlow_BuyGrowthFund,			///> 充值购买成长基金
+	ItemFlow_PayCardAward,			///> 领取周月卡奖励
+	ItemFlow_TitleLevelUp,			///> 头衔升级
+	ItemFlow_PayFirstAward,			///> 领取首充奖励
+	ItemFlow_FirstPassRank,			///> 首通
+	ItemFlow_FirstPassCommend,		///> 首通点赞
+	ItemFlow_VipLevelGift,			///> 领取vip等级礼包
+	ItemFlow_GrowthFundAward,		///> 领取成长基金奖励
+	ItemFlow_ItemFindBackCost,		///> 道具找回
+	ItemFlow_ItemFindBackGet,		///> 道具找回获得
+	ItemFlow_BuyIBItemByDiamond,	///> 采用钻石购买IB道具
+	ItemFlow_BuyIBItemByDragonCoin,	///> 采用龙玉购买IB道具
+	ItemFlow_CreateAtlasTeam,	    ///> 图鉴系统激活组合
+	ItemFlow_SpriteLevelUp,			///> 精灵升级
+	ItemFlow_SpriteEvolutionLevelUp,///> 精灵升星
+	ItemFlow_SpriteAwake,			///> 精灵觉醒
+	ItemFlow_SpriteDecompose,		///> 精灵分解
+	ItemFlow_SpriteLottery,			///> 精灵蛋抽奖
+	ItemFlow_GaoJiGu_UseFish,		///> 使用鱼
+	ItemFlow_SuperRiskDice,		    ///> 大冒险
+	ItemFlow_LevelSeal_Exchange,	///> 封印货币兑换礼包
+	ItemFlow_SuperRiskOpenBox,		///> 大冒险开宝箱
+	ItemFlow_SuperRiskBattle,		///> 大冒险战斗
+	ItemFlow_SuperRiskAccelerate,	///> 大冒险加速
+	ItemFlow_SuperRiskBuy,			///> 大冒险购买
+	ItemFlow_SuperRiskRebattle,		///> 大冒险再次挑战
+	ItemFlow_StageDragonExp,        ///> 龙之远征
+	ItemFlow_SmeltEquip,			///> 装备洗炼
+	ItemFlow_SmeltEmblem,			///> 纹章洗炼
+	ItemFlow_Tower_RefreshSweep,	///> 黑暗神殿刷新扫荡结果
+	ItemFlow_Tower_FirstPass,		///> 黑暗神殿首通
+	ItemFlow_BuyArenaCost,			///> 购买竞技场次数
+	ItemFlow_ClearArenaCD,			///> 清除竞技场CD
+	ItemFlow_ResetProfession,		///> 重置职业
+	ItemFlow_Buy_BlueBird,			///> 购买蓝鸟
+
+	ItemFlow_UsePeck,				///> 使用礼包
+	ItemFlow_CircleDraw,			///> 圆盘抽奖
+	ItemFlow_UsePetBorn,			///> 使用宠物蛋
+	ItemFlow_UseSceneCountTicket,	///> 使用入场券
+	ItemFlow_OpenSystemGive,		///> 开放系统给 
+	ItemFlow_SpActivity_GetReward,	///> 活动领取任务奖励
+	ItemFlow_SpActivity_BigPrize,	///> 活动领取大奖
+	ItemFlow_GuildCardMatch,		///> 工会卡牌大赛
+	ItemFlow_Auction_GetBack,       ///> 拍卖行取回
+	ItemFlow_LevelSealSelfGit,		///> 封印个人勋章奖励
+
+	ItemFlow_Garden_PlantSeed,		///> 家园种植
+	ItemFlow_Garden_Fish,			///> 家园钓鱼
+	ItemFlow_Garden_Cooking,		///> 家园烹饪
+	ItemFlow_Garden_Banquet,		///> 家园
+
+	ItemFlow_Guild_Wage,			///> 公会工资
+
+	ItemFlow_GuildAuct_Take,        ///> 公会拍卖
+
+	ItemFlow_GoldClickGive,			///> 摇钱树
+	ItemFlow_GoldClickTake,			///> 摇钱树
+
+	ItemFlow_UsePandora,			///> 打开潘多拉之心
+
+	ItemFlow_GuildAuct_Give,        ///> 公会拍卖
+
+	ItemFlow_Donate,				///> 公会捐献
+	
+	ItemFlow_TeamCostTake,			///> 赏金团
+	ItemFlow_TeamCostGive,			///> 赏金团
+	ItemFlow_GuildInheritGive,		///> 公会传功
+
+	ItemFlow_RenameCost,			///> 改名消耗
+	ItemFlow_GuildBossAward,		///> 公会boss奖励
+	ItemFlow_GuildArenaAward,		///> 公会擂台战奖励
+	ItemFlow_GuildRankdAward,		///> 公会排名奖励
+	ItemFlow_GuildResWarAward,		///> 公会矿脉战奖励
+	ItemFlow_GuildCampRankAward,	///> 公会大冒险排名奖励
+	ItemFlow_SkyCityAward,			///> 天空竞技场奖励
+	ItemFlow_GuildCardAward,		///> 公会扑克奖励
+	ItemFlow_FlowerWeekRankAward,	///> 鲜花排行奖励
+	ItemFlow_GuildLadderAward,		///> 公会天梯赛奖励
+	ItemFlow_QAAward,				///> 答题排行奖励
+	ItemFlow_WorldBossAward,		///> 世界boss奖励
+	ItemFlow_PkWeekRankAward,		///> 天梯赛周排行奖励
+	ItemFlow_PlatFriendGift,		///> 平台好友gift
+	ItemFlow_DragonExpRankAward,	///> 龙之远征排名奖励
+	ItemFlow_DonateMemberItem,		///> 公会捐献
+	ItemFlow_GuildAuctProfit,		///> 公会拍卖分红
+	ItemFlow_GuildAuctFailBack,		///> 公会竞价失败退回
+	ItemFlow_TeamCostAward,			///> 赏金团每日奖励
+	ItemFlow_QQVip,					///> 手Q会员
+	ItemFlow_PayMember,				///> 充值会员特权
+	ItemFlow_TeamCostBack,			///> 赏金团返还
+	ItemFlow_PetSkillBook,			///> 使用坐骑技能书
+	ItemFlow_Enchant_Take,			///> 装备附魔消耗
+	ItemFlow_MakePartner,			///> 结拜战友关系 
+	ItemFlow_WeekNest,              ///> 每周巢穴
+	ItemFlow_PartnerChest,			///> 战友活跃度宝箱
+	ItemFlow_PokerTournamentAward,		///> 扑克之王奖励
+	ItemFlow_PartnerShop,			///> 战友商店
+	ItemFlow_PokerTournamentCost,	///> 扑克之王报名消耗
+	ItemFlow_MentorComplete,		///> 师徒出师
+	ItemFlow_GuildTerrChall,		///> 公会领地宣战
+	ItemFlow_GuildTerrJoin,         ///> 公会领地参与
+	
+	ItemFlow_HeroBattle_Reward,		///> 英雄战场胜利奖励与每日参与奖励
+	ItemFlow_HeroBattle_WeekReward,	///> 英雄战场每周胜场奖励
+	ItemFlow_HeroBattle_BuyHero,	///> 英雄战场买英雄
+	ItemFlow_SpActivity_Collect,	///> 完成收集活动扣物品
+	ItemFlow_Desig,					///> 成就称号
+	ItemFlow_Forge_Take,			///> 装备锻造消耗
+	ItemFlow_Exchange_Dragoncoin,   ///> 钻石不足时，兑换指定数量的龙币
+
+	ItemFlow_ItemSell_Out,			///> 物品出售
+	ItemFlow_ItemSell_In,			///> 物品出售
+	ItemFlow_Fashion_TimeOut,		///> 时装过期
+
+	ItemFlow_ChangePro_Cost,		///> 变职业
+	ItemFlow_ChangePro_ItemTake,	///> 变职业
+	ItemFlow_ChangePro_ItemGive,	///> 变职业
+
+	ItemFlow_SpriteTrain,			///> 精灵培养
+	ItemFlow_SpriteResetTrain,		///> 精灵重置培养
+
+	ItemFlow_LeagueBattleRace,		///> 联赛积分赛
+
+	ItemFlow_SkillTwo,				///> 同步获取技能点2
+	ItemFlow_PayReward,             ///> 支付礼包
+
+	ItemFlow_MentorTask,	        ///> 师徒任务
+	ItemFlow_FlowerValentinesDayRankAward,	///> 鲜花情人节排行奖励
+
+	ItemFlow_Compose_Common,		///> 合成物品——通用
+
+	ItemFlow_Team_UseTicket,        ///> 组队用门票
+
+	ItemFlow_Stage_ActivityOne,    ///> 活动关卡1
+	ItemFlow_Stage_ActivityTwo,    ///> 活动关卡2
+	ItemFlow_Stage_ActivityThree,  ///> 活动关卡3
+
+	ItemFlow_SpActivityPartner_GetReward,	///> 战友日活动领取奖励
+	ItemFlow_SpActivityBackFlow_GetReward,	///> 回流活动领取奖励
+
+	////> 注意：： 新加类型只能依次往下加，不能打乱上面的数据id  （请加中文注释）
+};

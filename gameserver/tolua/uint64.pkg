@@ -1,0 +1,12 @@
+$#include "script/luauint64.h"
+
+
+class CUint64
+{
+public:
+	CUint64();
+	~CUint64();
+
+	std::string tostr();
+	void set(const std::string& str);
+};

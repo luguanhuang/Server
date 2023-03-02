@@ -1,0 +1,46 @@
+
+
+全部清档流程:
+1.  world_db:    masterid表不清，其余表都清空
+2.  online_db:	 所有表都清空
+3.  login_db:	 notice，gmaccount，gateinfo 表不清，其余表都清空
+4.  game_db:	 openserverdate，wxpush，notice 表不清，其余表都清空
+5.  centerserver_redis: 清空所有
+6.  把login_db的gateinfo表的列:  register_account, online_role更新为0，open_time列统一设置成2015-20-27 (看情况，方便就搞，不搞也无妨)
+
+
+
+新服正式对外时流程：
+1. 关闭小服所有进程
+2. 修改 openserverdate表，修改第一行数据：_id列为1， date列精为当天日期值: 如 2017-02-20
+3. 对globconfig表，执行DELETE FROM globalconfig WHERE `_id`=4 OR `_id`=5 OR `_id`=6 OR `_id`=8;
+4. 启动进程
+5. 测试可以进入
+6. 改变该服状态，刷新区服列表，对玩家可见
+
+
+
+开服流程：
+1. 开启全区全服级别模块: idipserver, versionserver
+2. 开启平台级别进程:	 fmserver(qq, wx)
+3. 开启大区级别模块:	 loginserver, centerserver，worldserver
+4. 开启跨服模块:	 routerserver，cross_gameserver
+5. 开启各个小服模块
+
+
+维护时关服流程:
+1. 关闭小服模块
+2. 关闭 cross_gameserver模块
+3. 关闭 routerserver模块
+4. 关闭 worldserver模块
+5. fmserver centerserver, idipserver, versionserver，loginserver 不关闭（除非修复BUG，更新邮件中会说明）
+
+
+小服各进程关闭顺序:
+1. 关闭gateserver1, gateserver2
+2. 关闭gameserver5, gameserver4 ... gameserver1
+3. 关闭masterserver
+4. 关闭audioserver
+5. 关闭controlserver
+6. 关闭dbserver
+注：如果出现进程关闭掉，等待超过1分钟后，直接kill -9

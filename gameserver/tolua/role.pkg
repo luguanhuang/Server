@@ -1,0 +1,26 @@
+$#include "unit/role.h"
+$pfile "unit.pkg"
+
+
+class Role : public Unit
+{
+public:
+	unsigned int GetNickId();
+
+	CUint64 GetSessionID() const;
+	CUint64 GetRoleID() const;
+
+	const std::string &GetName() const;
+	const std::string GetAccount();
+
+
+	bool AddDiamond(int iCount, int reason, int subreason);
+
+	
+	void HintNotify(unsigned int systemid, bool isremove);
+
+	bool IsWatcher();
+
+	void AddFriend(CUint64 friendid);
+	void DelFriend(CUint64 friendid);
+};

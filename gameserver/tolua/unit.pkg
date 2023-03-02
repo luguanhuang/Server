@@ -1,0 +1,9 @@
+$#include "unit/unit.h"
+$pfile "uint64.pkg"
+
+class Unit
+{
+public:
+  int GetLevel();
+  CUint64 GetID();
+};
