@@ -1,8 +1,5 @@
 [Bb]uild/
 
-# generated protobuf files
-protocol/
-
 # cmake files
 CMakeLists.txt.user
 CMakeCache.txt

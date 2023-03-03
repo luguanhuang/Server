@@ -1,0 +1,62 @@
+﻿#ifndef __RPCM2G_MODIFYDRAGONGUILDNAMECOST_H__
+#define __RPCM2G_MODIFYDRAGONGUILDNAMECOST_H__
+
+// generate by ProtoGen at date: 2017/9/8 10:45:33
+
+#include "crpc.h"
+#include "pb/project.pb.h"
+
+using namespace KKSG;
+
+#define RPCM2G_MODIFYDRAGONGUILDNAMECOST_TYPE 58056
+
+class RpcM2G_ModifyDragonGuildNameCost : public CRpc
+{
+private:
+
+	RpcM2G_ModifyDragonGuildNameCost():CRpc(RPCM2G_MODIFYDRAGONGUILDNAMECOST_TYPE)
+	{
+        m_dwTimeout = 5000;
+		m_ArgPtr = &m_oArg;
+		m_ResPtr = &m_oRes;
+	}
+
+public:
+	static RpcM2G_ModifyDragonGuildNameCost *CreateRpc()
+	{
+		return new RpcM2G_ModifyDragonGuildNameCost;
+	}
+
+	virtual RpcEndType GetEndType() const;
+	virtual void Process(UINT32 dwConnID);
+
+private:
+	// implemention as client
+	void OnReply(const ModifyDragonNameCostArg &roArg, const ModifyDragonNameCostRes &roRes, const CUserData &roUserData);
+	void OnTimeout(const ModifyDragonNameCostArg &roArg, const CUserData &roUserData);
+
+	// implemention as server
+	void OnCall(const ModifyDragonNameCostArg &roArg, ModifyDragonNameCostRes &roRes);
+	void OnDelayReplyRpc(const ModifyDragonNameCostArg &roArg, ModifyDragonNameCostRes &roRes, const CUserData &roUserData);
+
+	virtual void OnReplyTimeout() 
+	{ 
+		OnTimeout(m_oArg, m_oUser); 
+	}
+
+	virtual void OnDelayRpc(const CUserData &userData)
+	{
+		OnDelayReplyRpc( m_oArg, m_oRes, userData);
+	}
+
+	virtual CRpc *NewRpc() 
+	{
+		return CreateRpc();
+	}
+
+public:
+	ModifyDragonNameCostArg m_oArg;
+	ModifyDragonNameCostRes m_oRes;
+};
+
+#endif
