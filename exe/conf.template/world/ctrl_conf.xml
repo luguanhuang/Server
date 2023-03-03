@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+
+<ControlServer name="control" zone="1" id="1">
+	<AppPlat app="qq" plat="ios" /> <!-- app(qq, wechat), plat(ios, android) -->
+	<DB ip="10.0.128.229" user="root" password="" port="3306" database="world"/>
+
+	<Connect>
+		<peer ip="127.0.0.1" port="21065" handler="dblink" sendBufSize="2048000" recvBufSize="2048000"/>
+		<peer ip="10.0.128.229" port="25000" handler="loginlink" sendBufSize="1024000" recvBufSize="1024000"/>
+	</Connect>
+
+	<Listen>
+		<peer ip="0.0.0.0" port="21025" handler="gatelink" sendBufSize="2048000" recvBufSize="2048000"/>
+		<peer ip="0.0.0.0" port="21045" handler="gslink" sendBufSize="2048000" recvBufSize="2048000"/>
+		<peer ip="0.0.0.0" port="21080" handler="mslink" sendBufSize="2048000" recvBufSize="2048000"/>
+		<peer ip="0.0.0.0" port="12895" handler="gmtoollink" sendBufSize="0" recvBufSize="0"/>
+	</Listen>
+
+	<!-- rolltype (day, hour) -->
+	<LogType  file="1" console="1" rolltype="day"/>
+	<LogLevel info="1" debug="1" warn="1" error="1" fatal="1"/>
+
+	<Shm>
+		<config name="scene" num="50000" />
+		<config name="account" num="20000" />
+		<config name="role" num="10000" />
+	</Shm>
+
+	<RootPath dir="gsconf"/>
+	<RpcTimeout enabled="1"/>
+	<KeepAlive  enabled="0"/>
+</ControlServer>

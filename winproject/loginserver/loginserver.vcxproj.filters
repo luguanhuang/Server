@@ -1,0 +1,439 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="protocol">
+      <UniqueIdentifier>{551e47e7-ede7-44be-83f4-27d8f082c3be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="network">
+      <UniqueIdentifier>{abf9bf90-221b-42d9-9956-a977e1bd1130}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\pb">
+      <UniqueIdentifier>{32dfb5b2-f404-4523-bcc4-de59bf0ad83a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\login">
+      <UniqueIdentifier>{c52fe6d2-7e23-48ef-9564-c4a9c998c40b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="verify">
+      <UniqueIdentifier>{29b2a4a3-2309-4b3d-8163-f5105fe84d12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="table">
+      <UniqueIdentifier>{81c2af75-0421-49d2-9b97-a91368798c4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gatemgr">
+      <UniqueIdentifier>{02ba1b74-28d4-43d9-90c5-1db5f9dbfc30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="share">
+      <UniqueIdentifier>{10548859-343c-48d2-a882-937ce48e10f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gmmgr">
+      <UniqueIdentifier>{3d4fbab2-fda0-439d-911a-b8eaa0cd869f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="iplist">
+      <UniqueIdentifier>{220a71f4-d742-4319-9085-08c4939a1550}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sql">
+      <UniqueIdentifier>{c8efd076-f61a-4e1e-9cc2-4269b4745ca3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\gm">
+      <UniqueIdentifier>{a7978568-1de1-4af3-bf2c-8535fde0890b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\common">
+      <UniqueIdentifier>{7a0b28c8-4d7a-4ec8-bcfd-9cbfbbf11677}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="share\util">
+      <UniqueIdentifier>{39bcdf3d-697d-420e-a81c-693b20e98471}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="connection">
+      <UniqueIdentifier>{51711d72-2f2e-43a7-9686-80f7ac30b771}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="notice">
+      <UniqueIdentifier>{c37c7161-d431-4095-ba41-8192ac20e0db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gatemgr\dbtask">
+      <UniqueIdentifier>{a9d66579-d159-4033-ae77-456c5a341d6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="share\version">
+      <UniqueIdentifier>{015dec81-5d2f-4ca3-8095-9e5af286067e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="profile">
+      <UniqueIdentifier>{29ca016b-adc8-429a-bc69-b96056a0cb5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="share\profile">
+      <UniqueIdentifier>{b67b2e51-584a-4de5-9ef6-67e3877c6958}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\platfriend">
+      <UniqueIdentifier>{74824f8a-d257-4f57-b7c6-a9605d59a218}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\role">
+      <UniqueIdentifier>{de43edf2-222f-4ba9-a8bb-f0216a9d85f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="serverrole">
+      <UniqueIdentifier>{db9ed00f-88f3-452a-8cc9-59cd65a8ca33}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\loginserver\main.cpp" />
+    <ClCompile Include="..\..\loginserver\process.cpp" />
+    <ClCompile Include="..\..\loginserver\config.cpp" />
+    <ClCompile Include="..\..\loginserver\ptcregister.cpp" />
+    <ClCompile Include="..\..\protocol\pb\project.pb.cc">
+      <Filter>protocol\pb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\loginserver\protocol\login\rpcc2i_querygateip.cpp">
+      <Filter>protocol\login</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\loginserver\network\clientlink.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\loginserver\verify\tokenverifymgr.cpp">
+      <Filter>verify</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\loginserver\verify\SNDALoginTask.cpp">
+      <Filter>verify</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\loginserver\verify\DBCheckPasswordTask.cpp">
+      <Filter>verify</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\loginserver\gatemgr\gatemgr.cpp">
+      <Filter>gatemgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\loginserver\verify\DBUpdateLastServerTask.cpp">
+      <Filter>verify</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\loginserver\protocol\sendonly.cpp">
+      <Filter>protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\DBInfo.cpp">
+      <Filter>share</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\SQLThread.cpp">
+      <Filter>share</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\WebFetchThread.cpp">
+      <Filter>share</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\SQLStmt.cpp">
+      <Filter>share</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\loginserver\gmmgr\gmmgr.cpp">
+      <Filter>gmmgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\loginserver\network\gmlink.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\loginserver\sql\mysqlmgr.cpp">
+      <Filter>sql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\HashUtil.cpp">
+      <Filter>share</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\loginserver\verify\TXLoginTask.cpp">
+      <Filter>verify</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\protocol\pb\enum.pb.cc">
+      <Filter>protocol\pb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\loginserver\iplist\whitelistmgr.cpp">
+      <Filter>iplist</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\loginserver\protocol\gm\rpcp2i_loginhttpcommand.cpp">
+      <Filter>protocol\gm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\loginserver\protocol\common\rpcm2i_registerms2login.cpp">
+      <Filter>protocol\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\loginserver\verify\DBGetSelfServerTask.cpp">
+      <Filter>verify</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\loginserver\verify\DBUpdateSelfServerTask.cpp">
+      <Filter>verify</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\loginserver\protocol\common\ptcm2i_updateselfserver.cpp">
+      <Filter>protocol\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\loginserver\protocol\common\rpco2i_gmtoolcommand2login.cpp">
+      <Filter>protocol\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\loginserver\network\gmtoollink.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\loginserver\gmmgr\reloadmgr.cpp">
+      <Filter>gmmgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\loginserver\verify\logincontrol.cpp">
+      <Filter>verify</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\loginserver\protocol\login\rpcn2i_loginverify.cpp">
+      <Filter>protocol\login</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\loginserver\protocol\common\rpcn2i_registerns2login.cpp">
+      <Filter>protocol\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\loginserver\protocol\login\ptcn2i_usedlogintokennotify.cpp">
+      <Filter>protocol\login</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\loginserver\network\controllink.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\loginserver\network\mslink.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\util\jsonutil.cpp">
+      <Filter>share\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\util\UtilEncode.cpp">
+      <Filter>share\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\util\XRandom.cpp">
+      <Filter>share\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\loginserver\connection\connectionmgr.cpp">
+      <Filter>connection</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\loginserver\protocol\gm\ptcp2i_updateplatnoticeloginntf.cpp">
+      <Filter>protocol\gm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\loginserver\protocol\gm\rpcm2i_getplatnoticeinfo.cpp">
+      <Filter>protocol\gm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\loginserver\notice\platnoticemgr.cpp">
+      <Filter>notice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\loginserver\protocol\common\ptcn2i_updateserverstate2login.cpp">
+      <Filter>protocol\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\loginserver\gatemgr\gateinfo.cpp">
+      <Filter>gatemgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\loginserver\gatemgr\LoadGateInfoTask.cpp">
+      <Filter>gatemgr\dbtask</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\loginserver\gatemgr\UpdateGateInfoTask.cpp">
+      <Filter>gatemgr\dbtask</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\loginserver\sql\mysqltest.cpp">
+      <Filter>sql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\version\version.cpp">
+      <Filter>share\version</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\loginserver\network\worldlink.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\loginserver\profile\loginprofile.cpp">
+      <Filter>profile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\profile\profiler.cpp">
+      <Filter>share\profile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\loginserver\protocol\gm\ptcp2i_punishaccountntf.cpp">
+      <Filter>protocol\gm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\loginserver\iplist\accountbanmgr.cpp">
+      <Filter>iplist</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\util\gettimeofday.cpp">
+      <Filter>share\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\loginserver\verify\freeflowtask.cpp">
+      <Filter>verify</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\loginserver\verify\TXPlatFriendTask.cpp">
+      <Filter>verify</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\loginserver\protocol\platfriend\rpci2s_reqplatusersinfoi2s.cpp">
+      <Filter>protocol\platfriend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\loginserver\network\cslink.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\loginserver\verify\dbgetbespeaktask.cpp">
+      <Filter>verify</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\idip\idiperrdesc.cpp">
+      <Filter>share</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\idip\idiphandler.cpp">
+      <Filter>share</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\appid.cpp">
+      <Filter>share</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\loginserver\protocol\role\rpcm2i_getzoneroleinfom2i.cpp">
+      <Filter>protocol\role</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\loginserver\protocol\role\rpci2m_getzoneroleinfoi2m.cpp">
+      <Filter>protocol\role</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\loginserver\verify\getselfservertasknew.cpp">
+      <Filter>verify</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\loginserver\serverrole\readrolecontrol.cpp">
+      <Filter>serverrole</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\loginserver\verify\savechargebackrole.cpp">
+      <Filter>verify</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\loginserver\pch.h" />
+    <ClInclude Include="..\..\loginserver\minidump.h" />
+    <ClInclude Include="..\..\loginserver\process.h" />
+    <ClInclude Include="..\..\loginserver\config.h" />
+    <ClInclude Include="..\..\loginserver\ptcregister.h" />
+    <ClInclude Include="..\..\loginserver\network\clientlink.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\loginserver\verify\tokenverifymgr.h">
+      <Filter>verify</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\loginserver\verify\SNDALoginTask.h">
+      <Filter>verify</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\loginserver\verify\DBCheckPasswordTask.h">
+      <Filter>verify</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\loginserver\gatemgr\gatemgr.h">
+      <Filter>gatemgr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\loginserver\verify\DBUpdateLastServerTask.h">
+      <Filter>verify</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\DBInfo.h">
+      <Filter>share</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\SQLTask.h">
+      <Filter>share</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\SQLThread.h">
+      <Filter>share</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\WebFetchThread.h">
+      <Filter>share</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\SQLStmt.h">
+      <Filter>share</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\loginserver\gmmgr\gmmgr.h">
+      <Filter>gmmgr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\loginserver\network\gmlink.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\loginserver\sql\mysqlmgr.h">
+      <Filter>sql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\HashUtil.h">
+      <Filter>share</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\loginserver\verify\TXLoginTask.h">
+      <Filter>verify</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\loginserver\iplist\whitelistmgr.h">
+      <Filter>iplist</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\loginserver\verify\DBGetSelfServerTask.h">
+      <Filter>verify</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\loginserver\verify\DBUpdateSelfServerTask.h">
+      <Filter>verify</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\loginserver\network\gmtoollink.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\loginserver\gmmgr\reloadmgr.h">
+      <Filter>gmmgr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\loginserver\verify\logincontrol.h">
+      <Filter>verify</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\loginserver\network\controllink.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\loginserver\network\mslink.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\util\jsonutil.h">
+      <Filter>share\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\util\UtilEncode.h">
+      <Filter>share\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\util\XRandom.h">
+      <Filter>share\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\util\atomic.h">
+      <Filter>share</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\table\GateIPTable.h">
+      <Filter>table</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\util\timelist.h">
+      <Filter>share\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\loginserver\connection\connectionmgr.h">
+      <Filter>connection</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\loginserver\notice\platnoticemgr.h">
+      <Filter>notice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\loginserver\gatemgr\gateinfo.h">
+      <Filter>gatemgr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\loginserver\gatemgr\LoadGateInfoTask.h">
+      <Filter>gatemgr\dbtask</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\loginserver\gatemgr\UpdateGateInfoTask.h">
+      <Filter>gatemgr\dbtask</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\loginserver\sql\mysqltest.h">
+      <Filter>sql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\version\version.h">
+      <Filter>share\version</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\loginserver\network\worldlink.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\loginserver\profile\loginprofile.h">
+      <Filter>profile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\profile\profiler.h">
+      <Filter>share\profile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\loginserver\iplist\accountbanmgr.h">
+      <Filter>iplist</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\util\gettimeofday.h">
+      <Filter>share\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\loginserver\verify\freeflowtask.h">
+      <Filter>verify</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\loginserver\verify\TXPlatFriendTask.h">
+      <Filter>verify</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\loginserver\network\cslink.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\loginserver\verify\dbgetbespeaktask.h">
+      <Filter>verify</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\appid.h">
+      <Filter>share</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\loginserver\verify\getselfservertasknew.h">
+      <Filter>verify</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\loginserver\serverrole\readrolecontrol.h">
+      <Filter>serverrole</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\loginserver\verify\savechargebackrole.h">
+      <Filter>verify</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

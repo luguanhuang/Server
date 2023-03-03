@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CDA434EF-3737-44CD-A79F-71F77E8059E2}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>winproject</RootNamespace>
+    <ProjectName>network</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)..\lib\</OutDir>
+    <TargetName>network</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../../common/include;../../common/log;../../common/util;../../common/network/netproc;../../thirdparty/protobuf-2.5.0/include;../../thirdparty/iconv/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\common\log\LogConsole.cpp" />
+    <ClCompile Include="..\..\common\log\LogFile.cpp" />
+    <ClCompile Include="..\..\common\log\LogInit.cpp" />
+    <ClCompile Include="..\..\common\log\LogInterface.cpp" />
+    <ClCompile Include="..\..\common\log\LogMgr.cpp" />
+    <ClCompile Include="..\..\common\network\iocp\iocpnetwork.cpp" />
+    <ClCompile Include="..\..\common\network\iocp\iocpsock.cpp" />
+    <ClCompile Include="..\..\common\network\iocp\iocpsockmgr.cpp" />
+    <ClCompile Include="..\..\common\network\iocp\listener.cpp" />
+    <ClCompile Include="..\..\common\network\iocp\listenermgr.cpp" />
+    <ClCompile Include="..\..\common\network\netproc\baselink.cpp" />
+    <ClCompile Include="..\..\common\network\netproc\coder.cpp" />
+    <ClCompile Include="..\..\common\network\netproc\baseconfig.cpp" />
+    <ClCompile Include="..\..\common\network\netproc\crpc.cpp" />
+    <ClCompile Include="..\..\common\network\netproc\forward.cpp" />
+    <ClCompile Include="..\..\common\network\netproc\netproc.cpp" />
+    <ClCompile Include="..\..\common\network\netproc\protocol.cpp" />
+    <ClCompile Include="..\..\common\network\netproc\reconnetmgr.cpp" />
+    <ClCompile Include="..\..\common\timer\timerimpl.cpp" />
+    <ClCompile Include="..\..\common\timer\timermgr.cpp" />
+    <ClCompile Include="..\..\common\util\cmdline.cpp" />
+    <ClCompile Include="..\..\common\util\cvsreader.cpp" />
+    <ClCompile Include="..\..\common\util\mempipe.cpp" />
+    <ClCompile Include="..\..\common\util\mutex.cpp" />
+    <ClCompile Include="..\..\common\util\threads.cpp" />
+    <ClCompile Include="..\..\common\util\timeutil.cpp" />
+    <ClCompile Include="..\..\common\util\tinyxml2.cpp" />
+    <ClCompile Include="..\..\common\util\util.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\common\include\cmdline.h" />
+    <ClInclude Include="..\..\common\include\define.h" />
+    <ClInclude Include="..\..\common\include\mempipe.h" />
+    <ClInclude Include="..\..\common\include\multiindex_map.h" />
+    <ClInclude Include="..\..\common\include\netpacketcoder.h" />
+    <ClInclude Include="..\..\common\include\netprocess.h" />
+    <ClInclude Include="..\..\common\include\network.h" />
+    <ClInclude Include="..\..\common\include\packetcoder.h" />
+    <ClInclude Include="..\..\common\include\singleton.h" />
+    <ClInclude Include="..\..\common\include\threadlock.h" />
+    <ClInclude Include="..\..\common\include\timer.h" />
+    <ClInclude Include="..\..\common\include\timermgr.h" />
+    <ClInclude Include="..\..\common\include\timeutil.h" />
+    <ClInclude Include="..\..\common\log\LogConsole.h" />
+    <ClInclude Include="..\..\common\log\LogFile.h" />
+    <ClInclude Include="..\..\common\log\LogInit.h" />
+    <ClInclude Include="..\..\common\log\LogInterface.h" />
+    <ClInclude Include="..\..\common\log\LogMgr.h" />
+    <ClInclude Include="..\..\common\network\epoll\netutil.h" />
+    <ClInclude Include="..\..\common\network\iocp\iocpdef.h" />
+    <ClInclude Include="..\..\common\network\iocp\iocpnetwork.h" />
+    <ClInclude Include="..\..\common\network\iocp\iocpsock.h" />
+    <ClInclude Include="..\..\common\network\iocp\iocpsockmgr.h" />
+    <ClInclude Include="..\..\common\network\iocp\listener.h" />
+    <ClInclude Include="..\..\common\network\iocp\listenermgr.h" />
+    <ClInclude Include="..\..\common\network\iocp\netpch.h" />
+    <ClInclude Include="..\..\common\network\netproc\baselink.h" />
+    <ClInclude Include="..\..\common\network\netproc\coder.h" />
+    <ClInclude Include="..\..\common\network\netproc\baseconfig.h" />
+    <ClInclude Include="..\..\common\network\netproc\crpc.h" />
+    <ClInclude Include="..\..\common\network\netproc\forward.h" />
+    <ClInclude Include="..\..\common\network\netproc\netproc.h" />
+    <ClInclude Include="..\..\common\network\netproc\protocol.h" />
+    <ClInclude Include="..\..\common\network\netproc\reconnetmgr.h" />
+    <ClInclude Include="..\..\common\timer\timerimpl.h" />
+    <ClInclude Include="..\..\common\timer\timernode.h" />
+    <ClInclude Include="..\..\common\util\cmdline.h" />
+    <ClInclude Include="..\..\common\util\cvsreader.h" />
+    <ClInclude Include="..\..\common\util\mutex.h" />
+    <ClInclude Include="..\..\common\util\threads.h" />
+    <ClInclude Include="..\..\common\util\tinyxml2.h" />
+    <ClInclude Include="..\..\common\util\util.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

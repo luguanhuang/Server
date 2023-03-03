@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<FMServer name="fm" id="$server_id$">
+	<DB ip="$host$" user="$user$" password="$pwd$" port="$port$" database="$db$"/>
+	<Listen>
+		<peer ip="0.0.0.0" port="35000" handler="mslink" sendBufSize="1024000" recvBufSize="1024000"/>
+		<peer ip="0.0.0.0" port="35010" handler="gmtoollink" sendBufSize="0" recvBufSize="0"/>
+	</Listen>
+
+	<!-- rolltype (day, hour) -->
+	<LogType  file="1" console="0" rolltype="hour"/>
+	<LogLevel info="1" debug="0" warn="1" error="1" fatal="1"/>
+
+	<RootPath dir="gsconf"/>
+
+	<!-- app(qq, wechat) -->
+	<AppPlat app="qq"/>
+</FMServer>

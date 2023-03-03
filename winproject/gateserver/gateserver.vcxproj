@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{587984BC-4828-4625-BC41-AD729446A17E}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>gateserver</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)..\..\exe\</OutDir>
+    <EmbedManifest>false</EmbedManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)..\bin\</OutDir>
+    <EmbedManifest>false</EmbedManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../../protocol;../../common/include;../../gateserver/network;../../gateserver/protocol;../../gateserver/;../../thirdparty/tinyxml2;../../thirdparty/protobuf-2.5.0/include;../../share;../../thirdparty/kcp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalOptions>/bigobj /Zm200 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>../../lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>common.lib;ws2_32.lib;libprotobuf.lib;libiconv.lib;zlib.lib;iocp.lib;kcp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Create</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../../protocol;../../common/include;../../gateserver/network;../../gateserver/protocol;../../gateserver/;../../thirdparty/tinyxml2;../../thirdparty/protobuf-2.5.0/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>../../lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>network.lib;ws2_32.lib;libprotobuf.lib;libiconv.lib;zlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\gateserver\config.cpp" />
+    <ClCompile Include="..\..\gateserver\main.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\gateserver\network\audiolink.cpp" />
+    <ClCompile Include="..\..\gateserver\network\clientlink.cpp" />
+    <ClCompile Include="..\..\gateserver\network\controllink.cpp" />
+    <ClCompile Include="..\..\gateserver\network\gslink.cpp" />
+    <ClCompile Include="..\..\gateserver\network\mslink.cpp" />
+    <ClCompile Include="..\..\gateserver\network\protocolcoder.cpp" />
+    <ClCompile Include="..\..\gateserver\network\protocolstat.cpp" />
+    <ClCompile Include="..\..\gateserver\network\rslink.cpp" />
+    <ClCompile Include="..\..\gateserver\network\serverstateinfo.cpp" />
+    <ClCompile Include="..\..\gateserver\process.cpp" />
+    <ClCompile Include="..\..\gateserver\profile\gateprofile.cpp" />
+    <ClCompile Include="..\..\gateserver\protocolban\crossprotocolbanmgr.cpp" />
+    <ClCompile Include="..\..\gateserver\protocol\common\ptcg2t_opengate.cpp" />
+    <ClCompile Include="..\..\gateserver\protocol\login\ptcc2t_keepalivepingack.cpp" />
+    <ClCompile Include="..\..\gateserver\protocol\login\ptcn2t_kickaccount.cpp" />
+    <ClCompile Include="..\..\gateserver\protocol\login\rpcc2t_reconnect.cpp" />
+    <ClCompile Include="..\..\gateserver\protocol\login\rpct2n_loginrequestnew.cpp" />
+    <ClCompile Include="..\..\gateserver\protocol\sendonly.cpp" />
+    <ClCompile Include="..\..\gateserver\ptcregister.cpp" />
+    <ClCompile Include="..\..\gateserver\session\sessionmanager.cpp" />
+    <ClCompile Include="..\..\gateserver\udpnet\kcppeer.cpp" />
+    <ClCompile Include="..\..\gateserver\udpnet\udphandler.cpp" />
+    <ClCompile Include="..\..\gateserver\udpnet\udpnetwork.cpp" />
+    <ClCompile Include="..\..\protocol\pb\enum.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\protocol\pb\project.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\gateserver\protocol\login\rpcc2t_clientloginrequest.cpp" />
+    <ClCompile Include="..\..\gateserver\protocol\common\rpct2m_registergt2ms.cpp" />
+    <ClCompile Include="..\..\gateserver\protocol\common\rpcg2t_registergs2gt.cpp" />
+    <ClCompile Include="..\..\gateserver\protocol\common\rpct2g_registergt2gs.cpp" />
+    <ClCompile Include="..\..\gateserver\protocol\common\ptcg2t_changegsline.cpp" />
+    <ClCompile Include="..\..\gateserver\protocol\chat\ptcm2t_chatforward.cpp" />
+    <ClCompile Include="..\..\gateserver\protocol\common\ptcm2t_versionnotify.cpp" />
+    <ClCompile Include="..\..\share\profile\profiler.cpp" />
+    <ClCompile Include="..\..\share\version\version.cpp" />
+    <ClCompile Include="..\..\gateserver\protocol\broadcast\ptcm2t_broadcastm2t.cpp" />
+    <ClCompile Include="..\..\gateserver\protocol\login\rpct2g_reconnectgs.cpp" />
+    <ClCompile Include="..\..\gateserver\protocol\common\rpct2r_registergt2router.cpp" />
+    <ClCompile Include="..\..\gateserver\protocol\common\rpct2n_registergt2ns.cpp" />
+    <ClCompile Include="..\..\gateserver\protocol\login\ptcn2t_notifygtsessionlogin.cpp" />
+    <ClCompile Include="..\..\gateserver\protocol\broadcast\ptcg2t_broadcastg2t.cpp" />
+    <ClCompile Include="..\..\gateserver\protocol\common\ptcm2t_notifyrouterinfo2gate.cpp" />
+    <ClCompile Include="..\..\gateserver\protocol\chat\rpcc2t_uploadaudiotogate.cpp" />
+    <ClCompile Include="..\..\gateserver\protocol\chat\rpct2a_uploadaudiotoaudio.cpp" />
+    <ClCompile Include="..\..\gateserver\protocol\session\ptcn2t_sessionchange2gt.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\gateserver\config.h" />
+    <ClInclude Include="..\..\gateserver\network\audiolink.h" />
+    <ClInclude Include="..\..\gateserver\network\controllink.h" />
+    <ClInclude Include="..\..\gateserver\network\mslink.h" />
+    <ClInclude Include="..\..\gateserver\network\protocolcoder.h" />
+    <ClInclude Include="..\..\gateserver\network\protocolstat.h" />
+    <ClInclude Include="..\..\gateserver\network\rslink.h" />
+    <ClInclude Include="..\..\gateserver\network\serverstateinfo.h" />
+    <ClInclude Include="..\..\gateserver\pch.h" />
+    <ClInclude Include="..\..\gateserver\minidump.h" />
+    <ClInclude Include="..\..\gateserver\network\clientlink.h" />
+    <ClInclude Include="..\..\gateserver\network\gslink.h" />
+    <ClInclude Include="..\..\gateserver\process.h" />
+    <ClInclude Include="..\..\gateserver\profile\gateprofile.h" />
+    <ClInclude Include="..\..\gateserver\protocolban\crossprotocolbanmgr.h" />
+    <ClInclude Include="..\..\gateserver\ptcregister.h" />
+    <ClInclude Include="..\..\gateserver\session\protowindow.h" />
+    <ClInclude Include="..\..\gateserver\session\sessionmanager.h" />
+    <ClInclude Include="..\..\gateserver\udpnet\kcppeer.h" />
+    <ClInclude Include="..\..\gateserver\udpnet\kcputil.h" />
+    <ClInclude Include="..\..\gateserver\udpnet\udphandler.h" />
+    <ClInclude Include="..\..\gateserver\udpnet\udpnetwork.h" />
+    <ClInclude Include="..\..\share\profile\profiler.h" />
+    <ClInclude Include="..\..\share\version\version.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

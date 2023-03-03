@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+
+<MasterServer name="master" zone="1" id="1" debug="1">
+	<AppPlat app="qq" plat="android" /> <!-- app(qq, wechat), plat(ios, android) -->
+	<DB ip="10.0.128.229" user="root" password="" port="3306" database="world"/>
+
+	<Connect>
+		<peer ip="127.0.0.1" port="21060" handler="dblink" sendBufSize="2048000" recvBufSize="2048000"/>
+		<peer ip="127.0.0.1" port="21080" handler="ctrllink" sendBufSize="1024000" recvBufSize="1024000"/>
+
+		<peer ip="10.0.128.160" port="29000" handler="idiplink" sendBufSize="2048000" recvBufSize="2048000"/>
+		<peer ip="127.0.0.1" port="35000" handler="fmlink" sendBufSize="1024000" recvBufSize="1024000"/>
+		<!-- CenterServer列表 -->
+		<peer ip="10.0.128.229" port="30000" handler="centerlink" sendBufSize="1024000" recvBufSize="1024000"/>
+		
+		<peer ip="10.0.128.186" port="31101" handler="worldlink" sendBufSize="1024000" recvBufSize="1024000"/>
+		
+		<peer ip="10.0.128.186" port="41101" handler="teamlink" sendBufSize="1024000" recvBufSize="1024000"/>
+
+		<!-- LoginServer列表 -->
+		<peer ip="10.0.128.229" port="28000" handler="loginlink" sendBufSize="1024000" recvBufSize="1024000"/>
+	</Connect>
+
+	<Listen>
+		<peer ip="0.0.0.0" port="21020" handler="gatelink" sendBufSize="2048000" recvBufSize="2048000"/>
+		<peer ip="0.0.0.0" port="21030" handler="gslink" sendBufSize="2048000" recvBufSize="2048000"/>
+		<peer ip="0.0.0.0" port="12890" handler="gmtoollink" sendBufSize="0" recvBufSize="0"/>
+	</Listen>
+
+	<!-- rolltype (day, hour) -->
+	<LogType  file="1" console="1" rolltype="day"/>
+	<LogLevel info="1" debug="1" warn="1" error="1" fatal="1"/>
+
+	<RootPath dir="gsconf"/>
+	<RpcTimeout enabled="1"/>
+	<FM enabled="1"/>
+	<TLogConfigFile path="serveronly/tlog_config.xml"/>
+
+	
+	<!-- paydebug(沙箱或现网环境) 0：现网 1：沙箱 没有该字段默认为沙箱环境-->
+	<!-- paydelaytest(延迟测试) 0:正常 1：延迟，谨慎使用，正式环境不能打开延迟，仅用于测试用-->
+	<PayUrl link="http://msdktest.qq.com" slavelink=""  buygoodslink="http://msdktest.qq.com" buygoodsslavelink="" count="10" paydebug="1" paydelaytest="0"/>
+	<!-- MsdkUrl idc正式:msdk.tencent-cloud.net  idc测试:msdktest.tencent-cloud.net  外网正式:msdk.qq.com  外网测试:msdktest.qq.com -->
+	<MsdkUrl link="http://msdktest.qq.com"/>
+	<!-- 信鸽地址 不要加http -->
+	<XingeUrl link="openapi.xg.qq.com"/>
+
+	<KeepAlive  enabled="0"/>
+</MasterServer>

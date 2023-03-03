@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XSkillData>
+  <Name>Monster_ent_combo_nest</Name>
+  <TypeToken>0</TypeToken>
+  <ClipName>Animation/Monster_ent/Monster_ent_combo</ClipName>
+  <Charge>
+    <XChargeData>
+      <Using_Curve>true</Using_Curve>
+      <Curve_Forward>Curve/Monster_ent/Monster_ent_combo_forward</Curve_Forward>
+      <Curve_Side>Curve/Monster_ent/Monster_ent_combo_side</Curve_Side>
+    </XChargeData>
+  </Charge>
+  <Script />
+  <Logical>
+    <StrickenMask>Cease</StrickenMask>
+    <Syntonic_CoolDown_Skill />
+  </Logical>
+  <Time>7.833334</Time>
+</XSkillData>

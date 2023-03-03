@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+
+<AudioServer name="audio" zone="$zone_id$" id="$server_id$">
+	<Connect>
+	</Connect>
+	
+	<Listen>
+		<peer ip="0.0.0.0" port="21070" handler="gatelink" sendBufSize="1024000" recvBufSize="1024000"/>
+	</Listen>
+	
+	<Connect>	
+		<peer ip="$host$" port="30050" handler="centerlink" sendBufSize="1024000" recvBufSize="1024000"/>	
+	</Connect>
+	<!-- rolltype (day, hour) -->
+	<LogType  file="1" console="0" rolltype="hour"/>
+	<LogLevel info="1" debug="0" warn="1" error="1" fatal="1"/>
+
+	<RootPath dir="audioconf"/>
+	<RpcTimeout enabled="1"/>
+</AudioServer>

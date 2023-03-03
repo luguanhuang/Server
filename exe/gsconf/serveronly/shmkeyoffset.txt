@@ -1,0 +1,4 @@
+nsscene|0
+nsrole|0
+nsaccount|0
+msfm|0

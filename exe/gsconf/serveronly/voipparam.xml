@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Param>
+<!--
+腾讯idc正式地址： dir_svr_url  udp://10.173.129.28:16004|udp://10.239.177.62:16004  
+非腾讯idc或dev的机器，外网正式地址：udp://101.226.103.77:10006
+-->
+  <ParamValue dir_svr_url="udp://10.173.129.28:16004|udp://10.239.177.62:16004" business_name="gcloud.long_zhi_gu" business_key="7b8ede479c395821ce55094651d7605e" />
+  <LibName windowsdll="voip.dll" linuxa="libapollo_voice_server_all.a" />
+</Param>

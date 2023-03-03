@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<CombineTool name="combine"  id="1">
+
+	<SrcServer>
+		<server id="50" ip="10.0.128.229" port="3306" user="root" password="" database="world50"/>
+		<server id="80" ip="10.0.128.229" port="3306" user="root" password="" database="world80"/>
+	</SrcServer>
+
+	<!-- rolltype (day, hour) -->
+	<LogType  file="1" console="1" rolltype="day"/>
+	<LogLevel info="1" debug="1" warn="1" error="1" fatal="1"/>
+
+	<RootPath dir="gsconf"/>
+	<RpcTimeout enabled="1"/>
+	<KeepAlive  enabled="0"/>
+</CombineTool>

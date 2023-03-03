@@ -1,0 +1,1915 @@
+﻿<?xml version="1.0"?>
+<Settings>
+	<Zone id="1" name="zone1">
+		<!-- linux -->
+		<DBServer name="db-linux" id="1">
+		    <DB ip="10.0.128.229" threads="5" type="mysql" user="root" password="" database="world"/>
+			<!-- DB ip="10.0.128.229" threads="1" type="sqlite" user="root" password="" database="test" / -->
+			<Connect>
+				<peer ip="10.0.128.229" port="25000" handler="loginlink"/>	
+				<peer ip="10.0.128.229" port="23000" handler="loglink"/>	
+			</Connect>
+			<Listen>
+				<peer ip="0.0.0.0" port="20000" handler="gslink"/>
+			</Listen>
+			<Log name="console" info="1" debug="1" warn="1" error="1" fatal="1"/>
+			<Log name="file" info="0" debug="0" warn="1" error="1" fatal="1"/>
+		    <RootPath dir="dbconf"/>
+		</DBServer>
+		<GateServer name="gate-linux" id="1">
+			<Listen>
+				<peer ip="0.0.0.0" port="12345" handler="clientlink"/>
+				<peer ip="127.0.0.1" port="11001" handler="gslink"/>
+			</Listen>
+			<Reconnect timeout="300" />
+			<RootPath dir="gateconf"/>
+		</GateServer>
+
+		<GameServer name="gs-linux" id="1" debug="1">
+			<Connect>
+				<peer ip="127.0.0.1" port="20000" handler="dblink"/>
+				<peer ip="10.0.128.229" port="23000" handler="loglink"/>
+				<peer ip="127.0.0.1" port="11001" handler="gatelink"/>
+				<peer ip="10.0.128.229" port="29002" handler="weblink"/>	
+				<!-- peer ip="127.0.0.1" port="11002" handler="gatelink"/ -->
+			</Connect>
+			<Listen>
+				<!-- peer ip="0.0.0.0" port="24000" handler="gmlink"/ -->
+			</Listen>
+			<Log name="console" info="1" debug="1" warn="1" error="1" fatal="1"/>
+			<Log name="file" info="0" debug="0" warn="1" error="1" fatal="1"/>
+			<RootPath dir="gsconf"/>
+			<OpenServerTime time="2015-10-20"/>
+		</GameServer>
+
+		<!-- liming -->
+		<DBServer name="db-liming" id="2">
+		    <DB ip="10.0.128.229" threads="5" type="mysql" user="root" password="" database="world"/>
+			<!-- DB ip="10.0.128.229" threads="1" type="sqlite" user="root" password="" database="test" / -->
+			<Connect>
+				<peer ip="10.0.128.229" port="25000" handler="loginlink"/>	
+				<peer ip="10.0.128.229" port="23000" handler="loglink"/>	
+				<!-- peer ip="10.0.128.229" port="29000" handler="gmlink"/ -->	
+			</Connect>
+			<Listen>
+				<peer ip="0.0.0.0" port="20000" handler="gslink"/>
+			</Listen>
+			<Log name="console" info="1" debug="1" warn="1" error="1" fatal="1"/>
+			<Log name="file" info="0" debug="0" warn="1" error="1" fatal="1"/>
+		    <RootPath dir="dbconf"/>
+		</DBServer>
+		<GateServer name="gate-liming" id="2">
+			<Listen>
+				<peer ip="0.0.0.0" port="12345" handler="clientlink"/>
+				<peer ip="127.0.0.1" port="11001" handler="gslink"/>
+			</Listen>
+			<Reconnect timeout="300" />
+			<RootPath dir="gateconf"/>
+		</GateServer>
+
+		<GameServer name="gs-liming" id="2" debug="1">
+
+			<Connect>
+				<peer ip="127.0.0.1" port="20000" handler="dblink"/>
+				<peer ip="10.0.128.229" port="23000" handler="loglink"/>
+				<peer ip="127.0.0.1" port="11001" handler="gatelink"/>
+				<!-- peer ip="10.0.128.229" port="29002" handler="weblink"/ -->
+			</Connect>
+			<Listen>
+				<!-- peer ip="0.0.0.0" port="24000" handler="gmlink"/ -->
+			</Listen>
+			<Log name="console" info="1" debug="1" warn="1" error="1" fatal="1"/>
+			<Log name="file" info="0" debug="0" warn="1" error="1" fatal="1"/>
+			<RootPath dir="gsconf"/>
+			<OpenServerTime time="2015-11-18"/>
+		</GameServer>
+
+
+		<!-- xiaoyufeng -->
+		<DBServer name="db-xiaoyufeng" id="35">
+
+		    <DB ip="10.0.128.229" threads="5" type="mysql" user="root" password="" database="world"/>
+			<!-- DB ip="10.0.128.229" threads="1" type="sqlite" user="root" password="" database="test" / -->
+			
+			<Connect>
+				<peer ip="10.0.128.229" port="25000" handler="loginlink"/>	
+				<peer ip="10.0.128.229" port="23000" handler="loglink"/>	
+				<!-- peer ip="10.0.128.229" port="29000" handler="gmlink"/ -->	
+			</Connect>
+
+			<Listen>
+				<peer ip="0.0.0.0" port="20000" handler="gslink"/>
+			</Listen>
+
+			<Log name="console" info="1" debug="1" warn="1" error="1" fatal="1"/>
+			<Log name="file" info="0" debug="0" warn="1" error="1" fatal="1"/>
+
+		    <RootPath dir="dbconf"/>
+
+		</DBServer>
+
+		<GateServer name="gate-xiaoyufeng" id="35">
+
+			<Listen>
+				<peer ip="0.0.0.0" port="12345" handler="clientlink"/>
+				<peer ip="127.0.0.1" port="11001" handler="gslink"/>
+			</Listen>
+
+			<Reconnect timeout="300" />
+
+			<RootPath dir="gateconf"/>
+
+		</GateServer>
+
+		<GameServer name="gs-xiaoyufeng" id="35" debug="1">
+
+			<Connect>
+				<peer ip="127.0.0.1" port="20000" handler="dblink"/>
+				<peer ip="10.0.128.229" port="23000" handler="loglink"/>
+				<peer ip="127.0.0.1" port="11001" handler="gatelink"/>
+				<!-- peer ip="10.0.128.229" port="29002" handler="weblink"/ -->
+			</Connect>
+
+			<Listen>
+				<!-- peer ip="0.0.0.0" port="24000" handler="gmlink"/ -->
+			</Listen>
+
+			<Log name="console" info="1" debug="1" warn="1" error="1" fatal="1"/>
+			<Log name="file" info="0" debug="0" warn="1" error="1" fatal="1"/>
+
+			<RootPath dir="gsconf"/>
+
+			<OpenServerTime time="2016-06-03"/>
+
+		</GameServer>
+
+
+
+
+		<GMServer name="gm-liming" id="2">
+            		<DB ip="10.0.128.229" user="root" password="" database=""/>
+			<Listen>
+				<peer ip="127.0.0.1" port="29000" handler="dblink"/>
+			</Listen>
+			<Log name="console" info="1" debug="1" warn="1" error="1" fatal="1"/>
+			<Log name="file"    info="1" debug="0" warn="1" error="1" fatal="1"/>
+			<RootPath dir="gmconf"/>
+		</GMServer>
+
+		<!-- hai gong -->
+		<DBServer name="db-haigong" id="3">
+		    <DB ip="10.0.128.229" threads="5" type="mysql" user="root" password="" database="world"/>
+			<!-- DB ip="10.0.128.229" threads="1" type="sqlite" user="root" password="" database="test" / -->
+			
+			<Connect>
+				<peer ip="10.0.128.229" port="25000" handler="loginlink"/>	
+				<peer ip="10.0.128.229" port="23000" handler="loglink"/>	
+			</Connect>
+			<Listen>
+				<peer ip="0.0.0.0" port="20000" handler="gslink"/>
+			</Listen>
+			<Log name="console" info="1" debug="1" warn="1" error="1" fatal="1"/>
+			<Log name="file" info="0" debug="0" warn="1" error="1" fatal="1"/>
+		    <RootPath dir="dbconf"/>
+		</DBServer>
+		<GateServer name="gate-haigong" id="3">
+			<Listen>
+				<peer ip="0.0.0.0" port="12345" handler="clientlink"/>
+				<peer ip="127.0.0.1" port="11001" handler="gslink"/>
+			</Listen>
+			<Reconnect timeout="300" />
+			<RootPath dir="gateconf"/>
+		</GateServer>
+
+
+		<GameServer name="gs-haigong" id="3" debug="1">
+
+			<Connect>
+				<peer ip="127.0.0.1" port="20000" handler="dblink"/>
+				<peer ip="10.0.128.229" port="23000" handler="loglink"/>
+				<peer ip="127.0.0.1" port="11001" handler="gatelink"/>
+				<!-- peer ip="127.0.0.1" port="11002" handler="gatelink"/ -->
+			</Connect>
+			<Listen>
+				<!-- peer ip="0.0.0.0" port="24000" handler="gmlink"/ -->
+			</Listen>
+			<Log name="console" info="1" debug="1" warn="1" error="1" fatal="1"/>
+			<Log name="file" info="0" debug="0" warn="1" error="1" fatal="1"/>
+			<RootPath dir="gsconf"/>
+			<OpenServerTime time="2015-10-20"/>
+		</GameServer>
+
+		<!-- chenyao windows -->
+		<DBServer name="db-chenyao-win" id="4">
+		    <DB ip="10.0.128.229" threads="5" type="mysql" user="root" password="" database="world"/>
+			<!-- DB ip="10.0.128.229" threads="1" type="sqlite" user="root" password="" database="test" / -->
+			
+			<Connect>
+				<peer ip="10.0.128.229" port="25000" handler="loginlink"/>	
+				<peer ip="10.0.128.229" port="23000" handler="loglink"/>	
+				<peer ip="10.0.128.229" port="29000" handler="gmlink"/>	
+			</Connect>
+			<Listen>
+				<peer ip="0.0.0.0" port="20000" handler="gslink"/>
+			</Listen>
+			<Log name="console" info="1" debug="1" warn="1" error="1" fatal="1"/>
+			<Log name="file" info="0" debug="0" warn="1" error="1" fatal="1"/>
+		    <RootPath dir="dbconf"/>
+		</DBServer>
+		<GateServer name="gate-chenyao-win" id="4">
+			<Listen>
+				<peer ip="0.0.0.0" port="12345" handler="clientlink"/>
+				<peer ip="127.0.0.1" port="11001" handler="gslink"/>
+			</Listen>
+			<Reconnect timeout="300" />
+			<RootPath dir="gateconf"/>
+		</GateServer>
+
+		<GameServer name="gs-chenyao-win" id="4" debug="1">
+
+			<Connect>
+				<peer ip="127.0.0.1" port="20000" handler="dblink"/>
+				<peer ip="10.0.128.229" port="23000" handler="loglink"/>
+				<peer ip="127.0.0.1" port="11001" handler="gatelink"/>
+				<!--peer ip="127.0.0.1" port="29002" handler="weblink"/-->	
+				<!-- peer ip="127.0.0.1" port="11002" handler="gatelink"/ -->
+			</Connect>
+			<Listen>
+				<!-- peer ip="0.0.0.0" port="24000" handler="gmlink"/ -->
+			</Listen>
+			<Log name="console" info="1" debug="1" warn="1" error="1" fatal="1"/>
+			<Log name="file" info="0" debug="0" warn="1" error="1" fatal="1"/>
+			<RootPath dir="gsconf"/>
+			<OpenServerTime time="2015-10-20"/>
+		</GameServer>
+
+		<!-- xiangyuang windows -->
+		<DBServer name="db-xiangyuang" id="5">
+		    <DB ip="10.0.128.229" threads="5" type="mysql" user="root" password="" database="world"/>
+			<!-- DB ip="10.0.128.229" threads="1" type="sqlite" user="root" password="" database="test" / -->
+			
+			<Connect>
+				<peer ip="10.0.128.229" port="25000" handler="loginlink"/>	
+				<peer ip="10.0.128.229" port="23000" handler="loglink"/>	
+			</Connect>
+			<Listen>
+				<peer ip="0.0.0.0" port="20000" handler="gslink"/>
+			</Listen>
+			<Log name="console" info="1" debug="1" warn="1" error="1" fatal="1"/>
+			<Log name="file" info="0" debug="0" warn="1" error="1" fatal="1"/>
+		    <RootPath dir="dbconf"/>
+		</DBServer>
+		<GateServer name="gate-xiangyuang" id="5">
+			<Listen>
+				<peer ip="0.0.0.0" port="12345" handler="clientlink"/>
+				<peer ip="127.0.0.1" port="11001" handler="gslink"/>
+				<peer ip="0.0.0.0" port="12001" handler="audiolink"/>
+			</Listen>
+			<Reconnect timeout="300" />
+			<RootPath dir="gateconf"/>
+		</GateServer>
+
+		<GameServer name="gs-xiangyuang" id="5" debug="1">
+
+			<Connect>
+				<peer ip="127.0.0.1" port="20000" handler="dblink"/>
+				<peer ip="10.0.128.229" port="23000" handler="loglink"/>
+				<peer ip="127.0.0.1" port="11001" handler="gatelink"/>
+				<!-- peer ip="127.0.0.1" port="11002" handler="gatelink"/ -->
+			</Connect>
+			<Listen>
+				<!-- peer ip="0.0.0.0" port="24000" handler="gmlink"/ -->
+			</Listen>
+			<Log name="console" info="1" debug="1" warn="1" error="1" fatal="1"/>
+			<Log name="file" info="0" debug="0" warn="1" error="1" fatal="1"/>
+			<RootPath dir="gsconf"/>
+			<OpenServerTime time="2015-10-20"/>
+		</GameServer>
+		
+		<AudioServer name="audio" id="5">
+			<Connect>
+				<peer ip="10.0.128.229" port="23000" handler="loglink"/>
+				<peer ip="127.0.0.1" port="12001" handler="gatelink"/>
+				<!-- peer ip="127.0.0.1" port="11002" handler="gatelink"/ -->
+			</Connect>
+
+			<Log name="console" info="1" debug="1" warn="1" error="1" fatal="1"/>
+			<Log name="file" info="0" debug="0" warn="1" error="1" fatal="1"/>
+
+			<RootPath dir="audioconf"/>
+		</AudioServer>		
+
+		<!-- yanwenjie windows -->
+		<DBServer name="db-yanwenjie" id="7">
+		    <DB ip="10.0.128.229" threads="5" type="mysql" user="root" password="" database="world"/>
+			<!-- DB ip="10.0.128.229" threads="1" type="sqlite" user="root" password="" database="test" / -->
+			
+			<Connect>
+				<peer ip="10.0.128.229" port="25000" handler="loginlink"/>	
+				<peer ip="10.0.128.229" port="23000" handler="loglink"/>	
+			</Connect>
+			<Listen>
+				<peer ip="0.0.0.0" port="20000" handler="gslink"/>
+			</Listen>
+			
+			<Miscellaneous maxOnlineNum="0"/>
+			<Log name="console" info="1" debug="1" warn="1" error="1" fatal="1"/>
+			<Log name="file" info="0" debug="0" warn="1" error="1" fatal="1"/>
+		    <RootPath dir="dbconf"/>
+		</DBServer>
+		<GateServer name="gate-yanwenjie" id="7">
+			<Listen>
+				<peer ip="0.0.0.0" port="12345" handler="clientlink"/>
+				<peer ip="127.0.0.1" port="11001" handler="gslink"/>
+			</Listen>
+			<Reconnect timeout="300" />
+			<RootPath dir="gateconf"/>
+		</GateServer>
+
+		<GameServer name="gs-yanwenjie" id="7" debug="1">
+
+			<Connect>
+				<peer ip="127.0.0.1" port="20000" handler="dblink"/>
+				<peer ip="10.0.128.229" port="23000" handler="loglink"/>
+				<peer ip="127.0.0.1" port="11001" handler="gatelink"/>
+				<!-- peer ip="127.0.0.1" port="11002" handler="gatelink"/ -->
+			</Connect>
+			<Listen>
+				<!-- peer ip="0.0.0.0" port="24000" handler="gmlink"/ -->
+			</Listen>
+			<Log name="console" info="1" debug="1" warn="1" error="1" fatal="1"/>
+			<Log name="file" info="0" debug="0" warn="1" error="1" fatal="1"/>
+			<RootPath dir="gsconf"/>
+			<OpenServerTime time="2015-10-20"/>
+		</GameServer>
+		<!-- chenyao linux -->
+		<DBServer name="db-chenyao-linux" id="8">
+		    <DB ip="10.0.128.229" threads="5" type="mysql" user="root" password="" database="world"/>
+			<!-- DB ip="10.0.128.229" threads="1" type="sqlite" user="root" password="" database="test" / -->
+			
+			<Connect>
+				<peer ip="10.0.128.229" port="25000" handler="loginlink"/>	
+				<peer ip="10.0.128.229" port="23000" handler="loglink"/>	
+			</Connect>
+			<Listen>
+				<peer ip="0.0.0.0" port="20001" handler="gslink"/>
+			</Listen>
+			<Log name="console" info="1" debug="1" warn="1" error="1" fatal="1"/>
+			<Log name="file" info="0" debug="0" warn="1" error="1" fatal="1"/>
+		    <RootPath dir="dbconf"/>
+		</DBServer>
+		<GateServer name="gate-chenyao-linux" id="8">
+			<Listen>
+				<peer ip="0.0.0.0" port="10000" handler="clientlink"/>
+				<peer ip="127.0.0.1" port="11002" handler="gslink"/>
+			</Listen>
+			<Reconnect timeout="300" />
+			<RootPath dir="gateconf"/>
+		</GateServer>
+
+		<GameServer name="gs-chenyao-linux" id="8" debug="1">
+
+			<Connect>
+				<peer ip="127.0.0.1" port="20001" handler="dblink"/>
+				<peer ip="10.0.128.229" port="23000" handler="loglink"/>
+				<peer ip="127.0.0.1" port="11002" handler="gatelink"/>
+				<!-- peer ip="127.0.0.1" port="11002" handler="gatelink"/ -->
+			</Connect>
+			<Listen>
+				<!-- peer ip="0.0.0.0" port="24000" handler="gmlink"/ -->
+			</Listen>
+			<Log name="console" info="1" debug="1" warn="1" error="1" fatal="1"/>
+			<Log name="file" info="0" debug="0" warn="1" error="1" fatal="1"/>
+			<RootPath dir="gsconf"/>
+			<OpenServerTime time="2015-10-20"/>
+		</GameServer>
+
+		<!-- zouyuanbing windows -->
+		<DBServer name="db-zouyuanbing" id="9">
+		    <DB ip="10.0.128.229" threads="5" type="mysql" user="root" password="" database="world"/>
+			<!-- DB ip="10.0.128.229" threads="1" type="sqlite" user="root" password="" database="test" / -->
+			
+			<Connect>
+				<peer ip="10.0.128.229" port="25000" handler="loginlink"/>	
+				<peer ip="10.0.128.229" port="23000" handler="loglink"/>	
+			</Connect>
+			<Listen>
+				<peer ip="0.0.0.0" port="20001" handler="gslink"/>
+			</Listen>
+			<Log name="console" info="1" debug="1" warn="1" error="1" fatal="1"/>
+			<Log name="file" info="0" debug="0" warn="1" error="1" fatal="1"/>
+		    <RootPath dir="dbconf"/>
+		</DBServer>
+		<GateServer name="gate-zouyuanbing" id="9">
+			<Listen>
+				<peer ip="0.0.0.0" port="12345" handler="clientlink"/>
+				<peer ip="127.0.0.1" port="11002" handler="gslink"/>
+			</Listen>
+			<Reconnect timeout="300" />
+			<RootPath dir="gateconf"/>
+		</GateServer>
+		<GameServer name="gs-zouyuanbing" id="9" debug="1">
+			<Connect>
+				<peer ip="127.0.0.1" port="20001" handler="dblink"/>
+				<peer ip="10.0.128.229" port="23000" handler="loglink"/>
+				<peer ip="127.0.0.1" port="11002" handler="gatelink"/>
+				<!-- peer ip="127.0.0.1" port="11002" handler="gatelink"/ -->
+			</Connect>
+			<Listen>
+				<!-- peer ip="0.0.0.0" port="24000" handler="gmlink"/ -->
+			</Listen>
+			<Log name="console" info="1" debug="1" warn="1" error="1" fatal="1"/>
+			<Log name="file" info="0" debug="0" warn="1" error="1" fatal="1"/>
+			<RootPath dir="gsconf"/>
+			<OpenServerTime time="2015-10-20"/>
+		</GameServer>
+
+		<!-- alinasun windows -->
+		<DBServer name="db-alinasun" id="10">
+		    <DB ip="10.0.128.229" threads="5" type="mysql" user="root" password="" database="world"/>
+			<!-- DB ip="10.0.128.229" threads="1" type="sqlite" user="root" password="" database="test" / -->
+			
+			<Connect>
+				<peer ip="10.0.128.229" port="25000" handler="loginlink"/>	
+				<peer ip="10.0.128.229" port="23000" handler="loglink"/>	
+			</Connect>
+			<Listen>
+				<peer ip="0.0.0.0" port="20001" handler="gslink"/>
+			</Listen>
+			<Log name="console" info="1" debug="1" warn="1" error="1" fatal="1"/>
+			<Log name="file" info="0" debug="0" warn="1" error="1" fatal="1"/>
+		    <RootPath dir="dbconf"/>
+		</DBServer>
+		<GateServer name="gate-alinasun" id="10">
+			<Listen>
+				<peer ip="0.0.0.0" port="12345" handler="clientlink"/>
+				<peer ip="127.0.0.1" port="11002" handler="gslink"/>
+			</Listen>
+			<Reconnect timeout="300" />
+			<RootPath dir="gateconf"/>
+		</GateServer>
+
+		<GameServer name="gs-alinasun" id="10" debug="1">
+
+			<Connect>
+				<peer ip="127.0.0.1" port="20001" handler="dblink"/>
+				<peer ip="10.0.128.229" port="23000" handler="loglink"/>
+				<peer ip="127.0.0.1" port="11002" handler="gatelink"/>
+				<!-- peer ip="127.0.0.1" port="11002" handler="gatelink"/ -->
+			</Connect>
+			<Listen>
+				<!-- peer ip="0.0.0.0" port="24000" handler="gmlink"/ -->
+			</Listen>
+			<Log name="console" info="1" debug="1" warn="1" error="1" fatal="1"/>
+			<Log name="file" info="0" debug="0" warn="1" error="1" fatal="1"/>
+			<RootPath dir="gsconf"/>
+			<OpenServerTime time="2015-10-20"/>
+		</GameServer>
+
+		<!-- ashwang windows -->
+		<DBServer name="db-ashwang" id="11">
+		    <DB ip="10.0.128.229" threads="5" type="mysql" user="root" password="" database="world"/>
+			<!-- DB ip="10.0.128.229" threads="1" type="sqlite" user="root" password="" database="test" / -->
+			
+			<Connect>
+				<peer ip="10.0.128.229" port="25000" handler="loginlink"/>	
+				<peer ip="10.0.128.229" port="23000" handler="loglink"/>	
+			</Connect>
+			<Listen>
+				<peer ip="0.0.0.0" port="20001" handler="gslink"/>
+			</Listen>
+			<Log name="console" info="1" debug="1" warn="1" error="1" fatal="1"/>
+			<Log name="file" info="0" debug="0" warn="1" error="1" fatal="1"/>
+		    <RootPath dir="dbconf"/>
+		</DBServer>
+		<GateServer name="gate-ashwang" id="11">
+			<Listen>
+				<peer ip="0.0.0.0" port="12345" handler="clientlink"/>
+				<peer ip="127.0.0.1" port="11002" handler="gslink"/>
+			</Listen>
+			<Reconnect timeout="300" />
+			<RootPath dir="gateconf"/>
+		</GateServer>
+
+		<GameServer name="gs-ashwang" id="11" debug="1">
+
+			<Connect>
+				<peer ip="127.0.0.1" port="20001" handler="dblink"/>
+				<peer ip="10.0.128.229" port="23000" handler="loglink"/>
+				<peer ip="127.0.0.1" port="11002" handler="gatelink"/>
+				<!-- peer ip="127.0.0.1" port="11002" handler="gatelink"/ -->
+			</Connect>
+			<Listen>
+				<!-- peer ip="0.0.0.0" port="24000" handler="gmlink"/ -->
+			</Listen>
+			<Log name="console" info="1" debug="1" warn="1" error="1" fatal="1"/>
+			<Log name="file" info="0" debug="0" warn="1" error="1" fatal="1"/>
+			<RootPath dir="gsconf"/>
+			<OpenServerTime time="2015-10-20"/>
+		</GameServer>
+
+		<!-- zhangcao windows -->
+		<DBServer name="db-zhangcao" id="12">
+		    <DB ip="10.0.128.229" threads="5" type="mysql" user="root" password="" database="world"/>
+			<!-- DB ip="10.0.128.229" threads="1" type="sqlite" user="root" password="" database="test" / -->
+			
+			<Connect>
+				<peer ip="10.0.128.229" port="25000" handler="loginlink"/>	
+				<peer ip="10.0.128.229" port="23000" handler="loglink"/>	
+			</Connect>
+			<Listen>
+				<peer ip="0.0.0.0" port="20001" handler="gslink"/>
+			</Listen>
+			<Log name="console" info="1" debug="1" warn="1" error="1" fatal="1"/>
+			<Log name="file" info="0" debug="0" warn="1" error="1" fatal="1"/>
+		    <RootPath dir="dbconf"/>
+		</DBServer>
+		<GateServer name="gate-zhangcao" id="12">
+			<Listen>
+				<peer ip="0.0.0.0" port="12345" handler="clientlink"/>
+				<peer ip="127.0.0.1" port="11002" handler="gslink"/>
+			</Listen>
+			<Reconnect timeout="300" />
+			<RootPath dir="gateconf"/>
+		</GateServer>
+
+		<GameServer name="gs-zhangcao" id="12" debug="1">
+			<Connect>
+				<peer ip="127.0.0.1" port="20001" handler="dblink"/>
+				<peer ip="10.0.128.229" port="23000" handler="loglink"/>
+				<peer ip="127.0.0.1" port="11002" handler="gatelink"/>
+				<!-- peer ip="127.0.0.1" port="11002" handler="gatelink"/ -->
+			</Connect>
+			<Listen>
+				<!-- peer ip="0.0.0.0" port="24000" handler="gmlink"/ -->
+			</Listen>
+			<Log name="console" info="1" debug="1" warn="1" error="1" fatal="1"/>
+			<Log name="file" info="0" debug="0" warn="1" error="1" fatal="1"/>
+			<RootPath dir="gsconf"/>
+			<OpenServerTime time="2015-10-20"/>
+		</GameServer>
+		<!-- zjh linux -->
+		<DBServer name="db-zjh-linux" id="13">
+		    <DB ip="10.0.128.229" threads="5" type="mysql" user="root" password="" database="world"/>
+			<!-- DB ip="10.0.128.229" threads="1" type="sqlite" user="root" password="" database="test" / -->
+			
+			<Connect>
+				<peer ip="10.0.128.229" port="25000" handler="loginlink"/>	
+				<peer ip="10.0.128.229" port="23000" handler="loglink"/>	
+				<peer ip="127.0.0.1"    port="29013" handler="gmlink"/>	
+			</Connect>
+			<Listen>
+				<peer ip="0.0.0.0" port="20002" handler="gslink"/>
+			</Listen>
+			<Log name="console" info="1" debug="1" warn="1" error="1" fatal="1"/>
+			<Log name="file" info="0" debug="0" warn="1" error="1" fatal="1"/>
+		    <RootPath dir="dbconf"/>
+		</DBServer>
+		<GateServer name="gate-zjh-linux" id="13">
+			<Listen>
+				<peer ip="0.0.0.0" port="11111" handler="clientlink"/>
+				<peer ip="127.0.0.1" port="11003" handler="gslink"/>
+			</Listen>
+			<Reconnect timeout="300" />
+			<RootPath dir="gateconf"/>
+		</GateServer>
+
+		<GameServer name="gs-zjh-linux" id="13" debug="1">
+
+			<Connect>
+				<peer ip="127.0.0.1" port="20002" handler="dblink"/>
+				<peer ip="10.0.128.229" port="23000" handler="loglink"/>
+				<peer ip="127.0.0.1" port="11003" handler="gatelink"/>
+				<!-- peer ip="127.0.0.1" port="11002" handler="gatelink"/ -->
+			</Connect>
+			<Listen>
+				<!-- peer ip="0.0.0.0" port="24000" handler="gmlink"/ -->
+			</Listen>
+			<Log name="console" info="1" debug="1" warn="1" error="1" fatal="1"/>
+			<Log name="file" info="0" debug="0" warn="1" error="1" fatal="1"/>
+			<RootPath dir="gsconf"/>
+			<OpenServerTime time="2015-10-20"/>
+		</GameServer>
+		<GMServer name="gm-zjh-linux" id="13">
+            <DB ip="10.0.128.229" user="root" password="" database=""/>
+			<Listen>
+				<peer ip="0.0.0.0" port="29013" handler="dblink"/>
+			</Listen>
+			<Log name="console" info="1" debug="1" warn="1" error="1" fatal="1"/>
+			<Log name="file" info="0" debug="0" warn="1" error="1" fatal="1"/>
+			<RootPath dir="gmconf"/>
+		</GMServer>
+
+		<!-- zjh windows -->
+		<DBServer name="db-zjh-win" id="14">
+		    <DB ip="10.0.128.229" threads="5" type="mysql" user="root" password="" database="world"/>
+			<!-- DB ip="10.0.128.229" threads="1" type="sqlite" user="root" password="" database="test" / -->
+			
+			<Connect>
+				<peer ip="10.0.128.229" port="25000" handler="loginlink"/>	
+				<peer ip="10.0.128.229" port="23000" handler="loglink"/>	
+				<!-- <peer ip="127.0.0.1"    port="29000" handler="gmlink"/> -->	
+			</Connect>
+			<Listen>
+				<peer ip="0.0.0.0" port="20001" handler="gslink"/>
+			</Listen>
+			<Log name="console" info="1" debug="1" warn="1" error="1" fatal="1"/>
+			<Log name="file" info="0" debug="0" warn="1" error="1" fatal="1"/>
+		    <RootPath dir="dbconf"/>
+		</DBServer>
+		<GateServer name="gate-zjh-win" id="14">
+			<Listen>
+				<peer ip="0.0.0.0" port="12345" handler="clientlink"/>
+				<peer ip="127.0.0.1" port="11002" handler="gslink"/>
+			</Listen>
+			<Reconnect timeout="300" />
+			<RootPath dir="gateconf"/>
+		</GateServer>
+
+		<GameServer name="gs-zjh-win" id="14" debug="1">
+
+			<Connect>
+				<peer ip="127.0.0.1" port="20001" handler="dblink"/>
+				<peer ip="10.0.128.229" port="23000" handler="loglink"/>
+				<peer ip="127.0.0.1" port="11002" handler="gatelink"/>
+				<!-- peer ip="127.0.0.1" port="11002" handler="gatelink"/ -->
+			</Connect>
+			<Listen>
+				<!-- peer ip="0.0.0.0" port="24000" handler="gmlink"/ -->
+			</Listen>
+			<Log name="console" info="1" debug="1" warn="1" error="1" fatal="1"/>
+			<Log name="file" info="0" debug="0" warn="1" error="1" fatal="1"/>
+			<RootPath dir="gsconf"/>
+			<OpenServerTime time="2015-10-20"/>
+		</GameServer>
+		
+		<GMServer name="gm-zjh-win" id="14">
+            <DB ip="10.0.128.229" user="root" password="" database=""/>
+			<Listen>
+				<peer ip="127.0.0.1" port="29000" handler="dblink"/>
+			</Listen>
+			<Log name="console" info="1" debug="1" warn="1" error="1" fatal="1"/>
+			<Log name="file" info="0" debug="0" warn="1" error="1" fatal="1"/>
+			<RootPath dir="gmconf"/>
+		</GMServer>
+
+		<!-- alvinma windows -->
+		<DBServer name="db-alvinma" id="16">
+		    <DB ip="10.0.128.229" threads="5" type="mysql" user="root" password="" database="world"/>
+			<!-- DB ip="10.0.128.229" threads="1" type="sqlite" user="root" password="" database="test" / -->
+			
+			<Connect>
+				<peer ip="10.0.128.229" port="25000" handler="loginlink"/>	
+				<peer ip="10.0.128.229" port="23000" handler="loglink"/>	
+			</Connect>
+			<Listen>
+				<peer ip="0.0.0.0" port="20001" handler="gslink"/>
+			</Listen>
+			<Log name="console" info="1" debug="1" warn="1" error="1" fatal="1"/>
+			<Log name="file" info="0" debug="0" warn="1" error="1" fatal="1"/>
+		    <RootPath dir="dbconf"/>
+		</DBServer>
+		<GateServer name="gate-alvinma" id="16">
+			<Listen>
+				<peer ip="0.0.0.0" port="12345" handler="clientlink"/>
+				<peer ip="127.0.0.1" port="11002" handler="gslink"/>
+			</Listen>
+			<Reconnect timeout="300" />
+			<RootPath dir="gateconf"/>
+		</GateServer>
+
+
+		<GameServer name="gs-alvinma" id="16" debug="1">
+
+			<Connect>
+				<peer ip="127.0.0.1" port="20001" handler="dblink"/>
+				<peer ip="10.0.128.229" port="23000" handler="loglink"/>
+				<peer ip="127.0.0.1" port="11002" handler="gatelink"/>
+				<!-- peer ip="127.0.0.1" port="11002" handler="gatelink"/ -->
+			</Connect>
+			<Listen>
+				<!-- peer ip="0.0.0.0" port="24000" handler="gmlink"/ -->
+			</Listen>
+			<Log name="console" info="1" debug="1" warn="1" error="1" fatal="1"/>
+			<Log name="file" info="0" debug="0" warn="1" error="1" fatal="1"/>
+			<RootPath dir="gsconf"/>
+			<OpenServerTime time="2015-10-20"/>
+		</GameServer>
+
+		<!-- tangyunfeng windows -->
+		<DBServer name="db-tangyunfeng" id="17">
+		    <DB ip="10.0.128.229" threads="5" type="mysql" user="root" password="" database="world"/>
+			<!-- DB ip="10.0.128.229" threads="1" type="sqlite" user="root" password="" database="test" / -->
+			
+			<Connect>
+				<peer ip="10.0.128.229" port="25000" handler="loginlink"/>	
+				<peer ip="10.0.128.229" port="23000" handler="loglink"/>	
+			</Connect>
+			<Listen>
+				<peer ip="0.0.0.0" port="20001" handler="gslink"/>
+			</Listen>
+			<Log name="console" info="1" debug="1" warn="1" error="1" fatal="1"/>
+			<Log name="file" info="0" debug="0" warn="1" error="1" fatal="1"/>
+		    <RootPath dir="dbconf"/>
+		</DBServer>
+		<GateServer name="gate-tangyunfeng" id="17">
+			<Listen>
+				<peer ip="0.0.0.0" port="12345" handler="clientlink"/>
+				<peer ip="127.0.0.1" port="11002" handler="gslink"/>
+			</Listen>
+			<Reconnect timeout="300" />
+			<RootPath dir="gateconf"/>
+		</GateServer>
+
+
+		<GameServer name="gs-tangyunfeng" id="17" debug="1">
+
+			<Connect>
+				<peer ip="127.0.0.1" port="20001" handler="dblink"/>
+				<peer ip="10.0.128.229" port="23000" handler="loglink"/>
+				<peer ip="127.0.0.1" port="11002" handler="gatelink"/>
+				<!-- peer ip="127.0.0.1" port="11002" handler="gatelink"/ -->
+			</Connect>
+			<Listen>
+				<!-- peer ip="0.0.0.0" port="24000" handler="gmlink"/ -->
+			</Listen>
+			<Log name="console" info="1" debug="1" warn="1" error="1" fatal="1"/>
+			<Log name="file" info="0" debug="0" warn="1" error="1" fatal="1"/>
+			<RootPath dir="gsconf"/>
+			<OpenServerTime time="2015-10-20"/>
+		</GameServer>
+		
+		<!-- wai-wang linux -->
+		<DBServer name="db-wai-wang" id="18">
+		    <DB ip="10.0.128.229" threads="5" type="mysql" user="root" password="" database="world"/>
+			<!-- DB ip="10.0.128.229" threads="1" type="sqlite" user="root" password="" database="test" / -->
+			
+			<Connect>
+				<peer ip="10.0.128.229" port="25000" handler="loginlink"/>	
+				<peer ip="10.0.128.229" port="23000" handler="loglink"/>	
+			</Connect>
+			<Listen>
+				<peer ip="0.0.0.0" port="20001" handler="gslink"/>
+			</Listen>
+			<Log name="console" info="1" debug="1" warn="1" error="1" fatal="1"/>
+			<Log name="file" info="0" debug="0" warn="1" error="1" fatal="1"/>
+		    <RootPath dir="dbconf"/>
+		</DBServer>
+		<GateServer name="gate-wai-wang" id="18">
+			<Listen>
+				<peer ip="0.0.0.0" port="12345" handler="clientlink"/>
+				<peer ip="127.0.0.1" port="11002" handler="gslink"/>
+			</Listen>
+			<Reconnect timeout="300" />
+			<RootPath dir="gateconf"/>
+		</GateServer>
+
+
+		<GameServer name="gs-wai-wang" id="18" debug="1">
+
+			<Connect>
+				<peer ip="127.0.0.1" port="20001" handler="dblink"/>
+				<peer ip="10.0.128.229" port="23000" handler="loglink"/>
+				<peer ip="127.0.0.1" port="11002" handler="gatelink"/>
+				<!-- peer ip="127.0.0.1" port="11002" handler="gatelink"/ -->
+			</Connect>
+			<Listen>
+				<!-- peer ip="0.0.0.0" port="24000" handler="gmlink"/ -->
+			</Listen>
+			<Log name="console" info="1" debug="1" warn="1" error="1" fatal="1"/>
+			<Log name="file" info="0" debug="0" warn="1" error="1" fatal="1"/>
+			<RootPath dir="gsconf"/>
+			<OpenServerTime time="2015-10-20"/>
+		</GameServer>
+		<!-- rongxutao -->
+		<DBServer name="db-rongxutao" id="19">
+		    <DB ip="10.0.128.229" threads="5" type="mysql" user="root" password="" database="world"/>
+			<!-- DB ip="10.0.128.229" threads="1" type="sqlite" user="root" password="" database="test" / -->
+			
+			<Connect>
+				<peer ip="10.0.128.229" port="25000" handler="loginlink"/>	
+				<peer ip="10.0.128.229" port="23000" handler="loglink"/>	
+			</Connect>
+			<Listen>
+				<peer ip="0.0.0.0" port="20000" handler="gslink"/>
+			</Listen>
+			<Log name="console" info="1" debug="1" warn="1" error="1" fatal="1"/>
+			<Log name="file" info="0" debug="0" warn="1" error="1" fatal="1"/>
+		    <RootPath dir="dbconf"/>
+		</DBServer>
+		<GateServer name="gate-rongxutao" id="19">
+			<Listen>
+				<peer ip="0.0.0.0" port="12345" handler="clientlink"/>
+				<peer ip="127.0.0.1" port="11001" handler="gslink"/>
+			</Listen>
+			<Reconnect timeout="300" />
+			<RootPath dir="gateconf"/>
+		</GateServer>
+
+
+		<GameServer name="gs-rongxutao" id="19" debug="1">
+
+			<Connect>
+				<peer ip="127.0.0.1" port="20000" handler="dblink"/>
+				<peer ip="10.0.128.229" port="23000" handler="loglink"/>
+				<peer ip="127.0.0.1" port="11001" handler="gatelink"/>
+				<!-- peer ip="127.0.0.1" port="11002" handler="gatelink"/ -->
+			</Connect>
+			<Listen>
+				<!-- peer ip="0.0.0.0" port="24000" handler="gmlink"/ -->
+			</Listen>
+			<Log name="console" info="1" debug="1" warn="1" error="1" fatal="1"/>
+			<Log name="file" info="0" debug="0" warn="1" error="1" fatal="1"/>
+			<RootPath dir="gsconf"/>
+			<OpenServerTime time="2015-11-18"/>
+		</GameServer>
+
+		<!-- dong xin yan - windows -->
+		<DBServer name="db-xinyan-win" id="20">
+		    <DB ip="10.0.128.229" threads="1" type="mysql" user="root" password="" database="world"/>
+			<!-- DB ip="10.0.128.229" threads="1" type="sqlite" user="root" password="" database="test" / -->
+			
+			<Connect>
+				<peer ip="10.0.128.229" port="25000" handler="loginlink"/>	
+				<peer ip="10.0.128.229" port="23000" handler="loglink"/>	
+				<!-- peer ip="10.0.128.229" port="29000" handler="gmlink"/ -->	
+			</Connect>
+			<Listen>
+				<peer ip="0.0.0.0" port="20000" handler="gslink"/>
+			</Listen>
+			<Log name="console" info="1" debug="1" warn="1" error="1" fatal="1"/>
+			<Log name="file" info="0" debug="0" warn="1" error="1" fatal="1"/>
+		    <RootPath dir="dbconf"/>
+		</DBServer>
+		<GateServer name="gate-xinyan-win" id="20">
+			<Listen>
+				<peer ip="0.0.0.0" port="12345" handler="clientlink"/>
+				<peer ip="127.0.0.1" port="11001" handler="gslink"/>
+			</Listen>
+			<Reconnect timeout="300" />
+			<RootPath dir="gateconf"/>
+		</GateServer>
+
+
+		<GameServer name="gs-xinyan-win" id="20" debug="1">
+			<Connect>
+				<peer ip="127.0.0.1" port="20000" handler="dblink"/>
+				<peer ip="10.0.128.229" port="23000" handler="loglink"/>
+				<peer ip="127.0.0.1" port="11001" handler="gatelink"/>
+				<!-- peer ip="127.0.0.1" port="11002" handler="gatelink"/ -->
+			</Connect>
+			<Listen>
+				<!-- peer ip="0.0.0.0" port="24000" handler="gmlink"/ -->
+			</Listen>
+			<Log name="console" info="1" debug="1" warn="1" error="1" fatal="1"/>
+			<Log name="file" info="0" debug="0" warn="1" error="1" fatal="1"/>
+			<RootPath dir="gsconf"/>
+			<OpenServerTime time="2015-10-20"/>
+		</GameServer>
+		
+		<!-- yao hui - windows -->
+		<DBServer name="db-yaohui-win" id="22">
+		    <DB ip="10.0.128.229" threads="1" type="mysql" user="root" password="" database="world"/>
+			<!-- DB ip="10.0.128.229" threads="1" type="sqlite" user="root" password="" database="test" / -->
+			
+			<Connect>
+				<peer ip="10.0.128.229" port="25000" handler="loginlink"/>	
+				<peer ip="10.0.128.229" port="23000" handler="loglink"/>	
+				<!-- peer ip="10.0.128.229" port="29000" handler="gmlink"/ -->	
+			</Connect>
+			<Listen>
+				<peer ip="0.0.0.0" port="20000" handler="gslink"/>
+			</Listen>
+			<Log name="console" info="1" debug="1" warn="1" error="1" fatal="1"/>
+			<Log name="file" info="0" debug="0" warn="1" error="1" fatal="1"/>
+		    <RootPath dir="dbconf"/>
+		</DBServer>
+		<GateServer name="gate-yaohui-win" id="22">
+			<Listen>
+				<peer ip="0.0.0.0" port="12345" handler="clientlink"/>
+				<peer ip="127.0.0.1" port="11001" handler="gslink"/>
+			</Listen>
+			<Reconnect timeout="300" />
+			<RootPath dir="gateconf"/>
+		</GateServer>
+
+
+		<GameServer name="gs-yaohui-win" id="22" debug="1">
+			<Connect>
+				<peer ip="127.0.0.1" port="20000" handler="dblink"/>
+				<peer ip="10.0.128.229" port="23000" handler="loglink"/>
+				<peer ip="127.0.0.1" port="11001" handler="gatelink"/>
+				<!-- peer ip="127.0.0.1" port="11002" handler="gatelink"/ -->
+			</Connect>
+			<Listen>
+				<!-- peer ip="0.0.0.0" port="24000" handler="gmlink"/ -->
+			</Listen>
+			<Log name="console" info="1" debug="1" warn="1" error="1" fatal="1"/>
+			<Log name="file" info="0" debug="0" warn="1" error="1" fatal="1"/>
+			<RootPath dir="gsconf"/>
+			<OpenServerTime time="2015-10-20"/>
+		</GameServer>
+		
+		<!-- lian ye yan - windows -->
+		<DBServer name="db-lianye-win" id="21">
+		    <DB ip="10.0.128.229" threads="1" type="mysql" user="root" password="" database="world"/>
+			<!-- DB ip="10.0.128.229" threads="1" type="sqlite" user="root" password="" database="test" / -->
+			
+			<Connect>
+				<peer ip="10.0.128.229" port="25000" handler="loginlink"/>	
+				<peer ip="10.0.128.229" port="23000" handler="loglink"/>	
+				<!-- peer ip="10.0.128.229" port="29000" handler="gmlink"/ -->	
+			</Connect>
+			<Listen>
+				<peer ip="0.0.0.0" port="20000" handler="gslink"/>
+			</Listen>
+			<Log name="console" info="1" debug="1" warn="1" error="1" fatal="1"/>
+			<Log name="file" info="0" debug="0" warn="1" error="1" fatal="1"/>
+		    <RootPath dir="dbconf"/>
+		</DBServer>
+		<GateServer name="gate-lianye-win" id="21">
+			<Listen>
+				<peer ip="0.0.0.0" port="12345" handler="clientlink"/>
+				<peer ip="127.0.0.1" port="11001" handler="gslink"/>
+			</Listen>
+			<Reconnect timeout="300" />
+			<RootPath dir="gateconf"/>
+		</GateServer>
+
+
+		<GameServer name="gs-lianye-win" id="21" debug="1">
+
+			<Connect>
+				<peer ip="127.0.0.1" port="20000" handler="dblink"/>
+				<peer ip="10.0.128.229" port="23000" handler="loglink"/>
+				<peer ip="127.0.0.1" port="11001" handler="gatelink"/>
+				<!-- peer ip="127.0.0.1" port="11002" handler="gatelink"/ -->
+			</Connect>
+			<Listen>
+				<!-- peer ip="0.0.0.0" port="24000" handler="gmlink"/ -->
+			</Listen>
+			<Log name="console" info="1" debug="1" warn="1" error="1" fatal="1"/>
+			<Log name="file" info="0" debug="0" warn="1" error="1" fatal="1"/>
+			<RootPath dir="gsconf"/>
+			<OpenServerTime time="2015-10-20"/>
+		</GameServer>
+		
+		<!-- wang chao - windows -->
+		<DBServer name="db-wangchao-win" id="23">
+		    <DB ip="10.0.128.229" threads="1" type="mysql" user="root" password="" database="world"/>
+			<!-- DB ip="10.0.128.229" threads="1" type="sqlite" user="root" password="" database="test" / -->
+			
+			<Connect>
+				<peer ip="10.0.128.229" port="25000" handler="loginlink"/>	
+				<peer ip="10.0.128.229" port="23000" handler="loglink"/>	
+				<!-- peer ip="10.0.128.229" port="29000" handler="gmlink"/ -->	
+			</Connect>
+			<Listen>
+				<peer ip="0.0.0.0" port="20000" handler="gslink"/>
+			</Listen>
+			<Log name="console" info="1" debug="1" warn="1" error="1" fatal="1"/>
+			<Log name="file" info="0" debug="0" warn="1" error="1" fatal="1"/>
+		    <RootPath dir="dbconf"/>
+		</DBServer>
+		<GateServer name="gate-wangchao-win" id="23">
+			<Listen>
+				<peer ip="0.0.0.0" port="12345" handler="clientlink"/>
+				<peer ip="127.0.0.1" port="11001" handler="gslink"/>
+			</Listen>
+			<Reconnect timeout="300" />
+			<RootPath dir="gateconf"/>
+		</GateServer>
+
+
+		<GameServer name="gs-wangchao-win" id="23" debug="1">
+
+			<Connect>
+				<peer ip="127.0.0.1" port="20000" handler="dblink"/>
+				<peer ip="10.0.128.229" port="23000" handler="loglink"/>
+				<peer ip="127.0.0.1" port="11001" handler="gatelink"/>
+				<!-- peer ip="127.0.0.1" port="11002" handler="gatelink"/ -->
+			</Connect>
+			<Listen>
+				<!-- peer ip="0.0.0.0" port="24000" handler="gmlink"/ -->
+			</Listen>
+			<Log name="console" info="1" debug="1" warn="1" error="1" fatal="1"/>
+			<Log name="file" info="0" debug="0" warn="1" error="1" fatal="1"/>
+			<RootPath dir="gsconf"/>
+			<OpenServerTime time="2015-10-20"/>
+		</GameServer>
+		
+		<!-- gengliqi - windows -->
+		<DBServer name="db-gengliqi" id="24">
+		    <DB ip="10.0.128.229" threads="1" type="mysql" user="root" password="" database="world"/>
+			<!-- DB ip="10.0.128.229" threads="1" type="sqlite" user="root" password="" database="test" / -->
+			
+			<Connect>
+				<peer ip="10.0.128.229" port="25000" handler="loginlink"/>	
+				<peer ip="10.0.128.229" port="23000" handler="loglink"/>	
+				<!-- peer ip="10.0.128.229" port="29000" handler="gmlink"/ -->	
+			</Connect>
+			<Listen>
+				<peer ip="0.0.0.0" port="20000" handler="gslink"/>
+			</Listen>
+			<Log name="console" info="1" debug="1" warn="1" error="1" fatal="1"/>
+			<Log name="file" info="0" debug="0" warn="1" error="1" fatal="1"/>
+		    <RootPath dir="dbconf"/>
+		</DBServer>
+		<GateServer name="gate-gengliqi" id="24">
+			<Listen>
+				<peer ip="0.0.0.0" port="12345" handler="clientlink"/>
+				<peer ip="127.0.0.1" port="11001" handler="gslink"/>
+			</Listen>
+			<Reconnect timeout="300" />
+			<RootPath dir="gateconf"/>
+		</GateServer>
+
+
+		<GameServer name="gs-gengliqi" id="24" debug="1">
+			<Connect>
+				<peer ip="127.0.0.1" port="20000" handler="dblink"/>
+				<peer ip="10.0.128.229" port="23000" handler="loglink"/>
+				<peer ip="127.0.0.1" port="11001" handler="gatelink"/>
+				<!-- peer ip="127.0.0.1" port="11002" handler="gatelink"/ -->
+			</Connect>
+			<Listen>
+				<!-- peer ip="0.0.0.0" port="24000" handler="gmlink"/ -->
+			</Listen>
+			<Log name="console" info="1" debug="1" warn="1" error="1" fatal="1"/>
+			<Log name="file" info="0" debug="0" warn="1" error="1" fatal="1"/>
+			<RootPath dir="gsconf"/>
+			<OpenServerTime time="2015-10-20"/>
+		</GameServer>
+		<!-- zhuang - windows -->
+		<DBServer name="db-zhuang" id="25">
+		    <DB ip="10.0.128.229" threads="1" type="mysql" user="root" password="" database="world"/>
+			<!-- DB ip="10.0.128.229" threads="1" type="sqlite" user="root" password="" database="test" / -->
+			
+			<Connect>
+				<peer ip="10.0.128.229" port="25000" handler="loginlink"/>	
+				<peer ip="10.0.128.229" port="23000" handler="loglink"/>	
+				<!-- peer ip="10.0.128.229" port="29000" handler="gmlink"/ -->	
+			</Connect>
+			<Listen>
+				<peer ip="0.0.0.0" port="20000" handler="gslink"/>
+			</Listen>
+			<Log name="console" info="1" debug="1" warn="1" error="1" fatal="1"/>
+			<Log name="file" info="0" debug="0" warn="1" error="1" fatal="1"/>
+		    <RootPath dir="dbconf"/>
+		</DBServer>
+		<GateServer name="gate-zhuang" id="25">
+			<Listen>
+				<peer ip="0.0.0.0" port="12345" handler="clientlink"/>
+				<peer ip="127.0.0.1" port="11001" handler="gslink"/>
+			</Listen>
+			<Reconnect timeout="300" />
+			<RootPath dir="gateconf"/>
+		</GateServer>
+
+		<GameServer name="gs-zhuang" id="25" debug="1">
+
+			<Connect>
+				<peer ip="127.0.0.1" port="20000" handler="dblink"/>
+				<peer ip="10.0.128.229" port="23000" handler="loglink"/>
+				<peer ip="127.0.0.1" port="11001" handler="gatelink"/>
+				<!-- peer ip="127.0.0.1" port="11002" handler="gatelink"/ -->
+			</Connect>
+			<Listen>
+				<!-- peer ip="0.0.0.0" port="24000" handler="gmlink"/ -->
+			</Listen>
+			<Log name="console" info="1" debug="1" warn="1" error="1" fatal="1"/>
+			<Log name="file" info="0" debug="0" warn="1" error="1" fatal="1"/>
+			<RootPath dir="gsconf"/>
+			<OpenServerTime time="2015-10-20"/>
+		</GameServer>
+
+
+
+
+
+		<!-- liyang -->
+		<DBServer name="db-yang" id="28" >
+
+		    <AppPlat app="qq" plat="ios" /> <!-- app(qq, wechat), plat(ios, android) -->
+		    <DB ip="10.0.128.229" threads="5" type="mysql" user="root" password="" database="world"/>
+		    <OnlineDB ip="10.0.128.160" threads="1" type="mysql" user="root" password="123" database="db_Dragon_Nest_online"/>
+			<!-- DB ip="10.0.128.229" threads="1" type="sqlite" user="root" password="" database="test" / -->
+			
+			<Connect>
+				<peer ip="10.0.128.229" port="25000" handler="loginlink"/>	
+				<peer ip="10.0.128.229" port="23000" handler="loglink"/>	
+				<peer ip="10.0.128.160" port="29000" handler="gmlink"/>	
+			</Connect>
+
+			<Listen>
+				<peer ip="0.0.0.0" port="20000" handler="gslink"/>
+				<peer ip="0.0.0.0" port="21000" handler="mslink"/>
+			</Listen>
+
+			<Log name="console" info="1" debug="1" warn="1" error="1" fatal="1"/>
+			<Log name="file" info="0" debug="0" warn="1" error="1" fatal="1"/>
+
+		    <RootPath dir="dbconf"/>
+
+		</DBServer>
+
+		<GateServer name="gate-yang" id="28" line="1">
+			<Listen>
+				<peer ip="0.0.0.0" port="12345" handler="clientlink"/>
+				<peer ip="127.0.0.1" port="11003" handler="gslink"/>
+			</Listen>
+			<Connect>
+				<peer ip="127.0.0.1" port="11001" handler="mslink"/>
+			</Connect>
+
+			<Reconnect timeout="300" />
+			<RootPath dir="gateconf"/>
+		</GateServer>
+
+		<MasterServer name="ms-yang" id="28" debug="1">
+		    <DB ip="10.0.128.229" threads="5" type="mysql" user="root" password="" database="world"/>
+			<Connect>
+				<peer ip="127.0.0.1" port="21000" handler="dblink"/>
+				<peer ip="10.0.128.160" port="29000" handler="gmlink"/>
+				<!-- peer ip="10.0.128.229" port="29002" handler="weblink"/ -->
+			</Connect>
+
+			<Listen>
+				<peer ip="127.0.0.1" port="11001" handler="gatelink"/>
+				<peer ip="0.0.0.0" port="11002" handler="gslink"/>
+			</Listen>
+
+			<Log name="console" info="1" debug="1" warn="1" error="1" fatal="1"/>
+			<Log name="file" info="0" debug="0" warn="1" error="1" fatal="1"/>
+
+			<RootPath dir="gsconf"/>
+
+			<OpenServerTime time="2016-05-04"/>
+		</MasterServer>
+
+		<GameServer name="gs-yang" id="28" debug="1" line="1">
+			<Connect>
+				<peer ip="127.0.0.1" port="20000" handler="dblink"/>
+				<peer ip="10.0.128.229" port="23000" handler="loglink"/>
+				<!--peer ip="127.0.0.1" port="11003" handler="gatelink"/ -->
+				<peer ip="127.0.0.1" port="11002" handler="mslink"/>
+				<!-- peer ip="10.0.128.229" port="29002" handler="weblink"/ -->
+			</Connect>
+			<Listen>
+				<!-- peer ip="0.0.0.0" port="24000" handler="gmlink"/ -->
+			</Listen>
+
+			<Log name="console" info="1" debug="1" warn="1" error="1" fatal="1"/>
+			<Log name="file" info="0" debug="0" warn="1" error="1" fatal="1"/>
+
+			<RootPath dir="gsconf"/>
+			<OpenServerTime time="2016-05-04"/>
+		</GameServer>
+
+
+
+
+		<!-- liyang linux -->
+		<DBServer name="db-yang" id="29">
+
+		    <DB ip="10.0.128.229" threads="5" type="mysql" user="root" password="" database="world"/>
+			<!-- DB ip="10.0.128.229" threads="1" type="sqlite" user="root" password="" database="test" / -->
+			
+			<Connect>
+				<peer ip="10.0.128.229" port="25000" handler="loginlink"/>	
+				<peer ip="10.0.128.229" port="23000" handler="loglink"/>	
+				<!-- peer ip="10.0.128.229" port="29000" handler="gmlink"/ -->	
+			</Connect>
+
+			<Listen>
+				<peer ip="0.0.0.0" port="20010" handler="gslink"/>
+			</Listen>
+
+			<Log name="console" info="1" debug="1" warn="1" error="1" fatal="1"/>
+			<Log name="file" info="0" debug="0" warn="1" error="1" fatal="1"/>
+
+		    <RootPath dir="dbconf"/>
+
+		</DBServer>
+
+		<GateServer name="gate-yang" id="29">
+
+			<Listen>
+				<peer ip="0.0.0.0" port="12355" handler="clientlink"/>
+				<peer ip="127.0.0.1" port="11021" handler="gslink"/>
+			</Listen>
+
+			<Reconnect timeout="300" />
+
+			<RootPath dir="gateconf"/>
+
+		</GateServer>
+
+		<GameServer name="gs-yang" id="29" debug="1">
+
+			<Connect>
+				<peer ip="127.0.0.1" port="20010" handler="dblink"/>
+				<peer ip="10.0.128.229" port="23000" handler="loglink"/>
+				<peer ip="127.0.0.1" port="11021" handler="gatelink"/>
+				<!-- peer ip="10.0.128.229" port="29002" handler="weblink"/ -->
+			</Connect>
+
+			<Listen>
+				<!-- peer ip="0.0.0.0" port="24000" handler="gmlink"/ -->
+			</Listen>
+
+			<Log name="console" info="1" debug="1" warn="1" error="1" fatal="1"/>
+			<Log name="file" info="0" debug="0" warn="1" error="1" fatal="1"/>
+
+			<RootPath dir="gsconf"/>
+
+			<OpenServerTime time="2016-05-05"/>
+
+		</GameServer>
+
+
+
+
+		<!-- guo - windows -->
+		<DBServer name="db-guo" id="32">
+
+		    <DB ip="10.0.128.229" threads="1" type="mysql" user="root" password="" database="world"/>
+			<!-- DB ip="10.0.128.229" threads="1" type="sqlite" user="root" password="" database="test" / -->
+			
+			<Connect>
+				<peer ip="10.0.128.229" port="25000" handler="loginlink"/>	
+				<peer ip="10.0.128.229" port="23000" handler="loglink"/>	
+				<!-- peer ip="10.0.128.229" port="29000" handler="gmlink"/ -->	
+			</Connect>
+
+			<Listen>
+				<peer ip="0.0.0.0" port="20000" handler="gslink"/>
+			</Listen>
+
+			<Log name="console" info="1" debug="1" warn="1" error="1" fatal="1"/>
+			<Log name="file" info="0" debug="0" warn="1" error="1" fatal="1"/>
+
+		    <RootPath dir="dbconf"/>
+
+		</DBServer>
+
+		<GateServer name="gate-guo" id="32">
+
+			<Listen>
+				<peer ip="0.0.0.0" port="12345" handler="clientlink"/>
+				<peer ip="127.0.0.1" port="11001" handler="gslink"/>
+			</Listen>
+
+			<Reconnect timeout="300" />
+
+			<RootPath dir="gateconf"/>
+
+		</GateServer>
+
+		<GameServer name="gs-guo" id="32" debug="1">
+
+			<Connect>
+				<peer ip="127.0.0.1" port="20000" handler="dblink"/>
+				<peer ip="10.0.128.229" port="23000" handler="loglink"/>
+				<peer ip="127.0.0.1" port="11001" handler="gatelink"/>
+				<!-- peer ip="127.0.0.1" port="11002" handler="gatelink"/ -->
+			</Connect>
+
+			<Listen>
+				<!-- peer ip="0.0.0.0" port="24000" handler="gmlink"/ -->
+			</Listen>
+
+			<Log name="console" info="1" debug="1" warn="1" error="1" fatal="1"/>
+			<Log name="file" info="0" debug="0" warn="1" error="1" fatal="1"/>
+
+			<RootPath dir="gsconf"/>
+
+			<OpenServerTime time="2015-10-20"/>
+
+		</GameServer>
+
+
+
+
+
+
+		
+		
+		
+		
+		
+		<!-- xiao - windows -->
+		<DBServer name="db-xiao" id="34">
+
+		    <DB ip="10.0.128.229" threads="1" type="mysql" user="root" password="" database="world"/>
+			<!-- DB ip="10.0.128.229" threads="1" type="sqlite" user="root" password="" database="test" / -->
+			
+			<Connect>
+				<peer ip="10.0.128.229" port="25000" handler="loginlink"/>	
+				<peer ip="10.0.128.229" port="23000" handler="loglink"/>	
+				<!-- peer ip="10.0.128.229" port="29000" handler="gmlink"/ -->	
+			</Connect>
+
+			<Listen>
+				<peer ip="0.0.0.0" port="20000" handler="gslink"/>
+			</Listen>
+
+			<Log name="console" info="1" debug="1" warn="1" error="1" fatal="1"/>
+			<Log name="file" info="0" debug="0" warn="1" error="1" fatal="1"/>
+
+		    <RootPath dir="dbconf"/>
+
+		</DBServer>
+
+		<GateServer name="gate-xiao" id="34">
+
+			<Listen>
+				<peer ip="0.0.0.0" port="12345" handler="clientlink"/>
+				<peer ip="0.0.0.0" port="11001" handler="gslink"/>
+				<peer ip="0.0.0.0" port="12001" handler="audiolink"/>
+			</Listen>
+
+			<Reconnect timeout="300" />
+
+			<RootPath dir="gateconf"/>
+
+		</GateServer>
+
+		<GameServer name="gs-xiao" id="34" debug="1">
+
+			<Connect>
+				<peer ip="127.0.0.1" port="20000" handler="dblink"/>
+				<peer ip="10.0.128.229" port="23000" handler="loglink"/>
+				<peer ip="127.0.0.1" port="11001" handler="gatelink"/>
+				<!-- peer ip="127.0.0.1" port="11002" handler="gatelink"/ -->
+			</Connect>
+
+			<Listen>
+				<!-- peer ip="0.0.0.0" port="24000" handler="gmlink"/ -->
+			</Listen>
+
+			<Log name="console" info="1" debug="1" warn="1" error="1" fatal="1"/>
+			<Log name="file" info="0" debug="0" warn="1" error="1" fatal="1"/>
+
+			<RootPath dir="gsconf"/>
+
+			<OpenServerTime time="2015-10-20"/>
+
+		</GameServer>
+
+				<!--音频服务器-->
+		<AudioServer name="audio" id="34">
+			<Connect>
+				<peer ip="10.0.128.229" port="23000" handler="loglink"/>
+				<peer ip="127.0.0.1" port="12001" handler="gatelink"/>
+				<!-- peer ip="127.0.0.1" port="11002" handler="gatelink"/ -->
+			</Connect>
+
+			<Log name="console" info="1" debug="1" warn="1" error="1" fatal="1"/>
+			<Log name="file" info="0" debug="0" warn="1" error="1" fatal="1"/>
+
+			<RootPath dir="audioconf"/>
+		</AudioServer>
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<!--  windows -->
+		<DBServer name="db-zhang" id="36">
+
+		    <DB ip="10.0.128.229" threads="1" type="mysql" user="root" password="" database="world"/>
+			<!-- DB ip="10.0.128.229" threads="1" type="sqlite" user="root" password="" database="test" / -->
+			
+			<Connect>
+				<peer ip="10.0.128.229" port="25000" handler="loginlink"/>	
+				<peer ip="10.0.128.229" port="23000" handler="loglink"/>	
+				<!-- peer ip="10.0.128.229" port="29000" handler="gmlink"/ -->	
+			</Connect>
+
+			<Listen>
+				<peer ip="0.0.0.0" port="20000" handler="gslink"/>
+			</Listen>
+
+			<Log name="console" info="1" debug="1" warn="1" error="1" fatal="1"/>
+			<Log name="file" info="0" debug="0" warn="1" error="1" fatal="1"/>
+
+		    <RootPath dir="dbconf"/>
+
+		</DBServer>
+
+		<GateServer name="gate-zhang" id="36">
+
+			<Listen>
+				<peer ip="0.0.0.0" port="12345" handler="clientlink"/>
+				<peer ip="127.0.0.1" port="11001" handler="gslink"/>
+			</Listen>
+
+			<Reconnect timeout="300" />
+
+			<RootPath dir="gateconf"/>
+
+		</GateServer>
+
+		<GameServer name="gs-zhang" id="36" debug="1">
+
+			<Connect>
+				<peer ip="127.0.0.1" port="20000" handler="dblink"/>
+				<peer ip="10.0.128.229" port="23000" handler="loglink"/>
+				<peer ip="127.0.0.1" port="11001" handler="gatelink"/>
+				<!-- peer ip="127.0.0.1" port="11002" handler="gatelink"/ -->
+			</Connect>
+
+			<Listen>
+				<!-- peer ip="0.0.0.0" port="24000" handler="gmlink"/ -->
+			</Listen>
+
+			<Log name="console" info="1" debug="1" warn="1" error="1" fatal="1"/>
+			<Log name="file" info="0" debug="0" warn="1" error="1" fatal="1"/>
+
+			<RootPath dir="gsconf"/>
+
+			<OpenServerTime time="2015-10-20"/>
+
+		</GameServer>
+
+		
+		<!--  windows -->
+		<DBServer name="db" id="37">
+
+		    <DB ip="10.0.128.229" threads="1" type="mysql" user="root" password="" database="world"/>
+			<!-- DB ip="10.0.128.229" threads="1" type="sqlite" user="root" password="" database="test" / -->
+			
+			<Connect>
+				<peer ip="10.0.128.229" port="25000" handler="loginlink"/>	
+				<peer ip="10.0.128.229" port="23000" handler="loglink"/>	
+				<!-- peer ip="10.0.128.229" port="29000" handler="gmlink"/ -->	
+			</Connect>
+
+			<Listen>
+				<peer ip="0.0.0.0" port="20000" handler="gslink"/>
+			</Listen>
+
+			<Log name="console" info="1" debug="1" warn="1" error="1" fatal="1"/>
+			<Log name="file" info="0" debug="0" warn="1" error="1" fatal="1"/>
+
+		    <RootPath dir="dbconf"/>
+
+		</DBServer>
+
+		<GateServer name="gate" id="37">
+
+			<Listen>
+				<peer ip="0.0.0.0" port="12345" handler="clientlink"/>
+				<peer ip="127.0.0.1" port="11001" handler="gslink"/>
+			</Listen>
+
+			<Reconnect timeout="300" />
+
+			<RootPath dir="gateconf"/>
+
+		</GateServer>
+
+		<GameServer name="gs" id="37" debug="1">
+
+			<Connect>
+				<peer ip="127.0.0.1" port="20000" handler="dblink"/>
+				<peer ip="10.0.128.229" port="23000" handler="loglink"/>
+				<peer ip="127.0.0.1" port="11001" handler="gatelink"/>
+				<!-- peer ip="127.0.0.1" port="11002" handler="gatelink"/ -->
+			</Connect>
+
+			<Listen>
+				<!-- peer ip="0.0.0.0" port="24000" handler="gmlink"/ -->
+			</Listen>
+
+			<Log name="console" info="1" debug="1" warn="1" error="1" fatal="1"/>
+			<Log name="file" info="0" debug="0" warn="1" error="1" fatal="1"/>
+
+			<RootPath dir="gsconf"/>
+
+			<OpenServerTime time="2015-10-20"/>
+
+		</GameServer>
+
+		
+		
+		<!--  windows -->
+		<DBServer name="db" id="38">
+
+		    <DB ip="10.0.128.229" threads="1" type="mysql" user="root" password="" database="world"/>
+			<!-- DB ip="10.0.128.229" threads="1" type="sqlite" user="root" password="" database="test" / -->
+			
+			<Connect>
+				<peer ip="10.0.128.229" port="25000" handler="loginlink"/>	
+				<peer ip="10.0.128.229" port="23000" handler="loglink"/>	
+				<!-- peer ip="10.0.128.229" port="29000" handler="gmlink"/ -->	
+			</Connect>
+
+			<Listen>
+				<peer ip="0.0.0.0" port="20000" handler="gslink"/>
+			</Listen>
+
+			<Log name="console" info="1" debug="1" warn="1" error="1" fatal="1"/>
+			<Log name="file" info="0" debug="0" warn="1" error="1" fatal="1"/>
+
+		    <RootPath dir="dbconf"/>
+
+		</DBServer>
+
+		<GateServer name="gate" id="38">
+
+			<Listen>
+				<peer ip="0.0.0.0" port="12345" handler="clientlink"/>
+				<peer ip="127.0.0.1" port="11001" handler="gslink"/>
+			</Listen>
+
+			<Reconnect timeout="300" />
+
+			<RootPath dir="gateconf"/>
+
+		</GateServer>
+
+		<GameServer name="gs" id="38" debug="1">
+
+			<Connect>
+				<peer ip="127.0.0.1" port="20000" handler="dblink"/>
+				<peer ip="10.0.128.229" port="23000" handler="loglink"/>
+				<peer ip="127.0.0.1" port="11001" handler="gatelink"/>
+				<!-- peer ip="127.0.0.1" port="11002" handler="gatelink"/ -->
+			</Connect>
+
+			<Listen>
+				<!-- peer ip="0.0.0.0" port="24000" handler="gmlink"/ -->
+			</Listen>
+
+			<Log name="console" info="1" debug="1" warn="1" error="1" fatal="1"/>
+			<Log name="file" info="0" debug="0" warn="1" error="1" fatal="1"/>
+
+			<RootPath dir="gsconf"/>
+
+			<OpenServerTime time="2015-10-20"/>
+
+		</GameServer>
+
+		
+		
+		<!--  windows -->
+		<DBServer name="db" id="39">
+
+		    <DB ip="10.0.128.229" threads="1" type="mysql" user="root" password="" database="world"/>
+			<!-- DB ip="10.0.128.229" threads="1" type="sqlite" user="root" password="" database="test" / -->
+			
+			<Connect>
+				<peer ip="10.0.128.229" port="25000" handler="loginlink"/>	
+				<peer ip="10.0.128.229" port="23000" handler="loglink"/>	
+				<!-- peer ip="10.0.128.229" port="29000" handler="gmlink"/ -->	
+			</Connect>
+
+			<Listen>
+				<peer ip="0.0.0.0" port="20000" handler="gslink"/>
+			</Listen>
+
+			<Log name="console" info="1" debug="1" warn="1" error="1" fatal="1"/>
+			<Log name="file" info="0" debug="0" warn="1" error="1" fatal="1"/>
+
+		    <RootPath dir="dbconf"/>
+
+		</DBServer>
+
+		<GateServer name="gate" id="39">
+
+			<Listen>
+				<peer ip="0.0.0.0" port="12345" handler="clientlink"/>
+				<peer ip="127.0.0.1" port="11001" handler="gslink"/>
+			</Listen>
+
+			<Reconnect timeout="300" />
+
+			<RootPath dir="gateconf"/>
+
+		</GateServer>
+
+		<GameServer name="gs" id="39" debug="1">
+
+			<Connect>
+				<peer ip="127.0.0.1" port="20000" handler="dblink"/>
+				<peer ip="10.0.128.229" port="23000" handler="loglink"/>
+				<peer ip="127.0.0.1" port="11001" handler="gatelink"/>
+				<!-- peer ip="127.0.0.1" port="11002" handler="gatelink"/ -->
+			</Connect>
+
+			<Listen>
+				<!-- peer ip="0.0.0.0" port="24000" handler="gmlink"/ -->
+			</Listen>
+
+			<Log name="console" info="1" debug="1" warn="1" error="1" fatal="1"/>
+			<Log name="file" info="0" debug="0" warn="1" error="1" fatal="1"/>
+
+			<RootPath dir="gsconf"/>
+
+			<OpenServerTime time="2015-10-20"/>
+
+		</GameServer>
+
+		
+		
+		<!--  windows -->
+		<DBServer name="db" id="40">
+
+		    <DB ip="10.0.128.229" threads="1" type="mysql" user="root" password="" database="world"/>
+			<!-- DB ip="10.0.128.229" threads="1" type="sqlite" user="root" password="" database="test" / -->
+			
+			<Connect>
+				<peer ip="10.0.128.229" port="25000" handler="loginlink"/>	
+				<peer ip="10.0.128.229" port="23000" handler="loglink"/>	
+				<!-- peer ip="10.0.128.229" port="29000" handler="gmlink"/ -->	
+			</Connect>
+
+			<Listen>
+				<peer ip="0.0.0.0" port="20000" handler="gslink"/>
+			</Listen>
+
+			<Log name="console" info="1" debug="1" warn="1" error="1" fatal="1"/>
+			<Log name="file" info="0" debug="0" warn="1" error="1" fatal="1"/>
+
+		    <RootPath dir="dbconf"/>
+
+		</DBServer>
+
+		<GateServer name="gate" id="40">
+
+			<Listen>
+				<peer ip="0.0.0.0" port="12345" handler="clientlink"/>
+				<peer ip="127.0.0.1" port="11001" handler="gslink"/>
+			</Listen>
+
+			<Reconnect timeout="300" />
+
+			<RootPath dir="gateconf"/>
+
+		</GateServer>
+
+		<GameServer name="gs" id="40" debug="1">
+
+			<Connect>
+				<peer ip="127.0.0.1" port="20000" handler="dblink"/>
+				<peer ip="10.0.128.229" port="23000" handler="loglink"/>
+				<peer ip="127.0.0.1" port="11001" handler="gatelink"/>
+				<!-- peer ip="127.0.0.1" port="11002" handler="gatelink"/ -->
+			</Connect>
+
+			<Listen>
+				<!-- peer ip="0.0.0.0" port="24000" handler="gmlink"/ -->
+			</Listen>
+
+			<Log name="console" info="1" debug="1" warn="1" error="1" fatal="1"/>
+			<Log name="file" info="0" debug="0" warn="1" error="1" fatal="1"/>
+
+			<RootPath dir="gsconf"/>
+
+			<OpenServerTime time="2015-10-20"/>
+
+		</GameServer>
+
+		
+		<!--  windows -->
+		<DBServer name="db" id="41">
+
+		    <DB ip="10.0.128.229" threads="1" type="mysql" user="root" password="" database="world"/>
+			<!-- DB ip="10.0.128.229" threads="1" type="sqlite" user="root" password="" database="test" / -->
+			
+			<Connect>
+				<peer ip="10.0.128.229" port="25000" handler="loginlink"/>	
+				<peer ip="10.0.128.229" port="23000" handler="loglink"/>	
+				<!-- peer ip="10.0.128.229" port="29000" handler="gmlink"/ -->	
+			</Connect>
+
+			<Listen>
+				<peer ip="0.0.0.0" port="20000" handler="gslink"/>
+			</Listen>
+
+			<Log name="console" info="1" debug="1" warn="1" error="1" fatal="1"/>
+			<Log name="file" info="0" debug="0" warn="1" error="1" fatal="1"/>
+
+		    <RootPath dir="dbconf"/>
+
+		</DBServer>
+
+		<GateServer name="gate" id="41">
+
+			<Listen>
+				<peer ip="0.0.0.0" port="12345" handler="clientlink"/>
+				<peer ip="127.0.0.1" port="11001" handler="gslink"/>
+			</Listen>
+
+			<Reconnect timeout="300" />
+
+			<RootPath dir="gateconf"/>
+
+		</GateServer>
+
+		<GameServer name="gs" id="41" debug="1">
+
+			<Connect>
+				<peer ip="127.0.0.1" port="20000" handler="dblink"/>
+				<peer ip="10.0.128.229" port="23000" handler="loglink"/>
+				<peer ip="127.0.0.1" port="11001" handler="gatelink"/>
+				<!-- peer ip="127.0.0.1" port="11002" handler="gatelink"/ -->
+			</Connect>
+
+			<Listen>
+				<!-- peer ip="0.0.0.0" port="24000" handler="gmlink"/ -->
+			</Listen>
+
+			<Log name="console" info="1" debug="1" warn="1" error="1" fatal="1"/>
+			<Log name="file" info="0" debug="0" warn="1" error="1" fatal="1"/>
+
+			<RootPath dir="gsconf"/>
+
+			<OpenServerTime time="2015-10-20"/>
+
+		</GameServer>
+		
+				<!--  windows -->
+		<DBServer name="db" id="42">
+
+		    <DB ip="10.0.128.229" threads="1" type="mysql" user="root" password="" database="world"/>
+			<!-- DB ip="10.0.128.229" threads="1" type="sqlite" user="root" password="" database="test" / -->
+			
+			<Connect>
+				<peer ip="10.0.128.229" port="25000" handler="loginlink"/>	
+				<peer ip="10.0.128.229" port="23000" handler="loglink"/>	
+				<!-- peer ip="10.0.128.229" port="29000" handler="gmlink"/ -->	
+			</Connect>
+
+			<Listen>
+				<peer ip="0.0.0.0" port="20000" handler="gslink"/>
+			</Listen>
+
+			<Log name="console" info="1" debug="1" warn="1" error="1" fatal="1"/>
+			<Log name="file" info="0" debug="0" warn="1" error="1" fatal="1"/>
+
+		    <RootPath dir="dbconf"/>
+
+		</DBServer>
+
+		<GateServer name="gate" id="42">
+
+			<Listen>
+				<peer ip="0.0.0.0" port="12345" handler="clientlink"/>
+				<peer ip="127.0.0.1" port="11001" handler="gslink"/>
+			</Listen>
+
+			<Reconnect timeout="300" />
+
+			<RootPath dir="gateconf"/>
+
+		</GateServer>
+
+		<GameServer name="gs" id="42" debug="1">
+
+			<Connect>
+				<peer ip="127.0.0.1" port="20000" handler="dblink"/>
+				<peer ip="10.0.128.229" port="23000" handler="loglink"/>
+				<peer ip="127.0.0.1" port="11001" handler="gatelink"/>
+				<!-- peer ip="127.0.0.1" port="11002" handler="gatelink"/ -->
+			</Connect>
+
+			<Listen>
+				<!-- peer ip="0.0.0.0" port="24000" handler="gmlink"/ -->
+			</Listen>
+
+			<Log name="console" info="1" debug="1" warn="1" error="1" fatal="1"/>
+			<Log name="file" info="0" debug="0" warn="1" error="1" fatal="1"/>
+
+			<RootPath dir="gsconf"/>
+
+			<OpenServerTime time="2015-10-20"/>
+
+		</GameServer>
+			
+		
+				<!--  windows -->
+		<DBServer name="db" id="43">
+
+		    <DB ip="10.0.128.229" threads="1" type="mysql" user="root" password="" database="world"/>
+			<!-- DB ip="10.0.128.229" threads="1" type="sqlite" user="root" password="" database="test" / -->
+			
+			<Connect>
+				<peer ip="10.0.128.229" port="25000" handler="loginlink"/>	
+				<peer ip="10.0.128.229" port="23000" handler="loglink"/>	
+				<!-- peer ip="10.0.128.229" port="29000" handler="gmlink"/ -->	
+			</Connect>
+
+			<Listen>
+				<peer ip="0.0.0.0" port="20000" handler="gslink"/>
+			</Listen>
+
+			<Log name="console" info="1" debug="1" warn="1" error="1" fatal="1"/>
+			<Log name="file" info="0" debug="0" warn="1" error="1" fatal="1"/>
+
+		    <RootPath dir="dbconf"/>
+
+		</DBServer>
+
+		<GateServer name="gate" id="43">
+
+			<Listen>
+				<peer ip="0.0.0.0" port="12345" handler="clientlink"/>
+				<peer ip="127.0.0.1" port="11001" handler="gslink"/>
+			</Listen>
+
+			<Reconnect timeout="300" />
+
+			<RootPath dir="gateconf"/>
+
+		</GateServer>
+
+		<GameServer name="gs" id="43" debug="1">
+
+			<Connect>
+				<peer ip="127.0.0.1" port="20000" handler="dblink"/>
+				<peer ip="10.0.128.229" port="23000" handler="loglink"/>
+				<peer ip="127.0.0.1" port="11001" handler="gatelink"/>
+				<!-- peer ip="127.0.0.1" port="11002" handler="gatelink"/ -->
+			</Connect>
+
+			<Listen>
+				<!-- peer ip="0.0.0.0" port="24000" handler="gmlink"/ -->
+			</Listen>
+
+			<Log name="console" info="1" debug="1" warn="1" error="1" fatal="1"/>
+			<Log name="file" info="0" debug="0" warn="1" error="1" fatal="1"/>
+
+			<RootPath dir="gsconf"/>
+
+			<OpenServerTime time="2015-10-20"/>
+
+		</GameServer>
+			
+
+
+		<LogServer name="log" id="1">
+			<DB ip="10.0.128.229" user="root" password="" database="gamelog"/>
+			<TDB ip="10.0.128.229" user="root" password="" database="tlog"/>
+
+			<Listen>
+				<peer ip="0.0.0.0" port="23000" handler="serverlink"/>
+			</Listen>
+			<Log name="console" info="1" debug="1" warn="1" error="1" fatal="1"/>
+			<Log name="file" info="0" debug="0" warn="1" error="1" fatal="1"/>
+			<RootPath dir="logconf"/>
+		</LogServer>
+	</Zone>
+
+	<LoginServer name="login" id="100" platform="dn_sdo">
+		<DB ip="10.0.128.229" user="root" password="" database=""/>
+		<Connect>
+			<!--peer ip="10.0.128.229" port="29001" handler="gmlink"/-->	
+			<peer ip="127.0.0.1" port="29001" handler="gmlink"/>	
+		</Connect>
+		<Listen>
+			<peer ip="0.0.0.0" port="25000" handler="dblink"/>
+			<peer ip="0.0.0.0"   port="25001" handler="clientlink"/>
+		</Listen>
+			
+		<Log name="console" info="1" debug="1" warn="1" error="1" fatal="1"/>
+		<Log name="file" info="0" debug="0" warn="1" error="1" fatal="1"/>
+		<RootPath dir="loginconf"/>
+		<!-- serverids 是推荐服务器的id -->
+		<!-- url 是服务器配置地址 -->
+		<!-- RecommandServer url="http://10.0.128.229:8080/IPTable/gateip.txt" / -->
+		<RecommandServer url="https://gameadm.123u.com/sites/gameadm.123u.com/files/dn_game/dn_sdo/IPTable/gateip.html" />
+	</LoginServer>
+
+    	<WebServer name="web" id="150">
+		<Listen>
+			<peer ip="0.0.0.0" port="29002" handler="gslink"/>
+		</Listen>
+		<RootPath dir="webconf"/>
+	</WebServer>
+
+	<GMServer name="gm" id="200">
+		<DB ip="10.0.128.229" user="root" password="" database=""/>
+		<Listen>
+			<peer ip="0.0.0.0" port="29000" handler="dblink"/>
+			<peer ip="0.0.0.0" port="29001" handler="loginlink"/>
+		</Listen>
+		<Log name="console" info="1" debug="1" warn="1" error="1" fatal="1"/>
+		<Log name="file" info="0" debug="0" warn="1" error="1" fatal="1"/>
+		<RootPath dir="gmconf"/>
+	</GMServer>
+
+</Settings>

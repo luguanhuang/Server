@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+
+<AudioServer name="audio" zone="1" id="1">
+	<Connect>
+		<peer ip="127.0.0.1" port="30050" handler="centerlink" sendBufSize="1024000" recvBufSize="1024000"/>
+	</Connect>
+
+	<Listen>
+		<peer ip="0.0.0.0" port="21070" handler="gatelink" sendBufSize="1024000" recvBufSize="1024000"/>
+	</Listen>
+
+	
+	<!-- rolltype (day, hour) -->
+	<LogType  file="1" console="1" rolltype="day"/>
+	<LogLevel info="1" debug="1" warn="1" error="1" fatal="1"/>
+
+	<RootPath dir="audioconf"/>
+	<RpcTimeout enabled="1"/>
+	<KeepAlive  enabled="0"/>
+	<TestApolloEnv enabled="1"/>
+</AudioServer>

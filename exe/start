@@ -1,0 +1,44 @@
+#!/bin/bash
+
+if [ $# -ne 1 ]; then
+	echo "Require 1 parameter"
+	exit 0
+fi
+
+db_name=$1_db
+gt_name=$1_gt
+gsa_name=$1_gsa
+gsb_name=$1_gsb
+ms_name=$1_ms
+ns_name=$1_ns
+au_name=$1_au
+
+
+function StartServer()
+{
+	echo starting $2 ...
+	echo start $2 on screen session $1
+
+	ret=`screen -ls | grep $1`
+	if [ $? -ne 0 ]; then
+		screen -dmS $1
+	else
+		echo "try kill $2D ..."
+		screen -S $1 -p 0 -X stuff $'\003'
+	fi
+
+	screen -S $1 -p 0 -X stuff "chmod +x $2$(printf \\r)"
+	screen -S $1 -p 0 -X stuff "./$2 $3$(printf \\r)"
+	echo $2 started
+	echo ""
+}
+
+
+StartServer $db_name dbserver "conf/db_conf.xml"
+StartServer $gsa_name gameserver "conf/gs_conf1.xml"
+StartServer $gsb_name gameserver "conf/gs_conf2.xml"
+StartServer $gt_name gateserver "conf/gate_conf.xml"
+StartServer $ms_name masterserver "conf/ms_conf.xml"
+StartServer $ns_name controlserver "conf/ctrl_conf.xml"
+StartServer $au_name audioserver "conf/audio_conf.xml"
+

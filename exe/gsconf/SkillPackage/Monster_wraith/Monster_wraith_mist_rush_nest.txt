@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XSkillData>
+  <Name>Monster_wraith_mist_rush_nest</Name>
+  <TypeToken>0</TypeToken>
+  <ClipName>Animation/Monster_wraith/Monster_wraith_deathsickle</ClipName>
+  <Charge>
+    <XChargeData>
+      <Using_Curve>true</Using_Curve>
+      <Curve_Forward>Curve/Monster_wraith/Monster_wraith_deathsickle_forward</Curve_Forward>
+      <Curve_Side>Curve/Monster_wraith/Monster_wraith_deathsickle_side</Curve_Side>
+    </XChargeData>
+  </Charge>
+  <Fx>
+    <XFxData>
+      <Type>FirerBased</Type>
+      <At>0.7930001</At>
+      <End>2.16666675</End>
+      <Fx>Effects/FX_Particle/NPC/Lzg_Boss/Monster_wraith_mist_rush_nest_Clip01</Fx>
+      <Bone>Boxbone01_wraith</Bone>
+    </XFxData>
+  </Fx>
+  <Script />
+  <Logical>
+    <StrickenMask>Cease</StrickenMask>
+    <Syntonic_CoolDown_Skill />
+  </Logical>
+  <Time>2.16666675</Time>
+</XSkillData>

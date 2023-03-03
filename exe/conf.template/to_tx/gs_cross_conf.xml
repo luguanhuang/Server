@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+
+<GameServer name="game" zone="$zone_id$" id="0" line="$line$" cross="1">
+	<Connect>
+		<peer ip="$host$" port="31002" handler="worldlink" sendBufSize="1024000" recvBufSize="1024000"/>
+	</Connect>
+
+	<!-- rolltype (day, hour) -->
+	<LogType  file="1" console="0" rolltype="hour"/>
+	<LogLevel info="1" debug="0" warn="1" error="1" fatal="1"/>
+
+	<RootPath dir="gsconf"/>
+	<RpcTimeout enabled="1"/>
+	<TLogConfigFile path="$tlog_cfg_file$"/>
+	<SdkUrl link="http://msdk.tencent-cloud.net"/>
+	<AntiAddictionUrl link="http://lzg.maasapi.idip.tencent-cloud.net/aas.fcg" />
+</GameServer>

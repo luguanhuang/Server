@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+
+<RouterServer name="router" line="$line$">
+	<Listen>
+		<peer ip="0.0.0.0" port="32001" handler="mslink" sendBufSize="2048000" recvBufSize="2048000"/>
+		<peer ip="0.0.0.0" port="32002" handler="gatelink" sendBufSize="2048000" recvBufSize="2048000"/>
+		<peer ip="$local_ip$" port="32003" handler="gslink" sendBufSize="2048000" recvBufSize="2048000"/>
+		<peer ip="0.0.0.0" port="32004" handler="ctrllink" sendBufSize="2048000" recvBufSize="2048000"/>
+		<peer ip="0.0.0.0" port="32005" handler="dblink" sendBufSize="2048000" recvBufSize="2048000"/>
+	</Listen>
+	
+	<Connect>
+		<peer ip="$host$" port="31003" handler="worldlink" sendBufSize="2048000" recvBufSize="2048000"/>
+	</Connect>
+
+
+	<!-- rolltype (day, hour) -->
+	<LogType  file="1" console="0" rolltype="hour"/>
+	<LogLevel info="1" debug="0" warn="1" error="1" fatal="1"/>
+
+	<Reconnect timeout="300" />
+	<RootPath dir="rsconf"/>
+	<RpcTimeout enabled="1"/>
+</RouterServer>

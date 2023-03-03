@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+
+<GMTool name="gmtool" zone="1" id="0">
+	<DB ip="10.0.128.229" user="root" password="" port="3306" database="login"/>
+
+	<Connect>
+		<peer ip="127.0.0.1" port="25002" handler="loginlink"/>
+		<peer ip="127.0.0.1" port="12890" handler="mslink"/>
+		<peer ip="127.0.0.1" port="24002" handler="vslink"/>
+		<peer ip="127.0.0.1" port="35010" handler="fmlink"/>
+		<peer ip="127.0.0.1" port="31004" handler="worldlink"/>
+	</Connect>
+
+	<!-- rolltype (day, hour) -->
+	<LogType  file="1" console="1" rolltype="day"/>
+	<LogLevel info="1" debug="1" warn="1" error="1" fatal="1"/>
+
+	<RootPath dir="gmconf"/>
+	<RpcTimeout enabled="1"/>
+</GMTool>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XSkillData>
+  <Name>Monster_ent_fallen_nest</Name>
+  <TypeToken>0</TypeToken>
+  <ClipName>Animation/Monster_ent/Monster_ent_fallen</ClipName>
+  <Charge>
+    <XChargeData>
+      <Using_Curve>true</Using_Curve>
+      <Curve_Forward>Curve/Monster_ent/Monster_ent_fallen_forward</Curve_Forward>
+      <Curve_Side>Curve/Monster_ent/Monster_ent_fallen_side</Curve_Side>
+    </XChargeData>
+  </Charge>
+  <Script />
+  <Logical>
+    <StrickenMask>Cease</StrickenMask>
+    <Syntonic_CoolDown_Skill />
+  </Logical>
+  <Time>5.00000048</Time>
+</XSkillData>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XSkillData>
+  <Name>Monster_wraith_mist_blackhole_nest</Name>
+  <TypeToken>0</TypeToken>
+  <ClipName>Animation/Monster_wraith/Monster_wraith_mist_blackhole</ClipName>
+  <Fx>
+    <XFxData>
+      <Type>FirerBased</Type>
+      <At>0.8333334</At>
+      <End>3.33333349</End>
+      <Fx>Effects/FX_Particle/NPC/Lzg_Boss/Monster_wraith_mist_blackhole_nest_Clip01</Fx>
+    </XFxData>
+  </Fx>
+  <Script />
+  <Logical>
+    <StrickenMask>Cease</StrickenMask>
+    <Syntonic_CoolDown_Skill />
+  </Logical>
+  <Time>3.33333349</Time>
+</XSkillData>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+
+<WorldServer name="world" id="$server_id$">
+	<DB ip="10.0.128.229" threads="3" user="root" password="" port="3306" database="globalworld"/>
+
+	<Connect>	
+		<peer ip="$host$" port="$port$" handler="loginlink" sendBufSize="1024000" recvBufSize="1024000"/>
+	</Connect>
+
+	<Listen>
+		<peer ip="0.0.0.0" port="31001" handler="mslink" sendBufSize="1024000" recvBufSize="1024000"/>
+		<peer ip="0.0.0.0" port="31002" handler="gslink" sendBufSize="1024000" recvBufSize="1024000"/>
+		<peer ip="0.0.0.0" port="31003" handler="rslink" sendBufSize="1024000" recvBufSize="1024000"/>
+		<peer ip="0.0.0.0" port="31004" handler="gmtoollink" sendBufSize="512000" recvBufSize="512000"/>
+		<peer ip="0.0.0.0" port="31005" handler="teamlink" sendBufSize="1024000" recvBufSize="1024000"/>
+	</Listen>
+
+	<!-- rolltype (day, hour) -->
+	<LogType  file="1" console="0" rolltype="hour"/>
+	<LogLevel info="1" debug="0" warn="1" error="1" fatal="1"/>
+
+	<RootPath dir="gsconf"/>
+	<RpcTimeout enabled="1"/>
+</WorldServer>

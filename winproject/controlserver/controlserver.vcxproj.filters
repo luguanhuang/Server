@@ -1,0 +1,432 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\controlserver\ptcregister.cpp" />
+    <ClCompile Include="..\..\controlserver\config.cpp" />
+    <ClCompile Include="..\..\controlserver\main.cpp" />
+    <ClCompile Include="..\..\controlserver\process.cpp" />
+    <ClCompile Include="..\..\share\DBInfo.cpp">
+      <Filter>share</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\controlserver\network\dblink.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\controlserver\network\gatelink.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\controlserver\network\gmtoollink.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\controlserver\network\gslink.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\controlserver\network\loginlink.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\controlserver\network\mslink.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\controlserver\protocol\common\rpct2n_registergt2ns.cpp">
+      <Filter>protocol\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\protocol\pb\enum.pb.cc">
+      <Filter>protocol\pb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\protocol\pb\project.pb.cc">
+      <Filter>protocol\pb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\controlserver\protocol\common\rpcg2n_registergs2ns.cpp">
+      <Filter>protocol\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\controlserver\protocol\sendonly.cpp">
+      <Filter>protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\controlserver\role\role.cpp">
+      <Filter>role</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\controlserver\role\roleidgenerator.cpp">
+      <Filter>role</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\controlserver\role\rolemanager.cpp">
+      <Filter>role</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\controlserver\network\rslink.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\controlserver\scene\gsmanager.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\controlserver\scene\scene.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\controlserver\scene\sceneconfig.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\controlserver\scene\scenecreate.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\controlserver\scene\scenemanager.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\controlserver\scene\sceneswitch.cpp">
+      <Filter>scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\controlserver\account\accountkick.cpp">
+      <Filter>account</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\controlserver\account\accountsession.cpp">
+      <Filter>account</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\controlserver\account\accountsessionmgr.cpp">
+      <Filter>account</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\controlserver\account\logincontrol.cpp">
+      <Filter>account</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\controlserver\account\whitelistmgr.cpp">
+      <Filter>account</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\controlserver\protocol\login\rpcn2i_loginverify.cpp">
+      <Filter>protocol\login</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\controlserver\protocol\login\rpcn2d_nsreadaccountdata.cpp">
+      <Filter>protocol\login</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\controlserver\protocol\role\rpcn2d_nsreadroledata.cpp">
+      <Filter>protocol\role</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\controlserver\protocol\role\rpcn2d_createroleondbnew.cpp">
+      <Filter>protocol\role</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\controlserver\protocol\login\rpct2n_loginrequestnew.cpp">
+      <Filter>protocol\login</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\controlserver\protocol\role\rpcc2n_createrolenew.cpp">
+      <Filter>protocol\role</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\controlserver\protocol\role\rpcc2n_returntoselectrole.cpp">
+      <Filter>protocol\role</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\controlserver\protocol\role\rpcc2n_selectrolenew.cpp">
+      <Filter>protocol\role</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\controlserver\protocol\scene\rpcn2g_enterscene.cpp">
+      <Filter>protocol\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\controlserver\protocol\scene\rpcn2g_leavescene.cpp">
+      <Filter>protocol\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\controlserver\queuing\queuingmgr.cpp">
+      <Filter>queuing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\controlserver\protocol\scene\rpcg2n_changesceneverify.cpp">
+      <Filter>protocol\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\controlserver\protocol\common\rpcn2i_registerns2login.cpp">
+      <Filter>protocol\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\controlserver\protocol\login\ptct2n_logoutntf.cpp">
+      <Filter>protocol\login</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\controlserver\protocol\scene\rpcm2n_createbattlescene.cpp">
+      <Filter>protocol\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\controlserver\protocol\scene\rpcn2g_createbattle.cpp">
+      <Filter>protocol\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\controlserver\protocol\login\rpcm2n_kickaccountfromms.cpp">
+      <Filter>protocol\login</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\controlserver\protocol\scene\rpcm2n_changescenefromms.cpp">
+      <Filter>protocol\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\controlserver\protocol\common\rpcn2r_registerctrl2router.cpp">
+      <Filter>protocol\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\controlserver\protocol\role\rpcn2m_checkrolename.cpp">
+      <Filter>protocol\role</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\controlserver\protocol\role\rpcn2m_checkrolebaninfo.cpp">
+      <Filter>protocol\role</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\controlserver\protocol\queuing\ptcc2n_checkqueuingreq.cpp">
+      <Filter>protocol\queuing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\controlserver\protocol\scene\ptcg2n_scenedestroyedtons.cpp">
+      <Filter>protocol\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\controlserver\protocol\common\ptcr2n_crossgsclosentf.cpp">
+      <Filter>protocol\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\controlserver\protocol\common\rpcm2n_nsreload.cpp">
+      <Filter>protocol\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\controlserver\shm\shmmgr.cpp">
+      <Filter>shm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\sharememory\sharememory.cpp">
+      <Filter>share\sharememory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\sharememory\shmkey.cpp">
+      <Filter>share\sharememory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\controlserver\protocol\common\ptcc2n_updatestartuptypentf.cpp">
+      <Filter>protocol\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\controlserver\protocol\common\ptcm2n_updateregistercount2ns.cpp">
+      <Filter>protocol\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\table\globalconfig.cpp">
+      <Filter>share\table</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\util\XCommon.cpp">
+      <Filter>share\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\util\gametime.cpp">
+      <Filter>share\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\profile\profiler.cpp">
+      <Filter>profiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\controlserver\profile\ctrlprofiler.cpp">
+      <Filter>profiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\controlserver\protocol\common\ptcd2n_reportregistercount.cpp">
+      <Filter>protocol\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\controlserver\protocol\common\ptcd2n_mysqlconnectlost.cpp">
+      <Filter>protocol\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\controlserver\protocol\common\ptcm2n_notifyrouterinfo2ctrl.cpp">
+      <Filter>protocol\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\controlserver\protocol\common\rpcm2n_registerms2ns.cpp">
+      <Filter>protocol\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\controlserver\protocol\login\rpcc2n_loginreconnectreq.cpp">
+      <Filter>protocol\login</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\controlserver\protocol\login\rpcn2g_notifyroleloginreconnect2gs.cpp">
+      <Filter>protocol\login</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\controlserver\protocol\common\ptcm2n_m2nversoinnotify.cpp">
+      <Filter>protocol\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\version\version.cpp">
+      <Filter>version</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\util\XRandom.cpp">
+      <Filter>share\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\util\gettimeofday.cpp">
+      <Filter>share\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\controlserver\protocol\gm\rpcm2n_gmdowhitelist.cpp">
+      <Filter>protocol\gm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\util\jsonutil.cpp">
+      <Filter>share\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\util\UtilEncode.cpp">
+      <Filter>share\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\idip\idiphandler.cpp">
+      <Filter>share</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\idip\idiperrdesc.cpp">
+      <Filter>share</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\controlserver\ptcregister.h" />
+    <ClInclude Include="..\..\controlserver\config.h" />
+    <ClInclude Include="..\..\controlserver\minidump.h" />
+    <ClInclude Include="..\..\controlserver\pch.h" />
+    <ClInclude Include="..\..\controlserver\process.h" />
+    <ClInclude Include="..\..\share\DBInfo.h">
+      <Filter>share</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\controlserver\network\dblink.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\controlserver\network\gatelink.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\controlserver\network\gmtoollink.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\controlserver\network\gslink.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\controlserver\network\loginlink.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\controlserver\network\mslink.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\controlserver\role\role.h">
+      <Filter>role</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\controlserver\role\roleidgenerator.h">
+      <Filter>role</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\controlserver\role\rolemanager.h">
+      <Filter>role</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\controlserver\network\rslink.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\controlserver\scene\gsmanager.h">
+      <Filter>scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\controlserver\scene\scene.h">
+      <Filter>scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\controlserver\scene\sceneconfig.h">
+      <Filter>scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\controlserver\scene\scenecreate.h">
+      <Filter>scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\controlserver\scene\scenemanager.h">
+      <Filter>scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\controlserver\scene\sceneswitch.h">
+      <Filter>scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\controlserver\account\accountkick.h">
+      <Filter>account</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\controlserver\account\accountsession.h">
+      <Filter>account</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\controlserver\account\accountsessionmgr.h">
+      <Filter>account</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\controlserver\account\logincontrol.h">
+      <Filter>account</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\controlserver\account\whitelistmgr.h">
+      <Filter>account</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\controlserver\queuing\queuingmgr.h">
+      <Filter>queuing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\controlserver\shm\shmmgr.h">
+      <Filter>shm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\util\utilstring.h">
+      <Filter>share\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\sharememory\shmmap.h">
+      <Filter>share\sharememory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\sharememory\sharememory.h">
+      <Filter>share\sharememory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\sharememory\shmkey.h">
+      <Filter>share\sharememory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\table\globalconfig.h">
+      <Filter>share\table</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\util\XCommon.h">
+      <Filter>share\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\util\gametime.h">
+      <Filter>share\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\profile\profiler.h">
+      <Filter>profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\controlserver\profile\ctrlprofiler.h">
+      <Filter>profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\idutil.h">
+      <Filter>share</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\version\version.h">
+      <Filter>version</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\util\XRandom.h">
+      <Filter>share\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\util\gettimeofday.h">
+      <Filter>share\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\util\jsonutil.h">
+      <Filter>share\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\util\UtilEncode.h">
+      <Filter>share\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\idip\idiphandler.h">
+      <Filter>share</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\idip\idiperrdesc.h">
+      <Filter>share</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="share">
+      <UniqueIdentifier>{b1f40823-08d8-45ee-8b2c-e50ee6b3c399}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="network">
+      <UniqueIdentifier>{31029fa7-af82-4187-9b7f-e6d285814bc0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol">
+      <UniqueIdentifier>{89baebdd-74af-429b-8d21-71966aa2e930}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\common">
+      <UniqueIdentifier>{bbba38c1-0462-4b18-ac47-853e945aac02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\pb">
+      <UniqueIdentifier>{64951351-e80e-404e-8598-fa6a288b2d6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="role">
+      <UniqueIdentifier>{aa114c8d-2b26-4c4b-8227-66d9dd71ff9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="account">
+      <UniqueIdentifier>{e5901e43-4ee2-49b8-bc60-da1f028a3165}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="scene">
+      <UniqueIdentifier>{5db80f41-ba76-405e-b54b-bb4ebc949cb6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\scene">
+      <UniqueIdentifier>{07212642-acf6-4f14-9893-b61c957ca81e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\login">
+      <UniqueIdentifier>{782e399e-3595-4041-92b6-918b469b5e0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\role">
+      <UniqueIdentifier>{c679c66e-c58d-483f-a902-eaef53ca3e73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="queuing">
+      <UniqueIdentifier>{9d2cdaf0-506f-44aa-a076-799391220909}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\queuing">
+      <UniqueIdentifier>{64fd8853-dd71-438e-adf0-b2ee9964a1e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shm">
+      <UniqueIdentifier>{99550517-b84d-4bd5-b2cd-bdfd31eb3527}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="share\util">
+      <UniqueIdentifier>{6729c9ca-521e-4163-9a0f-116e698891f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="share\sharememory">
+      <UniqueIdentifier>{98803583-30b6-49df-8874-b6b4989d9279}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="share\table">
+      <UniqueIdentifier>{64448a30-561b-4690-ad1c-e3665c4c71be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="profiler">
+      <UniqueIdentifier>{5a896823-f027-4daa-99d1-67bfc7e3973a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="version">
+      <UniqueIdentifier>{2472d2fd-1340-434d-a84d-0aff2cd7d42a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\gm">
+      <UniqueIdentifier>{9a63c48a-c03c-4a5c-995e-10dceb870cd7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

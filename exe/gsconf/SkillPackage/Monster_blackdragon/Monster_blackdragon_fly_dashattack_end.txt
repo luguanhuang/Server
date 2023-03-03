@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XSkillData>
+  <Name>Monster_blackdragon_fly_dashattack_end</Name>
+  <ClipName>Animation/Monster_blackdragon/Monster_blackdragon_flydash</ClipName>
+  <NeedTarget>false</NeedTarget>
+  <ForCombinedOnly>true</ForCombinedOnly>
+  <Charge>
+    <XChargeData>
+      <Using_Curve>true</Using_Curve>
+      <Curve_Forward>Curve/Monster_blackdragon/Monster_blackdragon_flydash_forward</Curve_Forward>
+      <Curve_Side>Curve/Monster_blackdragon/Monster_blackdragon_flydash_side</Curve_Side>
+    </XChargeData>
+  </Charge>
+  <Script />
+  <Logical>
+    <StrickenMask>Cease</StrickenMask>
+  </Logical>
+  <Time>4</Time>
+</XSkillData>

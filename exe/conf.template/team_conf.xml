@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+
+<TeamServer name="team">
+	<Connect>
+		<peer ip="10.0.128.160" port="31005" handler="worldlink" sendBufSize="1024000" recvBufSize="1024000"/>
+	</Connect>
+
+	<Listen>
+		<peer ip="0.0.0.0" port="41001" handler="mslink" sendBufSize="1024000" recvBufSize="1024000"/>
+	</Listen>
+
+	
+	<!-- rolltype (day, hour) -->
+	<LogType  file="1" console="1" rolltype="day"/>
+	<LogLevel info="1" debug="1" warn="1" error="1" fatal="1"/>
+
+	<RootPath dir="gsconf"/>
+	<RpcTimeout enabled="1"/>
+	<KeepAlive  enabled="0"/>
+</TeamServer>

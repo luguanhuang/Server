@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+
+<GMTool name="gmtool" zone="0" id="0">
+
+	<Connect>
+		<peer ip="$host$" port="35010" handler="fmlink"/>
+		<peer ip="$host$" port="35010" handler="fmlink"/>
+	</Connect>
+
+	<!-- rolltype (day, hour) -->
+	<LogType  file="1" console="1" rolltype="day"/>
+	<LogLevel info="1" debug="1" warn="1" error="1" fatal="1"/>
+
+	<RootPath dir="gmconf"/>
+	<RpcTimeout enabled="1"/>
+</GMTool>

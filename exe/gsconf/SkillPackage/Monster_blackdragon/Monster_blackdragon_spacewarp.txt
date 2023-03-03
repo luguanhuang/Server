@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XSkillData>
+  <Name>Monster_blackdragon_spacewarp</Name>
+  <TypeToken>3</TypeToken>
+  <Combined>
+    <XCombinedData>
+      <Name>Monster_blackdragon_spacewarp_start</Name>
+      <End>3.00000024</End>
+      <Override_Presentation>true</Override_Presentation>
+    </XCombinedData>
+    <XCombinedData>
+      <Index>1</Index>
+      <Name>Monster_blackdragon_spacewarp_loop</Name>
+      <End>3.00000024</End>
+      <Override_Presentation>true</Override_Presentation>
+    </XCombinedData>
+    <XCombinedData>
+      <Index>2</Index>
+      <Name>Monster_blackdragon_spacewarp_loop1</Name>
+      <End>2</End>
+      <Override_Presentation>true</Override_Presentation>
+    </XCombinedData>
+    <XCombinedData>
+      <Index>3</Index>
+      <Name>Monster_blackdragon_spacewarp_end</Name>
+      <End>6.40000057</End>
+      <Override_Presentation>true</Override_Presentation>
+    </XCombinedData>
+  </Combined>
+  <Script />
+  <Logical>
+    <StrickenMask>Cease</StrickenMask>
+  </Logical>
+  <Time>14.4</Time>
+</XSkillData>

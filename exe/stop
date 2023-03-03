@@ -1,0 +1,42 @@
+#!/bin/bash
+
+if [ $# -ne 1 ]; then
+	echo "Require 1 parameter"
+	exit 0
+fi
+
+gt_name=$1_gt
+ms_name=$1_ms
+ns_name=$1_ns
+gsa_name=$1_gsa
+gsb_name=$1_gsb
+db_name=$1_db
+au_name=$1_au
+
+
+function StopServer()
+{
+	screen_pid=`screen -ls | grep $1`;
+	if [ ${#screen_pid} -eq 0 ]; then
+		echo "No session $1"
+		return
+	fi
+
+	echo stopping $2 ...
+	screen -S $1 -p 0 -X stuff $'\003'
+
+	sleep 1
+	screen -S $1 -p 0 -X quit
+	echo kill screen session $1
+	echo ""
+}
+
+
+StopServer $gt_name gateserver
+StopServer $ms_name masterserver
+StopServer $ns_name controlserver
+StopServer $gsa_name gameserver
+StopServer $gsb_name gameserver
+StopServer $db_name dbserver
+StopServer $au_name audioserver
+

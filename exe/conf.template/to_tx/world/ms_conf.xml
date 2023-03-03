@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+
+<MasterServer name="master" zone="$zone_id$" id="$server_id$" debug="0">
+	<AppPlat app="$app$" plat="$plat$" /> <!-- app(qq, wechat), plat(ios, android) -->
+	<DB ip="$host$" user="$user$" password="$pwd$" port="$port$" database="$db$"/>
+
+	<Connect>
+		<peer ip="127.0.0.1" port="21060" handler="dblink" sendBufSize="2048000" recvBufSize="2048000"/>
+		<peer ip="127.0.0.1" port="21080" handler="ctrllink" sendBufSize="1024000" recvBufSize="1024000"/>
+
+		<peer ip="$host$" port="29000" handler="idiplink" sendBufSize="2048000" recvBufSize="2048000"/>
+		<peer ip="$host$" port="35000" handler="fmlink" sendBufSize="1024000" recvBufSize="1024000"/>
+		<!-- CenterServer列表 -->
+		<peer ip="$host$" port="30000" handler="centerlink" sendBufSize="1024000" recvBufSize="1024000"/>
+
+		<peer ip="$host$" port="31001" handler="worldlink" sendBufSize="1024000" recvBufSize="1024000"/>
+		
+		<peer ip="$host$" port="41001" handler="teamlink" sendBufSize="1024000" recvBufSize="1024000"/>
+
+		<!-- LoginServer列表 -->
+		<peer ip="$host$" port="28000" handler="loginlink" sendBufSize="1024000" recvBufSize="1024000"/>
+		<peer ip="$host$" port="28000" handler="loginlink" sendBufSize="1024000" recvBufSize="1024000"/>
+	</Connect>
+
+	<Listen>
+		<peer ip="0.0.0.0" port="21020" handler="gatelink" sendBufSize="2048000" recvBufSize="2048000"/>
+		<peer ip="0.0.0.0" port="21030" handler="gslink" sendBufSize="2048000" recvBufSize="2048000"/>
+		<peer ip="0.0.0.0" port="12890" handler="gmtoollink" sendBufSize="0" recvBufSize="0"/>
+	</Listen>
+
+	<!-- rolltype (day, hour) -->
+	<LogType  file="1" console="0" rolltype="hour"/>
+	<LogLevel info="1" debug="0" warn="1" error="1" fatal="1"/>
+
+	<RootPath dir="gsconf"/>
+	<RpcTimeout enabled="1"/>
+	<FM enabled="1"/>
+	<TLogConfigFile path="$tlog_cfg_file$"/>
+
+	<!-- 充值平台Url idc正式:msdk.tencent-cloud.net  idc测试:msdktest.tencent-cloud.net  外网正式:msdk.qq.com  外网测试:msdktest.qq.com -->
+	<!-- paydelaytest(延迟测试) 0:正常 1：延迟，谨慎使用，正式环境不能打开延迟，仅用于测试用-->
+	<PayUrl link="10.206.139.242:80/v3/r" slavelink="10.212.20.177:80/v3/r" buygoodslink="10.240.65.24:8090/v3/r" buygoodsslavelink="10.223.30.52:8090/v3/r" count="10" paydebug="0" paydelaytest="0"/>
+	<MsdkUrl link="http://msdk.tencent-cloud.net"/>
+	<!-- 信鸽地址 不要加http -->
+	<XingeUrl link="10.166.224.41"/>
+
+</MasterServer>

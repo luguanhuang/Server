@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="log">
+      <UniqueIdentifier>{7b327ec8-3b95-47ff-8ad8-180e8c047783}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util">
+      <UniqueIdentifier>{298bc92c-8f71-4256-a5a1-376ab272b61a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="timer">
+      <UniqueIdentifier>{b01015e1-1ad7-4ef5-b548-ddd01fbf0d89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="network">
+      <UniqueIdentifier>{1f0feeea-ebf0-40b9-8882-7da7eb74db66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{7c34b0f9-a5b0-4d5a-9839-a6254e16002b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="netproc">
+      <UniqueIdentifier>{b287e4c5-c202-4392-baab-c1e981375404}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\common\log\LogConsole.cpp">
+      <Filter>log</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\log\LogFile.cpp">
+      <Filter>log</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\log\LogInit.cpp">
+      <Filter>log</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\log\LogInterface.cpp">
+      <Filter>log</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\log\LogMgr.cpp">
+      <Filter>log</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\util\mempipe.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\util\timeutil.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\timer\timerimpl.cpp">
+      <Filter>timer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\timer\timermgr.cpp">
+      <Filter>timer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\network\iocp\iocpnetwork.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\network\iocp\iocpsock.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\network\iocp\iocpsockmgr.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\network\iocp\listener.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\network\iocp\listenermgr.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\util\threads.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\util\mutex.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\network\netproc\coder.cpp">
+      <Filter>netproc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\network\netproc\netproc.cpp">
+      <Filter>netproc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\util\tinyxml2.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\network\netproc\baseconfig.cpp">
+      <Filter>netproc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\network\netproc\forward.cpp">
+      <Filter>netproc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\network\netproc\crpc.cpp">
+      <Filter>netproc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\network\netproc\protocol.cpp">
+      <Filter>netproc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\util\cvsreader.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\network\netproc\baselink.cpp">
+      <Filter>netproc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\util\util.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\util\cmdline.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\common\network\netproc\reconnetmgr.cpp">
+      <Filter>netproc</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\common\timer\timerimpl.h">
+      <Filter>timer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\timer\timernode.h">
+      <Filter>timer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\network\epoll\netutil.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\network\iocp\iocpdef.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\network\iocp\iocpnetwork.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\network\iocp\iocpsock.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\network\iocp\iocpsockmgr.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\network\iocp\listener.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\network\iocp\listenermgr.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\network\iocp\netpch.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\include\define.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\include\mempipe.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\include\netpacketcoder.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\include\netprocess.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\include\network.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\include\packetcoder.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\include\singleton.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\include\threadlock.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\include\timer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\include\timermgr.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\include\timeutil.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\network\netproc\baselink.h">
+      <Filter>netproc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\network\netproc\coder.h">
+      <Filter>netproc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\network\netproc\netproc.h">
+      <Filter>netproc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\network\netproc\baseconfig.h">
+      <Filter>netproc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\network\netproc\forward.h">
+      <Filter>netproc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\include\multiindex_map.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\log\LogConsole.h">
+      <Filter>log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\log\LogFile.h">
+      <Filter>log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\log\LogInit.h">
+      <Filter>log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\log\LogInterface.h">
+      <Filter>log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\log\LogMgr.h">
+      <Filter>log</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\include\cmdline.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\network\netproc\crpc.h">
+      <Filter>netproc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\network\netproc\protocol.h">
+      <Filter>netproc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\util\cmdline.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\util\cvsreader.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\util\mutex.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\util\threads.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\util\tinyxml2.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\util\util.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\common\network\netproc\reconnetmgr.h">
+      <Filter>netproc</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+
+<CenterServer name="center" id="300">
+
+	<!-- app(qq, wechat), plat(ios, android) -->
+	<AppPlat app="qq"  plat="android"/>
+	
+	<Redis ip="10.0.128.229" port="6379" password="101" keysuffix=""/>
+
+	<Listen>
+		<peer ip="0.0.0.0" port="30000" handler="mslink" sendBufSize="1024000" recvBufSize="1024000"/>
+		<peer ip="0.0.0.0" port="30050" handler="audiolink" sendBufSize="1024000" recvBufSize="1024000"/>
+	</Listen>
+	
+	
+
+	<Connect>
+		<peer ip="10.0.128.229" port="25003" handler="loginlink" sendBufSize="1024000" recvBufSize="1024000"/>
+	</Connect>
+	<!-- rolltype (day, hour) -->
+	<LogType  file="1" console="1" rolltype="day"/>
+	<LogLevel info="1" debug="1" warn="1" error="1" fatal="1"/>
+
+	<RootPath dir="csconf"/>
+	<KeepAlive  enabled="0"/>
+</CenterServer>

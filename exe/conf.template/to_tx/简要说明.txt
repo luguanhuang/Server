@@ -1,0 +1,38 @@
+
+
+1. world目录下是一个小服的配置文件
+
+2. 全局模块：
+cs_conf.xml:		centerserver
+fm_conf.xml:		fmserver
+gs_cross_conf.xml:	跨服gameserver
+login_conf.xml:		loginserver
+router_conf.xml:	routerserver
+world_conf.xml:		worldserver
+team_conf.xml:      teamserver
+
+
+3.变量列表:
+$zone_id$		大区ID( aqq/1 awx/2 iqq/3 iwx/4 iguest/5)
+$server_id$		服务器ID(不要重复，全局服务器可从 1 - 500)
+$app$			app type(qq, wechat)
+$plat$			plat type(ios, android)
+$login_plat$		登录服务器平台(aqq, awx, iqq, iwx, iguest)
+
+$host$			服务器ip 或 TSpider域名
+$user$			用户
+$pwd$			密码
+$port$			端口
+$db$			database
+
+$local_ip$		本地IP(监听使用)
+$line$			同名模块需要多开部署的，以line做为ID区分，从1开始递增
+
+$tlog_cfg_file$		tlog配置文件路径，以服务器执行目录为根目录
+
+
+
+4. gmtool的配置文件
+
+<a>. gmtool_2local_conf.xml，每个小服的gmtool配置文件，不用更改，部署到每个小服的机器上.
+<b>. gmtool_2login_conf.xml，每个大区的gmtool配置文件，连接到该大区内的所有login.

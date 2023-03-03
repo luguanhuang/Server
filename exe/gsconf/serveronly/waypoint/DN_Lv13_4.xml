@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<WayPoint>
+  <point index="0" pos="75.08:0.51:144.23" />
+  <point index="1" pos="89.19:0.91:140.3" />
+  <point index="2" pos="97.37:1.022:134.83" />
+  <point index="3" pos="103.61:2.505:128" />
+  <point index="4" pos="106.16:3.25:119.58" />
+  <point index="5" pos="104.5:3.974:109.8" />
+  <point index="6" pos="106.4:3.97:99.56" />
+  <point index="7" pos="112.46:4.88:93.09" />
+  <point index="8" pos="125.95:4.24:93.48" />
+  <point index="9" pos="136.85:3.97:91.94" />
+  <point index="10" pos="158.83:3.395:91.36" />
+</WayPoint>

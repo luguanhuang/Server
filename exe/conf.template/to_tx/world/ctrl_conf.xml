@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+
+<ControlServer name="control" zone="$zone_id$" id="$server_id$">
+	<AppPlat app="$app$" plat="$plat$" /> <!-- app(qq, wechat), plat(ios, android) -->
+	<DB ip="$host$" user="$user$" password="$pwd$" port="$port$" database="$db$"/>
+
+	<Connect>
+		<peer ip="127.0.0.1" port="21065" handler="dblink" sendBufSize="2048000" recvBufSize="2048000"/>
+
+		<!-- LoginServer列表 -->
+		<peer ip="$host$" port="25000" handler="loginlink" sendBufSize="1024000" recvBufSize="1024000"/>
+		<peer ip="$host$" port="25000" handler="loginlink" sendBufSize="1024000" recvBufSize="1024000"/>
+	</Connect>
+
+	<Listen>
+		<peer ip="0.0.0.0" port="21025" handler="gatelink" sendBufSize="2048000" recvBufSize="2048000"/>
+		<peer ip="0.0.0.0" port="21045" handler="gslink" sendBufSize="2048000" recvBufSize="2048000"/>
+		<peer ip="0.0.0.0" port="21080" handler="mslink" sendBufSize="2048000" recvBufSize="2048000"/>
+		<peer ip="0.0.0.0" port="12895" handler="gmtoollink" sendBufSize="0" recvBufSize="0"/>
+	</Listen>
+
+	<!-- rolltype (day, hour) -->
+	<LogType  file="1" console="0" rolltype="hour"/>
+	<LogLevel info="1" debug="0" warn="1" error="1" fatal="1"/>
+
+	<Shm>
+		<config name="scene" num="50000" />
+		<config name="account" num="50000" />
+		<config name="role" num="30000" />
+	</Shm>
+
+	<RootPath dir="gsconf"/>
+	<RpcTimeout enabled="1"/>
+</ControlServer>

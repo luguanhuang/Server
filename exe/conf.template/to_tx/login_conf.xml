@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+
+<LoginServer name="login" id="$server_id$" platform="$login_plat$" useOpenID="0" debug="0"> <!-- platform: aqq, awx, iqq, iwx, iguest -->
+	<DB ip="$host$" user="$user$" password="$pwd$" port="$port$" database="$db$"/>
+
+	<Connect>	
+		<peer ip="$host$" port="29001" handler="idiplink" sendBufSize="1024000" recvBufSize="1024000"/>	
+	</Connect>
+
+	<Listen>
+		<peer ip="0.0.0.0" port="25000" handler="ctrllink" sendBufSize="1024000" recvBufSize="1024000"/>
+		<peer ip="0.0.0.0" port="25001" handler="clientlink" sendBufSize="0" recvBufSize="0"/>
+		<peer ip="0.0.0.0" port="25002" handler="gmtoollink" sendBufSize="0" recvBufSize="0"/>
+		<peer ip="0.0.0.0" port="25003" handler="cslink" sendBufSize="1024000" recvBufSize="1024000"/>
+		
+		<peer ip="0.0.0.0" port="28000" handler="mslink" sendBufSize="1024000" recvBufSize="1024000"/>
+		<peer ip="0.0.0.0" port="28001" handler="worldlink" sendBufSize="1024000" recvBufSize="1024000"/>
+	</Listen>
+
+	<!-- onLineFull 在线人数达到多少服务器爆满 registerSmooth 注册数小于多少是流畅 registerFull 注册数大于多少是爆满 介于registerSmooth和registerFull之间是拥挤 --!>
+	<ServerState onlineFull="7000"  registerSmooth="20000" registerFull="30000" />
+
+	<RecommendZone name="推荐服" />
+
+	<!-- rolltype (day, hour) -->
+	<LogType  file="1" console="0" rolltype="hour"/>
+	<LogLevel info="1" debug="0" warn="1" error="1" fatal="1"/>
+
+	<RootPath dir="loginconf"/>
+	<MsdkUrl link="http://msdktest.qq.com"/>
+	<LoginControl max="500" />
+	<!-- <MsdkUrl link="http://msdktest.tencent-cloud.ne"/> -->
+	<!-- <MsdkUrl link="http://msdk.qq.com"/> -->
+	<!-- <MsdkUrl link="http://mocksvr.oa.com"/> -->
+	
+</LoginServer>

@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+
+<MasterServer name="master" zone="1" id="1" debug="1">
+	<AppPlat app="" plat="" /> <!-- app(qq, wechat), plat(ios, android) -->
+	<DB ip="127.0.0.1" user="root" password="" port="3306" database="world1"/>
+
+	<Connect>
+		<peer ip="127.0.0.1" handler="dblink" port="10160" sendBufSize="2048000" recvBufSize="2048000"/>
+		<peer ip="127.0.0.1" handler="ctrllink" port="10180" sendBufSize="1024000" recvBufSize="1024000"/>
+
+		<!-- CenterServer列表 
+		<peer ip="127.0.0.1" handler="centerlink" port="30000" sendBufSize="1024000" recvBufSize="1024000"/>
+		-->
+		
+		
+		<!--<peer ip="10.0.128.160" port="41001" handler="teamlink" sendBufSize="1024000" recvBufSize="1024000"/>-->
+
+		<!-- LoginServer列表 -->
+		<peer ip="127.0.0.1" handler="loginlink" port="28000" sendBufSize="1024000" recvBufSize="1024000"/>
+	</Connect>
+
+	<Listen>
+		<peer ip="127.0.0.1" handler="gatelink" port="10120" sendBufSize="2048000" recvBufSize="2048000"/>
+		<peer ip="127.0.0.1" handler="gslink" port="10130" sendBufSize="2048000" recvBufSize="2048000"/>
+	</Listen>
+
+	<!-- rolltype (day, hour) -->
+	<LogType  file="1" console="1" rolltype="day"/>
+	<LogLevel info="1" debug="1" warn="1" error="1" fatal="1"/>
+
+	<RootPath dir="gsconf"/>
+	<RpcTimeout enabled="1"/>
+	<FM enabled="1"/>
+	<TLogConfigFile path="serveronly/tlog_config.xml"/>
+
+	
+	<!-- paydebug(沙箱或现网环境) 0：现网 1：沙箱 没有该字段默认为沙箱环境-->
+	<!-- paydelaytest(延迟测试) 0:正常 1：延迟，谨慎使用，正式环境不能打开延迟，仅用于测试用-->
+	<PayUrl link="http://msdktest.qq.com" slavelink=""  count="10" paydebug="1" paydelaytest="0"/>
+	<PayUrl link="http://127.0.0.1" slavelink=""  count="10" paydebug="1" paydelaytest="0"/>
+	<CreateOrderUrl link="http://dragonnest-tw-test-payment.funplusgame.com/"/>
+	<FunplusBindUrl link="https://passport-dev.funplusgame.com/client_api.php?ver=3"/>
+	<!-- MsdkUrl idc正式:msdk.tencent-cloud.net  idc测试:msdktest.tencent-cloud.net  外网正式:msdk.qq.com  外网测试:msdktest.qq.com -->
+	<!--<MsdkUrl link="http://msdktest.qq.com"/>-->
+	<MsdkUrl link="http://127.0.0.1"/>
+	<!-- 信鸽地址 不要加http -->
+	<!--<XingeUrl link="openapi.xg.qq.com"/>-->
+	<XingeUrl link="http://127.0.0.1"/>
+
+	<KeepAlive  enabled="0"/>
+</MasterServer>

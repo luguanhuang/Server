@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+
+<DBServer name="db" zone="1" id="1">
+
+	<DB ip="127.0.0.1" user="root" password="" port="3306" database="world1" threads="6"/>
+	<OnlineDB ip="127.0.0.1" user="root" password="" port="3306" database="db_Dragon_Nest_online" threads="1"/>
+
+	<Listen>
+		<peer ip="127.0.0.1" handler="gslink" port="10150" sendBufSize="2048000" recvBufSize="2048000"/>
+		<peer ip="127.0.0.1" handler="mslink" port="10160" sendBufSize="2048000" recvBufSize="2048000"/>
+		<peer ip="127.0.0.1" handler="ctrllink" port="10165" sendBufSize="2048000" recvBufSize="2048000"/>
+	</Listen>
+
+	<!-- rolltype (day, hour) -->
+	<LogType  file="1" console="1" rolltype="day"/>
+	<LogLevel info="1" debug="1" warn="1" error="1" fatal="1"/>
+
+	<RootPath dir="dbconf"/>
+	<RpcTimeout enabled="1"/>
+	<AutoCreateDB enabled="1"/>
+
+	<MaxRegisterNum value="50000"/>
+	<KeepAlive  enabled="0"/>
+</DBServer>

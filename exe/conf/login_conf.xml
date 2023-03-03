@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+
+<LoginServer name="login" id="100" platform="aqq" useOpenID="0" debug="1"> <!-- platform: aqq, awx, iqq, iwx, iguest -->
+	<DB ip="127.0.0.1" user="root" password="" port="3306" database="login"/>
+
+	<Connect>	
+	</Connect>
+
+	<Listen>
+		<peer ip="0.0.0.0" handler="ctrllink" port="25000" sendBufSize="1024000" recvBufSize="1024000"/>
+		<peer ip="0.0.0.0" handler="clientlink" port="25001" sendBufSize="0" recvBufSize="0"/>
+		<peer ip="0.0.0.0" handler="gmtoollink" port="25002" sendBufSize="0" recvBufSize="0"/>
+		<peer ip="0.0.0.0" port="25003" handler="cslink" sendBufSize="1024000" recvBufSize="1024000"/>
+		
+		<peer ip="0.0.0.0" handler="mslink" port="28000" sendBufSize="1024000" recvBufSize="1024000"/>
+	</Listen>
+
+	<!-- onLineFull 在线人数达到多少服务器爆满 registerSmooth 注册数小于多少是流畅 registerFull 注册数大于多少是爆满 介于registerSmooth和registerFull之间是拥挤 -->
+	<ServerState onlineFull="7000"  registerSmooth="20000" registerFull="30000" />
+
+	<RecommendZone name="推薦服" />
+
+	<!-- rolltype (day, hour) -->
+	<LogType  file="1" console="1" rolltype="day"/>
+	<LogLevel info="1" debug="1" warn="1" error="1" fatal="1"/>
+
+	<RootPath dir="loginconf"/>
+	<MsdkUrl link="http://msdktest.qq.com"/>
+	<!-- Funplus登录验证地址 测试环境为http://passport-dev.funplusgame.com/server_api.php -->
+	<FunplusUrl link="http://passport.funplusgame.com/server_api.php"/>
+	<LoginControl max="500" />
+	<!-- <MsdkUrl link="http://msdktest.tencent-cloud.ne"/> -->
+	<!-- <MsdkUrl link="http://msdk.qq.com"/> -->
+	<!-- <MsdkUrl link="http://mocksvr.oa.com"/> -->
+	
+	<KeepAlive  enabled="0"/>
+</LoginServer>

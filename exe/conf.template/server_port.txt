@@ -1,0 +1,30 @@
+from	to	port
+
+client	gt	xxx10
+gt	ms	xxx20
+gt	ctrl	xxx25
+gt	audio	xxx70
+
+gs	ms	xxx30
+gs	gt	xxx31 - xxx40
+gs	ctrl	xxx45
+gs	db	xxx50
+
+ms	db	xxx60
+ms	ctrl	xxx80
+
+
+gmtool	ms	xxx90
+gmtool  ctrl	xxx95
+gmtool	login	25002
+
+
+ctrl	db	xxx65
+ctrl	login	25000
+
+ms	gm	29000
+ms	center	30000
+ms	login	28000
+
+login	gm	29001
+client	login	25001

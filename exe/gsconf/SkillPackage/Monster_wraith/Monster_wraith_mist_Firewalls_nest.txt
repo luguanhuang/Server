@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XSkillData>
+  <Name>Monster_wraith_mist_Firewalls_nest</Name>
+  <TypeToken>0</TypeToken>
+  <ClipName>Animation/Monster_wraith/Monster_wraith_mist_Firewalls</ClipName>
+  <Fx>
+    <XFxData>
+      <Type>FirerBased</Type>
+      <End>2.83333349</End>
+      <Fx>Effects/FX_Particle/NPC/Lzg_Boss/Monster_wraith_mist_Firewalls_nest_Clip01</Fx>
+    </XFxData>
+  </Fx>
+  <Script />
+  <Logical>
+    <StrickenMask>Cease</StrickenMask>
+  </Logical>
+  <Time>2.83333349</Time>
+</XSkillData>

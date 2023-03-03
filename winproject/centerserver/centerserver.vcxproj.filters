@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="protocol">
+      <UniqueIdentifier>{a07a1c74-2d87-47f2-b189-b888946d0611}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\pb">
+      <UniqueIdentifier>{01b3672b-959b-4ac1-9b32-9ac90b2c0c82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="share">
+      <UniqueIdentifier>{b46c8bdd-952c-46e1-8944-714efc167765}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\common">
+      <UniqueIdentifier>{70a50ffb-b2bf-4060-82f4-5e12dc63b634}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sql">
+      <UniqueIdentifier>{ee96d9dc-41f5-4d81-925a-e15538cedf84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="network">
+      <UniqueIdentifier>{6c49414f-337d-4d2d-ac8d-b3be7a79a254}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\platfriend">
+      <UniqueIdentifier>{c826c372-fa2a-4b10-9338-0d2d62c6cc8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="platforminfo">
+      <UniqueIdentifier>{48cf5e67-ef47-43b7-9118-d10892699ef5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sql\task">
+      <UniqueIdentifier>{822bcadd-f9ca-4a69-8436-556372a07aea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="redis">
+      <UniqueIdentifier>{627aea1f-c54e-4060-bb82-93eb6503844a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="redis\redistask">
+      <UniqueIdentifier>{af3f32de-9c42-497a-b9cf-605f43b31977}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\invfight">
+      <UniqueIdentifier>{3be9eef5-af50-4b85-89d8-02489bc83b0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="invfight">
+      <UniqueIdentifier>{28370e6a-b022-45d3-8043-468b282b2a0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="account">
+      <UniqueIdentifier>{5b2b44da-645a-4c9b-bc1b-2dcf7ce0a65b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\team">
+      <UniqueIdentifier>{1d42d9c1-1479-46fa-b3d3-6a4a82c47650}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="team">
+      <UniqueIdentifier>{93a8c718-18ef-4ea4-9370-5191d4e128dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\audio">
+      <UniqueIdentifier>{691d693e-8f24-4836-9f80-8502ab62721d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\centerserver\config.cpp" />
+    <ClCompile Include="..\..\centerserver\main.cpp" />
+    <ClCompile Include="..\..\centerserver\ptcregister.cpp" />
+    <ClCompile Include="..\..\protocol\pb\project.pb.cc">
+      <Filter>protocol\pb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\DBInfo.cpp">
+      <Filter>share</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\SQLStmt.cpp">
+      <Filter>share</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\protocol\pb\enum.pb.cc">
+      <Filter>protocol\pb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\centerserver\network\mslink.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\centerserver\protocol\platfriend\rpcm2s_m2sreqplatuserinfo.cpp">
+      <Filter>protocol\platfriend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\centerserver\protocol\platfriend\rpcm2s_m2sloginandoutsync.cpp">
+      <Filter>protocol\platfriend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\centerserver\protocol\platfriend\rpcm2s_m2ssendgift2platfriend.cpp">
+      <Filter>protocol\platfriend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\centerserver\protocol\platfriend\rpcs2m_s2msendgift2platfriend.cpp">
+      <Filter>protocol\platfriend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\centerserver\platforminfo\platformfriendmgr.cpp">
+      <Filter>platforminfo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\centerserver\platforminfo\cachedplatuserinfo.cpp">
+      <Filter>platforminfo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\util\XCommon.cpp">
+      <Filter>share</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\util\gametime.cpp">
+      <Filter>share</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\util\XRandom.cpp">
+      <Filter>share</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\centerserver\sql\mysqlmgr.cpp">
+      <Filter>sql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\util\dbutil.cpp">
+      <Filter>share</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\centerserver\sql\mysqlthread.cpp">
+      <Filter>sql</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\centerserver\sql\task\platfriendoptask.cpp">
+      <Filter>sql\task</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\centerserver\centerprocess.cpp" />
+    <ClCompile Include="..\..\share\redis\mywin32fixes.c" />
+    <ClCompile Include="..\..\centerserver\sql\task\platfriendquerytask.cpp">
+      <Filter>sql\task</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\centerserver\redis\redismgr.cpp">
+      <Filter>redis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\centerserver\redis\redisthread.cpp">
+      <Filter>redis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\centerserver\redis\redistask\selfonlinetask.cpp">
+      <Filter>redis\redistask</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\centerserver\redis\redistask\queryfriendtask.cpp">
+      <Filter>redis\redistask</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\centerserver\redis\redishelper.cpp">
+      <Filter>redis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\centerserver\redis\redistask\sendgifttask.cpp">
+      <Filter>redis\redistask</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\centerserver\protocol\common\rpcm2s_registerms2cs.cpp">
+      <Filter>protocol\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\centerserver\protocol\invfight\rpcm2s_invfightcross2csreq.cpp">
+      <Filter>protocol\invfight</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\centerserver\protocol\invfight\rpcs2m_invfightcross2msreq.cpp">
+      <Filter>protocol\invfight</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\centerserver\account\accountmgr.cpp">
+      <Filter>account</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\centerserver\protocol\platfriend\ptcm2s_m2suserstatussync.cpp">
+      <Filter>protocol\platfriend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\centerserver\invfight\invfightcrossmgr.cpp">
+      <Filter>invfight</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\centerserver\protocol\sendonly.cpp">
+      <Filter>protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\util\gettimeofday.cpp">
+      <Filter>share</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\centerserver\protocol\team\rpcm2s_teamrequestplatfreindm2s.cpp">
+      <Filter>protocol\team</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\centerserver\protocol\team\rpcs2m_teamrequestplatfreinds2m.cpp">
+      <Filter>protocol\team</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\centerserver\team\teamrequestmgr.cpp">
+      <Filter>team</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\centerserver\protocol\platfriend\rpci2s_reqplatusersinfoi2s.cpp">
+      <Filter>protocol\platfriend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\centerserver\network\loginlink.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\centerserver\protocol\common\rpca2s_registeraudiotocenter.cpp">
+      <Filter>protocol\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\centerserver\network\audiolink.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\centerserver\redis\redistask\audiowritetask.cpp">
+      <Filter>redis\redistask</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\centerserver\protocol\audio\rpca2s_getaudiofilecenter.cpp">
+      <Filter>protocol\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\centerserver\redis\redistask\audioreadtask.cpp">
+      <Filter>redis\redistask</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\centerserver\protocol\audio\rpca2s_upaudiotocenter.cpp">
+      <Filter>protocol\audio</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\centerserver\config.h" />
+    <ClInclude Include="..\..\centerserver\minidump.h" />
+    <ClInclude Include="..\..\centerserver\pch.h" />
+    <ClInclude Include="..\..\centerserver\ptcregister.h" />
+    <ClInclude Include="..\..\protocol\pb\project.pb.h">
+      <Filter>protocol\pb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\DBInfo.h">
+      <Filter>share</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\SQLStmt.h">
+      <Filter>share</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\centerserver\network\mslink.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\centerserver\platforminfo\platformfriendmgr.h">
+      <Filter>platforminfo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\centerserver\platforminfo\cachedplatuserinfo.h">
+      <Filter>platforminfo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\util\XCommon.h">
+      <Filter>share</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\util\gametime.h">
+      <Filter>share</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\util\XRandom.h">
+      <Filter>share</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\centerserver\sql\mysqlmgr.h">
+      <Filter>sql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\util\dbutil.h">
+      <Filter>share</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\centerserver\sql\mysqlthread.h">
+      <Filter>sql</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\centerserver\sql\task\platfriendoptask.h">
+      <Filter>sql\task</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\redis\hiredis.h">
+      <Filter>share</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\redis\win32fixes.h" />
+    <ClInclude Include="..\..\centerserver\centerprocess.h" />
+    <ClInclude Include="..\..\centerserver\sql\task\platfriendquerytask.h">
+      <Filter>sql\task</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\centerserver\redis\redismgr.h">
+      <Filter>redis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\centerserver\redis\redisthread.h">
+      <Filter>redis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\centerserver\redis\redistask\selfonlinetask.h">
+      <Filter>redis\redistask</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\centerserver\redis\redistask\queryfriendtask.h">
+      <Filter>redis\redistask</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\centerserver\redis\redishelper.h">
+      <Filter>redis</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\centerserver\redis\redistask\sendgifttask.h">
+      <Filter>redis\redistask</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\centerserver\account\accountmgr.h">
+      <Filter>account</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\centerserver\invfight\invfightcrossmgr.h">
+      <Filter>invfight</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\util\gettimeofday.h">
+      <Filter>share</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\centerserver\team\teamrequestmgr.h">
+      <Filter>team</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\centerserver\network\loginlink.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\centerserver\network\audiolink.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\centerserver\redis\redistask\audiowritetask.h">
+      <Filter>redis\redistask</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\centerserver\redis\redistask\audioreadtask.h">
+      <Filter>redis\redistask</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

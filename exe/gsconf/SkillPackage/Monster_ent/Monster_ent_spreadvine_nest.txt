@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XSkillData>
+  <Name>Monster_ent_spreadvine_nest</Name>
+  <TypeToken>3</TypeToken>
+  <Combined>
+    <XCombinedData>
+      <Name>Monster_ent_spreadvine_star</Name>
+      <End>1.50000012</End>
+    </XCombinedData>
+    <XCombinedData>
+      <Index>1</Index>
+      <Name>Monster_ent_spreadvine_loop</Name>
+      <End>1</End>
+    </XCombinedData>
+    <XCombinedData>
+      <Index>2</Index>
+      <Name>Monster_ent_spreadvine_end</Name>
+      <End>1.66666675</End>
+    </XCombinedData>
+  </Combined>
+  <Script />
+  <Logical>
+    <StrickenMask>Cease</StrickenMask>
+  </Logical>
+  <Time>4.167</Time>
+</XSkillData>

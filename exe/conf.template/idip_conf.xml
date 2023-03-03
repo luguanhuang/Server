@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+
+<IDIPServer name="idip" id="200">
+
+	<Listen>
+		<peer ip="0.0.0.0" port="29000" handler="mslink" sendBufSize="0" recvBufSize="0"/>
+		<peer ip="0.0.0.0" port="29001" handler="loginlink" sendBufSize="1024000" recvBufSize="1024000"/>
+	</Listen>
+
+	<!-- rolltype (day, hour) -->
+	<LogType  file="1" console="1" rolltype="day"/>
+	<LogLevel info="1" debug="1" warn="1" error="1" fatal="1"/>
+
+	<RootPath dir="idipconf"/>
+	<TLogConfigFile path="tlog_config.xml"/>
+	<KeepAlive  enabled="0"/>
+</IDIPServer>

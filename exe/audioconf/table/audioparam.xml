@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Param>
+  <ParamValue one_audio_size="200000" max_audio_count="50000" />
+</Param>

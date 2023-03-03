@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XSkillData>
+  <Name>Monster_dragonsycophant_puni_deadly_blackdragon</Name>
+  <TypeToken>3</TypeToken>
+  <Combined>
+    <XCombinedData>
+      <Name>Monster_dragonsycophant_puni_deadly_blackdragon_start</Name>
+      <End>2.50000024</End>
+      <Override_Presentation>true</Override_Presentation>
+    </XCombinedData>
+    <XCombinedData>
+      <Index>1</Index>
+      <Name>Monster_dragonsycophant_puni_deadly_blackdragon_attack</Name>
+      <End>1.08333373</End>
+      <Override_Presentation>true</Override_Presentation>
+    </XCombinedData>
+    <XCombinedData>
+      <Index>2</Index>
+      <Name>Monster_dragonsycophant_puni_deadly_blackdragon_loop</Name>
+      <End>1.2</End>
+      <Override_Presentation>true</Override_Presentation>
+    </XCombinedData>
+    <XCombinedData>
+      <Index>3</Index>
+      <Name>Monster_dragonsycophant_puni_deadly_blackdragon_loop</Name>
+      <End>1.2</End>
+      <Override_Presentation>true</Override_Presentation>
+    </XCombinedData>
+    <XCombinedData>
+      <Index>4</Index>
+      <Name>Monster_dragonsycophant_puni_deadly_blackdragon_loop</Name>
+      <End>1.2</End>
+      <Override_Presentation>true</Override_Presentation>
+    </XCombinedData>
+    <XCombinedData>
+      <Index>5</Index>
+      <Name>Monster_dragonsycophant_puni_deadly_blackdragon_end</Name>
+      <End>0.9333334</End>
+      <Override_Presentation>true</Override_Presentation>
+    </XCombinedData>
+  </Combined>
+  <Script />
+  <Logical>
+    <StrickenMask>Cease</StrickenMask>
+    <Not_Move_End>7.65</Not_Move_End>
+    <CanCancelAt>7.65</CanCancelAt>
+  </Logical>
+  <Time>8.117</Time>
+</XSkillData>

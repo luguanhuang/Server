@@ -1,0 +1,209 @@
+
+################################################
+            策划需要配置的错误码总表
+################################################
+
+
+
+答题系统：
+	ERR_QA_ALEADY_IN_ROOM    	已经在别的答题房间了
+	ERR_QA_NO_DATA		 	答题没有表格数据
+	ERR_QA_NO_GUILD 	 	公会答题没加入公会
+	ERR_QA_NO_COUNT		 	没有答题次数了
+	ERR_QA_NO_GUILD_ROOM 	 	没找到公会答题房间
+
+
+任务系统
+	ERR_TASK_NOT_ACCEPT	 	任务没有接
+	ERR_TASK_ALREADY_TAKE	 	任务奖励已经领取过了
+	ERR_TASK_NOT_FOUND	 	没有这个任务
+	ERR_TASK_NOT_FINISH	 	没有完成
+	ERR_TASK_NO_TABLE	 	任务没有表格数据
+	ERR_TASK_NO_ASK_HELPNUM	 	没有请求帮助次数了
+	ERR_TASK_CANNOT_HELP	 	任务不能求助（刷怪类任务）
+	ERR_TASK_ALREADY_FINISH	 	任务已经完成了
+	ERR_TASK_ALREADY_ASKED	 	任务已经请求过帮助了
+	ERR_TASK_NO_ASKINFO 	 	求助信息没找到
+	ERR_TASK_ASKITEM_REFRESH 	捐赠页面数据不一致，需要客户端刷新
+	ERR_TASK_CANNT_HELPSELF  	任务不能求助自己
+	ERR_TASK_CANNOT_GIVEUP	 	任务不能放弃
+
+
+公会红包	
+	ERR_GUILDBONUS_NOTEXIST				红包不存在
+	ERR_GUILDBONUS_ALREADYGET			已领过该红包
+	ERR_GUILDBONUS_EXCEED				红包已过期
+	ERR_GUILD_CHECKINBONUS_TIMEERROR		不在签到红包时间
+	ERR_GUILD_CHECKINBONUS_ASKTOOMUCH		请求冷却中
+	ERR_GUILDBONUS_ALLGET				红包已领完
+	
+		
+T台
+	ERR_TSHOW_LEVEL_NOTENOUGH 			等级不足
+	
+		
+阵营	
+	ERR_ALREADY_IN_CAMP				已在阵营
+	ERR_NOT_IN_CAMP					不在阵营
+	
+		
+找回
+	ERR_EXPBACK_ALREADYGET				已领取过
+
+
+黑暗神殿		
+	ERR_TEAM_TOWER_DAYCOUNT				次数不足
+	ERR_TOWER_INSWEEP				正在扫荡中
+	ERR_TOWER_FLOOR_NOTENOUGH			层数不匹配
+
+
+观战
+	ERR_WATCH_LIVEISOVER				该场次已结束，请选择其他场次观看
+	ERR_WATCH_LIVEISFULL				该直播观战人数已满，请选择其他直播观看
+	ERR_COMMENDWATCH_COUNTLIMIT			点击太快啦，休息一下再点吧
+
+
+龙本
+	ERR_DRAGON_TICKET_NOTENOUGH			门票不足，请前往狮蝎巢穴获取
+	ERR_DRAGON_PROGRESS_INVALID			您的挑战进度和队伍不符合
+
+
+家园：	
+	ERR_GARDEN_PLANT_CD   		作物处在CD期
+	ERR_GARDEN_COOKING_EXCEED   	烹饪次数已到上限
+	ERR_GARDEN_COOKINGLEVEL_LOW   	烹饪等级太低
+	ERR_GARDEN_PLANT_CUL_ERR   	培养操作错误
+	ERR_GARDEN_ERR_SEED         	错误的种子
+	ERR_GARDEN_NOSEED 		不存在的种子
+	ERR_GARDEN_NOALLOW 		地块还不允许种植
+	ERR_GARDEN_QUESTS_NOENOUGH     	客人不够
+	ERR_GARDEN_NOTINGARDEN         	本人不在家园
+	ERR_GARDEN_FOODBOOK_ACTIVED    	菜谱已经激活过
+	ERR_GARDEN_NOEXIST_FOODID   	不存在此料理
+	ERR_GARDEN_FOOD_NOALLOW   	本职业不允许制作此料理
+
+
+公会传功：	
+	ERR_GUILD_INHERIT_GAP	公会传承等级差不足3级
+	ERR_GUILD_INHERIT_TIMES	今日公会传承自己次数不足
+	ERR_GUILD_INHERIT_NOT_EXIT	公会传承该请求无效
+	ERR_GUILD_INHERIT_LVL	公会传承等级差不足3级
+	ERR_GUILD_INHERIT_CD_TIME	导师处于传承冷却时间
+	ERR_GUILD_INHERIT_MAP_WRONG	对方所处地图不符合公会传承要求
+
+坐骑	
+	ERR_PETSYS_NOT_OPEN		坐骑系统未开放
+	ERR_PET_SEAT_NOT_ENOUGH		坐骑栏数量不足
+	PET_LEVEL_MAX_TIP		坐骑已达到最大等级
+	PET_LEVEL_MORE_ROLE_TIP		坐骑等级不能超过人物等级的2倍
+	ERR_PET_IS_FULL			你的坐骑已经足够饱了
+	ERR_STATE_CANTCHANGE		当前状态下无法切换到其它状态
+	ERR_PE_CAN_NOT_RELEASE		已激活和骑乘中的坐骑无法放生
+	ERR_SCENE_NOT_PET		该场景不能乘骑坐骑
+
+
+擂台战
+	GUILD_ARENA_SIGN_LOW_LEVEL	需要公会达到2级才可以报名参加
+	GUILD_ARENA_SIGN_PROFESSION	公会会长或副会长才可以报名哦
+	GUILD_ARENA_UNOPEN		活动尚未开启
+	GUILD_ARENA_OVER		报名已结束
+
+
+公会技能研究	
+	GUILD_SKILL_UNDER_EXP		公会经验不足
+	GUILD_SKILL_LEVEL_FULL		已满级
+	GUILD_SKILL_GUILD_LEVEL_DOWN	公会等级不足
+	GUILD_SKILL_STUDY_LEVEL_DOWN	研究等级不足
+
+
+公会boss	
+	GuildBoss_CoolDown_Tips		离开公会BOSS战斗后，还需{0}秒方可再次进入
+
+
+公会天梯赛
+	ERR_GUILD_LADDER_NOT_OPEN	公会天梯赛没开启
+
+
+活跃度：
+	ERR_ACTIVITY_NOCHESTINDEX	没有此宝箱
+	ERR_ACTIVITY_HASGETCHEST	宝箱已领取
+	ERR_ACTIVITY_NOTENOUGHVALUE	活跃度不够
+
+使用物品：
+	ERR_ITEM_NOTEXIST		物品不存在
+	ERR_ITEM_WRONG_PROFESSION	装备与职业不符合
+	ERR_ITEM_LEVELLIMIT		角色等级不够，不能使用该物品
+	ERR_EMBLEM_NOIDENTIFY		具有孔的纹章，需要鉴定后才能装备
+	ERR_EMBLEM_NOEMPTYSLOT		没有空纹章孔
+	ERR_BAG_FULL_TAKEOFF_EQUIP	包裹已满，无法卸下装备
+	ERR_BAG_FULL_TAKEOFF_EMBLEM	包裹已满，无法卸下纹章
+	ERR_SLOTATTR_MONEYLIMIT		材料不足（这是使用坐骑兑换牌）
+	ERR_PANDORA_LACKOF_FIRE		开启所需道具不足（潘多拉之心）
+
+纹章：
+	ERR_EMBLEM_CANTIDENTIFY		该纹章无法鉴定
+
+龙玉：
+	ERR_JADECOMPOSE_NOTFIND		没有可以升级的龙玉
+	ERR_JADE_MAXLEVEL		龙玉已升至最高等级
+	ERR_JADE_COUNTNOTENOUGH		龙玉数量不足
+	ERR_JADE_GOLDNOTENOUGH		升级龙玉金币不足
+	ERR_JADE_MINEQUIPLEVEL		镶嵌失败，{0}只能镶嵌在{1}级装备上
+	ERR_JADE_WRONGTYPE		镶嵌失败，龙玉孔形状不符
+	ERR_JADE_SAME_TYPE		该装备已镶嵌了一个同类型龙玉
+	ERR_JADE_REPLACE		替换龙玉成功
+	ERR_BAG_FULL_TAKEOFF_JADE	包裹已满，无法卸下龙玉
+
+强化：
+	ERR_ENHANCE_MAX			强化等级已满
+	ERR_ENHANCE_LACKITEM		强化道具不足
+	ERR_ENHANCE_SUCCEED		(stringtable没配，这个多余了)
+	ERR_ENHANCE_FAILED		强化失败
+	ERR_ENHANCE_TRANSPOS		只有同部位的装备才可以进行强化转移操作
+	ERR_ENHANCE_NO_EQUIP_CAN_TRANSFORM	目前没有合适的装备可以进行强化转移
+
+切换状态（跳舞，骑马）：	
+	ERR_STATE_CANTCHANGE		当前状态下无法切换到其它状态
+
+超级活动（开服嘉年华，解封狂欢）：
+	ERR_SPACTIVITY_NOPRIZE		该活动没有大奖哦~
+	ERR_SPACTIVITY_PRIZE_GET	已经领取过大奖了
+	ERR_SPACTIVITY_NOTPRIZETIME	积分不足
+	ERR_SPACTIVITY_NOTENOUGH_MONEY	没有足够的龙币哦
+	ERR_SPACTIVITY_TASK_NOT_COMPLETE任务未完成
+	ERR_SPACTIVITY_TASK_GET		已经领取过了哦~
+
+精灵：
+	ERR_SPRITE_NOTFIND		未找到该精灵
+	ERR_SPRITE_LEVELMAX		精灵等级不能高于玩家等级
+	ERR_SPRITE_LEVELUP_LACKOFCOST	精灵喂养道具不足
+	ERR_SPRITE_EVOLUTION_LEVELMAX	精灵升星已达到最高级别
+	ERR_SPRITE_EVOLUTION_LEVELLIMIT	精灵升星所需等级不足
+	ERR_SPRITE_EVOLUTION_ROLE_LEVELLIMIT	精灵升星所需人物等级不足
+	ERR_SPRITE_EVOLUTION_LACKOFCOST	精灵升星药水不足
+	ERR_SPRITE_AWAKE_ROLE_LEVELLIMIT	精灵觉醒所需人物等级不足
+	ERR_SPRITE_AWAKE_LACKOFCOST	精灵觉醒药水不足
+	ERR_SPRITE_ALREADY_INFIGHT	该精灵已经出战
+	ERR_SPRITE_ALREADY_OUTFIGHT	该精灵未出战
+	ERR_SPRITE_INFIGHT_FULL		出战精灵已满
+	ERR_SPRITE_ALREADY_ISLEADER	该精灵已经是队长
+
+头衔：
+	ERR_TITLE_MAX			头衔已达到最高等级
+	ERR_TITLE_PPTLIMIT		头衔升级所需战力不足
+	ERR_TITLE_LACKITEM		头衔升级所需物品不足
+
+聊天：
+	ERR_CHAT_LEVELLIMIT		该频道需要更高等级
+	ERR_CHAT_TIMELIMIT		发送过于频繁，还剩{0}后可再次发送
+	ERR_CHAT_LENGTHLIMIT		输入字数达到上限
+
+
+通用:
+	ERR_UNKNOWN			未知错误
+	ERR_MS_UNREADY			MS未就绪 (黑龙正在攻击服务器)
+	ERR_GS_UNREADY			GS未就绪 (黑龙正在攻击服务器)
+	ERR_LOGIN_NOT_IN_WHITE_LIST	服务器未开放
+
+
+

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XSkillData>
+  <Name>Monster_minotauros_comboattack_blackdragon</Name>
+  <ClipName>Animation/Monster_minotauros/Monster_minotauros_comboattack</ClipName>
+  <Charge>
+    <XChargeData>
+      <Using_Curve>true</Using_Curve>
+      <Curve_Forward>Curve/Monster_minotauros/Monster_minotauros_comboattack_forward</Curve_Forward>
+      <Curve_Side>Curve/Monster_minotauros/Monster_minotauros_charge_side</Curve_Side>
+    </XChargeData>
+  </Charge>
+  <Script />
+  <Logical>
+    <StrickenMask>Cease</StrickenMask>
+  </Logical>
+  <Time>4.666667</Time>
+</XSkillData>

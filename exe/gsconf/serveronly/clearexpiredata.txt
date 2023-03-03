@@ -1,0 +1,3 @@
+rolesummary:1
+friend:1
+garden:0

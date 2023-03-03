@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FMServer name="fm" id="45">
+	<DB ip="10.0.128.229" user="root" password="" port="3306" database="globalworld"/>
+	<Listen>
+		<peer ip="0.0.0.0" port="35000" handler="mslink" sendBufSize="1024000" recvBufSize="1024000"/>
+		<peer ip="0.0.0.0" port="35010" handler="gmtoollink" sendBufSize="0" recvBufSize="0"/>
+	</Listen>
+	<LogType  file="1" console="1" rolltype="day"/>
+	<LogLevel info="1" debug="1" warn="1" error="1" fatal="1"/>
+	<RootPath dir="gsconf"/>
+	<AppPlat app="qq"/> <!-- app(qq, wechat)-->
+</FMServer>

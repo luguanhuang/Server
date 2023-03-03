@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{917D21AE-1183-4EB6-A8A9-91BBEB6AD912}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>centerserver</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)..\..\exe\</OutDir>
+    <EmbedManifest>false</EmbedManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../../protocol;../../common/include;../../centerserver/protocol;../../centerserver/;../../thirdparty/tinyxml2;../../thirdparty/;../../thirdparty/protobuf-2.5.0/include;../../share;../../thirdparty/mysql/include;../../thirdparty/tsf4g_lib/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>../../lib;../../thirdparty/mysql/lib/vs10/;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>common.lib;mysqlclient.lib;ws2_32.lib;libprotobuf.lib;libiconv.lib;zlib.lib;iocp.lib;mysql.lib;hiredis.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>LIBCMTD.lib</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\centerserver\account\accountmgr.cpp" />
+    <ClCompile Include="..\..\centerserver\centerprocess.cpp" />
+    <ClCompile Include="..\..\centerserver\config.cpp" />
+    <ClCompile Include="..\..\centerserver\invfight\invfightcrossmgr.cpp" />
+    <ClCompile Include="..\..\centerserver\main.cpp" />
+    <ClCompile Include="..\..\centerserver\network\loginlink.cpp" />
+    <ClCompile Include="..\..\centerserver\network\audiolink.cpp" />
+    <ClCompile Include="..\..\centerserver\network\mslink.cpp" />
+    <ClCompile Include="..\..\centerserver\platforminfo\cachedplatuserinfo.cpp" />
+    <ClCompile Include="..\..\centerserver\platforminfo\platformfriendmgr.cpp" />
+    <ClCompile Include="..\..\centerserver\protocol\sendonly.cpp" />
+    <ClCompile Include="..\..\centerserver\ptcregister.cpp" />
+    <ClCompile Include="..\..\centerserver\redis\redishelper.cpp" />
+    <ClCompile Include="..\..\centerserver\redis\redismgr.cpp" />
+    <ClCompile Include="..\..\centerserver\redis\redistask\audioreadtask.cpp" />
+    <ClCompile Include="..\..\centerserver\redis\redistask\audiowritetask.cpp" />
+    <ClCompile Include="..\..\centerserver\redis\redistask\queryfriendtask.cpp" />
+    <ClCompile Include="..\..\centerserver\redis\redistask\selfonlinetask.cpp" />
+    <ClCompile Include="..\..\centerserver\redis\redistask\sendgifttask.cpp" />
+    <ClCompile Include="..\..\centerserver\redis\redisthread.cpp" />
+    <ClCompile Include="..\..\centerserver\sql\mysqlmgr.cpp" />
+    <ClCompile Include="..\..\centerserver\sql\mysqlthread.cpp" />
+    <ClCompile Include="..\..\centerserver\sql\task\platfriendoptask.cpp" />
+    <ClCompile Include="..\..\centerserver\sql\task\platfriendquerytask.cpp" />
+    <ClCompile Include="..\..\centerserver\team\teamrequestmgr.cpp" />
+    <ClCompile Include="..\..\protocol\pb\enum.pb.cc" />
+    <ClCompile Include="..\..\protocol\pb\project.pb.cc" />
+    <ClCompile Include="..\..\share\DBInfo.cpp" />
+    <ClCompile Include="..\..\share\redis\mywin32fixes.c" />
+    <ClCompile Include="..\..\share\SQLStmt.cpp" />
+    <ClCompile Include="..\..\centerserver\protocol\platfriend\rpcm2s_m2sreqplatuserinfo.cpp" />
+    <ClCompile Include="..\..\centerserver\protocol\platfriend\rpcm2s_m2sloginandoutsync.cpp" />
+    <ClCompile Include="..\..\centerserver\protocol\platfriend\rpcm2s_m2ssendgift2platfriend.cpp" />
+    <ClCompile Include="..\..\centerserver\protocol\platfriend\rpcs2m_s2msendgift2platfriend.cpp" />
+    <ClCompile Include="..\..\share\util\dbutil.cpp" />
+    <ClCompile Include="..\..\share\util\gametime.cpp" />
+    <ClCompile Include="..\..\share\util\gettimeofday.cpp" />
+    <ClCompile Include="..\..\share\util\XCommon.cpp" />
+    <ClCompile Include="..\..\share\util\XRandom.cpp" />
+    <ClCompile Include="..\..\centerserver\protocol\common\rpcm2s_registerms2cs.cpp" />
+    <ClCompile Include="..\..\centerserver\protocol\invfight\rpcm2s_invfightcross2csreq.cpp" />
+    <ClCompile Include="..\..\centerserver\protocol\invfight\rpcs2m_invfightcross2msreq.cpp" />
+    <ClCompile Include="..\..\centerserver\protocol\platfriend\ptcm2s_m2suserstatussync.cpp" />
+    <ClCompile Include="..\..\centerserver\protocol\team\rpcm2s_teamrequestplatfreindm2s.cpp" />
+    <ClCompile Include="..\..\centerserver\protocol\team\rpcs2m_teamrequestplatfreinds2m.cpp" />
+    <ClCompile Include="..\..\centerserver\protocol\platfriend\rpci2s_reqplatusersinfoi2s.cpp" />
+    <ClCompile Include="..\..\centerserver\protocol\common\rpca2s_registeraudiotocenter.cpp" />
+    <ClCompile Include="..\..\centerserver\protocol\audio\rpca2s_getaudiofilecenter.cpp" />
+    <ClCompile Include="..\..\centerserver\protocol\audio\rpca2s_upaudiotocenter.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\centerserver\account\accountmgr.h" />
+    <ClInclude Include="..\..\centerserver\centerprocess.h" />
+    <ClInclude Include="..\..\centerserver\config.h" />
+    <ClInclude Include="..\..\centerserver\invfight\invfightcrossmgr.h" />
+    <ClInclude Include="..\..\centerserver\minidump.h" />
+    <ClInclude Include="..\..\centerserver\network\loginlink.h" />
+    <ClInclude Include="..\..\centerserver\network\audiolink.h" />
+    <ClInclude Include="..\..\centerserver\network\mslink.h" />
+    <ClInclude Include="..\..\centerserver\pch.h" />
+    <ClInclude Include="..\..\centerserver\platforminfo\cachedplatuserinfo.h" />
+    <ClInclude Include="..\..\centerserver\platforminfo\platformfriendmgr.h" />
+    <ClInclude Include="..\..\centerserver\ptcregister.h" />
+    <ClInclude Include="..\..\centerserver\redis\redishelper.h" />
+    <ClInclude Include="..\..\centerserver\redis\redismgr.h" />
+    <ClInclude Include="..\..\centerserver\redis\redistask\audioreadtask.h" />
+    <ClInclude Include="..\..\centerserver\redis\redistask\audiowritetask.h" />
+    <ClInclude Include="..\..\centerserver\redis\redistask\queryfriendtask.h" />
+    <ClInclude Include="..\..\centerserver\redis\redistask\selfonlinetask.h" />
+    <ClInclude Include="..\..\centerserver\redis\redistask\sendgifttask.h" />
+    <ClInclude Include="..\..\centerserver\redis\redisthread.h" />
+    <ClInclude Include="..\..\centerserver\sql\mysqlmgr.h" />
+    <ClInclude Include="..\..\centerserver\sql\mysqlthread.h" />
+    <ClInclude Include="..\..\centerserver\sql\task\platfriendoptask.h" />
+    <ClInclude Include="..\..\centerserver\sql\task\platfriendquerytask.h" />
+    <ClInclude Include="..\..\centerserver\team\teamrequestmgr.h" />
+    <ClInclude Include="..\..\protocol\pb\project.pb.h" />
+    <ClInclude Include="..\..\share\DBInfo.h" />
+    <ClInclude Include="..\..\share\redis\hiredis.h" />
+    <ClInclude Include="..\..\share\redis\win32fixes.h" />
+    <ClInclude Include="..\..\share\SQLStmt.h" />
+    <ClInclude Include="..\..\share\util\dbutil.h" />
+    <ClInclude Include="..\..\share\util\gametime.h" />
+    <ClInclude Include="..\..\share\util\gettimeofday.h" />
+    <ClInclude Include="..\..\share\util\XCommon.h" />
+    <ClInclude Include="..\..\share\util\XRandom.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

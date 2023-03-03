@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9F04F50C-F955-4562-A62D-9E131B327FEE}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>controlserver</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)..\..\exe\</OutDir>
+    <EmbedManifest>false</EmbedManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../../protocol;../../common/include;../../thirdparty/tinyxml2;../../thirdparty/protobuf-2.5.0/include;../../share;../../thirdparty/tsf4g_lib/include;../../thirdparty;../../controlserver;../../thirdparty/curl-7.40.0/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/bigobj /Zm200 %(AdditionalOptions)</AdditionalOptions>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>../../lib;../../thirdparty/mysql/lib/vs10/;../../thirdparty/curl-7.40.0/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>common.lib;ws2_32.lib;libprotobuf.lib;libiconv.lib;zlib.lib;mysqlclient.lib;mysql.lib;iocp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>LIBCMTD.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\controlserver\account\accountkick.cpp" />
+    <ClCompile Include="..\..\controlserver\account\accountsession.cpp" />
+    <ClCompile Include="..\..\controlserver\account\accountsessionmgr.cpp" />
+    <ClCompile Include="..\..\controlserver\account\logincontrol.cpp" />
+    <ClCompile Include="..\..\controlserver\account\whitelistmgr.cpp" />
+    <ClCompile Include="..\..\controlserver\config.cpp" />
+    <ClCompile Include="..\..\controlserver\main.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\controlserver\network\dblink.cpp" />
+    <ClCompile Include="..\..\controlserver\network\gatelink.cpp" />
+    <ClCompile Include="..\..\controlserver\network\gmtoollink.cpp" />
+    <ClCompile Include="..\..\controlserver\network\gslink.cpp" />
+    <ClCompile Include="..\..\controlserver\network\loginlink.cpp" />
+    <ClCompile Include="..\..\controlserver\network\mslink.cpp" />
+    <ClCompile Include="..\..\controlserver\network\rslink.cpp" />
+    <ClCompile Include="..\..\controlserver\process.cpp" />
+    <ClCompile Include="..\..\controlserver\profile\ctrlprofiler.cpp" />
+    <ClCompile Include="..\..\controlserver\protocol\common\rpcn2i_registerns2login.cpp" />
+    <ClCompile Include="..\..\controlserver\protocol\login\ptct2n_logoutntf.cpp" />
+    <ClCompile Include="..\..\controlserver\protocol\login\rpct2n_loginrequestnew.cpp" />
+    <ClCompile Include="..\..\controlserver\protocol\queuing\ptcc2n_checkqueuingreq.cpp" />
+    <ClCompile Include="..\..\controlserver\protocol\role\rpcc2n_createrolenew.cpp" />
+    <ClCompile Include="..\..\controlserver\protocol\role\rpcc2n_returntoselectrole.cpp" />
+    <ClCompile Include="..\..\controlserver\protocol\role\rpcc2n_selectrolenew.cpp" />
+    <ClCompile Include="..\..\controlserver\protocol\role\rpcn2d_createroleondbnew.cpp" />
+    <ClCompile Include="..\..\controlserver\protocol\scene\rpcg2n_changesceneverify.cpp" />
+    <ClCompile Include="..\..\controlserver\protocol\scene\rpcm2n_createbattlescene.cpp" />
+    <ClCompile Include="..\..\controlserver\protocol\scene\rpcn2g_createbattle.cpp" />
+    <ClCompile Include="..\..\controlserver\protocol\scene\rpcn2g_enterscene.cpp" />
+    <ClCompile Include="..\..\controlserver\protocol\scene\rpcn2g_leavescene.cpp" />
+    <ClCompile Include="..\..\controlserver\protocol\sendonly.cpp" />
+    <ClCompile Include="..\..\controlserver\ptcregister.cpp" />
+    <ClCompile Include="..\..\controlserver\queuing\queuingmgr.cpp" />
+    <ClCompile Include="..\..\controlserver\role\role.cpp" />
+    <ClCompile Include="..\..\controlserver\role\roleidgenerator.cpp" />
+    <ClCompile Include="..\..\controlserver\role\rolemanager.cpp" />
+    <ClCompile Include="..\..\controlserver\scene\gsmanager.cpp" />
+    <ClCompile Include="..\..\controlserver\scene\scene.cpp" />
+    <ClCompile Include="..\..\controlserver\scene\sceneconfig.cpp" />
+    <ClCompile Include="..\..\controlserver\scene\scenecreate.cpp" />
+    <ClCompile Include="..\..\controlserver\scene\scenemanager.cpp" />
+    <ClCompile Include="..\..\controlserver\scene\sceneswitch.cpp" />
+    <ClCompile Include="..\..\controlserver\shm\shmmgr.cpp" />
+    <ClCompile Include="..\..\protocol\pb\enum.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\protocol\pb\project.pb.cc">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\share\DBInfo.cpp" />
+    <ClCompile Include="..\..\controlserver\protocol\common\rpct2n_registergt2ns.cpp" />
+    <ClCompile Include="..\..\controlserver\protocol\common\rpcg2n_registergs2ns.cpp" />
+    <ClCompile Include="..\..\controlserver\protocol\login\rpcn2i_loginverify.cpp" />
+    <ClCompile Include="..\..\controlserver\protocol\login\rpcn2d_nsreadaccountdata.cpp" />
+    <ClCompile Include="..\..\controlserver\protocol\role\rpcn2d_nsreadroledata.cpp" />
+    <ClCompile Include="..\..\controlserver\protocol\login\rpcm2n_kickaccountfromms.cpp" />
+    <ClCompile Include="..\..\controlserver\protocol\scene\rpcm2n_changescenefromms.cpp" />
+    <ClCompile Include="..\..\controlserver\protocol\common\rpcn2r_registerctrl2router.cpp" />
+    <ClCompile Include="..\..\controlserver\protocol\role\rpcn2m_checkrolename.cpp" />
+    <ClCompile Include="..\..\controlserver\protocol\role\rpcn2m_checkrolebaninfo.cpp" />
+    <ClCompile Include="..\..\controlserver\protocol\scene\ptcg2n_scenedestroyedtons.cpp" />
+    <ClCompile Include="..\..\controlserver\protocol\common\rpcm2n_nsreload.cpp" />
+    <ClCompile Include="..\..\controlserver\protocol\common\ptcr2n_crossgsclosentf.cpp" />
+    <ClCompile Include="..\..\share\idip\idiperrdesc.cpp" />
+    <ClCompile Include="..\..\share\idip\idiphandler.cpp" />
+    <ClCompile Include="..\..\share\profile\profiler.cpp" />
+    <ClCompile Include="..\..\share\sharememory\sharememory.cpp" />
+    <ClCompile Include="..\..\share\sharememory\shmkey.cpp" />
+    <ClCompile Include="..\..\controlserver\protocol\common\ptcc2n_updatestartuptypentf.cpp" />
+    <ClCompile Include="..\..\controlserver\protocol\common\ptcm2n_updateregistercount2ns.cpp" />
+    <ClCompile Include="..\..\share\table\globalconfig.cpp" />
+    <ClCompile Include="..\..\share\util\gametime.cpp" />
+    <ClCompile Include="..\..\share\util\gettimeofday.cpp" />
+    <ClCompile Include="..\..\share\util\jsonutil.cpp" />
+    <ClCompile Include="..\..\share\util\UtilEncode.cpp" />
+    <ClCompile Include="..\..\share\util\XCommon.cpp" />
+    <ClCompile Include="..\..\controlserver\protocol\common\ptcd2n_reportregistercount.cpp" />
+    <ClCompile Include="..\..\controlserver\protocol\common\ptcd2n_mysqlconnectlost.cpp" />
+    <ClCompile Include="..\..\controlserver\protocol\common\ptcm2n_notifyrouterinfo2ctrl.cpp" />
+    <ClCompile Include="..\..\controlserver\protocol\common\rpcm2n_registerms2ns.cpp" />
+    <ClCompile Include="..\..\controlserver\protocol\login\rpcc2n_loginreconnectreq.cpp" />
+    <ClCompile Include="..\..\controlserver\protocol\login\rpcn2g_notifyroleloginreconnect2gs.cpp" />
+    <ClCompile Include="..\..\controlserver\protocol\common\ptcm2n_m2nversoinnotify.cpp" />
+    <ClCompile Include="..\..\share\util\XRandom.cpp" />
+    <ClCompile Include="..\..\share\version\version.cpp" />
+    <ClCompile Include="..\..\controlserver\protocol\gm\rpcm2n_gmdowhitelist.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\controlserver\account\accountkick.h" />
+    <ClInclude Include="..\..\controlserver\account\accountsession.h" />
+    <ClInclude Include="..\..\controlserver\account\accountsessionmgr.h" />
+    <ClInclude Include="..\..\controlserver\account\logincontrol.h" />
+    <ClInclude Include="..\..\controlserver\account\whitelistmgr.h" />
+    <ClInclude Include="..\..\controlserver\config.h" />
+    <ClInclude Include="..\..\controlserver\minidump.h" />
+    <ClInclude Include="..\..\controlserver\network\dblink.h" />
+    <ClInclude Include="..\..\controlserver\network\gatelink.h" />
+    <ClInclude Include="..\..\controlserver\network\gmtoollink.h" />
+    <ClInclude Include="..\..\controlserver\network\gslink.h" />
+    <ClInclude Include="..\..\controlserver\network\loginlink.h" />
+    <ClInclude Include="..\..\controlserver\network\mslink.h" />
+    <ClInclude Include="..\..\controlserver\network\rslink.h" />
+    <ClInclude Include="..\..\controlserver\pch.h" />
+    <ClInclude Include="..\..\controlserver\process.h" />
+    <ClInclude Include="..\..\controlserver\profile\ctrlprofiler.h" />
+    <ClInclude Include="..\..\controlserver\ptcregister.h" />
+    <ClInclude Include="..\..\controlserver\queuing\queuingmgr.h" />
+    <ClInclude Include="..\..\controlserver\role\role.h" />
+    <ClInclude Include="..\..\controlserver\role\roleidgenerator.h" />
+    <ClInclude Include="..\..\controlserver\role\rolemanager.h" />
+    <ClInclude Include="..\..\controlserver\scene\gsmanager.h" />
+    <ClInclude Include="..\..\controlserver\scene\scene.h" />
+    <ClInclude Include="..\..\controlserver\scene\sceneconfig.h" />
+    <ClInclude Include="..\..\controlserver\scene\scenecreate.h" />
+    <ClInclude Include="..\..\controlserver\scene\scenemanager.h" />
+    <ClInclude Include="..\..\controlserver\scene\sceneswitch.h" />
+    <ClInclude Include="..\..\controlserver\shm\shmmgr.h" />
+    <ClInclude Include="..\..\share\DBInfo.h" />
+    <ClInclude Include="..\..\share\idip\idiperrdesc.h" />
+    <ClInclude Include="..\..\share\idip\idiphandler.h" />
+    <ClInclude Include="..\..\share\idutil.h" />
+    <ClInclude Include="..\..\share\profile\profiler.h" />
+    <ClInclude Include="..\..\share\sharememory\sharememory.h" />
+    <ClInclude Include="..\..\share\sharememory\shmkey.h" />
+    <ClInclude Include="..\..\share\sharememory\shmmap.h" />
+    <ClInclude Include="..\..\share\table\globalconfig.h" />
+    <ClInclude Include="..\..\share\util\gametime.h" />
+    <ClInclude Include="..\..\share\util\gettimeofday.h" />
+    <ClInclude Include="..\..\share\util\jsonutil.h" />
+    <ClInclude Include="..\..\share\util\UtilEncode.h" />
+    <ClInclude Include="..\..\share\util\utilstring.h" />
+    <ClInclude Include="..\..\share\util\XCommon.h" />
+    <ClInclude Include="..\..\share\util\XRandom.h" />
+    <ClInclude Include="..\..\share\version\version.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

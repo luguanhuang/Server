@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XSkillData>
+  <Name>Monster_wraith_mist_samdswing_nest</Name>
+  <TypeToken>0</TypeToken>
+  <ClipName>Animation/Monster_wraith/Monster_wraith_mist_samdswing</ClipName>
+  <Fx>
+    <XFxData>
+      <Type>FirerBased</Type>
+      <At>0.50000006</At>
+      <End>5.00000048</End>
+      <Fx>Effects/FX_Particle/NPC/Lzg_Boss/Monster_wraith_mist_samdswing_nest_Clip01</Fx>
+      <Bone>Bip01_wraith/Bip01 Pelvis_wraith/Bip01 Spine_wraith/Bip01 Neck_wraith/Bip01 R Clavicle_wraith/Bip01 R UpperArm_wraith/Bip01 R Forearm_wraith/Bip01 R Hand_wraith/Bip01 R Finger1_wraith</Bone>
+    </XFxData>
+    <XFxData>
+      <Index>1</Index>
+      <Type>FirerBased</Type>
+      <At>2.266667</At>
+      <End>5.00000048</End>
+      <Fx>Effects/FX_Particle/NPC/Lzg_Boss/Monster_wraith_mist_samdswing_nest_Clip02</Fx>
+    </XFxData>
+    <XFxData>
+      <Index>2</Index>
+      <Type>FirerBased</Type>
+      <At>1.9333334</At>
+      <End>5.00000048</End>
+      <Fx>Effects/FX_Particle/NPC/Lzg_Boss/Monster_wraith_mist_samdswing_nest_Clip03</Fx>
+    </XFxData>
+    <XFxData>
+      <Index>3</Index>
+      <Type>FirerBased</Type>
+      <At>2.2</At>
+      <End>5.00000048</End>
+      <Fx>Effects/FX_Particle/NPC/Lzg_Boss/Monster_wraith_mist_samdswing_nest_Clip04</Fx>
+    </XFxData>
+  </Fx>
+  <Script />
+  <Logical>
+    <StrickenMask>Cease</StrickenMask>
+    <Syntonic_CoolDown_Skill />
+  </Logical>
+  <Time>5.00000048</Time>
+</XSkillData>

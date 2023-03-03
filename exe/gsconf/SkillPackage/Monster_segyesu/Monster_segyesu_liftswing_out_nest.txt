@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XSkillData>
+  <Name>Monster_segyesu_liftswing_out_nest</Name>
+  <TypeToken>0</TypeToken>
+  <ClipName>Animation/Monster_segyesu/Monster_segyesu_liftswing_out</ClipName>
+</XSkillData>

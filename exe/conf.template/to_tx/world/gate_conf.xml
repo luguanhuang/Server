@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+
+<GateServer name="gate" zone="$zone_id$" id="$server_id$" line="$line$">
+	<Listen>
+		<peer ip="0.0.0.0" port="21010" handler="clientlink" sendBufSize="0" recvBufSize="0"/>
+		<peer ip="127.0.0.1" port="21031" handler="gslink" sendBufSize="2048000" recvBufSize="2048000"/>
+	</Listen>
+	<Connect>
+		<peer ip="127.0.0.1" port="21020" handler="mslink" sendBufSize="2048000" recvBufSize="2048000"/>
+		<peer ip="127.0.0.1" port="21025" handler="ctrllink" sendBufSize="2048000" recvBufSize="2048000"/>
+		<peer ip="127.0.0.1" port="21070" handler="audiolink" sendBufSize="1024000" recvBufSize="1024000"/>
+	</Connect>
+
+	<!-- nps: 每秒新建连接数 tps: 单连接每秒请求数 maxConnection: 最大连接数 -->
+	<ConnectLimit nps="1000" tps="100" maxConnection="20000" />
+
+
+	<!-- rolltype (day, hour) -->
+	<LogType  file="1" console="0" rolltype="hour"/>
+	<LogLevel info="1" debug="0" warn="1" error="1" fatal="1"/>
+
+	<Reconnect timeout="300" />
+	<RootPath dir="gateconf"/>
+	<RpcTimeout enabled="1"/>
+	<Encrypt enabled="0"/>
+	<Compress enabled="1" threshold="500"/>
+</GateServer>

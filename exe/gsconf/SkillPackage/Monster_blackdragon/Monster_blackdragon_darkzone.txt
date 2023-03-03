@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XSkillData>
+  <Name>Monster_blackdragon_darkzone</Name>
+  <TypeToken>3</TypeToken>
+  <Combined>
+    <XCombinedData>
+      <Name>Monster_blackdragon_darkzone_start</Name>
+      <End>2.83333349</End>
+      <Override_Presentation>true</Override_Presentation>
+    </XCombinedData>
+    <XCombinedData>
+      <Index>1</Index>
+      <Name>Monster_blackdragon_darkzone_loop</Name>
+      <End>4.5</End>
+      <Override_Presentation>true</Override_Presentation>
+    </XCombinedData>
+    <XCombinedData>
+      <Index>2</Index>
+      <Name>Monster_blackdragon_darkzone_end</Name>
+      <End>6.40000057</End>
+      <Override_Presentation>true</Override_Presentation>
+    </XCombinedData>
+  </Combined>
+  <Script />
+  <Logical>
+    <StrickenMask>Cease</StrickenMask>
+    <Not_Move_End>13.7329979</Not_Move_End>
+    <CanCancelAt>13.7329979</CanCancelAt>
+    <Syntonic_CoolDown_Skill />
+  </Logical>
+  <Time>13.733</Time>
+  <Cast_Range_Upper>30</Cast_Range_Upper>
+  <Cast_Scope>360</Cast_Scope>
+</XSkillData>

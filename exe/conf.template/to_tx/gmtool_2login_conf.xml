@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+
+<GMTool name="gmtool" zone="0" id="0">
+	<DB ip="$host$" user="$user$" password="$pwd$" port="$port$" database="$db$"/>
+
+	<Connect>
+		<peer ip="$host$" port="25002" handler="loginlink"/>
+		<peer ip="$host$" port="25002" handler="loginlink"/>
+	</Connect>
+
+	<!-- rolltype (day, hour) -->
+	<LogType  file="1" console="1" rolltype="day"/>
+	<LogLevel info="1" debug="1" warn="1" error="1" fatal="1"/>
+
+	<RootPath dir="gmconf"/>
+	<RpcTimeout enabled="1"/>
+</GMTool>

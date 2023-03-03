@@ -1,0 +1,961 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="network">
+      <UniqueIdentifier>{93431401-064d-4130-b135-adf22a6e9607}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol">
+      <UniqueIdentifier>{1f3fe939-098d-4e51-8c2f-5db110824d59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\login">
+      <UniqueIdentifier>{e7330f8c-25d5-4fbf-90f2-86e335d7a50a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\pb">
+      <UniqueIdentifier>{2c59a1e1-bcca-486f-864e-0832d3bf3f57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\common">
+      <UniqueIdentifier>{0ef3278f-1071-4975-a85d-07417a157f7f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\role">
+      <UniqueIdentifier>{2872b7cf-fd95-46ca-a554-fe3da1d1a348}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\ranklist">
+      <UniqueIdentifier>{bef5fbaf-4f3e-4bd3-90cb-f3e5ba83c06e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\reward">
+      <UniqueIdentifier>{331a0797-88b2-4064-8579-dac45c085d29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\social">
+      <UniqueIdentifier>{a5843139-9dc7-444f-8626-e3c963a3a394}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\guild">
+      <UniqueIdentifier>{eee81435-9eaf-41fa-9609-576128d3ec8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="share">
+      <UniqueIdentifier>{6a2bc9b6-568b-4cda-b03a-9f4cad2decfb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\gm">
+      <UniqueIdentifier>{31f3c7e7-07f1-48dd-9771-c3063712f368}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\chat">
+      <UniqueIdentifier>{e31f7e86-793b-49f1-b0ff-f2c830f08111}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\auction">
+      <UniqueIdentifier>{72b9fcaf-fe63-4299-84b9-c4322563e561}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\mail">
+      <UniqueIdentifier>{b946ba75-39e0-4b84-92d2-564b57ae3c0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="db">
+      <UniqueIdentifier>{00c8c244-ed54-4cc6-bba5-37a3ca90a356}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="db\task">
+      <UniqueIdentifier>{c30eafe5-b9b5-4ea1-9d76-c4df60511e2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\friend">
+      <UniqueIdentifier>{1333a345-c180-41a7-9cc9-1a0a1d3c016b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\account">
+      <UniqueIdentifier>{bf6c2421-5416-4018-98ae-c136e6667229}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\desvent">
+      <UniqueIdentifier>{c4a044ca-d1d2-4cd2-9730-f5064130cb8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\garden">
+      <UniqueIdentifier>{d0ff3074-d46e-44c0-ab16-b0a3a7d74208}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\platfriend">
+      <UniqueIdentifier>{3696fac0-6d8b-44b6-854e-499a7fc2c25f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\db">
+      <UniqueIdentifier>{d767feb1-0e6b-4534-a665-66dfab6ae7b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="db\task\partner">
+      <UniqueIdentifier>{dc9bf2dc-6217-49c8-b618-2b9f3331045e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="share\utildb">
+      <UniqueIdentifier>{d5c24718-f413-41d3-b58c-a087ecb17cbc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\mentorship">
+      <UniqueIdentifier>{4eed674f-afba-4284-85f5-095dec4107d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\pay">
+      <UniqueIdentifier>{1e8d51b7-8644-4d3b-acfc-155bbb16d2bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="db\task\leagueteam">
+      <UniqueIdentifier>{0e80076d-81ab-4bba-bd19-16101bf9f1f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="db\task\garden">
+      <UniqueIdentifier>{0d41d184-4ddf-4cc4-bdee-759adc8c4dc2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="db\task\role">
+      <UniqueIdentifier>{a73ec8b0-7dc0-4d9f-a8a9-120d02c983f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="db\task\mail">
+      <UniqueIdentifier>{d868d746-61f7-470d-a24e-5943cd21e13f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="db\task\guild">
+      <UniqueIdentifier>{d0a0d88c-e096-4323-882c-7816eeeac091}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="db\task\auct">
+      <UniqueIdentifier>{caf5dff4-700a-4ffd-9736-bd3497063fb3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="db\task\chat">
+      <UniqueIdentifier>{7342536d-1efb-4494-84c3-ccef0bb23044}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="profiler">
+      <UniqueIdentifier>{18d5d4aa-6575-40c1-8448-9f020f416a25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\arenastar">
+      <UniqueIdentifier>{70a05279-2428-442e-a43a-dbe2f4ddb230}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="db\task\arenastar">
+      <UniqueIdentifier>{ff334ff1-c274-422b-8158-38309af87b2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="db\task\skyteam">
+      <UniqueIdentifier>{4461f8d0-8eab-42af-8d17-936b02d80bc4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\custombattle">
+      <UniqueIdentifier>{aceea679-fc50-4639-bbac-5cc2b98cba46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="db\task\custombattle">
+      <UniqueIdentifier>{309bee19-fde2-4fea-91be-8f5a56c0b55c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="db\task\report">
+      <UniqueIdentifier>{6ea74f8b-b281-4de7-9a74-e3ca6b60f08f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\mobabattle">
+      <UniqueIdentifier>{79f09d26-6701-4a3e-9f3d-f0435b0b2293}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="db\task\moba">
+      <UniqueIdentifier>{1684266e-2f3a-4689-8f9c-053107d9b8ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\marriage">
+      <UniqueIdentifier>{bd032605-55df-4516-a9ed-73638ad885f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="db\task\marriage">
+      <UniqueIdentifier>{97fc9402-4784-4b44-a405-b29c0c6a05f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\dbgroupchat">
+      <UniqueIdentifier>{27595e9a-f6a3-48c6-b054-cce534c18282}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="db\task\dbgroupchat">
+      <UniqueIdentifier>{ac240cce-5218-4d75-b923-e15ff84c6951}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="db\task\dragonguild">
+      <UniqueIdentifier>{3816638e-72b0-4370-a73f-7a1fccb6034e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\dragonguild">
+      <UniqueIdentifier>{579fd252-b6db-4bb9-a2b2-d10d824da66c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="db\task\dbgoalawards">
+      <UniqueIdentifier>{88c23e5e-5324-4e14-a1e9-a241055fba53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\dbgoalawards">
+      <UniqueIdentifier>{2f832dc1-027c-4abe-8d61-dc8d8af9e8bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\task">
+      <UniqueIdentifier>{fc313f15-f37a-4b67-8893-ccc83cccf93d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="db\task\roletask">
+      <UniqueIdentifier>{c49737df-4366-4c42-99c3-cffe87057d84}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\dbserver\network\gslink.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\main.cpp" />
+    <ClCompile Include="..\..\dbserver\ptcregister.cpp" />
+    <ClCompile Include="..\..\dbserver\config.cpp" />
+    <ClCompile Include="..\..\dbserver\protocol\sendonly.cpp">
+      <Filter>protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\protocol\pb\project.pb.cc">
+      <Filter>protocol\pb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\debugflag.cpp" />
+    <ClCompile Include="..\..\dbserver\protocol\common\ptcg2d_registgameserver.cpp">
+      <Filter>protocol\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\protocol\common\ptcg2d_updatefield.cpp">
+      <Filter>protocol\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\protocol\common\ptcg2d_queryglobalconfig.cpp">
+      <Filter>protocol\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\dbprocess.cpp" />
+    <ClCompile Include="..\..\dbserver\protocol\reward\ptcg2d_queryreward.cpp">
+      <Filter>protocol\reward</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\protocol\reward\ptcg2d_removereward.cpp">
+      <Filter>protocol\reward</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\protocol\reward\ptcg2d_addreward.cpp">
+      <Filter>protocol\reward</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\protocol\guild\ptcg2d_loadguilddatareq.cpp">
+      <Filter>protocol\guild</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\protocol\guild\ptcg2d_updateguild.cpp">
+      <Filter>protocol\guild</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\protocol\common\ptci2d_registloginserver.cpp">
+      <Filter>protocol\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\protocol\common\ptci2d_changeserverstatentf.cpp">
+      <Filter>protocol\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\protocol\pb\enum.pb.cc">
+      <Filter>protocol\pb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\db\mysqlmgr.cpp">
+      <Filter>db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\db\mysqlthread.cpp">
+      <Filter>db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\protocol\gm\rpcp2d_gmhttpcommand.cpp">
+      <Filter>protocol\gm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\network\mslink.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\protocol\login\rpcm2d_readaccountdata.cpp">
+      <Filter>protocol\login</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\protocol\role\rpcm2d_readroledata.cpp">
+      <Filter>protocol\role</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\protocol\role\rpcg2d_saveroledata.cpp">
+      <Filter>protocol\role</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\protocol\role\rpcm2d_mssaveroledata.cpp">
+      <Filter>protocol\role</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\util\dbutil.cpp">
+      <Filter>db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\protocol\mail\ptcm2d_mailoperation.cpp">
+      <Filter>protocol\mail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\protocol\role\rpcm2d_msgetallrole.cpp">
+      <Filter>protocol\role</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\protocol\chat\ptcm2d_mduploadchatntf.cpp">
+      <Filter>protocol\chat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\protocol\common\ptcm2d_msupdateglobalconfig.cpp">
+      <Filter>protocol\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\db\task\globalupdatetask.cpp">
+      <Filter>db\task</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\protocol\friend\ptcm2d_updatefriendondb.cpp">
+      <Filter>protocol\friend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\db\task\friendwritetask.cpp">
+      <Filter>db\task</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\db\task\onlinewritetask.cpp">
+      <Filter>db\task</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\protocol\social\ptcm2d_mssavesocialinfontf.cpp">
+      <Filter>protocol\social</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\db\task\socialoptask.cpp">
+      <Filter>db\task</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\protocol\mail\ptcm2d_addtemplatemail.cpp">
+      <Filter>protocol\mail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\protocol\ranklist\ptcm2d_saveranklistchangetodb.cpp">
+      <Filter>protocol\ranklist</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\protocol\ranklist\ptcm2d_saveranklisttodb.cpp">
+      <Filter>protocol\ranklist</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\protocol\role\ptcm2d_saverolesummarydata.cpp">
+      <Filter>protocol\role</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\protocol\guild\ptcm2d_saveguilddata.cpp">
+      <Filter>protocol\guild</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\protocol\chat\ptcm2d_updateprivatelistntf.cpp">
+      <Filter>protocol\chat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\db\task\privatechatlistupdatetask.cpp">
+      <Filter>db\task</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\db\task\punishtask.cpp">
+      <Filter>db\task</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\protocol\account\ptcm2d_savepunishdata.cpp">
+      <Filter>protocol\account</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\db\task\ranklistsavetask.cpp">
+      <Filter>db\task</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\protocol\auction\ptcm2d_auctsaleitemdbntf.cpp">
+      <Filter>protocol\auction</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\protocol\auction\ptcm2d_aucttraderecorddbntf.cpp">
+      <Filter>protocol\auction</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\protocol\desvent\ptcm2d_updatedesignation.cpp">
+      <Filter>protocol\desvent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\db\task\designationtask.cpp">
+      <Filter>db\task</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\protocol\common\rpcm2d_dbreload.cpp">
+      <Filter>protocol\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\protocol\garden\ptcm2d_savegardeninfo.cpp">
+      <Filter>protocol\garden</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\protocol\role\ptcm2d_delrolentf.cpp">
+      <Filter>protocol\role</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\db\task\paylisttask.cpp">
+      <Filter>db\task</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\protocol\common\ptcm2d_savepaylist.cpp">
+      <Filter>protocol\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\protocol\platfriend\ptcm2d_saveplatfriendinfo.cpp">
+      <Filter>protocol\platfriend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\db\task\platfriendoptask.cpp">
+      <Filter>db\task</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\network\controllink.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\protocol\login\rpcn2d_nsreadaccountdata.cpp">
+      <Filter>protocol\login</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\protocol\role\rpcn2d_nsreadroledata.cpp">
+      <Filter>protocol\role</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\protocol\common\ptcn2d_onlinenumntf.cpp">
+      <Filter>protocol\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\protocol\role\rpcn2d_createroleondbnew.cpp">
+      <Filter>protocol\role</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\protocol\auction\ptcm2d_guildauctupdatentf.cpp">
+      <Filter>protocol\auction</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\db\task\noticetask.cpp">
+      <Filter>db\task</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\protocol\gm\ptcm2d_saveplatnoticeptf.cpp">
+      <Filter>protocol\gm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\protocol\common\rpcd2r_registerdb2router.cpp">
+      <Filter>protocol\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\network\rslink.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\protocol\db\rpcm2d_updatepartnerdata.cpp">
+      <Filter>protocol\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\db\task\partnerinserttask.cpp">
+      <Filter>db\task\partner</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\db\task\partnerupdatetask.cpp">
+      <Filter>db\task\partner</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\db\task\partnerdeltask.cpp">
+      <Filter>db\task\partner</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\protocol\chat\ptcm2d_mddelchatntf.cpp">
+      <Filter>protocol\chat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\utildb\sqlbuilder.cpp">
+      <Filter>share\utildb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\protocol\mentorship\ptcm2d_savementorinfontf.cpp">
+      <Filter>protocol\mentorship</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\db\task\mentorshipoptask.cpp">
+      <Filter>db\task</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\protocol\pay\rpcm2d_savepayaccessdata.cpp">
+      <Filter>protocol\pay</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\db\task\payaccessinfotask.cpp">
+      <Filter>db\task</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\protocol\db\rpcm2d_saveleagueteamdata.cpp">
+      <Filter>protocol\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\db\task\leagueteaminserttask.cpp">
+      <Filter>db\task\leagueteam</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\db\task\leagueteamupdatetask.cpp">
+      <Filter>db\task\leagueteam</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\db\task\leagueteamdeltask.cpp">
+      <Filter>db\task\leagueteam</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\utildb\roledatafields.cpp">
+      <Filter>share\utildb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\protocol\role\rpcg2d_readhiddenroles.cpp">
+      <Filter>protocol\role</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\db\task\garden_info_inserttask.cpp">
+      <Filter>db\task\garden</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\db\task\garden_update_task.cpp">
+      <Filter>db\task\garden</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\db\task\roleallinforeadtask.cpp">
+      <Filter>db\task\role</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\db\task\roledeltask.cpp">
+      <Filter>db\task\role</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\db\task\roleinserttask.cpp">
+      <Filter>db\task\role</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\db\task\rolereadtask.cpp">
+      <Filter>db\task\role</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\db\task\rolesummarytask.cpp">
+      <Filter>db\task\role</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\db\task\rolewritetask.cpp">
+      <Filter>db\task\role</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\db\task\tmplmailinserttask.cpp">
+      <Filter>db\task\mail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\db\task\mailoptask.cpp">
+      <Filter>db\task\mail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\db\task\guilddeletetask.cpp">
+      <Filter>db\task\guild</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\db\task\guildinserttask.cpp">
+      <Filter>db\task\guild</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\db\task\guildupdatetask.cpp">
+      <Filter>db\task\guild</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\db\task\accountreadtask.cpp">
+      <Filter>db\task\role</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\db\task\auctsaleitemtask.cpp">
+      <Filter>db\task\auct</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\db\task\aucttraderecord.cpp">
+      <Filter>db\task\auct</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\db\task\guildaucttask.cpp">
+      <Filter>db\task\auct</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\db\task\chatdeltask.cpp">
+      <Filter>db\task\chat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\db\task\chatwritetask.cpp">
+      <Filter>db\task\chat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\db\task\readhiddenrolestask.cpp">
+      <Filter>db\task\role</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\db\task\crossrolesummarytask.cpp">
+      <Filter>db\task\role</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\db\task\crossrolesummarydelete.cpp">
+      <Filter>db\task\role</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\protocol\role\ptcm2d_deletecrossrolesummary.cpp">
+      <Filter>protocol\role</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\profile\profiler.cpp">
+      <Filter>profiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\profile\dbprofiler.cpp">
+      <Filter>profiler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\db\task\accountdeltask.cpp">
+      <Filter>db\task\role</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\protocol\account\ptcn2d_accountlogout.cpp">
+      <Filter>protocol\account</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\protocol\common\rpcm2d_mssavedbend.cpp">
+      <Filter>protocol\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\protocol\common\ptcm2d_notifyrouterinfo2db.cpp">
+      <Filter>protocol\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\db\task\partnerreplaceidtask.cpp">
+      <Filter>db\task\partner</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\protocol\role\rpcm2d_queryrolesummary.cpp">
+      <Filter>protocol\role</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\db\task\rolesummaryquerytask.cpp">
+      <Filter>db\task\role</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\protocol\garden\rpcm2d_querygardeninfo.cpp">
+      <Filter>protocol\garden</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\db\task\query_gardenInfo_task.cpp">
+      <Filter>db\task\garden</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\protocol\pay\rpcm2d_savegiftibitem.cpp">
+      <Filter>protocol\pay</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\db\task\savegiftibitem.cpp">
+      <Filter>db\task</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\protocol\pay\ptcm2d_savepayibitem.cpp">
+      <Filter>protocol\pay</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\db\task\payibitemtask.cpp">
+      <Filter>db\task</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\protocol\arenastar\rpcm2d_arenastarroledatasave.cpp">
+      <Filter>protocol\arenastar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\db\task\arenastartask.cpp">
+      <Filter>db\task\arenastar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\protocol\db\rpcm2d_skyteamdata2db.cpp">
+      <Filter>protocol\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\db\task\skyteaminserttask.cpp">
+      <Filter>db\task\skyteam</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\db\task\skyteamupdatetask.cpp">
+      <Filter>db\task\skyteam</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\db\task\skyteamdeltask.cpp">
+      <Filter>db\task\skyteam</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\db\task\giftibhisttask.cpp">
+      <Filter>db\task</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\protocol\pay\rpcm2d_savegiftibhist.cpp">
+      <Filter>protocol\pay</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\protocol\custombattle\ptcm2d_updatecustombattleondb.cpp">
+      <Filter>protocol\custombattle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\protocol\custombattle\ptcm2d_updatecustombattleroleondb.cpp">
+      <Filter>protocol\custombattle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\db\task\custombattleroletask.cpp">
+      <Filter>db\task\custombattle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\db\task\custombattletask.cpp">
+      <Filter>db\task\custombattle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\db\task\custombattledeletetask.cpp">
+      <Filter>db\task\custombattle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\protocol\db\rpcm2d_updaterolereportdata.cpp">
+      <Filter>protocol\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\db\task\updatereporttask.cpp">
+      <Filter>db\task\report</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\db\task\delreporttask.cpp">
+      <Filter>db\task\report</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\protocol\mobabattle\ptcm2d_savemobarolerecord.cpp">
+      <Filter>protocol\mobabattle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\protocol\mobabattle\rpcm2d_querymobarolerecord.cpp">
+      <Filter>protocol\mobabattle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\db\task\mobasavetask.cpp">
+      <Filter>db\task\moba</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\db\task\mobareadtask.cpp">
+      <Filter>db\task\moba</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\protocol\marriage\ptcm2d_savemarriageinfontf.cpp">
+      <Filter>protocol\marriage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\db\task\marriageoptask.cpp">
+      <Filter>db\task\marriage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\protocol\dbgroupchat\ptcm2d_dbgroupchatsavegroupissuentf.cpp">
+      <Filter>protocol\dbgroupchat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\protocol\dbgroupchat\ptcm2d_dbgroupchatdelgroupissuentf.cpp">
+      <Filter>protocol\dbgroupchat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\protocol\dbgroupchat\ptcm2d_dbgroupchatsaveroleissuentf.cpp">
+      <Filter>protocol\dbgroupchat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\protocol\dbgroupchat\ptcm2d_dbgroupchatdelroleissuentf.cpp">
+      <Filter>protocol\dbgroupchat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\protocol\dbgroupchat\ptcm2d_dbgroupchatsavegroupntf.cpp">
+      <Filter>protocol\dbgroupchat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\protocol\dbgroupchat\ptcm2d_dbgroupchatdelgroupntf.cpp">
+      <Filter>protocol\dbgroupchat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\protocol\dbgroupchat\ptcm2d_dbgroupchatsaverolentf.cpp">
+      <Filter>protocol\dbgroupchat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\protocol\dbgroupchat\ptcm2d_dbgroupchatdelrolentf.cpp">
+      <Filter>protocol\dbgroupchat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\protocol\dragonguild\ptcm2d_updatedragonguilddata.cpp">
+      <Filter>protocol\dragonguild</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\db\task\dbgroupchatdelgroup.cpp">
+      <Filter>db\task\dbgroupchat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\db\task\dbgroupchatdelgroupissue.cpp">
+      <Filter>db\task\dbgroupchat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\db\task\dbgroupchatdelrole.cpp">
+      <Filter>db\task\dbgroupchat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\db\task\dbgroupchatdelroleissue.cpp">
+      <Filter>db\task\dbgroupchat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\db\task\dbgroupchatsavegroup.cpp">
+      <Filter>db\task\dbgroupchat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\db\task\dbgroupchatsavegroupissue.cpp">
+      <Filter>db\task\dbgroupchat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\db\task\dbgroupchatsaverole.cpp">
+      <Filter>db\task\dbgroupchat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\db\task\dbgroupchatsaveroleissue.cpp">
+      <Filter>db\task\dbgroupchat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\appid.cpp">
+      <Filter>share</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\db\task\dragonguilddeletetask.cpp">
+      <Filter>db\task\dragonguild</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\db\task\dragonguildinserttask.cpp">
+      <Filter>db\task\dragonguild</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\db\task\dragonguildupdatetask.cpp">
+      <Filter>db\task\dragonguild</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\db\task\dbgoalawardssave.cpp">
+      <Filter>db\task\dbgoalawards</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\protocol\dbgoalawards\ptcm2d_dbgoalawardssaventf.cpp">
+      <Filter>protocol\dbgoalawards</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\protocol\task\rpcm2d_updateroletaskdata.cpp">
+      <Filter>protocol\task</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\db\task\roletaskupdatetask.cpp">
+      <Filter>db\task\roletask</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\db\task\roletaskdeletetask.cpp">
+      <Filter>db\task\roletask</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\protocol\role\rpcm2d_readaccountdatanew.cpp">
+      <Filter>protocol\role</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\db\task\readaccounttasknew.cpp">
+      <Filter>db\task\role</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\protocol\mail\rpcm2d_readmailfromdb.cpp">
+      <Filter>protocol\mail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dbserver\db\task\readrolemailtask.cpp">
+      <Filter>db\task\mail</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\dbserver\network\gslink.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dbserver\minidump.h" />
+    <ClInclude Include="..\..\dbserver\ptcregister.h" />
+    <ClInclude Include="..\..\dbserver\config.h" />
+    <ClInclude Include="..\..\dbserver\pch.h" />
+    <ClInclude Include="..\..\dbserver\debugflag.h" />
+    <ClInclude Include="..\..\dbserver\dbprocess.h" />
+    <ClInclude Include="..\..\share\httpapi.h">
+      <Filter>share</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dbserver\db\mysqlmgr.h">
+      <Filter>db</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dbserver\db\mysqlthread.h">
+      <Filter>db</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dbserver\network\mslink.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\util\dbutil.h">
+      <Filter>db</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dbserver\db\task\globalupdatetask.h">
+      <Filter>db\task</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dbserver\db\task\friendwritetask.h">
+      <Filter>db\task</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dbserver\db\task\onlinewritetask.h">
+      <Filter>db\task</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dbserver\db\task\socialoptask.h">
+      <Filter>db\task</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dbserver\db\task\privatechatlistupdatetask.h">
+      <Filter>db\task</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dbserver\db\task\punishtask.h">
+      <Filter>db\task</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dbserver\db\task\ranklistsavetask.h">
+      <Filter>db\task</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dbserver\db\task\designationtask.h">
+      <Filter>db\task</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dbserver\db\task\paylisttask.h">
+      <Filter>db\task</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dbserver\db\task\platfriendoptask.h">
+      <Filter>db\task</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dbserver\network\controllink.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dbserver\db\task\noticetask.h">
+      <Filter>db\task</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dbserver\network\rslink.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dbserver\db\task\partnerinserttask.h">
+      <Filter>db\task\partner</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dbserver\db\task\partnerupdatetask.h">
+      <Filter>db\task\partner</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dbserver\db\task\partnerdeltask.h">
+      <Filter>db\task\partner</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\utildb\sqlbuilder.h">
+      <Filter>share\utildb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\utildb\sqljoin.h">
+      <Filter>share\utildb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dbserver\db\task\mentorshipoptask.h">
+      <Filter>db\task</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dbserver\db\task\payaccessinfotask.h">
+      <Filter>db\task</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dbserver\db\task\leagueteaminserttask.h">
+      <Filter>db\task\leagueteam</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dbserver\db\task\leagueteamupdatetask.h">
+      <Filter>db\task\leagueteam</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dbserver\db\task\leagueteamdeltask.h">
+      <Filter>db\task\leagueteam</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\utildb\roledatafields.h">
+      <Filter>share\utildb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dbserver\db\task\garden_update_task.h">
+      <Filter>db\task\garden</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dbserver\db\task\garden_info_inserttask.h">
+      <Filter>db\task\garden</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dbserver\db\task\rolewritetask.h">
+      <Filter>db\task\role</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dbserver\db\task\roleallinforeadtask.h">
+      <Filter>db\task\role</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dbserver\db\task\roledeltask.h">
+      <Filter>db\task\role</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dbserver\db\task\roleinserttask.h">
+      <Filter>db\task\role</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dbserver\db\task\rolereadtask.h">
+      <Filter>db\task\role</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dbserver\db\task\rolesummarytask.h">
+      <Filter>db\task\role</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dbserver\db\task\tmplmailinserttask.h">
+      <Filter>db\task\mail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dbserver\db\task\mailoptask.h">
+      <Filter>db\task\mail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dbserver\db\task\guildupdatetask.h">
+      <Filter>db\task\guild</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dbserver\db\task\guilddeletetask.h">
+      <Filter>db\task\guild</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dbserver\db\task\guildinserttask.h">
+      <Filter>db\task\guild</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dbserver\db\task\accountreadtask.h">
+      <Filter>db\task\role</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dbserver\db\task\aucttraderecord.h">
+      <Filter>db\task\auct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dbserver\db\task\auctsaleitemtask.h">
+      <Filter>db\task\auct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dbserver\db\task\guildaucttask.h">
+      <Filter>db\task\auct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dbserver\db\task\chatwritetask.h">
+      <Filter>db\task\chat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dbserver\db\task\readhiddenrolestask.h">
+      <Filter>db\task\role</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dbserver\db\task\crossrolesummarytask.h">
+      <Filter>db\task\role</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dbserver\db\task\crossrolesummarydelete.h">
+      <Filter>db\task\role</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\profile\profiler.h">
+      <Filter>profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dbserver\profile\dbprofiler.h">
+      <Filter>profiler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dbserver\db\task\accountdeltask.h">
+      <Filter>db\task\role</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dbserver\db\task\partnerreplaceidtask.h">
+      <Filter>db\task\partner</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dbserver\db\task\rolesummaryquerytask.h">
+      <Filter>db\task\role</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dbserver\db\task\query_gardenInfo_task.h">
+      <Filter>db\task\garden</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dbserver\db\task\savegiftibitem.h">
+      <Filter>db\task</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dbserver\db\task\payibitemtask.h">
+      <Filter>db\task</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dbserver\db\task\arenastartask.h">
+      <Filter>db\task\arenastar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dbserver\db\task\skyteaminserttask.h">
+      <Filter>db\task\skyteam</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dbserver\db\task\skyteamupdatetask.h">
+      <Filter>db\task\skyteam</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dbserver\db\task\skyteamdeltask.h">
+      <Filter>db\task\skyteam</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dbserver\db\task\giftibhisttask.h">
+      <Filter>db\task</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dbserver\db\task\custombattleroletask.h">
+      <Filter>db\task\custombattle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dbserver\db\task\custombattletask.h">
+      <Filter>db\task\custombattle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dbserver\db\task\custombattledeletetask.h">
+      <Filter>db\task\custombattle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dbserver\db\task\updatereporttask.h">
+      <Filter>db\task\report</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dbserver\db\task\delreporttask.h">
+      <Filter>db\task\report</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dbserver\db\task\mobasavetask.h">
+      <Filter>db\task\moba</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dbserver\db\task\mobareadtask.h">
+      <Filter>db\task\moba</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dbserver\db\task\marriageoptask.h">
+      <Filter>db\task\marriage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dbserver\db\task\dbgroupchatdelgroup.h">
+      <Filter>db\task\dbgroupchat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dbserver\db\task\dbgroupchatdelgroupissue.h">
+      <Filter>db\task\dbgroupchat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dbserver\db\task\dbgroupchatdelrole.h">
+      <Filter>db\task\dbgroupchat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dbserver\db\task\dbgroupchatdelroleissue.h">
+      <Filter>db\task\dbgroupchat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dbserver\db\task\dbgroupchatsavegroup.h">
+      <Filter>db\task\dbgroupchat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dbserver\db\task\dbgroupchatsavegroupissue.h">
+      <Filter>db\task\dbgroupchat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dbserver\db\task\dbgroupchatsaverole.h">
+      <Filter>db\task\dbgroupchat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dbserver\db\task\dbgroupchatsaveroleissue.h">
+      <Filter>db\task\dbgroupchat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\appid.h">
+      <Filter>share</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dbserver\db\task\dragonguilddeletetask.h">
+      <Filter>db\task\dragonguild</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dbserver\db\task\dragonguildinserttask.h">
+      <Filter>db\task\dragonguild</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dbserver\db\task\dragonguildupdatetask.h">
+      <Filter>db\task\dragonguild</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dbserver\db\task\dbgoalawardssave.h">
+      <Filter>db\task\dbgoalawards</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dbserver\db\task\roletaskupdatetask.h">
+      <Filter>db\task\roletask</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dbserver\db\task\roletaskdeletetask.h">
+      <Filter>db\task\roletask</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dbserver\db\task\readaccounttasknew.h">
+      <Filter>db\task\role</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dbserver\db\task\readrolemailtask.h">
+      <Filter>db\task\mail</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\dbserver\db\task\chatdeltask.h">
+      <Filter>db\task\chat</Filter>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="network">
+      <UniqueIdentifier>{e69c39db-4636-4166-9458-38587bce692b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol">
+      <UniqueIdentifier>{25a585fb-3818-4cc4-bd91-3bcdaffa65a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\login">
+      <UniqueIdentifier>{949ae0f7-03a3-46a7-af2c-9abbaabfd8aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="session">
+      <UniqueIdentifier>{8fd5f927-2b95-47e2-98c2-1dab4d3b640d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\pb">
+      <UniqueIdentifier>{203567d9-b608-4b2b-a03f-a66fe4f6a3f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\common">
+      <UniqueIdentifier>{41005e9f-caa8-4fa7-9c75-42b3e79d262c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\chat">
+      <UniqueIdentifier>{16bc1b75-cc91-4a75-8ca7-0857eaf7e50b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="version">
+      <UniqueIdentifier>{174c5a9b-a954-41f5-b183-b36af8ee881a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\broadcast">
+      <UniqueIdentifier>{9b06fca9-c791-42d5-a957-a05cfe8be912}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="udpnet">
+      <UniqueIdentifier>{c7d11b65-10bb-429c-8ab1-7a9dfe5d7ad0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="profile">
+      <UniqueIdentifier>{266a00b7-3027-464f-9ce4-1f143fd7807e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="share">
+      <UniqueIdentifier>{0d93e2db-0c38-43ae-8635-c0c166a78e69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="share\profile">
+      <UniqueIdentifier>{5bd60241-4d97-446e-bf17-3a341e50402a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocolban">
+      <UniqueIdentifier>{4053c037-f763-4b23-bf87-e17dc8969633}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\session">
+      <UniqueIdentifier>{39c34151-3e55-4b42-96c2-489b91801b11}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\gateserver\config.cpp" />
+    <ClCompile Include="..\..\gateserver\main.cpp" />
+    <ClCompile Include="..\..\gateserver\process.cpp" />
+    <ClCompile Include="..\..\gateserver\ptcregister.cpp" />
+    <ClCompile Include="..\..\gateserver\network\clientlink.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gateserver\network\gslink.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gateserver\protocol\sendonly.cpp">
+      <Filter>protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gateserver\protocol\login\ptcc2t_keepalivepingack.cpp">
+      <Filter>protocol\login</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gateserver\session\sessionmanager.cpp">
+      <Filter>session</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\protocol\pb\project.pb.cc">
+      <Filter>protocol\pb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gateserver\network\serverstateinfo.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gateserver\protocol\login\rpcc2t_reconnect.cpp">
+      <Filter>protocol\login</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gateserver\protocol\common\ptcg2t_opengate.cpp">
+      <Filter>protocol\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gateserver\protocol\login\rpcc2t_clientloginrequest.cpp">
+      <Filter>protocol\login</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\protocol\pb\enum.pb.cc">
+      <Filter>protocol\pb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gateserver\network\audiolink.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gateserver\protocol\common\rpct2m_registergt2ms.cpp">
+      <Filter>protocol\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gateserver\network\mslink.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gateserver\protocol\common\rpcg2t_registergs2gt.cpp">
+      <Filter>protocol\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gateserver\protocol\common\rpct2g_registergt2gs.cpp">
+      <Filter>protocol\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gateserver\protocol\common\ptcg2t_changegsline.cpp">
+      <Filter>protocol\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gateserver\protocol\chat\ptcm2t_chatforward.cpp">
+      <Filter>protocol\chat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gateserver\protocol\common\ptcm2t_versionnotify.cpp">
+      <Filter>protocol\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\version\version.cpp">
+      <Filter>version</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gateserver\network\protocolstat.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gateserver\protocol\broadcast\ptcm2t_broadcastm2t.cpp">
+      <Filter>protocol\broadcast</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gateserver\protocol\login\rpct2g_reconnectgs.cpp">
+      <Filter>protocol\login</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gateserver\network\rslink.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gateserver\protocol\common\rpct2r_registergt2router.cpp">
+      <Filter>protocol\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gateserver\protocol\common\rpct2n_registergt2ns.cpp">
+      <Filter>protocol\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gateserver\network\controllink.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gateserver\protocol\login\ptcn2t_kickaccount.cpp">
+      <Filter>protocol\login</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gateserver\protocol\login\rpct2n_loginrequestnew.cpp">
+      <Filter>protocol\login</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gateserver\network\protocolcoder.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gateserver\protocol\login\ptcn2t_notifygtsessionlogin.cpp">
+      <Filter>protocol\login</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gateserver\udpnet\kcppeer.cpp">
+      <Filter>udpnet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gateserver\udpnet\udpnetwork.cpp">
+      <Filter>udpnet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gateserver\udpnet\udphandler.cpp">
+      <Filter>udpnet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gateserver\protocol\broadcast\ptcg2t_broadcastg2t.cpp">
+      <Filter>protocol\broadcast</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gateserver\profile\gateprofile.cpp">
+      <Filter>profile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\profile\profiler.cpp">
+      <Filter>share\profile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gateserver\protocol\common\ptcm2t_notifyrouterinfo2gate.cpp">
+      <Filter>protocol\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gateserver\protocolban\crossprotocolbanmgr.cpp">
+      <Filter>protocolban</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gateserver\protocol\chat\rpcc2t_uploadaudiotogate.cpp">
+      <Filter>protocol\chat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gateserver\protocol\chat\rpct2a_uploadaudiotoaudio.cpp">
+      <Filter>protocol\chat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gateserver\protocol\session\ptcn2t_sessionchange2gt.cpp">
+      <Filter>protocol\session</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\gateserver\config.h" />
+    <ClInclude Include="..\..\gateserver\minidump.h" />
+    <ClInclude Include="..\..\gateserver\process.h" />
+    <ClInclude Include="..\..\gateserver\ptcregister.h" />
+    <ClInclude Include="..\..\gateserver\network\clientlink.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gateserver\network\gslink.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gateserver\pch.h" />
+    <ClInclude Include="..\..\gateserver\session\sessionmanager.h">
+      <Filter>session</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gateserver\network\serverstateinfo.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gateserver\network\audiolink.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gateserver\network\mslink.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\version\version.h">
+      <Filter>version</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gateserver\network\protocolstat.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gateserver\network\rslink.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gateserver\network\controllink.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gateserver\network\protocolcoder.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gateserver\session\protowindow.h">
+      <Filter>session</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gateserver\udpnet\kcppeer.h">
+      <Filter>udpnet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gateserver\udpnet\kcputil.h">
+      <Filter>udpnet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gateserver\udpnet\udpnetwork.h">
+      <Filter>udpnet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gateserver\udpnet\udphandler.h">
+      <Filter>udpnet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gateserver\profile\gateprofile.h">
+      <Filter>profile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\profile\profiler.h">
+      <Filter>share\profile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gateserver\protocolban\crossprotocolbanmgr.h">
+      <Filter>protocolban</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,39 @@
+#!/bin/bash
+
+if [ $# -ne 1 ]; then
+	echo "Require 1 parameter"
+	exit 0
+fi
+
+gt_name=$1_gt
+ms_name=$1_ms
+ns_name=$1_ns
+gsa_name=$1_gsa
+gsb_name=$1_gsb
+db_name=$1_db
+au_name=$1_au
+
+
+function ServerStatus()
+{
+	screen_pid=`screen -ls | grep $1`;
+	if [ ${#screen_pid} -eq 0 ]; then
+		echo "No session $1"
+		return
+	fi
+
+	screen_pid=${screen_pid%.*}
+
+	all_info=`pstree -p | grep $screen_pid`;
+	all_info=${all_info##*screen}
+	echo "$1:  screen$all_info"
+}
+
+
+ServerStatus $gt_name gateserver
+ServerStatus $ms_name masterserver
+ServerStatus $ns_name controlserver
+ServerStatus $gsa_name gameserver
+ServerStatus $gsb_name gameserver
+ServerStatus $db_name dbserver
+ServerStatus $au_name audioserver
