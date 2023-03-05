@@ -4,7 +4,9 @@
 
 `sudo apt install cmake`
 
-## GCC compiler
+## GCC compiler (+ build essentials)
+
+`sudo apt install build-essential`
 
 ## Protobuf compiler
 

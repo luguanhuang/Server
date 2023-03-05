@@ -415,3 +415,6 @@ FodyWeavers.xsd
 
 # generated protobuf implementations
 protocol/pb/
+
+# vs code
+.vscode/
