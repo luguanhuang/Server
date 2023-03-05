@@ -2,7 +2,7 @@ INCLUDE_DIRECTORIES( . network protocol )
 INCLUDE_DIRECTORIES( /usr/include/mysql )
 INCLUDE_DIRECTORIES( ${SERVER_SOURCE_DIR}/share )
 INCLUDE_DIRECTORIES(${SERVER_SOURCE_DIR}/thirdparty/tsf4g_lib/include)
-
+INCLUDE_DIRECTORIES(${SERVER_SOURCE_DIR}/thirdparty/curl-7.40.0/include)
 LINK_DIRECTORIES( /usr/lib64/mysql )
 
 
