@@ -1,3 +1,5 @@
+syntax = "proto2";
+
 package KKSG;
 import "enum.proto";
 
