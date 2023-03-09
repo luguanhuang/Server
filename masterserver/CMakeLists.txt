@@ -5,7 +5,7 @@ INCLUDE_DIRECTORIES(${SERVER_SOURCE_DIR}/thirdparty/tsf4g_lib/include)
 INCLUDE_DIRECTORIES(${SERVER_SOURCE_DIR}/thirdparty/liboauth-0.9.4/src)
 INCLUDE_DIRECTORIES(${SERVER_SOURCE_DIR}/thirdparty/lua-5.1.4/src )
 INCLUDE_DIRECTORIES(${SERVER_SOURCE_DIR}/thirdparty/toluapp/include )
-
+INCLUDE_DIRECTORIES(${SERVER_SOURCE_DIR}/thirdparty/curl-7.40.0/include)
 
 LINK_DIRECTORIES( /usr/lib64/mysql )
 LINK_DIRECTORIES( ${SERVER_SOURCE_DIR}/thirdparty/lua-5.1.4/lib )
