@@ -412,3 +412,9 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+# generated protobuf implementations
+protocol/pb/
+
+# vs code
+.vscode/
