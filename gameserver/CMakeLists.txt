@@ -5,7 +5,7 @@ INCLUDE_DIRECTORIES(${SERVER_SOURCE_DIR}/thirdparty/tsf4g_lib/include)
 INCLUDE_DIRECTORIES(${SERVER_SOURCE_DIR}/thirdparty/lua-5.1.4/src )
 INCLUDE_DIRECTORIES(${SERVER_SOURCE_DIR}/thirdparty/toluapp/include )
 #LINK_DIRECTORIES(${LIBRARY_OUTPUT_PATH})
-
+INCLUDE_DIRECTORIES(${SERVER_SOURCE_DIR}/thirdparty/curl-7.40.0/include)
 LINK_DIRECTORIES( /usr/lib64/mysql )
 LINK_DIRECTORIES( ${SERVER_SOURCE_DIR}/thirdparty/lua-5.1.4/lib )
 LINK_DIRECTORIES( ${SERVER_SOURCE_DIR}/thirdparty/toluapp/lib )
